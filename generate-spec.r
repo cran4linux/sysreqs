@@ -14,8 +14,8 @@ replace_pattern <- function(x, pattern, replacement) {
   c(x[1:(idx-1)], replacement, x[(idx+1):length(x)])
 }
 
-type <- read.csv("types.csv")
 sreq <- read.csv("sysreqs.csv", na.strings="") |> subset(build)
+type <- read.csv("types.csv") |> subset(name %in% unique(sreq$type))
 
 reqs <- c(
   sprintf("Requires:       %%{name}-%-8s= %%{version}-%%{release}", type$name),
