@@ -3,7 +3,7 @@
 format_requires <- function(df) {
   do.call(c, lapply(names(df), function(i) {
     distros <- strsplit(i, "_")[[1]]
-    c(paste0("%if", paste0("0%{?", distros, "}", collapse=" || ")),
+    c(paste("%if", paste0("0%{?", distros, "}", collapse=" || ")),
       sprintf("Requires:       %s", na.omit(df[[i]])),
       "%endif")
   }))
