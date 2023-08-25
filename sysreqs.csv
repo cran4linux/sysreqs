@@ -26,12 +26,11 @@ doxygen,doc,FALSE,TRUE,doxygen,doxygen
 exiftool,media,TRUE,TRUE,/usr/bin/exiftool,libimage-exiftool-perl
 ffmpeg,media,TRUE,FALSE,ffmpeg-free-devel,libavfilter-dev
 ffmpeg-bin,media,FALSE,TRUE,ffmpeg-free,ffmpeg
-fftw,math,TRUE,FALSE,fftw-devel,fftw-dev
-fftw3,math,TRUE,FALSE,fftw3-devel,libfftw3-dev
+fftw,math,TRUE,FALSE,fftw-devel,libfftw3-dev
 flex,tools,TRUE,FALSE,flex,flex
 freetype,media,TRUE,FALSE,freetype-devel,libfreetype6-dev
 fribidi,media,TRUE,FALSE,fribidi-devel,libfribidi-dev
-gcc-c++,tools,FALSE,TRUE,g++,g++
+g++,tools,FALSE,TRUE,g++,g++
 gdal,geo,TRUE,FALSE,gdal-devel,libgdal-dev
 gdal-python,geo,FALSE,TRUE,python3dist(gdal),python3-gdal
 gdb,tools,FALSE,TRUE,gdb,gdb
@@ -51,8 +50,8 @@ grep,tools,FALSE,TRUE,grep,grep
 gretl,math,FALSE,TRUE,gretl,gretl
 gsl,math,TRUE,TRUE,gsl-devel,libgsl-dev
 harfbuzz,media,TRUE,FALSE,harfbuzz-devel,libharfbuzz-dev
+haveged-bin,crypto,FALSE,TRUE,haveged,haveged
 hdf5,db,TRUE,FALSE,hdf5-devel,libhdf5-serial-dev
-head,tools,FALSE,TRUE,/usr/bin/head,coreutils
 hiredis,db,TRUE,FALSE,hiredis-devel,libhiredis-dev
 hledger,doc,FALSE,TRUE,hledger,hledger
 hugo,net,FALSE,TRUE,hugo,hugo
@@ -64,7 +63,6 @@ java,,TRUE,FALSE,R-java-devel,default-jdk
 java-bin,,FALSE,TRUE,R-java,default-jre
 jq,net,TRUE,FALSE,jq-devel,libjq-dev
 julia,,FALSE,TRUE,julia,
-jupyter-kernel-test,,TRUE,FALSE,python3dist(jupyter-kernel-test),python3-jupyter-kernel-test
 latexdiff,tex,FALSE,TRUE,/usr/bin/latexdiff,latexdiff
 latexmk,tex,FALSE,TRUE,latexmk,latexmk
 latte,math,FALSE,TRUE,latte-integrale,
@@ -100,9 +98,9 @@ ncurses,gui,TRUE,FALSE,ncurses-devel,libncurses-dev
 netcdf,geo,TRUE,FALSE,netcdf-devel,libnetcdf-dev
 numpy,math,FALSE,TRUE,python3dist(numpy),python3-numpy
 odbc,db,TRUE,FALSE,unixODBC-devel,unixodbc-dev
-openbugs,,TRUE,TRUE,openbugs,openbugs
+openbugs,,TRUE,TRUE,openbugs glibc-devel(x86-32),openbugs
 opencv,media,TRUE,FALSE,opencv-devel,libopencv-dev
-openmpi,hpc,TRUE,FALSE,openmpi-devel,libopenmpi-dev
+openmpi,hpc,TRUE,TRUE,openmpi-devel,libopenmpi-dev
 openmpi-bin,hpc,FALSE,TRUE,openmpi%{_isa},openmpi-bin
 openssl,net,TRUE,FALSE,openssl-devel,libssl-dev
 p7zip,tools,FALSE,TRUE,p7zip,p7zip
@@ -112,7 +110,6 @@ pari,math,FALSE,TRUE,pari-gp,pari-gp
 pdflatex,tex,FALSE,TRUE,/usr/bin/pdflatex,texlive-latex-base
 perl,,FALSE,TRUE,perl,perl
 perl-getopt-long,,FALSE,TRUE,perl(Getopt::Long),libgetopt-long-descriptive-perl
-pgf,tex,FALSE,TRUE,texlive-pgf,texlive-pictures
 pocl,hpc,TRUE,FALSE,pocl-devel,libpocl-dev
 poppler,doc,TRUE,FALSE,poppler-cpp-devel poppler-data poppler-glib-devel,libpoppler-cpp-dev poppler-utils libpoppler-glib-dev
 postgresql,db,TRUE,FALSE,libpq-devel,libpq-dev
@@ -151,13 +148,15 @@ tex-hyperref,tex,FALSE,TRUE,tex(hyperref.sty),texlive-latex-base
 tex-latex,tex,FALSE,TRUE,tex(latex),texlive-latex-recommended
 tex-multirow,tex,FALSE,TRUE,tex(multirow.sty),texlive-latex-extra
 tex-pdfpages,tex,FALSE,TRUE,tex(pdfpages.sty),texlive-latex-recommended
-tex-siuntix,tex,FALSE,TRUE,tex(siunitx.sty),texlive-science
+tex-pgf,tex,FALSE,TRUE,texlive-pgf,texlive-pictures
+tex-siunitx,tex,FALSE,TRUE,tex(siunitx.sty),texlive-science
 tex-standalone,tex,FALSE,TRUE,tex(standalone.cls),texlive-latex-extra
 tex-tabularx,tex,FALSE,TRUE,tex(tabularx.sty),texlive-latex-base
 tex-threeparttable,tex,FALSE,TRUE,tex(threeparttable.sty),texlive-latex-extra
 tex-ulem,tex,FALSE,TRUE,tex(ulem.sty),texlive-plain-generic
 tex-wrapfig,tex,FALSE,TRUE,tex(wrapfig.sty),texlive-latex-extra
 texi2dvi,tex,FALSE,TRUE,/usr/bin/texi2dvi,texinfo
+tiledb,db,TRUE,FALSE,tiledb-devel,
 tkimg,gui,FALSE,TRUE,tkimg,libtk-img
 udunits,geo,TRUE,FALSE,udunits2-devel,libudunits2-dev
 unrar,tools,FALSE,TRUE,/usr/bin/unrar,unrar
