@@ -1,6 +1,7 @@
 name,description
 crypto,Cryptography
 db,Databases
+doc,Tools for Text Documents
 geo,Geographic Information Systems
 gui,Graphical User Interfaces
 hpc,High-Performance Computing
