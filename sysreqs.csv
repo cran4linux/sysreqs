@@ -69,6 +69,7 @@ latte,math,FALSE,TRUE,latte-integrale,
 ledger,doc,FALSE,TRUE,ledger,ledger
 leptonica,media,TRUE,FALSE,leptonica-devel,libleptonica-dev
 libarchive,media,TRUE,FALSE,libarchive-devel,libarchive-dev
+libatomic,hpc,TRUE,FALSE,libatomic,libatomic1
 libgit2,net,TRUE,FALSE,libgit2-devel,libgit2-dev
 libgl,media,TRUE,FALSE,mesa-libGL-devel,libgl1-mesa-dev
 libglu,media,TRUE,FALSE,mesa-libGLU-devel,libglu1-mesa-dev
