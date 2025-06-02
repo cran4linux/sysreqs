@@ -22,6 +22,10 @@ jobs:
         git config --local user.email "enchufa2@users.noreply.github.com"
     - name: Sync with CRAN
       run: |
+        . /etc/os-release
+        RVER=$(Rscript -e 'cat(version$major, as.integer(version$minor), sep=".")')
+        REPO="https://rdatatable.r-universe.dev/bin/linux/$VERSION_CODENAME-x86_64/$RVER"
+        Rscript -e "install.packages('data.table', repos='$REPO')"
         Rscript pkgdb-update.r
         Rscript pkgdb-update.r
         git add pkgdb.csv
