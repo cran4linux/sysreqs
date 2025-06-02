@@ -1,4 +1,4 @@
-dbnm <- "pkgdb.csv"
+dbnm <- "sysreqs/pkgdb.csv"
 cran <- tools::CRAN_package_db()[, c("Package", "NeedsCompilation", "Depends", "Imports")]
 cran <- cran[!duplicated(cran$Package), ]
 names(cran) <- c("name", "nc", "dep", "imp")
