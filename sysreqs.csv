@@ -55,6 +55,7 @@ hdf5,db,TRUE,FALSE,hdf5-devel,libhdf5-serial-dev
 hiredis,db,TRUE,FALSE,hiredis-devel,libhiredis-dev
 hledger,doc,FALSE,TRUE,hledger,hledger
 hugo,net,FALSE,TRUE,hugo,hugo
+hwloc,hpc,TRUE,FALSE,hwloc-devel,libhwloc-dev
 imagej,media,FALSE,TRUE,imagej,imagej
 imagemagick,media,TRUE,FALSE,ImageMagick-c++-devel,libmagick++-dev
 imagemagick-bin,media,FALSE,TRUE,ImageMagick,imagemagick

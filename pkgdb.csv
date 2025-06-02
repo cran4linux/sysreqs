@@ -790,7 +790,7 @@ RcppGetconf,,,FALSE,A POSIX system. Currently Linux and macOS are knownto work.
 RcppGSL,gsl,gsl,TRUE,GNU GSL
 RcppMeCab,mecab,,TRUE,"MeCab(or mecab-ko or higher,"
 RcppParallel,tbb,tbb,TRUE,"Intel TBB, Windows: cmd.exe andcscript.exe, Solaris: g++ is required"
-RcppPlanc,cmake hdf5,,TRUE,"cmake, hdf5, git, patch, gnumake,hwloc,"
+RcppPlanc,cmake hdf5 hwloc,,TRUE,"cmake, hdf5, git, patch, gnumake,hwloc,"
 RcppRedis,hiredis,,TRUE,"An available hiredis library (eg via packagelibhiredis-dev on Debian/Ubuntu, hiredis-devel onFedora/RedHat, or directly from source from<https://github.com/redis/hiredis>) can be used but version1.0.2 is also included and built on demand if needed. Theoptional 'rredis' package can be installed from the 'ghrr''drat' repo for additional illustrations and tests."
 RcppSimdJson,,,FALSE,A  compiler is required
 RcppTOML,,,FALSE,A  compiler
