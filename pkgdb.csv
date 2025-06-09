@@ -1,5 +1,5 @@
 name,build,run,revised,comment
-abn,gsl,,TRUE,Gnu Scientific Library version
+abn,gsl,,FALSE,"pkg-config, cmake, gsl, jpeg, gdal, geos, proj,udunits-2, openssl, libcurl, jags"
 accessr,,,FALSE,"OfficeToPDF -https://github.com/cognidox/OfficeToPDF, pandoc -https://pandoc.org"
 acro,,,FALSE,Python
 adbcpostgresql,,,FALSE,libpq
@@ -35,6 +35,7 @@ arulesCBA,,java-bin,TRUE,Java
 arulesNBMiner,,java-bin,TRUE,Java
 asbio,xvfb,bwidget,TRUE,BWidget
 asremlPlus,,,FALSE,asreml
+astgrepr,,,FALSE,"Cargo (Rust's package manager), rustc"
 autoharp,,,TRUE,pandoc - http://pandoc.org
 autonewsmd,,,FALSE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
 av,ffmpeg,,FALSE,"FFmpeg; with at least libx264 and lame(mp3) drivers. MacOS Homebrew: ffmpeg. Debian/Ubuntu:libavfilter-dev. Fedora/RHEL: either ffmpeg-devel fromhttps://rpmfusion.org (preferred), or libavfilter-free-develwhich is a more limited version available on Fedora/EPEL9."
@@ -480,6 +481,7 @@ ledger,,ledger hledger,TRUE,"ledger, hledger, beancount"
 leidenAlg,libxml2 glpk gmp,,FALSE,"(optional), libxml2 (optional), glpk, optional)"
 libdeflate,,,FALSE,CMake
 libimath,,,FALSE,cmake
+libopenexr,,,FALSE,"CMake,"
 Libra,gsl,,TRUE,GNU Scientific Library (GSL)
 libsoc,libxml2,,TRUE,
 libstable4u,,,FALSE,GNU GSL
@@ -627,6 +629,7 @@ pandocfilters,,pandoc,TRUE,pandoc
 papaja,,,TRUE,"Rendering the document template requires pandoc; https://pandoc.org) and for PDFs a TeX distribution, suchas TinyTeX; https://yihui.org/tinytex/)"
 paramlink,,,TRUE,"For multipoint linkage analysis, 'MERLIN'(http://csg.sph.umich.edu/abecasis/merlin/index.html)."
 paramlink2,,,FALSE,MERLIN (https://csg.sph.umich.edu/abecasis/merlin/)for multipoint linkage analysis.
+parseLatex,,,FALSE,"gettext, bison"
 patchDVI,,,TRUE,The 'Japanese.Rnw' vignette requires uplatex anddvipdfmx.
 pathfindR,,java-bin,TRUE,Java
 pathling,,,FALSE,Spark:x
@@ -666,7 +669,7 @@ plumberDeploy,,,TRUE,"libssh(the original, not libssh2)"
 PMCMRplus,gmp mpfr,,TRUE,"gmp, mpfr | file README.md"
 pmparser,,,TRUE,"head, unzip, sqlite"
 png,libpng,,TRUE,libpng
-poisbinom,fftw,,TRUE,fftw
+poisbinom,fftw,,FALSE,fftw3
 PoissonBinomial,fftw,,TRUE,fftw3
 PoissonMultinomial,fftw,,TRUE,fftw3(>=3.3)
 PolygonSoup,gmp mpfr,,TRUE,
@@ -1066,7 +1069,7 @@ survSNP,gsl,,TRUE,GNU GSL
 svDialogs,,zenity yad,TRUE,"zenity, yad"
 svglite,libpng,,TRUE,libpng
 svKomodo,,,TRUE,Komodo Edit(https://www.activestate.com/products/komodo-ide/)
-switchboard,xvfb,,TRUE,Tcl/Tk toolkit (X11 Quarts for Mac)
+switchboard,xvfb,,TRUE,
 switchr,,git subversion,TRUE,"git, svn"
 swmmr,,,TRUE,
 SymbolicDeterminants,,,TRUE,gmp
