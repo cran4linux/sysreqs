@@ -1,5 +1,5 @@
 name,build,run,revised,comment
-abn,gsl,,FALSE,"pkg-config, cmake, gsl, jpeg, gdal, geos, proj,udunits-2, openssl, libcurl, jags"
+abn,gsl,,TRUE,
 accessr,,,FALSE,"OfficeToPDF -https://github.com/cognidox/OfficeToPDF, pandoc -https://pandoc.org"
 acro,,,FALSE,Python
 adbcpostgresql,,,FALSE,libpq
@@ -134,7 +134,7 @@ cleanNLP,,,TRUE,Python
 clinDataReview,,,TRUE,pandoc (to create a clinical data review report)
 clinUtils,,,TRUE,pandoc (for export clin DT to a file - inclusion oflist of interactive plots/objects with knitr)
 clipr,,xclip,TRUE,"xclip (https://github.com/astrand/xclip) or xsel(http://www.vergenet.net/~conrad/software/xsel/) for accessingthe X11 clipboard, or wl-clipboard(https://github.com/bugaevc/wl-clipboard) for systems usingWayland."
-cloudml,,,TRUE,Python
+cloudml,,,TRUE,
 clustermq,zeromq,,FALSE,ZeroMQ (libzmq)(optional; otherwisebundled)
 ClusterR,,,TRUE,"libarmadillo: apt-get install -y libarmadillo-dev(deb), libblas: apt-get install -y libblas-dev (deb),liblapack: apt-get install -y liblapack-dev (deb),libarpack++2: apt-get install -y libarpack++2-dev (deb),: apt-get install -y  (deb), libgmp3: apt-getinstall -y libgmp3-dev (deb), libfftw3: apt-get install -ylibfftw3-dev (deb), libtiff5: apt-get install -y libtiff5-dev(deb)"
 CLVTools,,,FALSE,GNU GSL
@@ -295,7 +295,7 @@ fmf,,,TRUE,"libarmadillo: apt-get install -y libarmadillo-dev(deb), libblas: apt
 foieGras,,pandoc,TRUE,
 footBayes,,pandoc,FALSE,"CmdStan(https://mc-stan.org/users/interfaces/cmdstan), pandoc, pandoc-citeproc"
 forensim,,,FALSE,Tcl/Tk package TkTable
-forImage,,,TRUE,"Python, numpy, imutils, scipy, pandas, Pillow, opencv"
+forImage,,,TRUE,
 forsearch,,,TRUE,gmp
 freesurfer,,,FALSE,"FSL, Freesurfer(https://surfer.nmr.mgh.harvard.edu/)"
 frequency,,,TRUE,pandoc - http://pandoc.org
@@ -503,7 +503,7 @@ loon.tourr,xvfb,,TRUE,
 LSAMBA,,,FALSE,'Monolix'(<https://monolixsuite.slp-software.com/monolix/2024R1/>)
 lubridate,,,TRUE,A system with zoneinfo data (e.g./usr/share/zoneinfo). On Windows the zoneinfo included with Ris used.
 lwgeom,geos proj sqlite,,TRUE,"GEOS, PROJ, sqlite3"
-m2r,,,TRUE,Macaulay2 <http://www.math.uiuc.edu/Macaulay2/>
+m2r,,,FALSE,Macaulay2 <https://www.macaulay2.com>
 magick,imagemagick,,TRUE,ImageMagick++: ImageMagick-c++-devel (rpm) orlibmagick++-dev (deb)
 magickGUI,,,TRUE,ImageMagick
 maGUI,,,TRUE,Tktable
@@ -598,7 +598,7 @@ nomnoml,,,FALSE,"A chromium based browser, required by ""webshot2""<https://rstu
 nucim,,,TRUE,tiff fftw libcurl openssl
 occumb,,,FALSE,JAGS (http://mcmc-jags.sourceforge.net)
 oceanmap,,imagemagick-bin,TRUE,ImageMagick
-ODB,,,TRUE,zip
+ODB,,,TRUE,
 odbc,odbc,,FALSE,An ODBC3 driver manager and drivers.
 oddsapiR,,pandoc,TRUE,"pandoc, pandoc-citeproc"
 officedown,,,TRUE,pandoc - http://pandoc.org
@@ -969,7 +969,7 @@ sarsop,,,TRUE,"mallinfo, hence Linux, MacOS or Windows"
 SASmarkdown,,,TRUE,SAS
 SBRect,,,TRUE,
 sbrl,,,FALSE,"gmp, gsl"
-scaffolder,,,TRUE,Python
+scaffolder,,,TRUE,
 scatteR,,,TRUE,
 scModels,gmp mpfr,,TRUE,"gmp, mpfr"
 sdcTable,glpk gmp,,TRUE,"GLPK library, including -dev or -devel part"
@@ -1103,7 +1103,7 @@ textTinyR,,,TRUE,libarmadillo: apt-get install -y libarmadillo-dev(deb)
 tfaddons,,,TRUE,TensorFlow(https://www.tensorflow.org/)
 tfautograph,,,TRUE,TensorFlow (https://www.tensorflow.org/)
 tfdatasets,,,TRUE,TensorFlow(https://www.tensorflow.org/)
-tfestimators,,,TRUE,TensorFlow (https://www.tensorflow.org/)
+tfestimators,,,TRUE,
 tfevents,,,FALSE,"libprotobuf, protobuf-compiler"
 tfhub,,,TRUE,TensorFlow(https://www.tensorflow.org/)
 tfio,,,TRUE,TensorFlow(https://www.tensorflow.org/)and TensorFlow IO(https://github.com/tensorflow/io)
@@ -1182,7 +1182,7 @@ wordnet,,wordnet,TRUE,Java; WordNet database files (directdownload:<https://word
 workflowr,,,TRUE,pandoc - https://pandoc.org
 writexl,,,FALSE,zlib
 WriteXLS,,perl,TRUE,Perl
-x.ent,,perl,TRUE,"Perl, Unitexhttp://www-igm.univ-mlv.fr/~unitex/)"
+x.ent,,perl,TRUE,
 x13binary,,,FALSE,Fortran sources included in `tools/x13as_html` arecompiled via `configure`.
 xactonomial,,,FALSE,"Cargo (Rust's package manager), rustc"
 XBRL,libxml2,,TRUE,
