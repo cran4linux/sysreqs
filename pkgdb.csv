@@ -143,7 +143,7 @@ cncaGUI,xvfb,bwidget,TRUE,Tcl/Tk package BWidget.
 codacore,,,TRUE,TensorFlow (https://www.tensorflow.org/)
 coga,gsl,,TRUE,GNU GSL
 cogmapr,,,TRUE,libcurl: libcurl-devel (rpm) orlibcurl4-openssl-dev (deb).
-collUtils,,,TRUE,Java
+collUtils,,,TRUE,
 colorizer,,,TRUE,ImageMagick++: ImageMagick-c++-devel (rpm) orlibmagick++-dev (deb)
 Colossus,,,FALSE,make
 COMBO,,,FALSE,JAGS (http://mcmc-jags.sourceforge.net)
@@ -479,9 +479,9 @@ LeafArea,,imagej,TRUE,"ImageJ, ij.jar (seehttp://imagej.nih.gov/ij/), Java"
 learnr,,,TRUE,pandoc - http://pandoc.org
 ledger,,ledger hledger,TRUE,"ledger, hledger, beancount"
 leidenAlg,libxml2 glpk gmp,,FALSE,"(optional), libxml2 (optional), glpk, optional)"
-libdeflate,,,FALSE,CMake
-libimath,,,FALSE,cmake
-libopenexr,,,FALSE,"CMake,"
+libdeflate,,,TRUE,
+libimath,,,TRUE,
+libopenexr,,,TRUE,
 Libra,gsl,,TRUE,GNU Scientific Library (GSL)
 libsoc,libxml2,,TRUE,
 libstable4u,,,FALSE,GNU GSL
@@ -496,7 +496,7 @@ localsolver,,,TRUE,At least trial version of LocalSolver to bedownloaded from ht
 locfit,,,TRUE,USE_C17
 LOMAR,gmp fftw,,FALSE,"C++, gmp, fftw3"
 loo,,pandoc,TRUE,"pandoc, pandoc-citeproc"
-loon,xvfb,,FALSE,Tcl/Tk
+loon,xvfb,,TRUE,
 loon.ggplot,xvfb,,TRUE,
 loon.shiny,xvfb,,TRUE,
 loon.tourr,xvfb,,TRUE,
@@ -831,7 +831,7 @@ ReSurv,,,FALSE,Python
 reticulate,,python3,TRUE,Python
 revert,,,FALSE,"R, SAMtools"
 revise,,,FALSE,pandoc - http://pandoc.org
-rextendr,,cargo,TRUE,
+rextendr,,cargo,FALSE,Rust 'cargo'; the crate 'libR-sys' must compilewithout error
 rfacts,,,TRUE,"FACTS Linux engines, FLFLL,Mono"
 rflsgen,,,TRUE,Java
 rfviz,xvfb,,TRUE,
@@ -864,7 +864,7 @@ RKEAjars,,,TRUE,Java
 RKEEL,,,TRUE,Java
 rkeops,cmake,cmake,TRUE,
 Rlibeemd,gsl,,TRUE,GNU GSL
-rlibkriging,cmake,,FALSE,"cmake,"
+rlibkriging,cmake,,TRUE,
 RMariaDB,mysql,,TRUE,"libmariadb-client-lgpl-dev or libmariadb-dev orlibmysqlclient-dev, with libssl-dev (deb),mariadb-connector-c-devel or mariadb-devel (rpm),mariadb-connector-c or mysql-connector-c (brew)"
 RMark,,,TRUE,"notepad.exe, mark.exe (or mark32.exe andmark64.exe) and rel_32.exe (see README.txt)"
 rmarkdown,,pandoc,TRUE,pandoc - http://pandoc.org
@@ -881,7 +881,7 @@ Rmosek,,,TRUE,MOSEK and MOSEK License
 Rmpfr,gmp mpfr,,TRUE,"gmp, mpfr, pdfcrop (part ofTexLive) is required to rebuild the vignettes."
 Rmpi,openmpi,openmpi,TRUE,
 RMySQL,mysql,,TRUE,"libmariadb-client-dev | libmariadb-client-lgpl-dev| libmysqlclient-dev (deb), mariadb-devel (rpm), mariadb |mysql-connector-c (brew), mysql56_dev (csw)"
-RNCBIEUtilsLibs,,,TRUE,Java
+RNCBIEUtilsLibs,,,TRUE,
 rnetcarto,gsl,,TRUE,GNU GSL
 RNetCDF,netcdf udunits,,FALSE,"netcdf, udunits-2"
 RNetLogo,,,TRUE,"Java, NetLogo"
@@ -1147,6 +1147,7 @@ unigd,,,FALSE,"libpng, cairo, freetype2, fontconfig"
 units,udunits,,TRUE,udunits-2
 unix,,,TRUE,"POSIX.1-2001, AppArmor (optional)"
 unmconf,,,FALSE,JAGS(http://mcmc-jags.sourceforge.net)
+unsum,,,FALSE,"Cargo (Rust's package manager), rustc"
 untb,,pari,TRUE,PARI/GP[strongly recommended forlogkda()]
 URooTab,,,FALSE,EViews
 utr.annotation,,,TRUE,
@@ -1175,6 +1176,7 @@ webp,libwebp,,TRUE,libwebp
 webshot,,imagemagick-bin,TRUE,"PhantomJS for taking screenshots, ImageMagick orGraphicsMagick and OptiPNG for manipulating images."
 websocket,openssl,,TRUE,OpenSSL
 wgaim,,,TRUE,asreml-Rx
+WH,,,FALSE,LAPACK
 whirl,,,FALSE,Quarto command line tool(<https://github.com/quarto-dev/quarto-cli>).
 whitebox,,,TRUE,WhiteboxTools(https://github.com/jblindsay/whitebox-tools/releases/latest)
 worcs,,,FALSE,pandoc - https://pandoc.org
