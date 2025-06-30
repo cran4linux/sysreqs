@@ -1,5 +1,5 @@
 name,build,run,revised,comment
-abn,gsl,,TRUE,
+abn,gsl,,FALSE,"pkg-config, cmake, gsl, jpeg, gdal, geos, proj,udunits-2, openssl, libcurl, jags"
 accessr,,,FALSE,"OfficeToPDF -https://github.com/cognidox/OfficeToPDF, pandoc -https://pandoc.org"
 acro,,,FALSE,Python
 adbcpostgresql,,,FALSE,libpq
@@ -479,7 +479,7 @@ LeafArea,,imagej,TRUE,"ImageJ, ij.jar (seehttp://imagej.nih.gov/ij/), Java"
 learnr,,,TRUE,pandoc - http://pandoc.org
 ledger,,ledger hledger,TRUE,"ledger, hledger, beancount"
 leidenAlg,libxml2 glpk gmp,,FALSE,"(optional), libxml2 (optional), glpk, optional)"
-libdeflate,,,TRUE,
+libdeflate,,,FALSE,CMake
 libimath,,,TRUE,
 libopenexr,,,TRUE,
 Libra,gsl,,TRUE,GNU Scientific Library (GSL)
@@ -818,6 +818,7 @@ redland,redland,,TRUE,"Mac OSX: redland ; Linux: librdf0, librdf0-dev"
 redux,hiredis,,TRUE,hiredis
 relMix,,,FALSE,"tcltk, tk"
 remiod,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net/)
+REMixed,,,FALSE,'Monolix'(<https://monolixsuite.slp-software.com/>)
 remotes,,,TRUE,"Subversion for install_svn, git for install_git"
 REPLesentR,,,TRUE,Presentations written in (R)Markdown require Pandoc(http://pandoc.org).
 RepoGenerator,,,TRUE,"GitHub, 'RStudio'"
@@ -839,7 +840,7 @@ rgdal,gdal proj sqlite,,TRUE,
 rgeedim,,,TRUE,Python
 rgeos,geos,,TRUE,
 RGF,,scikit-learn numpy scipy,TRUE,"Python, rgf_python, scikit-learn, scipy, numpy. Detailed installation instructions foreach operating system can be found in the README file."
-rgl,libgl libglu libpng freetype,,FALSE,"OpenGL and GLU Library (Required for display in R.See ""Installing OpenGL support"" in README.md. Not needed ifonly browser displays using rglwidget() are wanted.), zlib(optional), libpng, optional), FreeType (optional)"
+rgl,libgl libglu libpng freetype,,FALSE,"OpenGL and GLU Library (Required for display in R.See ""Installing OpenGL support"" in README.md. Not needed ifonly browser displays using rglwidget() are wanted.), zlib(optional), libpng, optional), FreeType (optional),pandoc, needed for vignettes)"
 Rglpk,glpk,,TRUE,"GLPK library package (e.g., libglpk-dev onDebian/Ubuntu)"
 rgnparser,,,TRUE,gnparser (<https://github.com/gnames/gnparser>)
 rgrass,,grass,TRUE,GRASS
