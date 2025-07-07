@@ -126,6 +126,7 @@ cgalMeshes,gmp mpfr,,TRUE,
 chicane,,,TRUE,bedtools
 ChoR,,,TRUE,Java
 chromote,,,TRUE,Google Chrome or other Chromium-based browser.chromium: chromium (rpm) or chromium-browser (deb)
+ciflyr,,,FALSE,"Cargo (Rust's package manager), rustc"
 CirceR,,,FALSE,Java
 cit,gsl,,TRUE,gsl (with development libraries libgsl-dev)
 clarabel,,,FALSE,"Cargo (Rust's package manager), rustc,and"
@@ -479,8 +480,8 @@ LeafArea,,imagej,TRUE,"ImageJ, ij.jar (seehttp://imagej.nih.gov/ij/), Java"
 learnr,,,TRUE,pandoc - http://pandoc.org
 ledger,,ledger hledger,TRUE,"ledger, hledger, beancount"
 leidenAlg,libxml2 glpk gmp,,FALSE,"(optional), libxml2 (optional), glpk, optional)"
-libdeflate,,,FALSE,CMake
-libimath,,,TRUE,
+libdeflate,,,TRUE,
+libimath,,,FALSE,cmake
 libopenexr,,,TRUE,
 Libra,gsl,,TRUE,GNU Scientific Library (GSL)
 libsoc,libxml2,,TRUE,
@@ -574,6 +575,7 @@ mvst,,,FALSE,GNU Scientific Library
 mwa,,,TRUE,Java
 mwcsr,,java-bin,TRUE,Java
 NACHO,,,TRUE,"pandoc, pandoc-citeproc"
+nanoarrow,,,FALSE,libzstd (optional)
 nanonext,cmake,,FALSE,"'libnng'and 'libmbedtls', or 'cmake'and 'xz' to compile NNG and/or Mbed TLS included in packagesources"
 nbconvertR,,pandoc nbconvert,TRUE,"pandoc, jupyter, jupyter nbconvert (""nbconvert""python package), pywin32 (on windows)"
 ncdf4,netcdf,,TRUE,netcdf library versionor later
@@ -848,7 +850,7 @@ rgrass7,,grass,TRUE,
 rGroovy,,,TRUE,Java
 RH2,,,TRUE,java runtime
 ridge,gsl,,TRUE,Gnu Scientific Library version
-rim,,maxima,TRUE,"Maxima (https://sourceforge.net/projects/maxima/,tested with versions-, needs to be on PATH"
+rim,,maxima,TRUE,
 riot,cmake,,TRUE,
 rirods,,,FALSE,iRODS C++ HTTP API(<https://github.com/irods/irods_client_http_api>)
 rjags,jags,,TRUE,JAGSx.y
@@ -1081,7 +1083,7 @@ SymTS,gsl,,TRUE,
 sysfonts,libpng freetype,,TRUE,"zlib, libpng, FreeType"
 systemfonts,freetype,,TRUE,"fontconfig, freetype2"
 tables,,,TRUE,pandoc for vignettes
-tabr,,lilypond,TRUE,
+tabr,,lilypond,FALSE,LilyPond v2.22.1-2+ (needed for rendering sheetmusic or writing MIDI files)
 tabulapdf,,,FALSE,"Java: openjdk-11-jdk (deb),java-11-openjdk.x86_64 (rpm), openjdk@11 (brew)"
 tapkee,,,TRUE,'tapkee' (http://tapkee.lisitsyn.me/)
 TAQMNGR,,,TRUE,zlib headers and library
@@ -1193,6 +1195,7 @@ xdvir,,,FALSE,freetype2
 xlcharts,,,FALSE,"Python, Conda"
 XLConnect,,,TRUE,Java
 xlsx,,,TRUE,java
+xlsxjars,,,FALSE,java
 XML,libxml2,,TRUE,libxml2
 xml2,libxml2,,TRUE,"libxml2: libxml2-dev (deb), libxml2-devel (rpm)"
 xmpdf,,,FALSE,'ghostscript' or 'pdftk' for editing pdf bookmarksand/or documentation info entries. 'exiftool' for editing pdfdocumentation info entries and/or xmp metadata.
