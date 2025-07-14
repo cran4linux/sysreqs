@@ -158,6 +158,7 @@ conquestr,,,TRUE,ACER ConQuest
 convexjlr,,,TRUE,
 CoordinateCleaner,,,TRUE,GDAL
 CopernicusDEM,,awscli,TRUE,"awscli: apt install -y awscli (deb), aws-configure:aws configure (deb)"
+copernicusR,,,FALSE,"Python, copernicusmarine Python library"
 copula,,,TRUE,pdfcrop (part of TexLive) is required to rebuildthe vignettes.
 cordillera,,,TRUE,
 corehunter,,,FALSE,Java
@@ -239,6 +240,7 @@ ech,,unrar,TRUE,"'unrar' (Linux/macOS) or '7-Zip' (Windows) to workwith '.rar' f
 EcoDiet,,,TRUE,JAGS
 econetwork,,,TRUE,GNU GSL
 eDMA,,,TRUE,"Requires the OpenMP library for parallel computing.If the OpenMP library is not available, the code is executedsequentially and a warning is printed."
+EHRmuse,,,FALSE,GNU Scientific Library version
 EIAapi,,,FALSE,The package required the jq command line library.Please check https://stedolan.github.io/jq/download/ fordownload instructions.
 EigenR,,,FALSE,C++
 elbird,,,TRUE,
@@ -398,6 +400,7 @@ heuristicsmineR,,,FALSE,C++
 hgwrr,gsl,,TRUE,
 HiClimR,netcdf,,TRUE,NetCDF
 HiCseg,gsl,,TRUE,
+HighFive,,,FALSE,hdf5
 highs,cmake,,TRUE,"Bash, PkgConfig, CMAKE,"
 hive,,,TRUE,"Apache Hadoop(https://hadoop.apache.org/releases.html#Download); Obsolete:Hadoop coreand <=or CDH3(https://www.cloudera.com); standard unix tools (e.g., chmod)"
 hoopR,,pandoc,TRUE,"pandoc, pandoc-citeproc"
@@ -1006,7 +1009,7 @@ simhelpers,,,TRUE,RStudio
 SimInf,gsl,,TRUE,GNU Scientific Library (GSL)
 simplace,,,FALSE,Java
 simplermarkdown,,pandoc,TRUE,Pandoc (http://pandoc.org) needs to installed andavailable in the search path.
-simplexreg,gsl,,TRUE,GNU Scientific Library version
+simplexreg,gsl,,TRUE,
 sims,,,FALSE,JAGSx.y
 sjtable2df,,,FALSE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
 slendr,,,TRUE,'SLiM' is a forward simulation software forpopulation genetics and evolutionary biology. See<https://messerlab.org/slim/> for installation instructions andfurther information. The 'Python' coalescent framework'msprime' and the 'tskit' module can by installed by followingthe instructions at <https://tskit.dev/>.
@@ -1064,7 +1067,7 @@ streamMOA,,,TRUE,Java
 stressor,,,FALSE,python(>=3.8.10)
 string2path,cargo,,FALSE,"Cargo (Rust's package manager), rustc"
 stringi,,,TRUE,"ICU4C, optional)"
-subspace,,,TRUE,Java
+subspace,,,TRUE,
 sudachir,,,TRUE,Python
 SuperGauss,fftw,,TRUE,fftw3
 surveyvoi,fftw gmp mpfr,,FALSE,"JAGS (optional), fftw3, gmp, gmpxx, mpfr, autoconf,automake"
