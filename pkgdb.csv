@@ -7,7 +7,7 @@ adbcsqlite,,,FALSE,SQLite3
 adimpro,,imagemagick-bin dcraw,TRUE,"Image Magick (for reading non PPM format), dcraw(for reading RAW images)."
 admixr,,,TRUE,ADMIXTOOLS suite of command-line utilities forpopulation genetics. See<https://reich.hms.harvard.edu/software> for the most recentinstallation instructions and further information.
 AFR,,,TRUE,C++
-AgePopDenom,,,FALSE,TMB
+AgePopDenom,,,TRUE,
 aifeducation,,,FALSE,"PyTorch (see vignette ""Get started"")"
 alfr,,,TRUE,Alfresco Content Repository (Community orEnterprise)
 AlphaHull3D,gmp mpfr,,TRUE,
@@ -41,7 +41,7 @@ autonewsmd,,,FALSE,Quarto command line tools(https://github.com/quarto-dev/quart
 av,ffmpeg,,FALSE,"FFmpeg; with at least libx264 and lame(mp3) drivers. MacOS Homebrew: ffmpeg. Debian/Ubuntu:libavfilter-dev. Fedora/RHEL: either ffmpeg-devel fromhttps://rpmfusion.org (preferred), or libavfilter-free-develwhich is a more limited version available on Fedora/EPEL9."
 awdb,,,FALSE,"Cargo (Rust's package manager), rustc"
 AWR,,,TRUE,AWS Java SDK (see README.md for more details)
-b64,,,FALSE,"Cargo (Rust's package manager), rustc"
+b64,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
 babelwhale,,docker singularity,TRUE,Docker and/or Singularity
 babette,,,TRUE,BEAST2 (https://www.beast2.org/)
 bacistool,,,TRUE,JAGS
@@ -124,6 +124,7 @@ caviarpd,cargo,,FALSE,"Cargo (Rust's package manager), rustc"
 CBSr,,,TRUE,Java
 cgalMeshes,gmp mpfr,,TRUE,
 chicane,,,TRUE,bedtools
+chopin,,,FALSE,netcdf
 ChoR,,,TRUE,Java
 chromote,,,TRUE,Google Chrome or other Chromium-based browser.chromium: chromium (rpm) or chromium-browser (deb)
 ciflyr,,,FALSE,"Cargo (Rust's package manager), rustc"
@@ -247,6 +248,7 @@ elbird,,,TRUE,
 elexr,,python3,TRUE,Pythonor and elex package
 elliptic,,pari,TRUE,pari/gp
 emayili,,,TRUE,The function render() requires Pandoc(http://pandoc.org). To use PGP/GnuPG encryption requires gpg.
+emodnet.wfs,,,FALSE,"GDAL, GEOS, PROJ"
 entropart,,pandoc,TRUE,pandoc
 EpiSignalDetection,,,TRUE,pandoc
 eplusr,,,TRUE,EnergyPlus (optional) (<https://energyplus.net>);udunits2
@@ -300,6 +302,7 @@ footBayes,,pandoc,FALSE,"CmdStan(https://mc-stan.org/users/interfaces/cmdstan), 
 forensim,,,FALSE,Tcl/Tk package TkTable
 forImage,,,TRUE,
 forsearch,,,TRUE,gmp
+fpROC,,,FALSE,"OpenMP, TBB"
 freesurfer,,,FALSE,"FSL, Freesurfer(https://surfer.nmr.mgh.harvard.edu/)"
 frequency,,,TRUE,pandoc - http://pandoc.org
 fRLR,gsl,,TRUE,GNU Scientific Library (GSL). Note: users shouldhave GSL installed.
@@ -840,6 +843,7 @@ revise,,,FALSE,pandoc - http://pandoc.org
 rextendr,,cargo,FALSE,Rust 'cargo'; the crate 'libR-sys' must compilewithout error
 rfacts,,,TRUE,"FACTS Linux engines, FLFLL,Mono"
 rflsgen,,,TRUE,Java
+rfriend,,,FALSE,Pandoc
 rfviz,xvfb,,TRUE,
 rgdal,gdal proj sqlite,,TRUE,
 rgeedim,,,TRUE,Python
@@ -853,7 +857,7 @@ rgrass7,,grass,TRUE,
 rGroovy,,,TRUE,Java
 RH2,,,TRUE,java runtime
 ridge,gsl,,TRUE,Gnu Scientific Library version
-rim,,maxima,TRUE,
+rim,,maxima,FALSE,"Maxima (https://sourceforge.net/projects/maxima/,tested with versions-, needs to be on PATH"
 riot,cmake,,TRUE,
 rirods,,,FALSE,iRODS C++ HTTP API(<https://github.com/irods/irods_client_http_api>)
 rjags,jags,,TRUE,JAGSx.y
