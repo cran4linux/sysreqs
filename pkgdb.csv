@@ -7,7 +7,7 @@ adbcsqlite,,,FALSE,SQLite3
 adimpro,,imagemagick-bin dcraw,TRUE,"Image Magick (for reading non PPM format), dcraw(for reading RAW images)."
 admixr,,,TRUE,ADMIXTOOLS suite of command-line utilities forpopulation genetics. See<https://reich.hms.harvard.edu/software> for the most recentinstallation instructions and further information.
 AFR,,,TRUE,C++
-AgePopDenom,,,TRUE,
+AgePopDenom,,,FALSE,TMB
 aifeducation,,,FALSE,"PyTorch (see vignette ""Get started"")"
 alfr,,,TRUE,Alfresco Content Repository (Community orEnterprise)
 AlphaHull3D,gmp mpfr,,TRUE,
@@ -19,6 +19,7 @@ animation,,tex-latex ffmpeg-bin,TRUE,ImageMagick (http://imagemagick.org) orGrap
 anticlust,glpk,,FALSE,Rendering the vignette requires pandoc(<https://pandoc.org/>).
 apache.sedona,,,FALSE,'Apache Spark'x
 apcf,geos,,TRUE,GEOS
+APRScenario,,,FALSE,LAPACK
 arcgis,,,FALSE,"Cargo (Rust's package manager), rustc"
 arcgisgeocode,,,FALSE,"Cargo (Rust's package manager), rustc"
 arcgisplaces,,,FALSE,"Cargo (Rust's package manager), rustc, OpenSSL"
@@ -326,7 +327,7 @@ gdtools,cairo freetype,,TRUE,"cairo, freetype2, fontconfig"
 GeneralizedUmatrix,,,FALSE,"pandoc, needed for vignettes)"
 GeneralizedWendland,gsl,,TRUE,gsl
 genie,,,TRUE,"OpenMP,"
-genieclust,,,FALSE,OpenMP
+genieclust,,,FALSE,"OpenMP,"
 genlogis,,,FALSE,RStudio -https://posit.co/products/open-source/rstudio/
 geno2proteo,,perl,TRUE,Perl
 GeoFIS,gmp mpfr,,FALSE,"gmp, mpfr"
@@ -402,6 +403,7 @@ hellorust,cargo,,FALSE,"Cargo (Rust's package manager), rustc"
 heuristicsmineR,,,FALSE,C++
 hgwrr,gsl,,TRUE,
 HiClimR,netcdf,,TRUE,NetCDF
+hicream,,,FALSE,Python
 HiCseg,gsl,,TRUE,
 HighFive,,,FALSE,hdf5
 highs,cmake,,TRUE,"Bash, PkgConfig, CMAKE,"
@@ -486,9 +488,9 @@ LeafArea,,imagej,TRUE,"ImageJ, ij.jar (seehttp://imagej.nih.gov/ij/), Java"
 learnr,,,TRUE,pandoc - http://pandoc.org
 ledger,,ledger hledger,TRUE,"ledger, hledger, beancount"
 leidenAlg,libxml2 glpk gmp,,FALSE,"(optional), libxml2 (optional), glpk, optional)"
-libdeflate,,,TRUE,
+libdeflate,,,FALSE,CMake
 libimath,,,FALSE,cmake
-libopenexr,,,TRUE,
+libopenexr,,,FALSE,"CMake,"
 Libra,gsl,,TRUE,GNU Scientific Library (GSL)
 libsoc,libxml2,,TRUE,
 libstable4u,,,FALSE,GNU GSL
@@ -530,6 +532,7 @@ mboxr,,,TRUE,
 mBvs,gsl,,TRUE,
 mcbette,,,TRUE,BEAST2 (https://www.beast2.org/)
 mdbr,,mdbtools,TRUE,mdbtools: mdbtools (deb).
+MDCcure,,,FALSE,TBB
 mdendro,,,TRUE,
 MDSGUI,,bwidget,TRUE,"windows, 'BWidget', 'Tktable'"
 meltt,,,TRUE,Python
@@ -605,7 +608,7 @@ NobBS,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net/) foranalysis of Bayesian hi
 nomnoml,,,FALSE,"A chromium based browser, required by ""webshot2""<https://rstudio.github.io/webshot2/>"
 nucim,,,TRUE,tiff fftw libcurl openssl
 occumb,,,FALSE,JAGS (http://mcmc-jags.sourceforge.net)
-oceanmap,,imagemagick-bin,TRUE,ImageMagick
+oceanmap,,imagemagick-bin,TRUE,
 ODB,,,TRUE,
 odbc,odbc,,FALSE,An ODBC3 driver manager and drivers.
 oddsapiR,,pandoc,TRUE,"pandoc, pandoc-citeproc"
@@ -721,6 +724,7 @@ qspray,gmp mpfr,,FALSE,gmp
 qtkit,,,FALSE,"Chromium-based browser (e.g., Chrome, Chromium, orBrave)"
 quarto,,,FALSE,Quarto command line tool(<https://github.com/quarto-dev/quarto-cli>).
 questionr,,xclip,TRUE,xclip (Linux)
+quitefastmst,,,FALSE,"OpenMP,"
 r.blip,,java-bin,TRUE,Java
 R2admb,,,TRUE,AD Model Builder <http://admb-project.org>
 R2jags,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net)
@@ -874,7 +878,7 @@ RKEAjars,,,TRUE,Java
 RKEEL,,,TRUE,Java
 rkeops,cmake,cmake,TRUE,
 Rlibeemd,gsl,,TRUE,GNU GSL
-rlibkriging,cmake,,TRUE,
+rlibkriging,cmake,,FALSE,"cmake,"
 RMariaDB,mysql,,TRUE,"libmariadb-client-lgpl-dev or libmariadb-dev orlibmysqlclient-dev, with libssl-dev (deb),mariadb-connector-c-devel or mariadb-devel (rpm),mariadb-connector-c or mysql-connector-c (brew)"
 RMark,,,TRUE,"notepad.exe, mark.exe (or mark32.exe andmark64.exe) and rel_32.exe (see README.txt)"
 rmarkdown,,pandoc,TRUE,pandoc - http://pandoc.org
@@ -976,7 +980,7 @@ saotd,,,TRUE,
 sapo,,,FALSE,"GDAL, GEOS, PROJ"
 saros.base,,,FALSE,None.
 sarsop,,,TRUE,"mallinfo, hence Linux, MacOS or Windows"
-SASmarkdown,,,TRUE,SAS
+SASmarkdown,,,TRUE,
 SBRect,,,TRUE,
 sbrl,,,FALSE,"gmp, gsl"
 scaffolder,,,TRUE,
@@ -1058,7 +1062,7 @@ stanza,,,FALSE,"R, Python, stanza"
 staplr,,,FALSE,Java
 startR,,,TRUE,
 starvz,,,TRUE,"C++, arrow package with gzip codec, StarPU"
-Statamarkdown,,,FALSE,Stata
+Statamarkdown,,,TRUE,
 statgenGxE,,pdflatex,TRUE,pdflatex
 statgenSTA,,pdflatex,TRUE,pdflatex
 Statsomat,,python3,TRUE,
