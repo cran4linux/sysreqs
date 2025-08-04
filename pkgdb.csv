@@ -21,7 +21,7 @@ apache.sedona,,,FALSE,'Apache Spark'x
 apcf,geos,,TRUE,GEOS
 APRScenario,,,FALSE,LAPACK
 arcgis,,,FALSE,"Cargo (Rust's package manager), rustc"
-arcgisgeocode,,,FALSE,"Cargo (Rust's package manager), rustc"
+arcgisgeocode,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
 arcgisplaces,,,FALSE,"Cargo (Rust's package manager), rustc, OpenSSL"
 arcgisutils,,,FALSE,"Cargo (Rust's package manager), rustc"
 archive,libarchive,,FALSE,"libarchive: libarchive-dev (deb), libarchive-devel(rpm), libarchive (homebrew), libarchive_dev (csw)"
@@ -231,7 +231,7 @@ dti,gsl,,TRUE,gsl
 duckdb,,,FALSE,xz (for building from source)
 duet,,,FALSE,FFmpeg (https://ffmpeg.org/)
 DynareR,,,TRUE,"Dynare, Octave"
-dynaSpec,,,TRUE,ffmpeg
+dynaSpec,,,TRUE,
 dynBiplotGUI,xvfb,,TRUE,gmake
 dynr,gsl,,TRUE,
 eaf,gsl,,TRUE,Gnu Scientific Library
@@ -430,7 +430,7 @@ imager,fftw libtiff,,FALSE,"fftw3, libtiff, X11"
 implyr,,,TRUE,Impala driver to support a 'DBI'-compatible Rinterface
 iMRMC,,java-bin,TRUE,
 informativeSCI,,,FALSE,Java
-inldata,,,FALSE,libcurl4-openssl-dev pandoc libarchive-devlibv8-dev (deb)
+inldata,,,TRUE,
 inlmisc,,,TRUE,
 inlpubs,,,FALSE,"Complete functionality necessitates Amazon Corretto(win), and default-jre, pandoc, libxml2-dev,libpoppler-cpp-dev, libmagick++-dev, optipng, libtesseract-dev,libleptonica-dev, tesseract-ocr-eng (deb)"
 inpdfr,,xpdf,TRUE,XPDF (http://www.foolabs.com/xpdf/download.html)
@@ -1026,6 +1026,7 @@ slurm,,,FALSE,"Slurm command line programs (sacct, squeue)"
 smam,gsl,,TRUE,"GNU GSL,"
 smile,,,TRUE,"GDAL, GEOS, PROJ"
 snSMART,,,TRUE,JAGSx.y
+socratadata,,,FALSE,"Cargo (Rust's package manager), rustc"
 sodium,libsodium,,TRUE,libsodium
 SOFIA,,,TRUE,Circos
 soilhypfit,,,TRUE,"gmp, mpfr"
@@ -1177,13 +1178,13 @@ vcfR,devscripts,,TRUE,
 vdiffr,libpng,,TRUE,libpng
 vegawidget,,,TRUE,To use image functions for MacOS: X11
 venneuler,,,TRUE,Javaor higher
-VertexWiseR,,,FALSE,"Miniconda3 (v24.9.2), Python (<= v3.12), BrainStat(v0.4.2), vtk (v9.3.1)"
+VertexWiseR,,,FALSE,"Miniconda3 (v24.9.2), Python (<= v3.12), BrainStat(v0.4.2), vtk (v9.3.1), numpy (<= v1.26.4)"
 virtuoso,,,TRUE,"virtuoso-opensource (Linux). For Mac & Windows,this package can automate Virtuoso installation."
 vitae,,,TRUE,pandoc - http://pandoc.org
 VMDecomp,,,TRUE,"libarmadillo: apt-get install -y libarmadillo-dev(deb), libblas: apt-get install -y libblas-dev (deb),liblapack: apt-get install -y liblapack-dev (deb),libarpack++2: apt-get install -y libarpack++2-dev (deb),: apt-get install -y  (deb)"
 vmr,,vagrant,TRUE,Vagrant <https://www.vagrantup.com>
 vol2birdR,,,FALSE,"GSL, HDF5, PROJ"
-warbleR,,,FALSE,"fftw3,  sox, Ghostscript, libsndfile, GDAL"
+warbleR,,,TRUE,
 watcher,,,FALSE,"'libfswatch', or 'cmake' to compile from packagesources"
 webdriver,,,TRUE,PhantomJS (http://phantomjs.org/)
 webp,libwebp,,TRUE,libwebp
