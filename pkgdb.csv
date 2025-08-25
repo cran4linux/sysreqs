@@ -137,7 +137,7 @@ cleanNLP,,,TRUE,Python
 clinDataReview,,,TRUE,pandoc (to create a clinical data review report)
 clinUtils,,,TRUE,pandoc (for export clin DT to a file - inclusion oflist of interactive plots/objects with knitr)
 clipr,,xclip,TRUE,"xclip (https://github.com/astrand/xclip) or xsel(http://www.vergenet.net/~conrad/software/xsel/) for accessingthe X11 clipboard, or wl-clipboard(https://github.com/bugaevc/wl-clipboard) for systems usingWayland."
-cloudml,,,TRUE,
+cloudml,,,FALSE,Python
 clustermq,zeromq,,FALSE,ZeroMQ (libzmq)(optional; otherwisebundled)
 ClusterR,,,TRUE,"libarmadillo: apt-get install -y libarmadillo-dev(deb), libblas: apt-get install -y libblas-dev (deb),liblapack: apt-get install -y liblapack-dev (deb),libarpack++2: apt-get install -y libarpack++2-dev (deb),: apt-get install -y  (deb), libgmp3: apt-getinstall -y libgmp3-dev (deb), libfftw3: apt-get install -ylibfftw3-dev (deb), libtiff5: apt-get install -y libtiff5-dev(deb)"
 CLVTools,,,FALSE,GNU GSL
@@ -194,6 +194,7 @@ dataMaid,,,TRUE,"pandoc; https://pandoc.org), git, whoami"
 DataPackageR,,,FALSE,pandoc - https://pandoc.org
 dataReporter,,,TRUE,"pandoc; https://pandoc.org), git, whoami"
 datasailr,bison flex autoconf automake libtool,,TRUE,
+datefixR,,,FALSE,"Cargo (Rust's package manager), rustc"
 datelife,,,TRUE,
 datr,,,TRUE,dat
 dbmss,,pandoc,TRUE,"pandoc,"
@@ -238,7 +239,7 @@ eaf,gsl,,TRUE,Gnu Scientific Library
 easyNCDF,,,TRUE,netcdf development libraries
 EBASE,,,FALSE,JAGSx.y (https://mcmc-jags.sourceforge.net)
 ebvcube,,,TRUE,GDAL binaries
-ech,,unrar,TRUE,"'unrar' (Linux/macOS) or '7-Zip' (Windows) to workwith '.rar' files, GDAL, GEOS, PROJ"
+ech,,unrar,TRUE,
 EcoDiet,,,TRUE,JAGS
 econetwork,,,TRUE,GNU GSL
 eDMA,,,TRUE,"Requires the OpenMP library for parallel computing.If the OpenMP library is not available, the code is executedsequentially and a warning is printed."
@@ -333,7 +334,7 @@ geno2proteo,,perl,TRUE,Perl
 GeoFIS,gmp mpfr,,FALSE,"gmp, mpfr"
 geojsonR,,,TRUE,libarmadillo: apt-get install -y libarmadillo-dev(deb)
 GeoMongo,,,TRUE,"MongoDB, Python. Installationinstructions and links can be found in the README file."
-geouy,,,TRUE,"'unrar' (Linux/macOS) or '7-Zip' (Windows) to workwith '.rar' files,  GDAL, GEOS,PROJ"
+geouy,,,TRUE,
 gert,libgit2,,TRUE,libgit2: libgit2-devel (rpm) orlibgit2-dev (deb)
 geslaR,,,FALSE,arrow
 GetoptLong,,perl-getopt-long,TRUE,"Perl, Getopt::Long"
@@ -748,7 +749,7 @@ raveio,,,TRUE,
 ravetools,fftw,,FALSE,"fftw3 (libfftw3-dev (deb), or fftw-devel (rpm)),pkg-config"
 RBaseX,,,TRUE,Needs a running BaseX server instance. The testuserwith credentials ('Test'/'testBasex') should have admin rights.
 rbch,,,TRUE,BCHunlimited
-rbedrock,cmake,,TRUE,"cmake, zlib,  Solaris: g++ is arequirement"
+rbedrock,cmake,,FALSE,"cmake, zlib,"
 RBesT,,pandoc,FALSE,"pandoc, pngquant,"
 Rbgs,,,TRUE,
 rbi,,,TRUE,LibBi
@@ -1063,7 +1064,7 @@ stanza,,,FALSE,"R, Python, stanza"
 staplr,,,FALSE,Java
 startR,,,TRUE,
 starvz,,,TRUE,"C++, arrow package with gzip codec, StarPU"
-Statamarkdown,,,TRUE,
+Statamarkdown,,,FALSE,Stata
 statgenGxE,,pdflatex,TRUE,pdflatex
 statgenSTA,,pdflatex,TRUE,pdflatex
 Statsomat,,python3,TRUE,
@@ -1118,7 +1119,7 @@ textTinyR,,,TRUE,libarmadillo: apt-get install -y libarmadillo-dev(deb)
 tfaddons,,,TRUE,TensorFlow(https://www.tensorflow.org/)
 tfautograph,,,TRUE,TensorFlow (https://www.tensorflow.org/)
 tfdatasets,,,TRUE,TensorFlow(https://www.tensorflow.org/)
-tfestimators,,,TRUE,
+tfestimators,,,FALSE,TensorFlow (https://www.tensorflow.org/)
 tfevents,,,FALSE,"libprotobuf, protobuf-compiler"
 tfhub,,,TRUE,TensorFlow(https://www.tensorflow.org/)
 tfio,,,TRUE,TensorFlow(https://www.tensorflow.org/)and TensorFlow IO(https://github.com/tensorflow/io)
@@ -1166,7 +1167,7 @@ unsum,,,FALSE,"Cargo (Rust's package manager), rustc"
 untb,,pari,TRUE,PARI/GP[strongly recommended forlogkda()]
 URooTab,,,FALSE,EViews
 utr.annotation,,,TRUE,
-V8,v8,,TRUE,"V8 engine version+ is needed for ES6 and WASMsupport. On Linux you can build against libv8-dev (Debian) orv8-devel (Fedora). We also provide static libv8 binaries formost platforms, see the README for details."
+V8,v8,,FALSE,"On Linux you can build against libv8-dev (Debian)or v8-devel (Fedora). We also provide static libv8 binaries formost platforms, see the README for details."
 valection,,,TRUE,valection
 valse,R-CRAN-RcppGSL,,TRUE,
 vapour,gdal proj sqlite,,FALSE,"libgdal-dev, GDAL, PROJ"
@@ -1200,7 +1201,7 @@ workflowr,,,TRUE,pandoc - https://pandoc.org
 writexl,,,FALSE,zlib
 WriteXLS,,perl,TRUE,Perl
 x.ent,,perl,TRUE,
-x13binary,,,FALSE,Fortran sources included in `tools/x13as_html` arecompiled via `configure`.
+x13binary,,,FALSE,Fortran sources included in `tools/x13as_html`require a Fortran compiler
 xactonomial,,,FALSE,"Cargo (Rust's package manager), rustc"
 XBRL,libxml2,,TRUE,
 xdvir,,,FALSE,freetype2
