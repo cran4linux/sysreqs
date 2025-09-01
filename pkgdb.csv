@@ -176,7 +176,7 @@ credentials,,git,TRUE,git (optional)
 cronR,,cronie,TRUE,cron
 Crossover,,,TRUE,Java
 ctrdata,,,TRUE,
-ctsmTMB,,,FALSE,GNU GSL
+ctsmTMB,,,TRUE,
 CTxCC,,,FALSE,Intel MKL (optional for optimized BLAS/LAPACKperformance)
 cubature,,,FALSE,and USE_C17
 cuda.ml,,,TRUE,RAPIDS cuML (see https://rapids.ai/start.html)
@@ -281,7 +281,7 @@ FCPS,,pandoc,TRUE,Pandoc
 feamiR,,,TRUE,
 feather,,,TRUE,little-endian platform
 febr,,pandoc,TRUE,
-fect,,,TRUE,A  compiler.
+fect,,,TRUE,
 FedData,,,TRUE,GDAL
 FFD,xvfb,bwidget,TRUE,BWidget
 fftw,fftw,,TRUE,fftw3
@@ -317,6 +317,7 @@ ftExtra,,,TRUE,pandoc - http://pandoc.org
 FTSgof,,,FALSE,XQuartz (https://www.xquartz.org/)
 fuzzywuzzyR,,,TRUE,"Python, difflib, fuzzywuzzy,python-Levenshtein. Detailed installationinstructions for each operating system can be found in theREADME file."
 fwildclusterboot,,,TRUE,
+gadjid,,,FALSE,"Cargo (Rust's package manager), rustc"
 ganDataModel,,,TRUE,TensorFlow (https://www.tensorflow.org)
 ganGenerativeData,,,TRUE,TensorFlow (https://www.tensorflow.org)
 gcbd,,,TRUE,"Debian or Ubuntu system with access to Goto Blas,Intel MKL, Atlas development build as well as a Nvidia GPU withCUDA support"
@@ -391,6 +392,7 @@ gyro,,,TRUE,
 h2o,,java-bin,TRUE,"Java, <="
 h2o4gpu,,,TRUE,Python with header files and sharedlibrary; H2O4GPU (https://github.com/h2oai/h2o4gpu)
 h3jsr,,,TRUE,"V8 engine version+ is needed for modern JS andWASM support. On Debian / Ubuntu install either libv8-dev orlibnode-dev, on Fedora use v8-devel."
+h3o,,,FALSE,"Cargo (Rust's package manager), rustc"
 hadron,gsl,,TRUE,
 happign,,,TRUE,"GDAL, GEOS, PROJ, sqlite3"
 haven,,,FALSE,"zlib: zlib1g-dev (deb), zlib-devel (rpm)"
@@ -981,7 +983,7 @@ saotd,,,TRUE,
 sapo,,,FALSE,"GDAL, GEOS, PROJ"
 saros.base,,,FALSE,None.
 sarsop,,,TRUE,"mallinfo, hence Linux, MacOS or Windows"
-SASmarkdown,,,TRUE,
+SASmarkdown,,,FALSE,SAS
 SBRect,,,TRUE,
 sbrl,,,FALSE,"gmp, gsl"
 scaffolder,,,TRUE,
@@ -1106,6 +1108,7 @@ TDCM,,,FALSE,pandoc
 telefit,,,TRUE,A system with a recent-enough  compiler (suchas g++-4.8 or later).
 tensorflow,,,TRUE,TensorFlow (https://www.tensorflow.org/)
 tergo,,,FALSE,"Cargo (Rust's package manager), rustc"
+terminalgraphics,,,FALSE,A terminal emulator supporting the TerminalGraphics Protocol(<https://sw.kovidgoyal.net/kitty/graphics-protocol/>) orSixel.
 terra,gdal geos proj sqlite,,FALSE,"GDAL, GEOS, PROJ, TBB, sqlite3"
 tesseract,tesseract leptonica,,TRUE,Tesseract(libtesseract-dev /tesseract-devel) and Leptonica (libleptonica-dev /leptonica-devel). On Debian you need to install the Englishtraining data separately (tesseract-ocr-eng)
 TexExamRandomizer,,latexmk,TRUE,
@@ -1136,6 +1139,7 @@ tkImgR,xvfb,tkimg,TRUE,"Tcl/Tk. To read and write other formatsthan PPM/PGM, PNG
 tkrplot,,,TRUE,Windows or X11
 tkRplotR,xvfb,,TRUE,Tcl/Tk
 TMB,,g++,TRUE,
+tok,,,FALSE,"Cargo (Rust's package manager), rustc"
 tomledit,,,FALSE,"Cargo (Rust's package manager), rustc"
 TooManyCellsR,,,TRUE,'TooManyCells'(https://github.com/GregorySchwartz/too-many-cells)
 topicmodels,gsl,,FALSE,GNU Scientific Library version
