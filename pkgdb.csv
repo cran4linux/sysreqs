@@ -93,6 +93,7 @@ blaster,,,FALSE,C++
 blastula,,,TRUE,pandoc - http://pandoc.org
 blindreview,,,FALSE,gmp
 blogdown,,hugo,TRUE,Hugo (<https://gohugo.io>) and Pandoc(<https://pandoc.org>)
+blosc,,,FALSE,blosc: blosc-devel (rpm) or libblosc-dev (deb)
 BMTME,,,TRUE,
 bnlearn,,,FALSE,USE_C17
 BNSP,gsl,,TRUE,
@@ -170,6 +171,7 @@ coveffectsplot,,pandoc,TRUE,pandoc with https support
 COveR,,,FALSE,Gnu Scientific Library version
 cpp11qpdf,,,FALSE,"libjpegdeb: libjpeg-dev, rpm: libjpeg-devel,brew: libjpeg )"
 cppcheckR,,cppcheck,TRUE,cppcheck
+cppSim,,,FALSE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
 crandep,,,TRUE,pandoc - http://pandoc.org
 crc32c,,,FALSE,cmake
 credentials,,git,TRUE,git (optional)
@@ -315,7 +317,7 @@ fst,,,TRUE,little-endian platform
 fstcore,,,TRUE,little-endian platform
 ftExtra,,,TRUE,pandoc - http://pandoc.org
 FTSgof,,,FALSE,XQuartz (https://www.xquartz.org/)
-fuzzywuzzyR,,,TRUE,"Python, difflib, fuzzywuzzy,python-Levenshtein. Detailed installationinstructions for each operating system can be found in theREADME file."
+fuzzywuzzyR,,,FALSE,"Python, difflib, fuzzywuzzy,python-Levenshtein. Detailed installationinstructions can be found in the README file."
 fwildclusterboot,,,TRUE,
 gadjid,,,FALSE,"Cargo (Rust's package manager), rustc"
 ganDataModel,,,TRUE,TensorFlow (https://www.tensorflow.org)
@@ -554,6 +556,7 @@ microbenchmark,,,TRUE,"On a Unix-alike, one of the C functionsmach_absolute_time
 MigConnectivity,,,FALSE,JAGS (https://mcmc-jags.sourceforge.net)
 MIMSunit,,,TRUE,"memoryGB) Ubuntu: build-essential,libxml2-dev, libssl-dev, libcurl4-openssl-dev Windows: Rtools(>="
 minidown,,,TRUE,pandoc - http://pandoc.org
+minimaxALT,,,FALSE,"GNU Scientific Library (GSL), OpenMP"
 minired,,,FALSE,"'Redatam' runtime engine (see https://redatam.org),The dynamic binary library is downloaded from<https://redatam-core.s3.us-west-2.amazonaws.com> during thebuild step. Currently supported platforms are Windows and Linux(both for x86-64 processors only)"
 MinkowskiSum,gmp mpfr,,TRUE,
 mixcat,gsl,,TRUE,
@@ -738,7 +741,7 @@ R2SWF,libpng freetype,,TRUE,
 R2wd,,,TRUE,Windows
 R2WinBUGS,,openbugs,TRUE,OpenBugs for functions bugs() and openbugs() orWinBUGSfor function bugs()
 r5r,,,TRUE,Java JDK
-ragg,freetype libpng libtiff libjpeg,,TRUE,"freetype2, libpng, libtiff, libjpeg"
+ragg,freetype libpng libtiff libjpeg,,FALSE,"freetype2, libpng, libtiff, libjpeg, libwebp,libwebpmux"
 rankUncertainty,,,TRUE,
 rapidraker,,,TRUE,Java
 RAppArmor,,,TRUE,"linux, libapparmor-dev"
