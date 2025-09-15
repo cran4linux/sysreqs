@@ -101,11 +101,12 @@ bookdown,,,TRUE,Pandoc
 Boov,gmp mpfr,,TRUE,
 BOSO,,,TRUE,
 botor,,,TRUE,Python and boto3(https://aws.amazon.com/sdk-for-python)
-BrailleR,,wxpython,TRUE,Pythonand wxPython
+BrailleR,,wxpython,TRUE,
 breathtestcore,,pandoc,TRUE,pandoc
 breathteststan,,pandoc,TRUE,
-bridger,,texi2dvi,TRUE,LaTeX(texi2dvi) must be present in the system tocreate PDF reports
+bridger,,texi2dvi,TRUE,
 brinton,,,TRUE,"Pandoc, web browser"
+brms,,,FALSE,pngquant
 BRugs,openbugs,,TRUE,
 bsam,,,TRUE,JAGS
 bspm,,,TRUE,"systemd, dbus-python, PyGObject,python-(dnf|apt|alpm)"
@@ -639,6 +640,7 @@ orderly,,git,TRUE,git
 ordinalbayes,,,TRUE,JAGS
 osmose,,java-bin,TRUE,
 osrmr,,,TRUE,"To use the Localhost of OSRM, you need to buildOSRM<https://github.com/Project-OSRM/osrm-backend/wiki/Building-OSRM>locally"
+otelsdk,,,FALSE,"cmake, protobuf-compiler, libprotobuf, libcurl,zlib,"
 otsad,,,TRUE,
 pagedown,,,TRUE,Pandoc
 pander,,pandoc,TRUE,pandoc (https://johnmacfarlane.net/pandoc) forexporting markdown files to other formats.
@@ -877,6 +879,7 @@ rjdmarkdown,,,FALSE,Java
 rjdqa,,,FALSE,Java
 rJPSGCS,,,TRUE,
 RJSDMX,,,TRUE,Java
+rjuliabugs,,,FALSE,"Julia with the following packagesinstalled: 'JuliaBUGS.jl', 'LogDensityProblemsAD.jl','ReverseDiff.jl', 'AdvancedHMC.jl', 'AbstractMCMC.jl','LogDensityProblems.jl', 'MCMCChains.jl', 'RCall.jl','Suppressor.jl'."
 rkafka,,,TRUE,
 rkafkajars,,,TRUE,Java JDKor higher
 RKEA,,,TRUE,Java
@@ -933,6 +936,7 @@ rriskDistributions,xvfb,,TRUE,"Tcl/Tk, Tktable"
 RSAGA,,saga,TRUE,SAGA GISLTS -
 Rsagacmd,,saga,TRUE,SAGA-GIS
 rsahmi,,,FALSE,"kraken2, seqkit"
+rsamplr,,,FALSE,"Cargo (Rust's package manager), rustc"
 rscala,scala,scala,TRUE,
 RSclient,openssl,,TRUE,
 Rserve,,,TRUE,"libR,"
@@ -948,7 +952,7 @@ rstanarm,,pandoc,TRUE,"pandoc, pandoc-citeproc"
 rstantools,,pandoc,TRUE,"pandoc,"
 rsubgroup,,,TRUE,Java
 RSurvey,xvfb,,TRUE,
-rsvg,librsvg2,,TRUE,librsvg2
+rsvg,librsvg2,,FALSE,librsvg2 (at least version
 rswipl,,,FALSE,"CMake, pandoc, libarchive,libregex, libexpat, liblzma, libzstd, liblz4, libz2, libz,libbcrypt"
 Rsymphony,coin-or-symphony,,TRUE,SYMPHONY libraries and headers
 rsyncrosim,,,TRUE,SyncroSim
@@ -1046,6 +1050,7 @@ sparklyr.flint,,,TRUE,Spark:x or above
 sparklyr.nested,,,TRUE,Spark:x orx
 sparktf,,,TRUE,TensorFlow (https://www.tensorflow.org/)
 SPARSEMODr,gsl,,TRUE,GNU GSL
+sparsesurv,,,FALSE,JAGSx)
 spate,fftw,,TRUE,fftw3
 SpatialDDLS,,,FALSE,"Python, TensorFlow(https://www.tensorflow.org/)"
 spatPomp,,,TRUE,"For Windows users, Rtools (seehttps://cran.r-project.org/bin/windows/Rtools/)."
