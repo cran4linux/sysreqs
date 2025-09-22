@@ -23,7 +23,7 @@ APRScenario,,,FALSE,LAPACK
 arcgis,,,FALSE,"Cargo (Rust's package manager), rustc"
 arcgisgeocode,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
 arcgisplaces,,,FALSE,"Cargo (Rust's package manager), rustc, OpenSSL"
-arcgisutils,,,FALSE,"Cargo (Rust's package manager), rustc"
+arcgisutils,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
 archive,libarchive,,FALSE,"libarchive: libarchive-dev (deb), libarchive-devel(rpm), libarchive (homebrew), libarchive_dev (csw)"
 arcpbf,,,FALSE,"Cargo (Rust's package manager), rustc"
 arcpy,,,FALSE,"Conda, ArcGIS Pro"
@@ -86,7 +86,7 @@ bioacoustics,cmake fftw,,TRUE,"fftw3,"
 bioimagetools,libtiff fftw curl openssl,,TRUE,tiff fftw libcurl openssl
 biplotbootGUI,xvfb,bwidget,TRUE,Tcl/Tk package BWidget.
 BiplotGUI,,,TRUE,windows
-bisque,,,TRUE,A system with a recent-enough  compiler (suchas g++-4.8 or later).
+bisque,,,TRUE,
 bittermelon,,,FALSE,'monobit' for reading/writing additional bitmapfont formats.
 blandr,,,TRUE,pandoc
 blaster,,,FALSE,C++
@@ -245,6 +245,7 @@ ebvcube,,,TRUE,GDAL binaries
 ech,,unrar,TRUE,
 EcoDiet,,,TRUE,JAGS
 econetwork,,,TRUE,GNU GSL
+ecotourism,,,FALSE,Quarto
 eDMA,,,TRUE,"Requires the OpenMP library for parallel computing.If the OpenMP library is not available, the code is executedsequentially and a warning is printed."
 EHRmuse,,,FALSE,GNU Scientific Library version
 EIAapi,,,FALSE,The package required the jq command line library.Please check https://stedolan.github.io/jq/download/ fordownload instructions.
@@ -358,6 +359,7 @@ gifski,cargo,,FALSE,"Cargo (Rust's package manager), rustc"
 git2r,libgit2 openssl libssh2,,FALSE,libgit2 and its dependencies libssh2 andopenssl header and libraries.
 gitcreds,,git,TRUE,git
 gittargets,,git,TRUE,Git
+glioblastomaEHRsData,,,FALSE,"pandoc - http://pandoc.org, tcltk(optional)"
 glmulti,,,TRUE,Java
 glpkAPI,glpk gmp,,TRUE,GLPK
 gm,,musescore,TRUE,MuseScore - https://musescore.org/
@@ -373,10 +375,10 @@ gpuR,,,FALSE,"(supporting at least std=c++0x), OpenCLshared library (provided by
 GRANBase,,subversion git,TRUE,
 GreedyExperimentalDesign,,,TRUE,Java
 GreedyExperimentalDesignJARs,,,TRUE,Java
-greta,,,FALSE,Python with header files and sharedlibrary; TensorFlowv2.0.0; https://www.tensorflow.org/);TensorFlow Probability (v0.8.0;https://www.tensorflow.org/probability/)
-greta.censored,,,FALSE,Python with header files and sharedlibrary; TensorFlowv2.0.0; https://www.tensorflow.org/);TensorFlow Probability (v0.8.0;https://www.tensorflow.org/probability/)
-greta.dynamics,,,FALSE,Python with header files and sharedlibrary; TensorFlowv2.0.0; https://www.tensorflow.org/);TensorFlow Probability (v0.8.0;https://www.tensorflow.org/probability/)
-greta.gp,,,FALSE,Python with header files and sharedlibrary; TensorFlowv2.0.0; https://www.tensorflow.org/);TensorFlow Probability (v0.8.0;https://www.tensorflow.org/probability/)
+greta,,,TRUE,
+greta.censored,,,TRUE,
+greta.dynamics,,,TRUE,
+greta.gp,,,TRUE,
 gretlR,,gretl,TRUE,gretl
 gridDebug,,,TRUE,graphviz
 gridGraphviz,,graphviz,TRUE,graphviz
@@ -402,7 +404,7 @@ haven,,,FALSE,"zlib: zlib1g-dev (deb), zlib-devel (rpm)"
 hdbayes,,,FALSE,CmdStan(https://mc-stan.org/users/interfaces/cmdstan)
 hdf5r,hdf5,,TRUE,HDF5
 hdfqlr,,,TRUE,HDFql
-hdtg,,,FALSE,"RcppXsimd, CPU with AVX/SSE4.2 (optionalfor better performance)"
+hdtg,,,TRUE,
 heck,,,FALSE,"Cargo (Rust's package manager), rustc"
 helloJavaWorld,,,TRUE,Java
 hellorust,cargo,,FALSE,"Cargo (Rust's package manager), rustc"
@@ -887,7 +889,7 @@ RKEAjars,,,TRUE,Java
 RKEEL,,,TRUE,Java
 rkeops,cmake,cmake,TRUE,
 Rlibeemd,gsl,,TRUE,GNU GSL
-rlibkriging,cmake,,FALSE,"cmake,"
+rlibkriging,cmake,,TRUE,
 RMariaDB,mysql,,TRUE,"libmariadb-client-lgpl-dev or libmariadb-dev orlibmysqlclient-dev, with libssl-dev (deb),mariadb-connector-c-devel or mariadb-devel (rpm),mariadb-connector-c or mysql-connector-c (brew)"
 RMark,,,TRUE,"notepad.exe, mark.exe (or mark32.exe andmark64.exe) and rel_32.exe (see README.txt)"
 rmarkdown,,pandoc,TRUE,pandoc - http://pandoc.org
@@ -1113,7 +1115,7 @@ TAQMNGR,,,TRUE,zlib headers and library
 tcltk2,xvfb,,TRUE,"Tcl/Tk, Tktable, optional)"
 TDA,gmp,,TRUE,"gmp,"
 TDCM,,,FALSE,pandoc
-telefit,,,TRUE,A system with a recent-enough  compiler (suchas g++-4.8 or later).
+telefit,,,TRUE,
 tensorflow,,,TRUE,TensorFlow (https://www.tensorflow.org/)
 tergo,,,FALSE,"Cargo (Rust's package manager), rustc"
 terminalgraphics,,,FALSE,A terminal emulator supporting the TerminalGraphics Protocol(<https://sw.kovidgoyal.net/kitty/graphics-protocol/>) orSixel.
