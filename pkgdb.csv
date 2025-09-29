@@ -212,6 +212,7 @@ denguedatahub,,,FALSE,"Java: openjdk-11-jdk (deb),java-11-openjdk.x86_64 (rpm), 
 DesignCTPB,,,TRUE,
 designmatch,,,TRUE,
 devEMF,,,FALSE,fontconfig or zlib (only needed for platforms otherthan modern OSX and Windows)
+devianLM,,,FALSE,OpenMP
 dialr,,,TRUE,java
 dialrjars,,,TRUE,java
 diffeqr,,,TRUE,"Julia, DifferentialEquations.jl,ModelingToolkit.jl"
@@ -246,6 +247,7 @@ ech,,unrar,TRUE,
 EcoDiet,,,TRUE,JAGS
 econetwork,,,TRUE,GNU GSL
 ecotourism,,,FALSE,Quarto
+edgemodelr,,,FALSE,or equivalent for building
 eDMA,,,TRUE,"Requires the OpenMP library for parallel computing.If the OpenMP library is not available, the code is executedsequentially and a warning is printed."
 EHRmuse,,,FALSE,GNU Scientific Library version
 EIAapi,,,FALSE,The package required the jq command line library.Please check https://stedolan.github.io/jq/download/ fordownload instructions.
@@ -274,11 +276,12 @@ extraDistr,,,FALSE,C++
 extRatum,,,TRUE,"GDAL, GEOS, PROJ"
 ezknitr,,,TRUE,pandoc with https support
 factset.protobuf.stach.v2,,,TRUE,"ProtoBuf libraries and compiler versionorlater; On Debian/Ubuntu these can be installed aslibprotoc-dev, libprotobuf-dev and protobuf-compiler, while onFedora/CentOS protobuf-devel and protobuf-compiler are needed."
-factset.protobuf.stachextensions,protobuf,,TRUE,"ProtoBuf libraries and compiler versionorlater; On Debian/Ubuntu these can be installed aslibprotoc-dev, libprotobuf-dev and protobuf-compiler, while onFedora/CentOS protobuf-devel and protobuf-compiler are needed."
+factset.protobuf.stachextensions,protobuf,,TRUE,
 fangs,cargo,,FALSE,"Cargo (Rust's package manager), rustc"
 fasterRaster,,,FALSE,GRASS
 fastGLCM,,,TRUE,"apt-get-pip: apt-get install -y python3-pip (deb),python3-pip: python3 -m pip install -U pip (deb), numpy: pip3install -U numpy (deb), cv2: pip3 install -U opencv-python(deb), matplotlib: pip3 install -U matplotlib (deb), skimage:pip3 install -U scikit-image (deb), libarmadillo: apt-getinstall -y libarmadillo-dev (deb), libblas: apt-get install -ylibblas-dev (deb), liblapack: apt-get install -y liblapack-dev(deb), libarpack++2: apt-get install -y libarpack++2-dev (deb),: apt-get install -y  (deb)"
 FastHamming,,,FALSE,"C compiler (C99), OpenMP"
+FastKRR,,,FALSE,OpenMP (optional)
 fastText,,,TRUE,"Generally, fastText builds on modern Mac OS andLinux distributions. Since it uses some  features, itrequires a compiler with good  support. These include a(g++-4.7.2 or newer) or a (-3.3 or newer)."
 fcl,,,FALSE,"Cargo (Rust's package manager), rustc"
 FCPS,,pandoc,TRUE,Pandoc
@@ -899,7 +902,7 @@ RmdConcord,,,FALSE,"pandocwith 'commonmark_x' processing and'sourcepos' extensio
 rmdfiltr,,,TRUE,pandoc; https://pandoc.org)
 RmecabKo,mecab,,TRUE,
 rMIDAS,,,TRUE,Python
-rminizinc,,,TRUE,"pandoc, needed for the vignette)"
+rminizinc,,,TRUE,
 RMOA,,,TRUE,Java
 RMOAjars,,,TRUE,Java
 Rmosek,,,TRUE,MOSEK and MOSEK License
@@ -975,7 +978,7 @@ RWekajars,,,TRUE,Java
 RWinEdt,,,TRUE,WinEdt
 rzmq,zeromq,,TRUE,ZeroMQ: libzmq3-dev (deb) or zeromq-devel(rpm)
 s2,openssl,,FALSE,"cmake, OpenSSL, Abseil"
-s2dv,,,TRUE,
+s2dv,,,FALSE,cdo
 s2dverification,,,TRUE,
 sacRebleu,,,FALSE,lib/llvm-config
 saeHB,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net)
