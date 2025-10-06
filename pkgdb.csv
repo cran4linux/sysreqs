@@ -178,6 +178,7 @@ crc32c,,,FALSE,cmake
 credentials,,git,TRUE,git (optional)
 cronR,,cronie,TRUE,cron
 Crossover,,,TRUE,Java
+cTMed,,,FALSE,GNU GSL
 ctrdata,,,TRUE,
 ctsmTMB,,,TRUE,
 CTxCC,,,FALSE,Intel MKL (optional for optimized BLAS/LAPACKperformance)
@@ -212,7 +213,7 @@ denguedatahub,,,FALSE,"Java: openjdk-11-jdk (deb),java-11-openjdk.x86_64 (rpm), 
 DesignCTPB,,,TRUE,
 designmatch,,,TRUE,
 devEMF,,,FALSE,fontconfig or zlib (only needed for platforms otherthan modern OSX and Windows)
-devianLM,,,FALSE,OpenMP
+devianLM,,,FALSE,"OpenMP (optional, for parallel execution)"
 dialr,,,TRUE,java
 dialrjars,,,TRUE,java
 diffeqr,,,TRUE,"Julia, DifferentialEquations.jl,ModelingToolkit.jl"
@@ -247,7 +248,7 @@ ech,,unrar,TRUE,
 EcoDiet,,,TRUE,JAGS
 econetwork,,,TRUE,GNU GSL
 ecotourism,,,FALSE,Quarto
-edgemodelr,,,FALSE,or equivalent for building
+edgemodelr,,,TRUE,
 eDMA,,,TRUE,"Requires the OpenMP library for parallel computing.If the OpenMP library is not available, the code is executedsequentially and a warning is printed."
 EHRmuse,,,FALSE,GNU Scientific Library version
 EIAapi,,,FALSE,The package required the jq command line library.Please check https://stedolan.github.io/jq/download/ fordownload instructions.
@@ -620,7 +621,7 @@ NobBS,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net/) foranalysis of Bayesian hi
 nomnoml,,,FALSE,"A chromium based browser, required by ""webshot2""<https://rstudio.github.io/webshot2/>"
 nucim,,,TRUE,tiff fftw libcurl openssl
 occumb,,,FALSE,JAGS (http://mcmc-jags.sourceforge.net)
-oceanmap,,imagemagick-bin,TRUE,
+oceanmap,,imagemagick-bin,FALSE,ImageMagick
 ODB,,,TRUE,
 odbc,odbc,,FALSE,An ODBC3 driver manager and drivers.
 oddsapiR,,pandoc,TRUE,"pandoc, pandoc-citeproc"
@@ -755,6 +756,7 @@ RAppArmor,,,TRUE,"linux, libapparmor-dev"
 rapport,,,TRUE,pandoc (https://johnmacfarlane.net/pandoc) forexporting markdown files to other formats.
 RAQSAPI,,,FALSE,package manual and Vignettes require pandoc http://pandoc.org)
 rasciidoc,,asciidoc source-highlight,FALSE,"python, by default rasciidoc uses a systeminstallation of asciidoc. If a system installation of asciidocis not available, it downloads the sources from(<http://gitlab.com/asciidoc>). GNU source-highlight isrecommended."
+RAthena,,,FALSE,Python and boto3(https://aws.amazon.com/sdk-for-python)
 RationalMatrix,,,FALSE,"C++, gmp"
 ratioOfQsprays,,,FALSE,"gmp, mpfr"
 raveio,,,TRUE,
@@ -834,6 +836,7 @@ rdoxygen,,doxygen,TRUE,doxygen
 Rdroolsjars,,,TRUE,
 rdwd,,pandoc,TRUE,
 readbitmap,libjpeg libpng,,TRUE,"libjpeg, libpng"
+readepi,,,FALSE,"odbc, libmariadbclient-dev"
 readNSx,,,FALSE,"HDF5, little-endian platform"
 REBayes,,,TRUE,MOSEK (http://www.mosek.com) and MOSEK license.
 redatamx,,,FALSE,"'Redatam' runtime engine (see https://redatam.org),The dynamic binary library is downloaded from<https://redatam-core.s3.us-west-2.amazonaws.com> during thebuild step. Currently supported platforms are Windows, Linuxand macOS."
@@ -1196,7 +1199,7 @@ vcfR,devscripts,,TRUE,
 vdiffr,libpng,,TRUE,libpng
 vegawidget,,,TRUE,To use image functions for MacOS: X11
 venneuler,,,TRUE,Javaor higher
-VertexWiseR,,,FALSE,"Miniconda3 (v24.9.2), Python (<= v3.12), BrainStat(v0.4.2), vtk (v9.3.1), numpy (<= v1.26.4)"
+VertexWiseR,,,FALSE,"Miniconda3 (v24.9.2), Python (<= v3.12), BrainStat(v0.4.2), vtk (v9.3.1), numpy (<= v1.26.4), nilearn (<=v0.12.0)"
 virtuoso,,,TRUE,"virtuoso-opensource (Linux). For Mac & Windows,this package can automate Virtuoso installation."
 vitae,,,TRUE,pandoc - http://pandoc.org
 VMDecomp,,,TRUE,"libarmadillo: apt-get install -y libarmadillo-dev(deb), libblas: apt-get install -y libblas-dev (deb),liblapack: apt-get install -y liblapack-dev (deb),libarpack++2: apt-get install -y libarpack++2-dev (deb),: apt-get install -y  (deb)"
