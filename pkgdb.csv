@@ -18,6 +18,7 @@ AncestryMapper,,,TRUE,"None, but greater thanGB of RAM highlyrecommended."
 animation,,tex-latex ffmpeg-bin,TRUE,ImageMagick (http://imagemagick.org) orGraphicsMagick (http://www.graphicsmagick.org) or LyX(http://www.lyx.org) for saveGIF(); (PDF)LaTeX for saveLatex();SWF Tools (http://swftools.org) for saveSWF(); FFmpeg(http://ffmpeg.org) or avconv (https://libav.org/avconv.html)for saveVideo()
 anticlust,glpk,,FALSE,Rendering the vignette requires pandoc(<https://pandoc.org/>).
 apache.sedona,,,FALSE,'Apache Spark'x
+apathe,,,FALSE,"Rendering the document template requires pandoc; https://pandoc.org) and for PDFs a TeX distribution, suchas TinyTeX; https://yihui.org/tinytex/)"
 apcf,geos,,TRUE,GEOS
 APRScenario,,,FALSE,LAPACK
 arcgis,,,FALSE,"Cargo (Rust's package manager), rustc"
@@ -98,6 +99,7 @@ BMTME,,,TRUE,
 bnlearn,,,FALSE,USE_C17
 BNSP,gsl,,TRUE,
 bookdown,,,TRUE,Pandoc
+bootStateSpace,,,FALSE,GNU GSL
 Boov,gmp mpfr,,TRUE,
 BOSO,,,TRUE,
 botor,,,TRUE,Python and boto3(https://aws.amazon.com/sdk-for-python)
@@ -642,7 +644,7 @@ ora,,,TRUE,
 orbweaver,,,FALSE,"Cargo (Rust's package manager), rustc"
 Orcs,,p7zip dos2unix,TRUE,"zip, unix2dos"
 orderanalyzer,,,FALSE,"Tesseract, libtesseract-dev (deb),tesseract-devel (rpm), libleptonica-dev (deb), leptonica-devel(rpm), tesseract-ocr-eng (deb), libpoppler-cpp-dev (deb),poppler-cpp-devel (rpm), poppler-data (rpm/deb), libxml2-dev(deb), libxml2-devel (rpm)"
-orderly,,git,TRUE,git
+orderly,,git,TRUE,
 ordinalbayes,,,TRUE,JAGS
 osmose,,java-bin,TRUE,
 osrmr,,,TRUE,"To use the Localhost of OSRM, you need to buildOSRM<https://github.com/Project-OSRM/osrm-backend/wiki/Building-OSRM>locally"
@@ -880,6 +882,7 @@ ridge,gsl,,TRUE,Gnu Scientific Library version
 rim,,maxima,FALSE,"Maxima (https://sourceforge.net/projects/maxima/,tested with versions-, needs to be on PATH"
 riot,cmake,,TRUE,
 rirods,,,FALSE,iRODS C++ HTTP API(<https://github.com/irods/irods_client_http_api>)
+rixpress,,,FALSE,Nix
 rjags,jags,,TRUE,JAGSx.y
 rJava,java,,TRUE,"Java JDKor higher (for JRI/REngine JDKorhigher),"
 RJDemetra,,,FALSE,Java
@@ -1037,6 +1040,7 @@ simplace,,,FALSE,Java
 simplermarkdown,,pandoc,TRUE,Pandoc (http://pandoc.org) needs to installed andavailable in the search path.
 simplexreg,gsl,,TRUE,
 sims,,,FALSE,JAGSx.y
+simStateSpace,,,FALSE,GNU GSL
 sjtable2df,,,FALSE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
 slendr,,,TRUE,'SLiM' is a forward simulation software forpopulation genetics and evolutionary biology. See<https://messerlab.org/slim/> for installation instructions andfurther information. The 'Python' coalescent framework'msprime' and the 'tskit' module can by installed by followingthe instructions at <https://tskit.dev/>.
 slowraker,,java-bin,TRUE,Java
@@ -1044,7 +1048,7 @@ slurm,,,FALSE,"Slurm command line programs (sacct, squeue)"
 smam,gsl,,TRUE,"GNU GSL,"
 smile,,,TRUE,"GDAL, GEOS, PROJ"
 snSMART,,,TRUE,JAGSx.y
-socratadata,,,FALSE,"Cargo (Rust's package manager), rustc"
+socratadata,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
 sodium,libsodium,,TRUE,libsodium
 SOFIA,,,TRUE,Circos
 soilhypfit,,,TRUE,"gmp, mpfr"
@@ -1080,7 +1084,7 @@ stanette,,pandoc,TRUE,
 StanHeaders,,,TRUE,pandoc
 stanza,,,FALSE,"R, Python, stanza"
 staplr,,,FALSE,Java
-startR,,,TRUE,
+startR,,,FALSE,cdo ecFlow
 starvz,,,TRUE,"C++, arrow package with gzip codec, StarPU"
 Statamarkdown,,,FALSE,Stata
 statgenGxE,,pdflatex,TRUE,pdflatex
