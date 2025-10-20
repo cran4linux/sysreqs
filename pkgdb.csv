@@ -48,7 +48,7 @@ babelwhale,,docker singularity,TRUE,Docker and/or Singularity
 babette,,,TRUE,BEAST2 (https://www.beast2.org/)
 bacistool,,,TRUE,JAGS
 BaHZING,,,FALSE,JAGSx.y (http://mcmc-jags.sourceforge.net)
-baker,,,FALSE,JAGS (http://mcmc-jags.sourceforge.net)
+baker,,,TRUE,
 bamdit,,,TRUE,JAGS (seehttp://mcmc-jags.sourceforge.net)
 bamm,,,FALSE,"GDAL: gdal-bin (deb), libgdal-dev (deb)or gdal-devel (rmp), GEOS, PROJ:libproj-dev (deb), sqlite3, ImageMagick++: imagemagick (deb),libmagic-dev (deb), libmagick++-dev (deb) orImageMagick-c++-devel (rpm) ImageMagick(http://imagemagick.org) or GraphicsMagick(http://www.graphicsmagick.org) or LyX (http://www.lyx.org) forsaveGIF(); (PDF)LaTeX for saveLatex(); SWF Tools(http://swftools.org) for saveSWF(); FFmpeg (http://ffmpeg.org)or avconv (https://libav.org/avconv.html) for saveVideo()"
 BANOVA,,,TRUE,"JAGS-4.3.0,"
@@ -143,7 +143,7 @@ clinUtils,,,TRUE,pandoc (for export clin DT to a file - inclusion oflist of inte
 clipr,,xclip,TRUE,"xclip (https://github.com/astrand/xclip) or xsel(http://www.vergenet.net/~conrad/software/xsel/) for accessingthe X11 clipboard, or wl-clipboard(https://github.com/bugaevc/wl-clipboard) for systems usingWayland."
 cloudml,,,FALSE,Python
 clustermq,zeromq,,FALSE,ZeroMQ (libzmq)(optional; otherwisebundled)
-ClusterR,,,TRUE,"libarmadillo: apt-get install -y libarmadillo-dev(deb), libblas: apt-get install -y libblas-dev (deb),liblapack: apt-get install -y liblapack-dev (deb),libarpack++2: apt-get install -y libarpack++2-dev (deb),: apt-get install -y  (deb), libgmp3: apt-getinstall -y libgmp3-dev (deb), libfftw3: apt-get install -ylibfftw3-dev (deb), libtiff5: apt-get install -y libtiff5-dev(deb)"
+ClusterR,,,TRUE,
 CLVTools,,,FALSE,GNU GSL
 cmaRs,,,TRUE,MOSEK (http://www.mosek.com) and MOSEK License foruse of Rmosek
 cncaGUI,xvfb,bwidget,TRUE,Tcl/Tk package BWidget.
@@ -208,7 +208,7 @@ dccvalidator,,,TRUE,
 dclone,,,TRUE,"none, one or more of JAGS, WinBUGS, OpenBUGS, Stan"
 dcmle,,,TRUE,JAGS
 Deducer,,,TRUE,"Java, JRI"
-deforestable,,,TRUE,"GDAL, GEOS, PROJ, sqlite3"
+deforestable,,,FALSE,"GDAL, GEOS, PROJ,sqlite3"
 Delaporte,,,FALSE,A version of Fortran supporting the LOG_GAMMAIntrinsic and the ieee_arithmetic module.
 delaunay,gmp mpfr,,TRUE,
 denguedatahub,,,FALSE,"Java: openjdk-11-jdk (deb),java-11-openjdk.x86_64 (rpm), openjdk@11 (brew)"
@@ -426,6 +426,7 @@ hoopR,,pandoc,TRUE,"pandoc, pandoc-citeproc"
 hSDM,gsl,,FALSE,GNU GSL
 httpgd,libpng cairo freetype,,TRUE,
 httpuv,,,TRUE,zlib
+huito,,,FALSE,pandoc
 huxtable,,tex-adjustbox tex-array tex-calc tex-caption tex-colortbl tex-fontspec tex-graphicx tex-hhline tex-hyperref tex-multirow tex-siunitx tex-tabularx tex-threeparttable tex-ulem tex-wrapfig,TRUE,"LaTeX packages: adjustbox, array, calc, caption,colortbl, fontspec, graphicx, hhline, hyperref, multirow,siunitx, tabularx, threeparttable, ulem, wrapfig"
 HydeNet,,,TRUE,
 hypergeo2,,,FALSE,"gmp, mpfr"
@@ -451,6 +452,7 @@ inpdfr,,xpdf,TRUE,XPDF (http://www.foolabs.com/xpdf/download.html)
 InSilicoVA,,,TRUE,Java
 interpolation,,,FALSE,"C++, gmp"
 inTextSummaryTable,,pandoc,TRUE,pandoc (to export an interactive summary table to afile)
+inti,,,FALSE,pandoc
 IOHanalyzer,,,FALSE,C++
 IP,,,FALSE,libidn: libidn11-dev (deb)
 ip2location,,,TRUE,IP2Location Python library<https://www.ip2location.com/development-libraries/ip2location/python>
@@ -515,6 +517,7 @@ lincom,,,FALSE,"MOSEK, MOSEK License"
 lira,,,TRUE,JAGS (seehttp://mcmc-jags.sourceforge.net)
 littler,,,TRUE,libR
 lnmixsurv,,,FALSE,"C++, GNU,  GSL"
+localLLM,,,FALSE,"libcurl (optional, for model downloading)"
 localsolver,,,TRUE,At least trial version of LocalSolver to bedownloaded from http://www.localsolver.com/download.html
 locfit,,,TRUE,USE_C17
 LOMAR,gmp fftw,,FALSE,"C++, gmp, fftw3"
@@ -898,7 +901,7 @@ RKEAjars,,,TRUE,Java
 RKEEL,,,TRUE,Java
 rkeops,cmake,cmake,TRUE,
 Rlibeemd,gsl,,TRUE,GNU GSL
-rlibkriging,cmake,,TRUE,
+rlibkriging,cmake,,FALSE,"cmake,"
 RMariaDB,mysql,,TRUE,"libmariadb-client-lgpl-dev or libmariadb-dev orlibmysqlclient-dev, with libssl-dev (deb),mariadb-connector-c-devel or mariadb-devel (rpm),mariadb-connector-c or mysql-connector-c (brew)"
 RMark,,,TRUE,"notepad.exe, mark.exe (or mark32.exe andmark64.exe) and rel_32.exe (see README.txt)"
 rmarkdown,,pandoc,TRUE,pandoc - http://pandoc.org
