@@ -59,6 +59,7 @@ bayescount,,,FALSE,JAGS (https://mcmc-jags.sourceforge.net)
 BayesGWQS,,,TRUE,JAGS
 bayesplot,,pandoc,TRUE,"pandoc, pandoc-citeproc"
 BayesPostEst,,,TRUE,JAGS (http://mcmc-jags.sourceforge.io)
+bayesQRsurvey,,,FALSE,"BLAS, LAPACK"
 BayesSAE,gsl,,TRUE,
 BayesTools,,,TRUE,JAGS(https://mcmc-jags.sourceforge.io/)
 BayesVarSel,gsl,,TRUE,GNU Scientific Library
@@ -271,7 +272,7 @@ EviewsR,,,TRUE,EViews
 EWOC.Comb,,,FALSE,"JAGS. For installation instructions, seehttp://mcmc-jags.sourceforge.net/"
 exactextractr,geos,,TRUE,GEOS
 exams,,,TRUE,pandoc
-excerptr,,,TRUE,
+excerptr,,,FALSE,Python
 excursions,gsl,,TRUE,Gnu Scientific Library version
 exifr,exiftool,exiftool,TRUE,Perl
 exiftoolr,exiftool,exiftool,TRUE,Perl
@@ -280,6 +281,7 @@ extRatum,,,TRUE,"GDAL, GEOS, PROJ"
 ezknitr,,,TRUE,pandoc with https support
 factset.protobuf.stach.v2,,,TRUE,"ProtoBuf libraries and compiler versionorlater; On Debian/Ubuntu these can be installed aslibprotoc-dev, libprotobuf-dev and protobuf-compiler, while onFedora/CentOS protobuf-devel and protobuf-compiler are needed."
 factset.protobuf.stachextensions,protobuf,,TRUE,
+fairGNN,,,FALSE,Optional 'LibTorch' backend; install viatorch::install_torch().
 fangs,cargo,,FALSE,"Cargo (Rust's package manager), rustc"
 fasterRaster,,,FALSE,GRASS
 fastGLCM,,,TRUE,"apt-get-pip: apt-get install -y python3-pip (deb),python3-pip: python3 -m pip install -U pip (deb), numpy: pip3install -U numpy (deb), cv2: pip3 install -U opencv-python(deb), matplotlib: pip3 install -U matplotlib (deb), skimage:pip3 install -U scikit-image (deb), libarmadillo: apt-getinstall -y libarmadillo-dev (deb), libblas: apt-get install -ylibblas-dev (deb), liblapack: apt-get install -y liblapack-dev(deb), libarpack++2: apt-get install -y libarpack++2-dev (deb),: apt-get install -y  (deb)"
@@ -346,6 +348,7 @@ GeoFIS,gmp mpfr,,FALSE,"gmp, mpfr"
 geojsonR,,,TRUE,libarmadillo: apt-get install -y libarmadillo-dev(deb)
 GeoMongo,,,TRUE,"MongoDB, Python. Installationinstructions and links can be found in the README file."
 geouy,,,TRUE,
+GerminaR,,,FALSE,pandoc
 gert,libgit2,,TRUE,libgit2: libgit2-devel (rpm) orlibgit2-dev (deb)
 geslaR,,,FALSE,arrow
 GetoptLong,,perl-getopt-long,TRUE,"Perl, Getopt::Long"
@@ -410,7 +413,7 @@ haven,,,FALSE,"zlib: zlib1g-dev (deb), zlib-devel (rpm)"
 hdbayes,,,FALSE,CmdStan(https://mc-stan.org/users/interfaces/cmdstan)
 hdf5r,hdf5,,TRUE,HDF5
 hdfqlr,,,TRUE,HDFql
-hdtg,,,TRUE,
+hdtg,,,FALSE,CPU with AVX/SSE4.2 (optional for betterperformance)
 heck,,,FALSE,"Cargo (Rust's package manager), rustc"
 helloJavaWorld,,,TRUE,Java
 hellorust,cargo,,FALSE,"Cargo (Rust's package manager), rustc"
@@ -471,6 +474,7 @@ JFE,xvfb,,TRUE,
 JGR,,,FALSE,Java
 jlmerclusterperm,,,FALSE,Julia
 JMbayes,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net)
+jmotif,,,FALSE,C++
 jmvconnect,,,FALSE,jamovi
 JointAI,,,TRUE,JAGS (https://mcmc-jags.sourceforge.io/)
 jpeg,libjpeg,,TRUE,libjpeg
@@ -1206,13 +1210,13 @@ vcfR,devscripts,,TRUE,
 vdiffr,libpng,,TRUE,libpng
 vegawidget,,,TRUE,To use image functions for MacOS: X11
 venneuler,,,TRUE,Javaor higher
-VertexWiseR,,,FALSE,"Miniconda3 (v24.9.2), Python (<= v3.12), BrainStat(v0.4.2), vtk (v9.3.1), numpy (<= v1.26.4), nilearn (<=v0.12.0)"
+VertexWiseR,,,FALSE,"Miniconda3 (v24.9.2), Python (<= v3.12), BrainStat(v0.4.2), vtk (v9.3.1), numpy (<= v1.26.4), nilearn (<=v0.12.0), netneurotools (<= v0.2.5)"
 virtuoso,,,TRUE,"virtuoso-opensource (Linux). For Mac & Windows,this package can automate Virtuoso installation."
 vitae,,,TRUE,pandoc - http://pandoc.org
 VMDecomp,,,TRUE,"libarmadillo: apt-get install -y libarmadillo-dev(deb), libblas: apt-get install -y libblas-dev (deb),liblapack: apt-get install -y liblapack-dev (deb),libarpack++2: apt-get install -y libarpack++2-dev (deb),: apt-get install -y  (deb)"
 vmr,,vagrant,TRUE,Vagrant <https://www.vagrantup.com>
 vol2birdR,,,FALSE,"GSL, HDF5, PROJ"
-warbleR,,,TRUE,
+warbleR,,,FALSE,"fftw3,  sox, Ghostscript, libsndfile, GDAL"
 watcher,,,FALSE,"'libfswatch', or 'cmake' to compile from packagesources"
 webdriver,,,TRUE,PhantomJS (http://phantomjs.org/)
 webp,libwebp,,TRUE,libwebp
