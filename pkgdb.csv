@@ -153,7 +153,7 @@ coga,gsl,,TRUE,GNU GSL
 cogmapr,,,TRUE,libcurl: libcurl-devel (rpm) orlibcurl4-openssl-dev (deb).
 collUtils,,,TRUE,
 colorizer,,,TRUE,ImageMagick++: ImageMagick-c++-devel (rpm) orlibmagick++-dev (deb)
-Colossus,,,FALSE,make
+Colossus,,,FALSE,"make,"
 COMBO,,,FALSE,JAGS (http://mcmc-jags.sourceforge.net)
 CommonJavaJars,,java-bin,TRUE,Java
 compdb,,,FALSE,Clang
@@ -227,7 +227,7 @@ dismo,,java-bin,TRUE,Java
 divent,,,FALSE,pandoc
 diversitree,fftw gsl,,TRUE,"fftw3, gsl"
 DIZutils,,,TRUE,libpq: libpq-dev (deb) or postgresql-devel(rpm)
-DLSSM,,,FALSE,Intel MKL (optional for enhanced performance)
+DLSSM,,,TRUE,
 DNNSIM,,,FALSE,Python; PyTorch (https://pytorch.org/);NumPy (https://numpy.org/); SciPy (https://scipy.org/); sklearn(https://scikit-learn.org/stable/);
 docknitr,,docker,TRUE,"Docker, RStudio>=1.2"
 doconv,,libreoffice,TRUE,"LibreOffice, Microsoft Word"
@@ -240,7 +240,7 @@ dti,gsl,,TRUE,gsl
 duckdb,,,FALSE,xz (for building from source)
 duet,,,FALSE,FFmpeg (https://ffmpeg.org/)
 DynareR,,,TRUE,"Dynare, Octave"
-dynaSpec,,,TRUE,
+dynaSpec,,,FALSE,ffmpeg
 dynBiplotGUI,xvfb,,TRUE,gmake
 dynr,gsl,,TRUE,
 eaf,gsl,,TRUE,Gnu Scientific Library
@@ -584,6 +584,7 @@ mllrnrs,,,FALSE,Quarto command line tools(https://github.com/quarto-dev/quarto-c
 mlpack,,,TRUE,A  compiler. Versionor later of GCC will befine.
 mlr,,,TRUE,"gdal (optional), geos (optional), proj (optional),udunits (optional), gsl (optional), gmp (optional), glu(optional), jags (optional), mpfr (optional), openmpi(optional)"
 mlsurvlrnrs,,,FALSE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
+MoBPS,,,FALSE,MiXBLUP (optional; used for multi-trait genomicevaluations); blupf90-family (optional; used for multi-traitgenomic evaluations)
 mod09nrt,,,TRUE,MRTSwath
 modeltime.h2o,,,TRUE,
 MODIStsp,,,TRUE,
@@ -625,6 +626,7 @@ NGCHM,,,FALSE,Java Git
 nhdR,,p7zip,TRUE,7-zip command line toolz)
 nloptr,cmake,,TRUE,cmake which is used only on Linux ormacOS systems when no system build of nlopt can befound.
 nlrx,,java-bin pandoc,FALSE,"NetLogo, Java, pandoc, OpenSSL,udunits-2, PROJ.4, GEOS, GDAL, libxml2"
+NMADTA,,,FALSE,JAGSx.y (http://mcmc-jags.sourceforge.net)
 nmslibR,,,TRUE,"python3-dev: apt-get install -y python3-dev (deb),python3-pip: apt-get install -y python3-pip (deb), numpy: pip3install numpy (deb), scipy: pip3 install scipy (deb), nmslib:pip3 install --no-binary :all: nmslib (deb)"
 NobBS,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net/) foranalysis of Bayesian hierarchical models
 nomnoml,,,FALSE,"A chromium based browser, required by ""webshot2""<https://rstudio.github.io/webshot2/>"
@@ -905,7 +907,7 @@ RKEAjars,,,TRUE,Java
 RKEEL,,,TRUE,Java
 rkeops,cmake,cmake,TRUE,
 Rlibeemd,gsl,,TRUE,GNU GSL
-rlibkriging,cmake,,FALSE,"cmake,"
+rlibkriging,cmake,,TRUE,
 RMariaDB,mysql,,TRUE,"libmariadb-client-lgpl-dev or libmariadb-dev orlibmysqlclient-dev, with libssl-dev (deb),mariadb-connector-c-devel or mariadb-devel (rpm),mariadb-connector-c or mysql-connector-c (brew)"
 RMark,,,TRUE,"notepad.exe, mark.exe (or mark32.exe andmark64.exe) and rel_32.exe (see README.txt)"
 rmarkdown,,pandoc,TRUE,pandoc - http://pandoc.org
@@ -936,7 +938,7 @@ ROI.plugin.symphony,coin-or-symphony,,TRUE,
 rolog,,,FALSE,swi-prolog
 ropenblas,,,TRUE,GCC Compiler Suite (C and Fortran)
 ROpenCVLite,,cmake,FALSE,cmake
-ROracle,,,TRUE,Oracle Instant Client or Oracle Database Client
+ROracle,,,FALSE,curl Oracle Instant Client or Oracle DatabaseClient
 Rpadrino,,,FALSE,libcurl: libcurl-devel (rpm) orlibcurl4-openssl-dev (deb).
 rpanel,xvfb bwidget,bwidget,TRUE,
 Rpoppler,poppler,,TRUE,"Poppler Glib interface headers and libraries(<http://poppler.freedesktop.org/>) [Debian/Ubuntu:libpoppler-glib-dev, Fedora: poppler-glib-devel]"
