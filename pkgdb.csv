@@ -51,7 +51,7 @@ BaHZING,,,FALSE,JAGSx.y (http://mcmc-jags.sourceforge.net)
 baker,,,TRUE,
 bamdit,,,TRUE,JAGS (seehttp://mcmc-jags.sourceforge.net)
 bamm,,,FALSE,"GDAL: gdal-bin (deb), libgdal-dev (deb)or gdal-devel (rmp), GEOS, PROJ:libproj-dev (deb), sqlite3, ImageMagick++: imagemagick (deb),libmagic-dev (deb), libmagick++-dev (deb) orImageMagick-c++-devel (rpm) ImageMagick(http://imagemagick.org) or GraphicsMagick(http://www.graphicsmagick.org) or LyX (http://www.lyx.org) forsaveGIF(); (PDF)LaTeX for saveLatex(); SWF Tools(http://swftools.org) for saveSWF(); FFmpeg (http://ffmpeg.org)or avconv (https://libav.org/avconv.html) for saveVideo()"
-BANOVA,,,TRUE,"JAGS-4.3.0,"
+BANOVA,,,TRUE,
 bartMachine,,,TRUE,Java
 bartMachineJARs,,,TRUE,Java
 BayesCACE,,,TRUE,JAGSx.y (http://mcmc-jags.sourceforge.net)
@@ -311,6 +311,7 @@ Fluidigm,,,FALSE,"perl, plink"
 fluidsynth,,,FALSE,fluidsynth: fluidsynth-devel (rpm) orlibfluidsynth-dev (deb). On Linux you also need a soundfontprovided by 'fluid-soundfont-gm' (Fedora) or 'sf3-soundfont-gm'(Debian/Ubuntu)
 FMAT,,,FALSE,Python
 fmf,,,TRUE,"libarmadillo: apt-get install -y libarmadillo-dev(deb), libblas: apt-get install -y libblas-dev (deb),liblapack: apt-get install -y liblapack-dev (deb),libarpack++2: apt-get install -y libarpack++2-dev (deb),: apt-get install -y  (deb)"
+fmriAR,,,FALSE,OpenMP (optional)
 foieGras,,pandoc,TRUE,
 footBayes,,pandoc,FALSE,"CmdStan(https://mc-stan.org/users/interfaces/cmdstan), pandoc, pandoc-citeproc"
 forensim,,,FALSE,Tcl/Tk package TkTable
@@ -1070,7 +1071,7 @@ sparklyr,,java-bin,FALSE,"Spark:x, orx, orx"
 sparklyr.flint,,,TRUE,Spark:x or above
 sparklyr.nested,,,TRUE,Spark:x orx
 sparktf,,,TRUE,TensorFlow (https://www.tensorflow.org/)
-SPARSEMODr,gsl,,TRUE,GNU GSL
+SPARSEMODr,gsl,,TRUE,
 sparsesurv,,,FALSE,JAGSx)
 spate,fftw,,TRUE,fftw3
 SpatialDDLS,,,FALSE,"Python, TensorFlow(https://www.tensorflow.org/)"
