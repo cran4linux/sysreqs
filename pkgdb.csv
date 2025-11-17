@@ -209,6 +209,7 @@ dccvalidator,,,TRUE,
 dclone,,,TRUE,"none, one or more of JAGS, WinBUGS, OpenBUGS, Stan"
 dcmle,,,TRUE,JAGS
 Deducer,,,TRUE,"Java, JRI"
+deepspat,,,FALSE,"TensorFlow (https://www.tensorflow.org/),"
 deforestable,,,FALSE,"GDAL, GEOS, PROJ,sqlite3"
 Delaporte,,,FALSE,A version of Fortran supporting the LOG_GAMMAIntrinsic and the ieee_arithmetic module.
 delaunay,gmp mpfr,,TRUE,
@@ -881,7 +882,7 @@ rgdal,gdal proj sqlite,,TRUE,
 rgeedim,,,TRUE,Python
 rgeos,geos,,TRUE,
 RGF,,scikit-learn numpy scipy,TRUE,"Python, rgf_python, scikit-learn, scipy, numpy. Detailed installation instructions foreach operating system can be found in the README file."
-rgl,libgl libglu libpng freetype,,FALSE,"OpenGL and GLU Library (Required for display in R.See ""Installing OpenGL support"" in README.md. Not needed ifonly browser displays using rglwidget() are wanted.), zlib(optional), libpng, optional), FreeType (optional),pandoc, needed for vignettes)"
+rgl,libgl libglu libpng freetype,,FALSE,"OpenGL and GLU Library (Required for display in R.See ""Installing OpenGL support"" in README.md. Not needed ifonly browser displays using rglwidget() are wanted.), zlib(optional), libpng, optional), FreeType (optional),pandoc, needed for vignettes), LaTeX needed foroptional latex3d() examples."
 Rglpk,glpk,,TRUE,"GLPK library package (e.g., libglpk-dev onDebian/Ubuntu)"
 rgnparser,,,TRUE,gnparser (<https://github.com/gnames/gnparser>)
 rgrass,,grass,TRUE,GRASS
