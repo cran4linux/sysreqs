@@ -5,7 +5,7 @@ acro,,,FALSE,Python
 adbcpostgresql,,,FALSE,libpq
 adbcsqlite,,,FALSE,SQLite3
 adimpro,,imagemagick-bin dcraw,TRUE,"Image Magick (for reading non PPM format), dcraw(for reading RAW images)."
-admixr,,,TRUE,ADMIXTOOLS suite of command-line utilities forpopulation genetics. See<https://reich.hms.harvard.edu/software> for the most recentinstallation instructions and further information.
+admixr,,,FALSE,ADMIXTOOLS suite of command-line utilities forpopulation genetics. See<https://github.com/dreichlab/admixtools> for the most recentinstallation instructions and further information.
 AFR,,,TRUE,C++
 AgePopDenom,,,FALSE,TMB
 aifeducation,,,FALSE,"PyTorch (see vignette ""Get started"")"
@@ -282,6 +282,7 @@ extRatum,,,TRUE,"GDAL, GEOS, PROJ"
 ezknitr,,,TRUE,pandoc with https support
 factset.protobuf.stach.v2,,,TRUE,"ProtoBuf libraries and compiler versionorlater; On Debian/Ubuntu these can be installed aslibprotoc-dev, libprotobuf-dev and protobuf-compiler, while onFedora/CentOS protobuf-devel and protobuf-compiler are needed."
 factset.protobuf.stachextensions,protobuf,,TRUE,
+fairGATE,,,FALSE,Optional 'LibTorch' backend; install viatorch::install_torch().
 fairGNN,,,FALSE,Optional 'LibTorch' backend; install viatorch::install_torch().
 fangs,cargo,,FALSE,"Cargo (Rust's package manager), rustc"
 fasterRaster,,,FALSE,GRASS
@@ -341,6 +342,7 @@ gdalraster,,,FALSE,"GDAL, built against GEOS)"
 gdata,,perl,TRUE,
 gdtools,cairo freetype,,TRUE,"cairo, freetype2, fontconfig"
 GeneralizedUmatrix,,,FALSE,"pandoc, needed for vignettes)"
+GeneralizedUmatrixGPU,,,FALSE,"pandoc, needed for vignettes),OpenCL shared library (provided by an SDK such as AMD/NVIDIA)"
 GeneralizedWendland,gsl,,TRUE,gsl
 genie,,,TRUE,"OpenMP,"
 genieclust,,,FALSE,"OpenMP,"
@@ -938,6 +940,7 @@ roger,,,TRUE,roger-base (for interface functions only)
 Rogue,,,TRUE,C99
 ROI.plugin.symphony,coin-or-symphony,,TRUE,
 rolog,,,FALSE,swi-prolog
+Romeb,,,FALSE,JAGS
 ropenblas,,,TRUE,GCC Compiler Suite (C and Fortran)
 ROpenCVLite,,cmake,FALSE,cmake
 ROracle,,,FALSE,curl Oracle Instant Client or Oracle DatabaseClient
