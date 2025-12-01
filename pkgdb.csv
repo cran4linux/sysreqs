@@ -40,6 +40,7 @@ asremlPlus,,,FALSE,asreml
 astgrepr,,,FALSE,"Cargo (Rust's package manager), rustc"
 autoharp,,,TRUE,pandoc - http://pandoc.org
 autonewsmd,,,FALSE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
+autotab,,,FALSE,Python; TensorFlow; Keras;TensorFlow Addons
 av,ffmpeg,,FALSE,"FFmpeg; with at least libx264 and lame(mp3) drivers. MacOS Homebrew: ffmpeg. Debian/Ubuntu:libavfilter-dev. Fedora/RHEL: either ffmpeg-devel fromhttps://rpmfusion.org (preferred), or libavfilter-free-develwhich is a more limited version available on Fedora/EPEL9."
 awdb,,,FALSE,"Cargo (Rust's package manager), rustc"
 AWR,,,TRUE,AWS Java SDK (see README.md for more details)
@@ -312,7 +313,7 @@ flint,,,FALSE,"flint, mpfr, gmp"
 Fluidigm,,,FALSE,"perl, plink"
 fluidsynth,,,FALSE,fluidsynth: fluidsynth-devel (rpm) orlibfluidsynth-dev (deb). On Linux you also need a soundfontprovided by 'fluid-soundfont-gm' (Fedora) or 'sf3-soundfont-gm'(Debian/Ubuntu)
 FMAT,,,FALSE,Python
-fmf,,,TRUE,"libarmadillo: apt-get install -y libarmadillo-dev(deb), libblas: apt-get install -y libblas-dev (deb),liblapack: apt-get install -y liblapack-dev (deb),libarpack++2: apt-get install -y libarpack++2-dev (deb),: apt-get install -y  (deb)"
+fmf,,,TRUE,
 fmriAR,,,FALSE,OpenMP (optional)
 foieGras,,pandoc,TRUE,
 footBayes,,pandoc,FALSE,"CmdStan(https://mc-stan.org/users/interfaces/cmdstan), pandoc, pandoc-citeproc"
@@ -384,7 +385,7 @@ govdown,,,TRUE,pandoc - http://pandoc.org
 goxygen,,,FALSE,"pandoc, pandoc-citeproc"
 GPBayes,gsl,,TRUE,GNU Scientific Library version
 gpg,gpgme,haveged-bin,TRUE,
-gpuR,,,FALSE,"(supporting at least std=c++0x), OpenCLshared library (provided by an SDK such as AMD/NVIDIA) andOpenCL headers including the C++ header file (provided byKhronos if not by SDK)"
+gpuR,,,TRUE,
 GRANBase,,subversion git,TRUE,
 GreedyExperimentalDesign,,,TRUE,Java
 GreedyExperimentalDesignJARs,,,TRUE,Java
@@ -946,6 +947,7 @@ ROpenCVLite,,cmake,FALSE,cmake
 ROracle,,,FALSE,curl Oracle Instant Client or Oracle DatabaseClient
 Rpadrino,,,FALSE,libcurl: libcurl-devel (rpm) orlibcurl4-openssl-dev (deb).
 rpanel,xvfb bwidget,bwidget,TRUE,
+RPesto,,,FALSE,"Cargo (Rust's package manager), rustc"
 Rpoppler,poppler,,TRUE,"Poppler Glib interface headers and libraries(<http://poppler.freedesktop.org/>) [Debian/Ubuntu:libpoppler-glib-dev, Fedora: poppler-glib-devel]"
 rpostgis,,,TRUE,'PostgreSQL' with 'PostGIS' extension
 RPostgres,postgresql,,TRUE,libpq: libpq-dev (deb) or postgresql-devel(rpm)
@@ -1250,7 +1252,7 @@ xlsxjars,,,FALSE,java
 XML,libxml2,,TRUE,libxml2
 xml2,libxml2,,TRUE,"libxml2: libxml2-dev (deb), libxml2-devel (rpm)"
 xmpdf,,,FALSE,'ghostscript' or 'pdftk' for editing pdf bookmarksand/or documentation info entries. 'exiftool' for editing pdfdocumentation info entries and/or xmp metadata.
-XRJulia,,julia,TRUE,"Julia, vor later"
+XRJulia,,julia,TRUE,
 xslt,libxslt,,TRUE,"libxslt: libxslt1-dev (deb), libxslt-devel (rpm)"
 yamlme,,,TRUE,pandoc - http://pandoc.org
 ymd,cargo,,FALSE,"Cargo (Rust's package manager), rustc, xz"
