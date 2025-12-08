@@ -82,6 +82,7 @@ BiBitR,,java-bin,TRUE,Java
 biblio,,pandoc,TRUE,pandoc - http://pandoc.org
 BIDistances,,,FALSE,"pandoc, needed for vignettes)"
 bigGP,openmpi,openmpi-bin,TRUE,OpenMPI or MPICH2
+bigPLSR,,,FALSE,Optional CBLAS (detected at compile time)
 bigrquerystorage,,,FALSE,grpc/protobuf headers and compilers. For examplelibprotobuf-dev libgrpc++-dev protobuf-compiler-grpc (Debian)or protobuf-devel grpc-devel grpc-plugins (Fedora/RHEL)
 bigsimr,,,TRUE,"Julia, Bigsimr.jl, Distributions.jl"
 bigsnpr,,,TRUE,A few functions from package 'bigsnpr' wrapexisting software such as 'PLINK'<www.cog-genomics.org/plink2>. Functions are provided todownload these software. Note that these external softwaremight not work for some operating systems (e.g. 'PLINK' mightnot work on Solaris).
@@ -126,6 +127,7 @@ caracas,,,TRUE,Python
 caRpools,,,TRUE,
 cartogramR,fftw,,TRUE,"FFTW; possible package: fftw-devel (rpm),libfftw3-dev (deb) or fftw (brew)."
 cartography,gdal geos proj sqlite,,TRUE,
+caugi,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
 causact,,,FALSE,Python and numpyro are needed for Bayesianinference computations; python with header files andshared library; numpyrov0.12.1;https://https://num.pyro.ai/en/latest/index.html); arvizv0.15.1; https://https://python.arviz.org/en/stable/)
 caviarpd,cargo,,FALSE,"Cargo (Rust's package manager), rustc"
 CBSr,,,TRUE,Java
@@ -294,7 +296,7 @@ fastText,,,TRUE,"Generally, fastText builds on modern Mac OS andLinux distributi
 fcl,,,FALSE,"Cargo (Rust's package manager), rustc"
 FCPS,,pandoc,TRUE,Pandoc
 feamiR,,,TRUE,
-feather,,,TRUE,little-endian platform
+feather,,,TRUE,
 febr,,pandoc,TRUE,
 fect,,,TRUE,
 FedData,,,TRUE,GDAL
@@ -345,7 +347,7 @@ gdtools,cairo freetype,,TRUE,"cairo, freetype2, fontconfig"
 GeneralizedUmatrix,,,FALSE,"pandoc, needed for vignettes)"
 GeneralizedUmatrixGPU,,,FALSE,"pandoc, needed for vignettes),OpenCL shared library (provided by an SDK such as AMD/NVIDIA)"
 GeneralizedWendland,gsl,,TRUE,gsl
-genie,,,TRUE,"OpenMP,"
+genie,,,TRUE,
 genieclust,,,FALSE,"OpenMP,"
 genlogis,,,FALSE,RStudio -https://posit.co/products/open-source/rstudio/
 geno2proteo,,perl,TRUE,Perl
@@ -469,7 +471,7 @@ ip2proxy,,,TRUE,IP2Proxy Python library<https://www.ip2location.com/development-
 ip2whois,,,FALSE,IP2WHOIS Python library<https://github.com/ip2whois/ip2whois-python>
 iplots,xvfb,,TRUE,
 IRkernel,,,TRUE,"jupyter, jupyter_kernel_test (Python package fortesting)"
-ISEtools,,,TRUE,OpenBUGS or JAGS
+ISEtools,,,TRUE,
 jack,,,FALSE,"gmp, mpfr"
 jagstargets,,,TRUE,JAGSx.y (https://mcmc-jags.sourceforge.net)
 jagsUI,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net)
@@ -566,7 +568,7 @@ memoiR,,,TRUE,pandoc
 MeshesOperations,gmp mpfr,,TRUE,
 MeshesTools,gmp mpfr,,TRUE,
 metagear,,,TRUE,Tcl/Tk toolkit (X11 Quarts for Mac)
-metajam,,,FALSE,"Mac OSX: redland ; Linux: librdf0, librdf0-dev"
+metajam,,,TRUE,
 metaMix,,,TRUE,
 metapost,,mpost,TRUE,mpost
 MetaSKAT,,,TRUE,Little Endian
@@ -581,6 +583,7 @@ minimaxALT,,,FALSE,"GNU Scientific Library (GSL), OpenMP"
 minired,,,FALSE,"'Redatam' runtime engine (see https://redatam.org),The dynamic binary library is downloaded from<https://redatam-core.s3.us-west-2.amazonaws.com> during thebuild step. Currently supported platforms are Windows and Linux(both for x86-64 processors only)"
 MinkowskiSum,gmp mpfr,,TRUE,
 mixcat,gsl,,TRUE,
+mixgb,,,FALSE,macOS: Accelerate framework
 MixSIAR,,,TRUE,JAGS
 mixture,,,TRUE,GNU GSL
 ML2Pvae,,,TRUE,"TensorFlow (https://www.tensorflow.org), Keras(https://keras.io), TensorFlow Probability(https://www.tensorflow.org/probability)"
@@ -641,6 +644,7 @@ oceanmap,,imagemagick-bin,FALSE,ImageMagick
 ODB,,,TRUE,
 odbc,odbc,,FALSE,An ODBC3 driver manager and drivers.
 oddsapiR,,pandoc,TRUE,"pandoc, pandoc-citeproc"
+odiffr,,,FALSE,odiff -https://github.com/dmtrKovalenko/odiff
 officedown,,,TRUE,pandoc - http://pandoc.org
 OncoBayes2,,pandoc,FALSE,"pandoc, pngquant,"
 OpenCL,pocl,,FALSE,"OpenCL library,"
@@ -661,6 +665,7 @@ orderanalyzer,,,FALSE,"Tesseract, libtesseract-dev (deb),tesseract-devel (rpm), 
 orderly,,git,TRUE,
 ordinalbayes,,,TRUE,JAGS
 osmose,,java-bin,TRUE,
+osrm.backend,,,FALSE,OSRM backend binariesv5.27.0)<https://github.com/Project-OSRM/osrm-backend>; packagedownloads binaries automatically if not found
 osrmr,,,TRUE,"To use the Localhost of OSRM, you need to buildOSRM<https://github.com/Project-OSRM/osrm-backend/wiki/Building-OSRM>locally"
 otelsdk,,,FALSE,"cmake, protobuf-compiler, libprotobuf, libcurl,zlib,"
 otsad,,,TRUE,
