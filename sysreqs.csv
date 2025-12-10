@@ -1,5 +1,6 @@
 name,type,build,run,fedora_rhel,debian_ubuntu
 4ti2,math,FALSE,TRUE,4ti2,4ti2
+abseil,,TRUE,FALSE,abseil-cpp-devel,libabsl-dev
 aria2,net,FALSE,TRUE,aria2,aria2
 arrow,hpc,TRUE,FALSE,libarrow-dataset-devel,
 asciidoc,doc,FALSE,TRUE,asciidoc,asciidoc
