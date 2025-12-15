@@ -48,6 +48,7 @@ babelwhale,,docker singularity,TRUE,Docker and/or Singularity
 babette,,,TRUE,BEAST2 (https://www.beast2.org/)
 bacistool,,,TRUE,JAGS
 BaHZING,,,FALSE,JAGSx.y (http://mcmc-jags.sourceforge.net)
+baker,,,FALSE,JAGS (http://mcmc-jags.sourceforge.net)
 bamdit,,,TRUE,JAGS (seehttp://mcmc-jags.sourceforge.net)
 bamm,,,FALSE,"GDAL: gdal-bin (deb), libgdal-dev (deb)or gdal-devel (rmp), GEOS, PROJ:libproj-dev (deb), sqlite3, ImageMagick++: imagemagick (deb),libmagic-dev (deb), libmagick++-dev (deb) orImageMagick-c++-devel (rpm) ImageMagick(http://imagemagick.org) or GraphicsMagick(http://www.graphicsmagick.org) or LyX (http://www.lyx.org) forsaveGIF(); (PDF)LaTeX for saveLatex(); SWF Tools(http://swftools.org) for saveSWF(); FFmpeg (http://ffmpeg.org)or avconv (https://libav.org/avconv.html) for saveVideo()"
 bartMachine,,,TRUE,Java
@@ -59,6 +60,7 @@ bayesplot,,pandoc,TRUE,"pandoc, pandoc-citeproc"
 BayesPostEst,,,TRUE,JAGS (http://mcmc-jags.sourceforge.io)
 bayesQRsurvey,,,FALSE,"BLAS, LAPACK"
 BayesTools,,,TRUE,JAGS(https://mcmc-jags.sourceforge.io/)
+bayestransmission,,,FALSE,"BLAS, LAPACK"
 BayesVarSel,gsl,,TRUE,GNU Scientific Library
 BayLum,,,FALSE,JAGS(https://mcmc-jags.sourceforge.io/)
 bbl,gsl,,TRUE,
@@ -428,7 +430,7 @@ juicr,,,TRUE,Tcl/Tk toolkit (X11 Quarts for Mac)
 JuliaCall,,julia,TRUE,"Julia, RCall.jl"
 JuliaConnectoR,,julia,TRUE,Julia
 kantorovich,,,TRUE,GMP (https://gmplib.org/)
-kerastuneR,,,TRUE,TensorFlow(https://www.tensorflow.org/)
+kerastuneR,,,TRUE,
 KernelKnn,,,TRUE,"libarmadillo: apt-get install -y libarmadillo-dev(deb), libblas: apt-get install -y libblas-dev (deb),liblapack: apt-get install -y liblapack-dev (deb),libarpack++2: apt-get install -y libarpack++2-dev (deb),: apt-get install -y  (deb)"
 keyring,libsecret,,TRUE,"Optional: libsecret on Linux (libsecret-1-dev onDebian/Ubuntu, libsecret-devel on Fedora/CentOS)"
 klaR,,,TRUE,SVMlight
@@ -619,7 +621,7 @@ piecepackr,,ghostscript,TRUE,
 pivmet,,pandoc,TRUE,"pandoc, pandoc-citeproc"
 pkgdown,,,TRUE,pandoc
 pkgnews,,pandoc,TRUE,pandoc
-pkgstats,,,,"ctags, global"
+pkgstats,,,FALSE,"ctags, global"
 PKI,openssl,,TRUE,OpenSSL library and headers (openssl-dev orsimilar)
 PlanetNICFI,,aria2,TRUE,"aria2: apt-get install -y aria2 (deb), gdal-bin:apt-get install -y gdal-bin (deb), libgdal-dev: apt-get install-y libgdal-dev (deb)"
 Plasmidprofiler,,pandoc,TRUE,Pandoc
@@ -1071,6 +1073,7 @@ V8,v8,,FALSE,"On Linux you can build against libv8-dev (Debian)or v8-devel (Fedo
 valection,,,TRUE,valection
 vapour,gdal proj sqlite,,FALSE,"libgdal-dev, GDAL, PROJ"
 varitas,,perl bwa,TRUE,"perl, bedtools, bwa"
+varPro,,,FALSE,OpenMP
 vaultr,,,TRUE,vault
 VBLPCM,gsl,,TRUE,Gnu Scientific Library
 vcfppR,,,FALSE,"libcurl: libcurl-devel (rpm) orlibcurl4-openssl-dev (deb), ."
@@ -1110,6 +1113,7 @@ XML,libxml2,,TRUE,libxml2
 xml2,libxml2,,TRUE,"libxml2: libxml2-dev (deb), libxml2-devel (rpm)"
 xmpdf,,,FALSE,'ghostscript' or 'pdftk' for editing pdf bookmarksand/or documentation info entries. 'exiftool' for editing pdfdocumentation info entries and/or xmp metadata.
 xslt,libxslt,,TRUE,"libxslt: libxslt1-dev (deb), libxslt-devel (rpm)"
+yaml12,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
 yamlme,,,TRUE,pandoc - http://pandoc.org
 ymd,cargo,,FALSE,"Cargo (Rust's package manager), rustc, xz"
 zoomerjoin,,,FALSE,"Cargo (Rust's package manager), rustc"
