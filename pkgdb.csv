@@ -28,7 +28,7 @@ archive,libarchive,,FALSE,"libarchive: libarchive-dev (deb), libarchive-devel(rp
 arcpbf,,,FALSE,"Cargo (Rust's package manager), rustc"
 arcpy,,,FALSE,"Conda, ArcGIS Pro"
 argparse,,python3,TRUE,python
-ari,,ffmpeg-bin,TRUE,ffmpeg
+ari,,ffmpeg-bin,TRUE,
 arrangements,gmp,,TRUE,gmp
 arrow,arrow,,FALSE,"for AWS S3 support on Linux, libcurl andopenssl (optional); cmake(build-time only, and onlyfor full source build)"
 artma,,,FALSE,JAGS(https://mcmc-jags.sourceforge.io/)
@@ -73,7 +73,7 @@ bedr,,,TRUE,"Preferred genomic operations engine: 'BEDTools','BEDOPS' and 'Tabix
 BeQut,,,FALSE,JAGSx.y
 bfw,,java-bin,TRUE,"JAGS<https://mcmc-jags.sourceforge.io>,Java JDK<https://www.java.com/en/download/manual.jsp>"
 bhmbasket,,,TRUE,JAGSx.y (http://mcmc-jags.sourceforge.net)
-BiBitR,,java-bin,TRUE,Java
+BiBitR,,java-bin,TRUE,
 biblio,,pandoc,TRUE,pandoc - http://pandoc.org
 BIDistances,,,FALSE,"pandoc, needed for vignettes)"
 bigGP,openmpi,openmpi-bin,TRUE,OpenMPI or MPICH2
@@ -134,7 +134,7 @@ cloudml,,,FALSE,Python
 clustermq,zeromq,,FALSE,ZeroMQ (libzmq)(optional; otherwisebundled)
 ClusterR,,,TRUE,
 CLVTools,,,FALSE,GNU GSL
-cmaRs,,,TRUE,MOSEK (http://www.mosek.com) and MOSEK License foruse of Rmosek
+cmaRs,,,TRUE,
 cncaGUI,xvfb,bwidget,TRUE,Tcl/Tk package BWidget.
 codacore,,,TRUE,TensorFlow (https://www.tensorflow.org/)
 coga,gsl,,TRUE,GNU GSL
@@ -165,6 +165,7 @@ crc32c,,,FALSE,cmake
 credentials,,git,TRUE,git (optional)
 cronR,,cronie,TRUE,cron
 Crossover,,,TRUE,Java
+CSDownscale,,,FALSE,cdo
 cTMed,,,FALSE,GNU GSL
 ctrdata,,,TRUE,
 ctsmTMB,,,TRUE,
@@ -247,7 +248,7 @@ excursions,gsl,,TRUE,Gnu Scientific Library version
 exifr,exiftool,exiftool,TRUE,Perl
 exiftoolr,exiftool,exiftool,TRUE,Perl
 extraDistr,,,FALSE,C++
-extRatum,,,TRUE,"GDAL, GEOS, PROJ"
+extRatum,,,TRUE,
 ezknitr,,,TRUE,pandoc with https support
 factset.protobuf.stach.v2,,,TRUE,"ProtoBuf libraries and compiler versionorlater; On Debian/Ubuntu these can be installed aslibprotoc-dev, libprotobuf-dev and protobuf-compiler, while onFedora/CentOS protobuf-devel and protobuf-compiler are needed."
 fairGATE,,,FALSE,Optional 'LibTorch' backend; install viatorch::install_torch().
@@ -443,7 +444,7 @@ languageserversetup,,procps,TRUE,"procps (linux), ps (macos), wmic (windows)"
 latdiag,,graphviz,TRUE,dot from graphviz
 latexdiffr,,latexdiff,TRUE,latexdiff
 latte,,latte 4ti2,TRUE,"LattE <https://www.math.ucdavis.edu/~latte/>,ti2<http://www.4ti2.de/>"
-lazyarray,,,TRUE,little-endian platform
+lazyarray,,,TRUE,
 LCMCR,gsl,,TRUE,Gnu Scientific Library version
 lcra,,,TRUE,JAGSx.y or WinBUGS
 LDATS,,,FALSE,gsl
@@ -507,6 +508,7 @@ MFSIS,,,TRUE,Python
 microbenchmark,,,TRUE,"On a Unix-alike, one of the C functionsmach_absolute_time (macOS), clock_gettime or gethrtime. If noneof these is found, the obsolescent POSIX function gettimeofdaywill be tried."
 MigConnectivity,,,FALSE,JAGS (https://mcmc-jags.sourceforge.net)
 MIMSunit,,,TRUE,"memoryGB) Ubuntu: build-essential,libxml2-dev, libssl-dev, libcurl4-openssl-dev Windows: Rtools(>="
+mindr,,,FALSE,pandoc - http://pandoc.org
 minidown,,,TRUE,pandoc - http://pandoc.org
 minimaxALT,,,FALSE,"GNU Scientific Library (GSL), OpenMP"
 minired,,,FALSE,"'Redatam' runtime engine (see https://redatam.org),The dynamic binary library is downloaded from<https://redatam-core.s3.us-west-2.amazonaws.com> during thebuild step. Currently supported platforms are Windows and Linux(both for x86-64 processors only)"
@@ -777,7 +779,7 @@ reservoirnet,,,FALSE,Python
 restoptr,,,TRUE,Java
 ReSurv,,,FALSE,Python
 reticulate,,python3,TRUE,Python
-revert,,,FALSE,"R, SAMtools"
+revert,,,TRUE,
 revise,,,FALSE,pandoc - http://pandoc.org
 rextendr,,cargo,FALSE,Rust 'cargo'; the crate 'libR-sys' must compilewithout error
 rfacts,,,TRUE,"FACTS Linux engines, FLFLL,Mono"
@@ -833,7 +835,7 @@ rodeo,,,FALSE,The tools to run 'R CMD SHLIB' on 'Fortran' code.The used 'Fortran
 roger,,,TRUE,roger-base (for interface functions only)
 Rogue,,,TRUE,C99
 ROI.plugin.symphony,coin-or-symphony,,TRUE,
-rolog,,,FALSE,swi-prolog
+rolog,,,TRUE,
 Romeb,,,FALSE,JAGS
 ropenblas,,,TRUE,GCC Compiler Suite (C and Fortran)
 ROpenCVLite,,cmake,FALSE,cmake
@@ -869,7 +871,7 @@ rstanarm,,pandoc,TRUE,"pandoc, pandoc-citeproc"
 rstantools,,pandoc,TRUE,"pandoc,"
 rsubgroup,,,TRUE,Java
 rsvg,librsvg2,,FALSE,librsvg2 (at least version
-rswipl,,,FALSE,"CMake, pandoc, libarchive,libregex, libexpat, liblzma, libzstd, liblz4, libz2, libz,libbcrypt"
+rswipl,,,TRUE,
 Rsymphony,coin-or-symphony,,TRUE,SYMPHONY libraries and headers
 rsyncrosim,,,TRUE,SyncroSim
 rsyslog,,,TRUE,POSIX.1-2001
@@ -1089,6 +1091,7 @@ vmr,,vagrant,TRUE,Vagrant <https://www.vagrantup.com>
 vol2birdR,,,FALSE,"GSL, HDF5, PROJ"
 warbleR,,,FALSE,"fftw3,  sox, Ghostscript, libsndfile, GDAL"
 watcher,,,FALSE,"'libfswatch', or 'cmake' to compile from packagesources"
+waysign,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
 webdriver,,,TRUE,PhantomJS (http://phantomjs.org/)
 webp,libwebp,,TRUE,libwebp
 webshot,,imagemagick-bin,TRUE,"PhantomJS for taking screenshots, ImageMagick orGraphicsMagick and OptiPNG for manipulating images."
