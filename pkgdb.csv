@@ -421,7 +421,7 @@ JFE,xvfb,,TRUE,
 JGR,,,FALSE,Java
 jlmerclusterperm,,,FALSE,Julia
 JMbayes,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net)
-jmotif,,,FALSE,C++
+jmotif,,,TRUE,
 jmvconnect,,,FALSE,jamovi
 JointAI,,,TRUE,JAGS (https://mcmc-jags.sourceforge.io/)
 jpeg,libjpeg,,TRUE,libjpeg
@@ -466,7 +466,7 @@ lnmixsurv,,,FALSE,"C++, GNU,  GSL"
 localLLM,,,FALSE,"libcurl (optional, for model downloading)"
 localsolver,,,TRUE,At least trial version of LocalSolver to bedownloaded from http://www.localsolver.com/download.html
 locfit,,,TRUE,USE_C17
-LOMAR,gmp fftw,,FALSE,"C++, gmp, fftw3"
+LOMAR,gmp fftw,,FALSE,"gmp, fftw3"
 loo,,pandoc,TRUE,"pandoc, pandoc-citeproc"
 loon,xvfb,,TRUE,
 loon.ggplot,xvfb,,TRUE,
@@ -482,10 +482,11 @@ maGUI,,,TRUE,Tktable
 mailR,,,TRUE,Java
 mallet,,,TRUE,java
 manipulate,,,TRUE,RStudio - http://www.rstudio.com/products/rstudio/
+manureshed,,,FALSE,"GDAL, GEOS, PROJ"
 MaOEA,,,TRUE,"Pythonx with following modules: PyGMO, NumPy,and cloudpickle"
 mapme.biodiversity,,,TRUE,"GDAL, PROJ"
 marked,,,TRUE,ADMB version<http://admb-project.org/> foruse.admb=TRUE; see readme.txt
-matchingMarkets,,,FALSE,"Java, C++"
+matchingMarkets,,,FALSE,Java
 matlabr,,,TRUE,MATLAB
 mauricer,,,TRUE,BEAST2 (https://www.beast2.org/)
 MaxentVariableSelection,,java-bin,TRUE,maxent.jar file
@@ -613,7 +614,7 @@ pdfminer,,pandas,TRUE,"Python>=3.6, pdfminer.six>=20200402, pandas"
 pdftools,poppler,,TRUE,"Poppler C++ API: libpoppler-cpp-dev (deb) orpoppler-cpp-devel (rpm), and poppler-data (rpm/deb) package."
 pedometrics,,pandoc,TRUE,pandoc
 pedprobr,,,TRUE,MERLIN (https://csg.sph.umich.edu/abecasis/merlin/)for calculations involving multiple linked markers.
-PenCoxFrail,,,FALSE,C++
+PenCoxFrail,,,TRUE,
 PEPBVS,,,FALSE,GNU GSL
 pexm,jags,,TRUE,
 pharmr,,,TRUE,Python
@@ -914,7 +915,7 @@ sequoia,,,FALSE,Fortran95
 sf,gdal geos proj sqlite,,FALSE,"GDAL, GEOS, PROJ,sqlite3"
 SGP,,tex-pdfpages,TRUE,(PDF)LaTeX (https://www.latex-project.org/) with'pdfpages' package for studentGrowthPlot option in visualizeSGPto bind together student growth plots into school catalogs
 sharx,,,TRUE,jags
-shiny.benchmark,,,FALSE,"yarnor higher, Nodeor higher"
+shiny.benchmark,,,TRUE,
 shinyalert,,pandoc,TRUE,
 shinyInvoice,,,FALSE,pandoc
 shinyjs,,pandoc,TRUE,
