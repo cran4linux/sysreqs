@@ -247,7 +247,7 @@ excerptr,,,FALSE,Python
 excursions,gsl,,TRUE,Gnu Scientific Library version
 exifr,exiftool,exiftool,TRUE,Perl
 exiftoolr,exiftool,exiftool,TRUE,Perl
-extraDistr,,,FALSE,C++
+extraDistr,,,TRUE,
 extRatum,,,TRUE,
 ezknitr,,,TRUE,pandoc with https support
 factset.protobuf.stach.v2,,,TRUE,"ProtoBuf libraries and compiler versionorlater; On Debian/Ubuntu these can be installed aslibprotoc-dev, libprotobuf-dev and protobuf-compiler, while onFedora/CentOS protobuf-devel and protobuf-compiler are needed."
@@ -372,7 +372,7 @@ hdtg,,,FALSE,CPU with AVX/SSE4.2 (optional for betterperformance)
 heck,,,FALSE,"Cargo (Rust's package manager), rustc"
 helloJavaWorld,,,TRUE,Java
 hellorust,cargo,,FALSE,"Cargo (Rust's package manager), rustc"
-heuristicsmineR,,,FALSE,C++
+heuristicsmineR,,,TRUE,
 hgwrr,gsl,,TRUE,
 HiClimR,netcdf,,TRUE,NetCDF
 hicream,,,FALSE,Python
