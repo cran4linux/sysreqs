@@ -134,7 +134,7 @@ cloudml,,,FALSE,Python
 clustermq,zeromq,,FALSE,ZeroMQ (libzmq)(optional; otherwisebundled)
 ClusterR,,,TRUE,
 CLVTools,,,FALSE,GNU GSL
-cmaRs,,,TRUE,
+cmaRs,,,FALSE,MOSEK (http://www.mosek.com) and MOSEK License foruse of Rmosek
 cncaGUI,xvfb,bwidget,TRUE,Tcl/Tk package BWidget.
 codacore,,,TRUE,TensorFlow (https://www.tensorflow.org/)
 coga,gsl,,TRUE,GNU GSL
@@ -232,11 +232,13 @@ elexr,,python3,TRUE,Pythonor and elex package
 elliptic,,pari,TRUE,pari/gp
 emayili,,,TRUE,The function render() requires Pandoc(http://pandoc.org). To use PGP/GnuPG encryption requires gpg.
 emodnet.wfs,,,FALSE,"GDAL, GEOS, PROJ"
+enderecobr,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
 entropart,,pandoc,TRUE,pandoc
 EpiSignalDetection,,,TRUE,pandoc
 eplusr,,,TRUE,EnergyPlus (optional) (<https://energyplus.net>);udunits2
 ergm,,,TRUE,
 eseis,,,TRUE,gipptools dataselect
+esviz,,,FALSE,"GDAL, GEOS, PROJ"
 evapoRe,,,FALSE,"PROJ, https://proj.org/download.html), GDAL(>=, https://gdal.org/download.html), NetCDF,https://www.unidata.ucar.edu/software/netcdf/)."
 EvidenceSynthesis,,,FALSE,Java
 EviewsR,,,TRUE,EViews
@@ -258,7 +260,7 @@ fasterRaster,,,FALSE,GRASS
 fastGLCM,,,TRUE,"apt-get-pip: apt-get install -y python3-pip (deb),python3-pip: python3 -m pip install -U pip (deb), numpy: pip3install -U numpy (deb), cv2: pip3 install -U opencv-python(deb), matplotlib: pip3 install -U matplotlib (deb), skimage:pip3 install -U scikit-image (deb), libarmadillo: apt-getinstall -y libarmadillo-dev (deb), libblas: apt-get install -ylibblas-dev (deb), liblapack: apt-get install -y liblapack-dev(deb), libarpack++2: apt-get install -y libarpack++2-dev (deb),: apt-get install -y  (deb)"
 FastHamming,,,FALSE,"C compiler (C99), OpenMP"
 FastKRR,,,FALSE,OpenMP (optional)
-fastText,,,TRUE,"Generally, fastText builds on modern Mac OS andLinux distributions. Since it uses some  features, itrequires a compiler with good  support. These include a(g++-4.7.2 or newer) or a (-3.3 or newer)."
+fastText,,,TRUE,
 fcl,,,FALSE,"Cargo (Rust's package manager), rustc"
 FCPS,,pandoc,TRUE,Pandoc
 feather,,,TRUE,
@@ -363,7 +365,7 @@ h2o,,java-bin,TRUE,"Java, <="
 h2o4gpu,,,TRUE,Python with header files and sharedlibrary; H2O4GPU (https://github.com/h2oai/h2o4gpu)
 h3jsr,,,TRUE,"V8 engine version+ is needed for modern JS andWASM support. On Debian / Ubuntu install either libv8-dev orlibnode-dev, on Fedora use v8-devel."
 h3o,,,FALSE,"Cargo (Rust's package manager), rustc"
-happign,,,TRUE,"GDAL, GEOS, PROJ, sqlite3"
+happign,,,TRUE,
 haven,,,FALSE,"zlib: zlib1g-dev (deb), zlib-devel (rpm)"
 hdbayes,,,FALSE,CmdStan(https://mc-stan.org/users/interfaces/cmdstan)
 hdf5r,hdf5,,TRUE,HDF5
@@ -372,6 +374,7 @@ hdtg,,,FALSE,CPU with AVX/SSE4.2 (optional for betterperformance)
 heck,,,FALSE,"Cargo (Rust's package manager), rustc"
 helloJavaWorld,,,TRUE,Java
 hellorust,cargo,,FALSE,"Cargo (Rust's package manager), rustc"
+heritable,,,FALSE,asreml
 heuristicsmineR,,,TRUE,
 hgwrr,gsl,,TRUE,
 HiClimR,netcdf,,TRUE,NetCDF
@@ -412,6 +415,7 @@ ip2proxy,,,TRUE,IP2Proxy Python library<https://www.ip2location.com/development-
 ip2whois,,,FALSE,IP2WHOIS Python library<https://github.com/ip2whois/ip2whois-python>
 iplots,xvfb,,TRUE,
 IRkernel,,,TRUE,"jupyter, jupyter_kernel_test (Python package fortesting)"
+ISEtools,,,FALSE,OpenBUGS or JAGS
 jack,,,FALSE,"gmp, mpfr"
 jagstargets,,,TRUE,JAGSx.y (https://mcmc-jags.sourceforge.net)
 jagsUI,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net)
@@ -439,7 +443,7 @@ klic,,,TRUE,MOSEK (http://www.mosek.com) and MOSEK license.
 knitr,,pandoc rst2pdf,TRUE,Package vignettes based on R Markdown v2 orreStructuredText require Pandoc (http://pandoc.org). Thefunction rst2pdf() requires rst2pdf(https://github.com/rst2pdf/rst2pdf).
 KSgeneral,fftw,,FALSE,fftw3
 kza,fftw,,TRUE,fftw
-landsepi,gsl,,FALSE,"C++, gsl"
+landsepi,gsl,,FALSE,gsl
 languageserversetup,,procps,TRUE,"procps (linux), ps (macos), wmic (windows)"
 latdiag,,graphviz,TRUE,dot from graphviz
 latexdiffr,,latexdiff,TRUE,latexdiff
@@ -462,6 +466,7 @@ lightsout,,pandoc,TRUE,pandoc with https support
 lincom,,,FALSE,"MOSEK, MOSEK License"
 lira,,,TRUE,JAGS (seehttp://mcmc-jags.sourceforge.net)
 littler,,,TRUE,libR
+LLMing,,,FALSE,"Python with packages: torch,transformers, pandas, numpy"
 lnmixsurv,,,FALSE,"C++, GNU,  GSL"
 localLLM,,,FALSE,"libcurl (optional, for model downloading)"
 localsolver,,,TRUE,At least trial version of LocalSolver to bedownloaded from http://www.localsolver.com/download.html
@@ -507,6 +512,7 @@ MethComp,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net)
 MFPCA,fftw,,TRUE,libfftw3
 MFSIS,,,TRUE,Python
 microbenchmark,,,TRUE,"On a Unix-alike, one of the C functionsmach_absolute_time (macOS), clock_gettime or gethrtime. If noneof these is found, the obsolescent POSIX function gettimeofdaywill be tried."
+MicrobiomeStat,,,FALSE,"NLopt library (optional, for high-performance BMDDmode)"
 MigConnectivity,,,FALSE,JAGS (https://mcmc-jags.sourceforge.net)
 MIMSunit,,,TRUE,"memoryGB) Ubuntu: build-essential,libxml2-dev, libssl-dev, libcurl4-openssl-dev Windows: Rtools(>="
 mindr,,,FALSE,pandoc - http://pandoc.org
@@ -738,7 +744,7 @@ RcmdrPlugin.UCA,xvfb,,TRUE,
 Rcplex,,,TRUE,IBM ILOG CPLEX libraries and headers
 RcppAlgos,gmp,,TRUE,gmp
 RcppBigIntAlgos,gmp,,TRUE,gmp
-RcppCCTZ,,,TRUE,"A-bit POSIX OS such as Linux or OS X with IANAtime zone data in /usr/share/zoneinfo as well as arecent-enough  compiler (such as g++-4.9 or later which ispreferred, g++-4.8 works too). On Windows the zoneinfo includedwith R is used; and time parsing support is enabled via abackport of std::get_time from the LLVM libc++ library."
+RcppCCTZ,,,FALSE,A-bit POSIX OS such as Linux or OS X with IANAtime zone data in /usr/share/zoneinfo. On Windows the zoneinfoincluded with R is used; and time parsing support is enabledvia a backport of std::get_time from the LLVM libc++ library.
 RcppCWB,bison flex glib2 ncurses,,FALSE,"pcre2, GLib. OnWindows, no prior installations are necessary, as pre-built(i.e. cross-compiled) binaries of required libraries aredownloaded from a GitHub repository(<https://github.com/PolMine/libcl>) during installation. OnmacOS, static libraries of Glib are downloaded(<https://github.com/PolMine/libglib>) if Glib is not present."
 RcppGetconf,,,FALSE,A POSIX system. Currently Linux and macOS are knownto work.
 RcppGSL,gsl,gsl,TRUE,GNU GSL
@@ -849,7 +855,7 @@ rpostgis,,,TRUE,'PostgreSQL' with 'PostGIS' extension
 RPostgres,postgresql,,TRUE,libpq: libpq-dev (deb) or postgresql-devel(rpm)
 RPostgreSQL,postgresql,,TRUE,
 rPref,,,TRUE,Windows: cmd.exe and cscript.exe
-RProtoBuf,protobuf,,TRUE,"ProtoBuf libraries and compiler versionorlater; On Debian/Ubuntu these can be installed aslibprotoc-dev, libprotobuf-dev and protobuf-compiler, while onFedora/CentOS protobuf-devel and protobuf-compiler are needed.A  compiler is required as well."
+RProtoBuf,protobuf,,FALSE,"ProtoBuf libraries and compiler versionorlater; On Debian/Ubuntu these can be installed aslibprotoc-dev, libprotobuf-dev and protobuf-compiler, while onFedora/CentOS protobuf-devel and protobuf-compiler are needed.A modern compiler is required as well."
 RPushbullet,,,TRUE,"A user API key (which one can request from thewebsite at <http://www.pushbullet.com>), and one or moredevices to push messages to which may be any one of an (Androidor iOS) phone, a (Chrome or Firefox, or Opera or Safari)browser or the (Windows or Mac) desktop application providedthe corresponding Pushbullet 'app' has been installed on anyone of these."
 RPyGeo,,,TRUE,"Python, ArcGIS"
 RQuantLib,quantlib boost,,TRUE,"QuantLib library fromhttps://quantlib.org, Boost library from https://www.boost.org"
@@ -869,10 +875,10 @@ Rssa,fftw,,TRUE,fftw
 RsSimulx,,,FALSE,'Simulx' (<http://simulx.lixoft.com/>)
 rstan,,pandoc,TRUE,pandoc
 rstanarm,,pandoc,TRUE,"pandoc, pandoc-citeproc"
-rstantools,,pandoc,TRUE,"pandoc,"
+rstantools,,pandoc,FALSE,pandoc
 rsubgroup,,,TRUE,Java
 rsvg,librsvg2,,FALSE,librsvg2 (at least version
-rswipl,,,TRUE,
+rswipl,,,FALSE,"CMake, pandoc, libarchive,libregex, libexpat, liblzma, libzstd, liblz4, libz2, libz,libbcrypt"
 Rsymphony,coin-or-symphony,,TRUE,SYMPHONY libraries and headers
 rsyncrosim,,,TRUE,SyncroSim
 rsyslog,,,TRUE,POSIX.1-2001
