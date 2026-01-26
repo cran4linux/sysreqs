@@ -43,6 +43,7 @@ autotab,,,FALSE,Python; TensorFlow; Keras;TensorFlow Addons
 av,ffmpeg,,FALSE,"FFmpeg; with at least libx264 and lame(mp3) drivers. MacOS Homebrew: ffmpeg. Debian/Ubuntu:libavfilter-dev. Fedora/RHEL: either ffmpeg-devel fromhttps://rpmfusion.org (preferred), or libavfilter-free-develwhich is a more limited version available on Fedora/EPEL9."
 awdb,,,FALSE,"Cargo (Rust's package manager), rustc"
 AWR,,,TRUE,AWS Java SDK (see README.md for more details)
+b32,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
 b64,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
 babelwhale,,docker singularity,TRUE,Docker and/or Singularity
 babette,,,TRUE,BEAST2 (https://www.beast2.org/)
@@ -72,6 +73,7 @@ beastier,,,TRUE,BEAST2 (https://www.beast2.org/)
 BeastJar,,,TRUE,Java
 bedr,,,TRUE,"Preferred genomic operations engine: 'BEDTools','BEDOPS' and 'Tabix'."
 BeQut,,,FALSE,JAGSx.y
+bertopicr,,,FALSE,"Python; BERTopic and Python packages:sentence-transformers, umap-learn, hdbscan, scikit-learn"
 bfw,,java-bin,TRUE,"JAGS<https://mcmc-jags.sourceforge.io>,Java JDK<https://www.java.com/en/download/manual.jsp>"
 bhmbasket,,,TRUE,JAGSx.y (http://mcmc-jags.sourceforge.net)
 BiBitR,,java-bin,TRUE,
@@ -225,6 +227,7 @@ ebvcube,,,TRUE,GDAL binaries
 EcoDiet,,,TRUE,JAGS
 econetwork,,,TRUE,GNU GSL
 ecotourism,,,FALSE,Quarto
+edgemodelr,,,FALSE,or equivalent for building
 eDMA,,,TRUE,"Requires the OpenMP library for parallel computing.If the OpenMP library is not available, the code is executedsequentially and a warning is printed."
 EHRmuse,,,FALSE,GNU Scientific Library version
 EIAapi,,,FALSE,The package required the jq command line library.Please check https://stedolan.github.io/jq/download/ fordownload instructions.
@@ -260,6 +263,7 @@ fairGATE,,,FALSE,Optional 'LibTorch' backend; install viatorch::install_torch().
 fairGNN,,,FALSE,Optional 'LibTorch' backend; install viatorch::install_torch().
 fangs,cargo,,FALSE,"Cargo (Rust's package manager), rustc"
 fasterRaster,,,FALSE,GRASS
+fastgeojson,,,FALSE,"Cargo (Rust's package manager), rustc"
 fastGLCM,,,TRUE,"apt-get-pip: apt-get install -y python3-pip (deb),python3-pip: python3 -m pip install -U pip (deb), numpy: pip3install -U numpy (deb), cv2: pip3 install -U opencv-python(deb), matplotlib: pip3 install -U matplotlib (deb), skimage:pip3 install -U scikit-image (deb), libarmadillo: apt-getinstall -y libarmadillo-dev (deb), libblas: apt-get install -ylibblas-dev (deb), liblapack: apt-get install -y liblapack-dev(deb), libarpack++2: apt-get install -y libarpack++2-dev (deb),: apt-get install -y  (deb)"
 FastHamming,,,FALSE,"C compiler (C99), OpenMP"
 FastKRR,,,FALSE,OpenMP (optional)
@@ -480,7 +484,7 @@ loon,xvfb,,TRUE,
 loon.ggplot,xvfb,,TRUE,
 loon.shiny,xvfb,,TRUE,
 loon.tourr,xvfb,,TRUE,
-LSAMBA,,,TRUE,
+LSAMBA,,,FALSE,'Monolix'(<https://monolixsuite.slp-software.com/monolix/2024R1/>)
 lubridate,,,TRUE,A system with zoneinfo data (e.g./usr/share/zoneinfo). On Windows the zoneinfo included with Ris used.
 lwgeom,geos proj sqlite,,TRUE,"GEOS, PROJ, sqlite3"
 m2r,,,FALSE,Macaulay2 <https://www.macaulay2.com>
@@ -581,6 +585,7 @@ oddsapiR,,pandoc,TRUE,"pandoc, pandoc-citeproc"
 odiffr,,,FALSE,odiff -https://github.com/dmtrKovalenko/odiff
 officedown,,,TRUE,pandoc - http://pandoc.org
 OncoBayes2,,pandoc,FALSE,"pandoc, pngquant,"
+Open.Visualization.Academy,,,FALSE,quarto
 OpenCL,pocl,,FALSE,"OpenCL library,"
 opencpu,,,TRUE,"pandoc, apparmor (optional)"
 opencv,opencv,,FALSE,"OpenCVor newer: libopencv-dev (Debian, Ubuntu)or opencv-devel (Fedora). The QR code detector requires atleast libopencv"
