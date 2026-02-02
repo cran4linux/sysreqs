@@ -38,6 +38,7 @@ asbio,xvfb,bwidget,TRUE,BWidget
 asremlPlus,,,FALSE,asreml
 astgrepr,,,FALSE,"Cargo (Rust's package manager), rustc"
 autoharp,,,TRUE,pandoc - http://pandoc.org
+automerge,,,FALSE,"'automerge-c', or Cargo (Rust's package manager),rustcand CMaketo build from package sources."
 autonewsmd,,,FALSE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
 autotab,,,FALSE,Python; TensorFlow; Keras;TensorFlow Addons
 av,ffmpeg,,FALSE,"FFmpeg; with at least libx264 and lame(mp3) drivers. MacOS Homebrew: ffmpeg. Debian/Ubuntu:libavfilter-dev. Fedora/RHEL: either ffmpeg-devel fromhttps://rpmfusion.org (preferred), or libavfilter-free-develwhich is a more limited version available on Fedora/EPEL9."
@@ -313,7 +314,7 @@ gdalraster,,,FALSE,"GDAL, built against GEOS)"
 gdata,,perl,TRUE,
 gdtools,cairo freetype,,TRUE,"cairo, freetype2, fontconfig"
 GeneralizedUmatrix,,,FALSE,"pandoc, needed for vignettes)"
-GeneralizedUmatrixGPU,,,FALSE,"pandoc, needed for vignettes),OpenCL shared library (provided by an SDK such as AMD/NVIDIA)"
+GeneralizedUmatrixGPU,,,FALSE,"pandoc, needed forvignettes), OpenCL shared library (provided by an SDK such asAMD/NVIDIA)"
 GeneralizedWendland,gsl,,TRUE,gsl
 genie,,,TRUE,
 genieclust,,,FALSE,"OpenMP,"
@@ -396,7 +397,7 @@ huito,,,FALSE,pandoc
 huxtable,,tex-adjustbox tex-array tex-calc tex-caption tex-colortbl tex-fontspec tex-graphicx tex-hhline tex-hyperref tex-multirow tex-siunitx tex-tabularx tex-threeparttable tex-ulem tex-wrapfig,TRUE,"LaTeX packages: adjustbox, array, calc, caption,colortbl, fontspec, graphicx, hhline, hyperref, multirow,siunitx, tabularx, threeparttable, ulem, wrapfig"
 hypergeo2,,,FALSE,"gmp, mpfr"
 iai,,,TRUE,Julia and Interpretable AI System Image(>=
-iBART,,,FALSE,Java
+iBART,,,TRUE,
 IceSat2R,,,TRUE,"gdal-bin: apt install -y gdal-bin (deb),libgdal-dev: apt install -y libgdal-dev (deb), libudunits2-dev:apt install -y libudunits2-dev (deb), libgeos-dev: apt install-y libgeos-dev (deb), libproj-dev: apt install -y libproj-dev(deb), unzip: apt install unzip (deb)"
 idiogramFISH,,pandoc,TRUE,pandoc
 idm,,,TRUE,ImageMagick (http://imagemagick.org) orGraphicsMagick (http://www.graphicsmagick.org)
@@ -412,7 +413,7 @@ informativeSCI,,,FALSE,Java
 inlpubs,,,FALSE,"Complete functionality necessitates Amazon Corretto(win), and default-jre, pandoc, libxml2-dev,libpoppler-cpp-dev, libmagick++-dev, optipng, libtesseract-dev,libleptonica-dev, tesseract-ocr-eng (deb)"
 inpdfr,,xpdf,TRUE,XPDF (http://www.foolabs.com/xpdf/download.html)
 InSilicoVA,,,TRUE,Java
-interpolation,,,FALSE,"C++, gmp"
+interpolation,,,TRUE,
 inTextSummaryTable,,pandoc,TRUE,pandoc (to export an interactive summary table to afile)
 inti,,,FALSE,pandoc
 IP,,,FALSE,libidn: libidn11-dev (deb)
@@ -814,11 +815,14 @@ rGroovy,,,TRUE,Java
 RH2,,,TRUE,java runtime
 ridge,gsl,,TRUE,Gnu Scientific Library version
 rim,,maxima,FALSE,"Maxima (https://sourceforge.net/projects/maxima/,tested with versions-, needs to be on PATH"
+rinet,,,FALSE,"Python, TensorFlow, Keras, scikit-learn"
 rirods,,,FALSE,iRODS C++ HTTP API(<https://github.com/irods/irods_client_http_api>)
 rixpress,,,FALSE,Nix
 rjags,jags,,TRUE,JAGSx.y
 rJava,java,,TRUE,"Java JDKor higher (for JRI/REngine JDKorhigher),"
 rjd3toolkit,,,FALSE,Java
+rjd3tramoseats,,,FALSE,Java
+rjd3x13,,,FALSE,Java
 RJDemetra,,,FALSE,Java
 rjdmarkdown,,,FALSE,Java
 rjdqa,,,FALSE,Java
@@ -827,10 +831,11 @@ rjuliabugs,,,FALSE,"Julia with the following packagesinstalled: 'JuliaBUGS.jl', 
 rkafkajars,,,TRUE,Java JDKor higher
 RKEA,,,TRUE,Java
 RKEAjars,,,TRUE,Java
-RKEEL,,,TRUE,Java
+RKEEL,,,TRUE,
 Rlibeemd,gsl,,TRUE,GNU GSL
+rlibkriging,,,FALSE,"cmake,"
 RMariaDB,mysql,,TRUE,"libmariadb-client-lgpl-dev or libmariadb-dev orlibmysqlclient-dev, with libssl-dev (deb),mariadb-connector-c-devel or mariadb-devel (rpm),mariadb-connector-c or mysql-connector-c (brew)"
-RMark,,,TRUE,"notepad.exe, mark.exe (or mark32.exe andmark64.exe) and rel_32.exe (see README.txt)"
+RMark,,,FALSE,"notepad.exe, mark32.exe or mark64.exe on Windowsand only mark on Linux (see README.txt in packagedirectory)"
 rmarkdown,,pandoc,TRUE,pandoc - http://pandoc.org
 rmatio,,,TRUE,zlib headers and library.
 rmcfs,,,TRUE,Java
@@ -928,7 +933,7 @@ seewave,,,TRUE,LIBSNDFILE
 SemiCompRisks,gsl,,TRUE,
 sendigR,,,TRUE,Python(>=3.9.6)
 seqinr,,,TRUE,zlib headers and library.
-seqminer,,,TRUE,"zlib headers and libraries, optionally also bzip2 and POSIX-compliant regex functions."
+seqminer,,,TRUE,
 sequoia,,,FALSE,Fortran95
 sf,gdal geos proj sqlite,,FALSE,"GDAL, GEOS, PROJ,sqlite3"
 SGP,,tex-pdfpages,TRUE,(PDF)LaTeX (https://www.latex-project.org/) with'pdfpages' package for studentGrowthPlot option in visualizeSGPto bind together student growth plots into school catalogs
@@ -973,6 +978,7 @@ sparklyr.nested,,,TRUE,Spark:x orx
 sparktf,,,TRUE,TensorFlow (https://www.tensorflow.org/)
 sparsesurv,,,FALSE,JAGSx)
 spate,fftw,,TRUE,fftw3
+SpatialDownscaling,,,FALSE,"Python, TensorFlow, Keras"
 spatPomp,,,TRUE,"For Windows users, Rtools (seehttps://cran.r-project.org/bin/windows/Rtools/)."
 spatsoc,,,FALSE,"GDAL, GEOS, PROJ,sqlite3"
 spcosa,,,TRUE,Java
@@ -1058,7 +1064,7 @@ tiff,libjpeg libtiff,,TRUE,tiff and jpeg libraries
 tikzDevice,,tex-pgf,TRUE,pgf
 tiledb,tiledb,,FALSE,"A  compiler is required; on macOS compilationversionor later is required. Optionally cmake (only whenTileDB source build selected), curl (only when TileDB sourcebuild selected)), and git (only when TileDB source buildselected); on x86_64 and M1 platforms pre-built TileDB Embeddedlibraries are available at GitHub and are used if no TileDBinstallation is detected, and no other option to build ordownload was specified by the user."
 tiler,,gdal-python,TRUE,"Python, python-gdal library (For Windows,gdal installed via OSGeo4W <https://trac.osgeo.org/osgeo4w/>recommended) clipboard"
-timechange,,,TRUE,A system with zoneinfo data (e.g./usr/share/zoneinfo) as well as a recent-enough  compiler(such as g++-4.8 or later). On Windows the zoneinfo includedwith R is used.
+timechange,,,FALSE,A system with zoneinfo data (e.g./usr/share/zoneinfo). On Windows the zoneinfo included with Ris used.
 tkImgR,xvfb,tkimg,TRUE,"Tcl/Tk. To read and write other formatsthan PPM/PGM, PNG and GIF it is required the 'tkImg' for'Tcl/Tk' (https://sourceforge.net/projects/tkimg/), or thedebian 'libtk-img' package (Ubuntu) or the RPM 'tkimg' package(Fedora or openSUSE)."
 tkrplot,,,TRUE,Windows or X11
 tkRplotR,xvfb,,TRUE,Tcl/Tk
