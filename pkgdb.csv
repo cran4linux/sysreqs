@@ -236,7 +236,7 @@ EigenR,,,TRUE,
 elexr,,python3,TRUE,Pythonor and elex package
 elliptic,,pari,TRUE,pari/gp
 emayili,,,TRUE,The function render() requires Pandoc(http://pandoc.org). To use PGP/GnuPG encryption requires gpg.
-emodnet.wfs,,,FALSE,"GDAL, GEOS, PROJ"
+emodnet.wfs,,,TRUE,
 EmpiricalDynamics,,,FALSE,Julia
 enderecobr,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
 EnTraineR,,,FALSE,Pandoc (for DOCX/HTML conversion when usingrmarkdown)
@@ -254,6 +254,7 @@ exactextractr,geos,,TRUE,GEOS
 exams,,,TRUE,pandoc
 excerptr,,,FALSE,Python
 excursions,gsl,,TRUE,Gnu Scientific Library version
+exdqlm,,,FALSE,OpenMP (optional)
 exifr,exiftool,exiftool,TRUE,Perl
 exiftoolr,exiftool,exiftool,TRUE,Perl
 extraDistr,,,TRUE,
@@ -296,6 +297,7 @@ fpROC,,,FALSE,"OpenMP, TBB"
 freesurfer,,,FALSE,"FSL, Freesurfer(https://surfer.nmr.mgh.harvard.edu/)"
 frequency,,,TRUE,pandoc - http://pandoc.org
 fRLR,gsl,,TRUE,GNU Scientific Library (GSL). Note: users shouldhave GSL installed.
+fru,,,FALSE,"Cargo (Rust's package manager), rustc"
 fs,automake,,TRUE,
 fsdaR,,,TRUE,"(license-free) MATLAB Runtime (MCR) V, Java(>=8)"
 fslr,,,TRUE,FSL
@@ -664,7 +666,7 @@ prevalence,,,TRUE,JAGS (seehttps://mcmc-jags.sourceforge.io/)
 PRIMME,,,TRUE,A POSIX system. Currently Linux and OS X are knownto work. .
 proccalibrad,,,TRUE,MRTSwath
 ProcData,,,TRUE,"Python, Keras, TensorFlow"
-processmapR,,,FALSE,C++
+processmapR,,,TRUE,
 proffer,,graphviz pprof,FALSE,pprof (https://github.com/google/pprof)
 PROJ,,,FALSE,PROJ
 proj4,proj sqlite,,TRUE,projor higher (https://proj.org/)
@@ -864,6 +866,7 @@ Romeb,,,FALSE,JAGS
 ropenblas,,,TRUE,GCC Compiler Suite (C and Fortran)
 ROpenCVLite,,cmake,FALSE,cmake
 ROracle,,,FALSE,curl Oracle Instant Client or Oracle DatabaseClient
+roxigraph,,,FALSE,"Cargo (Rust's package manager), rustc,lib-dev (for RocksDB bindings)"
 Rpadrino,,,FALSE,libcurl: libcurl-devel (rpm) orlibcurl4-openssl-dev (deb).
 rpanel,xvfb bwidget,bwidget,TRUE,
 RPesto,,,FALSE,"Cargo (Rust's package manager), rustc"
@@ -1057,6 +1060,7 @@ tfevents,,,FALSE,"libprotobuf, protobuf-compiler"
 tfhub,,,TRUE,TensorFlow(https://www.tensorflow.org/)
 tfio,,,TRUE,TensorFlow(https://www.tensorflow.org/)and TensorFlow IO(https://github.com/tensorflow/io)
 tfprobability,,,TRUE,TensorFlow Probability(https://www.tensorflow.org/probability)
+theorytools,,,FALSE,Python
 Thermimage,,exiftool ffmpeg-bin imagemagick-bin,TRUE,"exiftool, perl, ffmpeg, imagemagick"
 tidycwl,,pandoc,TRUE,"PhantomJS (https://phantomjs.org), pandoc - https://pandoc.org."
 tidync,,,TRUE,netcdf udunits-2
@@ -1090,7 +1094,7 @@ ubiquity,,perl,TRUE,Perl
 udunits2,udunits,,TRUE,udunits fromhttps://www.unidata.ucar.edu/software/udunits/
 UHM,,,FALSE,JAGSx.y
 uHMM,xvfb,,TRUE,
-unigd,,,FALSE,"libpng, cairo, freetype2, fontconfig"
+unigd,,,TRUE,
 units,udunits,,TRUE,udunits-2
 unix,,,TRUE,"POSIX.1-2001, AppArmor (optional)"
 unmconf,,,FALSE,JAGS(http://mcmc-jags.sourceforge.net)
