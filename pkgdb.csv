@@ -67,6 +67,7 @@ bayestransmission,,,TRUE,
 BayesVarSel,gsl,,TRUE,GNU Scientific Library
 BayLum,,,FALSE,JAGS(https://mcmc-jags.sourceforge.io/)
 bbl,gsl,,TRUE,
+BCFM,,,FALSE,pandoc for building vignettes
 BCHM,,,TRUE,JAGS
 bcputility,,,TRUE,bcp Utility
 bdpar,,python3,TRUE,Pythonor
@@ -487,6 +488,7 @@ loon,xvfb,,TRUE,
 loon.ggplot,xvfb,,TRUE,
 loon.shiny,xvfb,,TRUE,
 loon.tourr,xvfb,,TRUE,
+lpmec,,,FALSE,"Python with jax, numpy, numpyro(optional; for NumPyro backend via reticulate)"
 LSAMBA,,,FALSE,'Monolix'(<https://monolixsuite.slp-software.com/monolix/2024R1/>)
 lubridate,,,TRUE,A system with zoneinfo data (e.g./usr/share/zoneinfo). On Windows the zoneinfo included with Ris used.
 lwgeom,geos proj sqlite,,TRUE,"GEOS, PROJ, sqlite3"
@@ -559,7 +561,7 @@ mwa,,,TRUE,Java
 mwcsr,,java-bin,TRUE,Java
 NACHO,,,TRUE,"pandoc, pandoc-citeproc"
 nanoarrow,,,FALSE,libzstd (optional)
-nanonext,cmake,,FALSE,"'libnng'and 'libmbedtls', or 'cmake'and 'xz' to compile NNG and/or Mbed TLS included in packagesources"
+nanonext,cmake,,FALSE,"'libnng'and 'libmbedtls', or 'cmake'to compile NNG and/or Mbed TLS included in package sources"
 nbconvertR,,pandoc nbconvert,TRUE,"pandoc, jupyter, jupyter nbconvert (""nbconvert""python package), pywin32 (on windows)"
 ncdf4,netcdf,,TRUE,netcdf library versionor later
 ndjson,,,TRUE,"zlib,"
@@ -693,7 +695,7 @@ qspray,gmp mpfr,,TRUE,
 qtkit,,,FALSE,"Chromium-based browser (e.g., Chrome, Chromium, orBrave)"
 quarto,,,FALSE,Quarto command line tool(<https://github.com/quarto-dev/quarto-cli>).
 questionr,,xclip,TRUE,xclip (Linux)
-quitefastmst,,,FALSE,"OpenMP,"
+quitefastmst,,,FALSE,OpenMP
 r.blip,,java-bin,TRUE,Java
 R2admb,,,TRUE,AD Model Builder <http://admb-project.org>
 R2jags,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net)
@@ -786,6 +788,7 @@ redcas,,,FALSE,"'REDUCE' <http://www.reduce-algebra.com>. At leastone of the 'CS
 redist,gmp libxml2,python3,FALSE,python
 redland,redland,,TRUE,"Mac OSX: redland ; Linux: librdf0, librdf0-dev"
 redux,hiredis,,TRUE,hiredis
+RegimeChange,,,FALSE,"Julia for optional high-performancebackend, Python with TensorFlow for deep learningmethods"
 relMix,,,FALSE,"tcltk, tk"
 remiod,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net/)
 REMixed,,,FALSE,'Monolix'(<https://monolixsuite.slp-software.com/>)
@@ -866,7 +869,7 @@ Romeb,,,FALSE,JAGS
 ropenblas,,,TRUE,GCC Compiler Suite (C and Fortran)
 ROpenCVLite,,cmake,FALSE,cmake
 ROracle,,,FALSE,curl Oracle Instant Client or Oracle DatabaseClient
-roxigraph,,,FALSE,"Cargo (Rust's package manager), rustc,lib-dev (for RocksDB bindings)"
+roxigraph,,,FALSE,"Cargo (Rust's package manager), rustc,lib-dev (for RocksDB bindings), libsnappy-dev (for RocksDBcompression)"
 Rpadrino,,,FALSE,libcurl: libcurl-devel (rpm) orlibcurl4-openssl-dev (deb).
 rpanel,xvfb bwidget,bwidget,TRUE,
 RPesto,,,FALSE,"Cargo (Rust's package manager), rustc"
@@ -910,6 +913,7 @@ runjags,jags,,TRUE,JAGS(https://mcmc-jags.sourceforge.io/)
 rvg,,,TRUE,libpng
 rviewgraph,,,FALSE,Java
 rvisidata,,,FALSE,visidata
+rvMF,,,FALSE,"gmp, mpfr"
 RWeka,,,TRUE,Java
 RWekajars,,,TRUE,Java
 RWinEdt,,,TRUE,WinEdt
@@ -1001,7 +1005,7 @@ StanHeaders,,,TRUE,pandoc
 stanza,,,FALSE,"R, Python, stanza"
 staplr,,,FALSE,Java
 startR,,,FALSE,cdo ecFlow
-starvz,,,TRUE,
+starvz,,,FALSE,"arrow package with gzip codec, StarPU"
 Statamarkdown,,,FALSE,Stata
 statgenGxE,,pdflatex,TRUE,pdflatex
 statgenSTA,,pdflatex,TRUE,pdflatex
