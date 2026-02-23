@@ -192,6 +192,7 @@ datr,,,TRUE,dat
 dbmss,,pandoc,TRUE,"pandoc,"
 dclone,,,TRUE,"none, one or more of JAGS, WinBUGS, OpenBUGS, Stan"
 dcmle,,,TRUE,JAGS
+deadwood,,,FALSE,OpenMP
 Deducer,,,TRUE,"Java, JRI"
 deepspat,,,FALSE,"TensorFlow (https://www.tensorflow.org/),"
 deforestable,,,FALSE,"GDAL, GEOS, PROJ,sqlite3"
@@ -323,6 +324,7 @@ genie,,,TRUE,
 genieclust,,,FALSE,"OpenMP,"
 genlogis,,,FALSE,RStudio -https://posit.co/products/open-source/rstudio/
 geno2proteo,,perl,TRUE,Perl
+geoarrowWidget,,,FALSE,Quarto command line tool(<https://github.com/quarto-dev/quarto-cli>).
 GeoFIS,gmp mpfr,,FALSE,"gmp, mpfr"
 geojsonR,,,TRUE,libarmadillo: apt-get install -y libarmadillo-dev(deb)
 GeoMongo,,,TRUE,"MongoDB, Python. Installationinstructions and links can be found in the README file."
@@ -336,6 +338,7 @@ ggdemetra,,,FALSE,Java
 ggExtra,,pandoc,TRUE,pandoc with https support
 ggiraph,libpng,,TRUE,libpng
 gglinedensity,,,FALSE,"Cargo (Rust's package manager), rustc"
+ggmlR,,,FALSE,"libvulkan-dev, glslc (optional,for GPU on Linux), 'Vulkan' 'SDK' (optional, for GPU onWindows)"
 ggquickeda,,pandoc,TRUE,pandoc with https support
 ggseg,,,TRUE,"GDAL, GEOS, PROJ"
 ggtrace,,pandoc,TRUE,pandoc
@@ -369,7 +372,7 @@ gslnls,gsl,,TRUE,GSL
 gsynth,,,TRUE,
 guildai,,,FALSE,Python
 gWidgets2tcltk,xvfb,,TRUE,
-GWmodelVis,,,FALSE,"GEOS, FFmpeg (for video export)"
+GWmodelVis,,,TRUE,
 GWnnegPCA,,,TRUE,"GDAL, GEOS, PROJ"
 GWpcor,,,TRUE,"GDAL, GEOS, PROJ"
 h2o,,java-bin,TRUE,"Java, <="
@@ -401,7 +404,7 @@ huxtable,,tex-adjustbox tex-array tex-calc tex-caption tex-colortbl tex-fontspec
 hypergeo2,,,FALSE,"gmp, mpfr"
 iai,,,TRUE,Julia and Interpretable AI System Image(>=
 iBART,,,TRUE,
-IceSat2R,,,TRUE,"gdal-bin: apt install -y gdal-bin (deb),libgdal-dev: apt install -y libgdal-dev (deb), libudunits2-dev:apt install -y libudunits2-dev (deb), libgeos-dev: apt install-y libgeos-dev (deb), libproj-dev: apt install -y libproj-dev(deb), unzip: apt install unzip (deb)"
+IceSat2R,,,TRUE,
 idiogramFISH,,pandoc,TRUE,pandoc
 idm,,,TRUE,ImageMagick (http://imagemagick.org) orGraphicsMagick (http://www.graphicsmagick.org)
 ieeeround,,,TRUE,A C library with the fesetround/fegetroundfunctions.
@@ -442,7 +445,7 @@ JointAI,,,TRUE,JAGS (https://mcmc-jags.sourceforge.io/)
 jpeg,libjpeg,,TRUE,libjpeg
 jqr,jq,,TRUE,libjq: jq-devel (rpm) or libjq-dev (deb)
 jSDM,gsl,,TRUE,GNU GSL
-juicr,,,TRUE,Tcl/Tk toolkit (X11 Quarts for Mac)
+juicr,,,TRUE,
 JuliaCall,,julia,TRUE,"Julia, RCall.jl"
 JuliaConnectoR,,julia,TRUE,Julia
 kantorovich,,,TRUE,GMP (https://gmplib.org/)
@@ -721,6 +724,7 @@ rbedrock,cmake,,FALSE,"cmake, zlib,"
 RBesT,,pandoc,FALSE,"pandoc, pngquant,"
 rbi,,,TRUE,LibBi
 rbi.helpers,,,TRUE,libbi
+rblimp,,,FALSE,Blimp software(<https://www.appliedmissingdata.com/blimp>)
 Rblpapi,,,FALSE,A valid Bloomberg installation. The API headers anddynamic library are downloaded from<https://github.com/Rblp/blp> during the build step. See<https://bloomberg.github.io/blpapi-docs/cpp/3.24.6> as well as<https://www.bloomberg.com/professional/support/api-library/>for API documentation. Currently supported platforms areWindows and Linux (both for x86-64 processors only) as well asmacOS (for arm64 only).Other os-cpu pairings are notsupported by Bloomberg and can therefore not be fully supportedhere.
 rblt,,,TRUE,libhdf5
 rbm25,,,FALSE,"Cargo (Rust's package manager), rustc"
@@ -825,6 +829,7 @@ rirods,,,FALSE,iRODS C++ HTTP API(<https://github.com/irods/irods_client_http_ap
 rixpress,,,FALSE,Nix
 rjags,jags,,TRUE,JAGSx.y
 rJava,java,,TRUE,"Java JDKor higher (for JRI/REngine JDKorhigher),"
+rjd3providers,,,FALSE,Java
 rjd3toolkit,,,FALSE,Java
 rjd3tramoseats,,,FALSE,Java
 rjd3x13,,,FALSE,Java
@@ -983,6 +988,7 @@ sparklyr,,java-bin,FALSE,"Spark:x, orx, orx"
 sparklyr.flint,,,TRUE,Spark:x or above
 sparklyr.nested,,,TRUE,Spark:x orx
 sparktf,,,TRUE,TensorFlow (https://www.tensorflow.org/)
+sparselu,,,FALSE,"SuiteSparse (UMFPACK, AMD, SuiteSparse_config)"
 sparsesurv,,,FALSE,JAGSx)
 spate,fftw,,TRUE,fftw3
 SpatialDownscaling,,,FALSE,"Python, TensorFlow, Keras"
@@ -1067,12 +1073,14 @@ tfprobability,,,TRUE,TensorFlow Probability(https://www.tensorflow.org/probabili
 theorytools,,,FALSE,Python
 Thermimage,,exiftool ffmpeg-bin imagemagick-bin,TRUE,"exiftool, perl, ffmpeg, imagemagick"
 tidycwl,,pandoc,TRUE,"PhantomJS (https://phantomjs.org), pandoc - https://pandoc.org."
+tidyGenR,,,FALSE,cutadapt(https://cutadapt.readthedocs.io/en/stable/)
 tidync,,,TRUE,netcdf udunits-2
 tiff,libjpeg libtiff,,TRUE,tiff and jpeg libraries
 tikzDevice,,tex-pgf,TRUE,pgf
 tiledb,tiledb,,FALSE,"A  compiler is required; on macOS compilationversionor later is required. Optionally cmake (only whenTileDB source build selected), curl (only when TileDB sourcebuild selected)), and git (only when TileDB source buildselected); on x86_64 and M1 platforms pre-built TileDB Embeddedlibraries are available at GitHub and are used if no TileDBinstallation is detected, and no other option to build ordownload was specified by the user."
 tiler,,gdal-python,TRUE,"Python, python-gdal library (For Windows,gdal installed via OSGeo4W <https://trac.osgeo.org/osgeo4w/>recommended) clipboard"
 timechange,,,FALSE,A system with zoneinfo data (e.g./usr/share/zoneinfo). On Windows the zoneinfo included with Ris used.
+tinyimg,,,FALSE,"Cargo (Rust's package manager), rustc"
 tkImgR,xvfb,tkimg,TRUE,"Tcl/Tk. To read and write other formatsthan PPM/PGM, PNG and GIF it is required the 'tkImg' for'Tcl/Tk' (https://sourceforge.net/projects/tkimg/), or thedebian 'libtk-img' package (Ubuntu) or the RPM 'tkimg' package(Fedora or openSUSE)."
 tkrplot,,,TRUE,Windows or X11
 tkRplotR,xvfb,,TRUE,Tcl/Tk
@@ -1098,7 +1106,7 @@ ubiquity,,perl,TRUE,Perl
 udunits2,udunits,,TRUE,udunits fromhttps://www.unidata.ucar.edu/software/udunits/
 UHM,,,FALSE,JAGSx.y
 uHMM,xvfb,,TRUE,
-unigd,,,TRUE,
+unigd,,,FALSE,"Cairo (optional, for raster output), libtiff(optional, for TIFF output), libpng, zlib"
 units,udunits,,TRUE,udunits-2
 unix,,,TRUE,"POSIX.1-2001, AppArmor (optional)"
 unmconf,,,FALSE,JAGS(http://mcmc-jags.sourceforge.net)
