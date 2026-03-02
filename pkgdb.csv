@@ -82,6 +82,7 @@ BiBitR,,java-bin,TRUE,
 biblio,,pandoc,TRUE,pandoc - http://pandoc.org
 BIDistances,,,FALSE,"pandoc, needed for vignettes)"
 bigGP,openmpi,openmpi-bin,TRUE,OpenMPI or MPICH2
+bigMICE,,,FALSE,"Spark:x, orx"
 bigPLSR,,,FALSE,Optional CBLAS (detected at compile time)
 bigrquerystorage,,,FALSE,grpc/protobuf headers and compilers. For examplelibprotobuf-dev libgrpc++-dev protobuf-compiler-grpc (Debian)or protobuf-devel grpc-devel grpc-plugins (Fedora/RHEL)
 bigsimr,,,TRUE,"Julia, Bigsimr.jl, Distributions.jl"
@@ -155,6 +156,7 @@ CoNI,,python3,TRUE,python3
 conquestr,,,TRUE,ACER ConQuest
 CoordinateCleaner,,,TRUE,GDAL
 CopernicusDEM,,awscli,TRUE,"awscli: apt install -y awscli (deb), aws-configure:aws configure (deb)"
+CopernicusMarine,,,FALSE,Requires GDALwith BLOSC support See<https://pepijn-devries.github.io/CopernicusMarine/articles/blosc.html>
 copernicusR,,,FALSE,"Python, copernicusmarine Python library"
 copula,,,TRUE,pdfcrop (part of TexLive) is required to rebuildthe vignettes.
 cordillera,,,TRUE,
@@ -214,6 +216,7 @@ doconv,,libreoffice,TRUE,"LibreOffice, Microsoft Word"
 docxtractr,,libreoffice,TRUE,LibreOffice (<https://www.libreoffice.org/>)required to extract data fromdoc files or performpptxconversion.
 domino,,,TRUE,domino (~>1.7.1)
 DQAstats,,,FALSE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
+dress.graph,,,FALSE,OpenMP
 DRIP,gsl,,TRUE,
 drugsens,,,FALSE,QuPath™or higher
 dti,gsl,,TRUE,gsl
@@ -321,7 +324,7 @@ GeneralizedUmatrix,,,FALSE,"pandoc, needed for vignettes)"
 GeneralizedUmatrixGPU,,,FALSE,"pandoc, needed forvignettes), OpenCL shared library (provided by an SDK such asAMD/NVIDIA)"
 GeneralizedWendland,gsl,,TRUE,gsl
 genie,,,TRUE,
-genieclust,,,FALSE,"OpenMP,"
+genieclust,,,FALSE,OpenMP
 genlogis,,,FALSE,RStudio -https://posit.co/products/open-source/rstudio/
 geno2proteo,,perl,TRUE,Perl
 geoarrowWidget,,,FALSE,Quarto command line tool(<https://github.com/quarto-dev/quarto-cli>).
@@ -390,6 +393,7 @@ helloJavaWorld,,,TRUE,Java
 hellorust,cargo,,FALSE,"Cargo (Rust's package manager), rustc"
 heritable,,,FALSE,asreml
 heuristicsmineR,,,TRUE,
+hexify,,,FALSE,C99
 hgwrr,gsl,,TRUE,
 HiClimR,netcdf,,TRUE,NetCDF
 hicream,,,FALSE,Python
@@ -782,6 +786,7 @@ rde,,xclip,TRUE,xclip (https://github.com/astrand/xclip) or xsel(http://www.verg
 rDEA,glpk,,TRUE,GLPK
 RDieHarder,gsl,,TRUE,GNU GSL for the GSL random-number generators
 rdoxygen,,doxygen,TRUE,doxygen
+Rduckhts,,,FALSE,"cmake, zlib, libbz2, liblzma, libcurl,openssl (development headers)"
 rdwd,,pandoc,TRUE,
 readbitmap,libjpeg libpng,,TRUE,"libjpeg, libpng"
 readepi,,,FALSE,"odbc, libmariadbclient-dev"
@@ -819,6 +824,7 @@ RGF,,scikit-learn numpy scipy,TRUE,"Python, rgf_python, scikit-learn, scipy, num
 rgl,libgl libglu libpng freetype,,FALSE,"OpenGL and GLU Library (Required for display in R.See ""Installing OpenGL support"" in README.md. Not needed ifonly browser displays using rglwidget() are wanted.), zlib(optional), libpng, optional), FreeType (optional),pandoc, needed for vignettes), LaTeX needed foroptional latex3d() examples."
 Rglpk,glpk,,TRUE,"GLPK library package (e.g., libglpk-dev onDebian/Ubuntu)"
 rgnparser,,,TRUE,gnparser (<https://github.com/gnames/gnparser>)
+rgph,,,FALSE,Java
 rgrass,,grass,TRUE,GRASS
 rGroovy,,,TRUE,Java
 RH2,,,TRUE,java runtime
@@ -937,6 +943,7 @@ sapo,,,FALSE,"GDAL, GEOS, PROJ"
 saros.base,,,FALSE,None.
 sarsop,,,TRUE,"mallinfo, hence Linux, MacOS or Windows"
 SASmarkdown,,,FALSE,SAS
+sasquatch,,,FALSE,"python, SASPy, java required forIOM access method"
 sbrl,,,FALSE,"gmp, gsl"
 scModels,gmp mpfr,,TRUE,"gmp, mpfr"
 sdcTable,glpk gmp,,TRUE,"GLPK library, including -dev or -devel part"
@@ -945,7 +952,7 @@ seewave,,,TRUE,LIBSNDFILE
 SemiCompRisks,gsl,,TRUE,
 sendigR,,,TRUE,Python(>=3.9.6)
 seqinr,,,TRUE,zlib headers and library.
-seqminer,,,TRUE,
+seqminer,,,FALSE,"zlib headers and libraries,  optionallyalso bzip2 and POSIX-compliant regex functions."
 sequoia,,,FALSE,Fortran95
 sf,gdal geos proj sqlite,,FALSE,"GDAL, GEOS, PROJ,sqlite3"
 SGP,,tex-pdfpages,TRUE,(PDF)LaTeX (https://www.latex-project.org/) with'pdfpages' package for studentGrowthPlot option in visualizeSGPto bind together student growth plots into school catalogs
@@ -1123,6 +1130,7 @@ VBLPCM,gsl,,TRUE,Gnu Scientific Library
 vcfppR,,,FALSE,"libcurl: libcurl-devel (rpm) orlibcurl4-openssl-dev (deb), ."
 vcfR,devscripts,,TRUE,
 vdiffr,libpng,,TRUE,libpng
+VectorForgeML,,,FALSE,OpenMP (optional)
 vegawidget,,,TRUE,To use image functions for MacOS: X11
 venneuler,,,TRUE,Javaor higher
 VertexWiseR,,,FALSE,"Miniconda3 (v24.9.2), Python (<= v3.12), BrainStat(v0.4.2), vtk (v9.3.1), numpy (<= v1.26.4), nilearn (<=v0.12.0), netneurotools (<= v0.2.5)"
