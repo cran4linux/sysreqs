@@ -8,6 +8,7 @@ adimpro,,imagemagick-bin dcraw,TRUE,"Image Magick (for reading non PPM format), 
 admixr,,,FALSE,ADMIXTOOLS suite of command-line utilities forpopulation genetics. See<https://github.com/dreichlab/admixtools> for the most recentinstallation instructions and further information.
 AFR,,,TRUE,
 AgePopDenom,,,FALSE,TMB
+agregR,,,FALSE,CmdStan(https://mc-stan.org/users/interfaces/cmdstan)
 aifeducation,,,FALSE,"PyTorch (see vignette ""Get started"")"
 alfr,,,TRUE,Alfresco Content Repository (Community orEnterprise)
 altair,,,TRUE,"Python, (Python) Altair,vega_datasets. To use image functions for MacOS: X11"
@@ -42,12 +43,14 @@ automerge,,,FALSE,"'automerge-c', or Cargo (Rust's package manager),rustcand CMa
 autonewsmd,,,FALSE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
 autotab,,,FALSE,Python; TensorFlow; Keras;TensorFlow Addons
 av,ffmpeg,,FALSE,"FFmpeg; with at least libx264 and lame(mp3) drivers. MacOS Homebrew: ffmpeg. Debian/Ubuntu:libavfilter-dev. Fedora/RHEL: either ffmpeg-devel fromhttps://rpmfusion.org (preferred), or libavfilter-free-develwhich is a more limited version available on Fedora/EPEL9."
+AV1R,,,FALSE,"FFmpeg withlibavcodec/libavformat, libvulkan-dev (optional, for GPUencoding on Linux), Vulkan SDK (optional, for GPU encoding onWindows)"
 awdb,,,FALSE,"Cargo (Rust's package manager), rustc"
 AWR,,,TRUE,AWS Java SDK (see README.md for more details)
 b32,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
 b64,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
 babelwhale,,docker singularity,TRUE,Docker and/or Singularity
 babette,,,TRUE,BEAST2 (https://www.beast2.org/)
+bacenR,,,FALSE,qpdf
 bacistool,,,TRUE,JAGS
 BaHZING,,,FALSE,JAGSx.y (http://mcmc-jags.sourceforge.net)
 baker,,,FALSE,JAGS (http://mcmc-jags.sourceforge.net)
@@ -141,6 +144,7 @@ clustermq,zeromq,,FALSE,ZeroMQ (libzmq)(optional; otherwisebundled)
 ClusterR,,,TRUE,
 CLVTools,,,FALSE,GNU GSL
 cmaRs,,,FALSE,MOSEK (http://www.mosek.com) and MOSEK License foruse of Rmosek
+cmtkr,,,FALSE,zlib
 cncaGUI,xvfb,bwidget,TRUE,Tcl/Tk package BWidget.
 codacore,,,TRUE,TensorFlow (https://www.tensorflow.org/)
 coga,gsl,,TRUE,GNU GSL
@@ -277,6 +281,7 @@ FastKRR,,,FALSE,OpenMP (optional)
 fastText,,,TRUE,
 fcl,,,FALSE,"Cargo (Rust's package manager), rustc"
 FCPS,,pandoc,TRUE,Pandoc
+fdars,,,FALSE,"Cargo (Rust's package manager), rustc"
 feather,,,TRUE,
 fect,,,TRUE,
 FedData,,,TRUE,GDAL
@@ -476,7 +481,7 @@ ledger,,ledger hledger,TRUE,"ledger, hledger, beancount"
 leidenAlg,libxml2 glpk gmp,,FALSE,"(optional), libxml2 (optional), glpk, optional)"
 libdeflate,,,FALSE,CMake
 libimath,,,FALSE,cmake
-libopenexr,,,FALSE,"CMake,"
+libopenexr,,,TRUE,
 Libra,gsl,,TRUE,GNU Scientific Library (GSL)
 libstable4u,,,FALSE,GNU GSL
 liftr,,docker,TRUE,Docker (see <https://docs.docker.com/install/>)
@@ -506,7 +511,7 @@ maGUI,,,TRUE,Tktable
 mailR,,,TRUE,Java
 mallet,,,TRUE,java
 manipulate,,,TRUE,RStudio - http://www.rstudio.com/products/rstudio/
-manureshed,,,FALSE,"GDAL, GEOS, PROJ"
+manureshed,,,TRUE,
 MaOEA,,,TRUE,"Pythonx with following modules: PyGMO, NumPy,and cloudpickle"
 mapme.biodiversity,,,TRUE,"GDAL, PROJ"
 marked,,,TRUE,ADMB version<http://admb-project.org/> foruse.admb=TRUE; see readme.txt
@@ -785,6 +790,7 @@ rdataretriever,,,TRUE,"Python, retriever (version mustbe listed to patch to allo
 rde,,xclip,TRUE,xclip (https://github.com/astrand/xclip) or xsel(http://www.vergenet.net/~conrad/software/xsel/) for accessingthe X11 clipboard
 rDEA,glpk,,TRUE,GLPK
 RDieHarder,gsl,,TRUE,GNU GSL for the GSL random-number generators
+rdkitpyr,,,FALSE,"Python, NumPy, RDKit (Python)"
 rdoxygen,,doxygen,TRUE,doxygen
 Rduckhts,,,FALSE,"cmake, zlib, libbz2, liblzma, libcurl,openssl (development headers)"
 rdwd,,pandoc,TRUE,
@@ -995,7 +1001,7 @@ sparklyr,,java-bin,FALSE,"Spark:x, orx, orx"
 sparklyr.flint,,,TRUE,Spark:x or above
 sparklyr.nested,,,TRUE,Spark:x orx
 sparktf,,,TRUE,TensorFlow (https://www.tensorflow.org/)
-sparselu,,,FALSE,"SuiteSparse (UMFPACK, AMD, SuiteSparse_config)"
+sparselu,,,TRUE,
 sparsesurv,,,FALSE,JAGSx)
 spate,fftw,,TRUE,fftw3
 SpatialDownscaling,,,FALSE,"Python, TensorFlow, Keras"
