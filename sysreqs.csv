@@ -18,7 +18,7 @@ coin-or-clp,math,TRUE,FALSE,coin-or-Clp-devel,coinor-libclp-dev
 coin-or-symphony,math,TRUE,FALSE,coin-or-SYMPHONY-devel,coinor-libsymphony-dev
 cppcheck,tools,FALSE,TRUE,cppcheck,cppcheck
 cronie,tools,FALSE,TRUE,cronie,
-curl,net,TRUE,FALSE,libcurl-devel,libcurl4-gnutls-dev
+curl,net,TRUE,FALSE,libcurl-devel,libcurl4-openssl-dev
 dcraw,media,FALSE,TRUE,dcraw,dcraw
 devscripts,tools,TRUE,FALSE,devscripts-checkbashisms,devscripts
 docker,hpc,FALSE,TRUE,podman-docker,docker
