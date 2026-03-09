@@ -8,6 +8,7 @@ autoconf,tools,TRUE,FALSE,autoconf,autoconf
 automake,tools,TRUE,FALSE,automake,automake
 awscli,hpc,FALSE,TRUE,awscli,awscli
 bison,tools,TRUE,FALSE,bison,bison
+blosc,tools,TRUE,FALSE,blosc-devel,libblosc-dev
 boost,,TRUE,FALSE,boost-devel,libboost-dev
 bwa,,FALSE,TRUE,bwa,bwa
 bwidget,gui,TRUE,TRUE,bwidget,bwidget
@@ -25,12 +26,16 @@ docker,hpc,FALSE,TRUE,podman-docker,docker
 dos2unix,doc,FALSE,TRUE,dos2unix,dos2unix
 doxygen,doc,FALSE,TRUE,doxygen,doxygen
 exiftool,media,TRUE,TRUE,/usr/bin/exiftool,libimage-exiftool-perl
+expat,net,TRUE,FALSE,expat-devel,libexpat-dev
 ffmpeg,media,TRUE,FALSE,ffmpeg-free-devel,libavfilter-dev
 ffmpeg-bin,media,FALSE,TRUE,ffmpeg-free,ffmpeg
 fftw,math,TRUE,FALSE,fftw-devel,libfftw3-dev
 flex,tools,TRUE,FALSE,flex,flex
+flint,math,TRUE,FALSE,flint-devel,libflint-dev
+fluidsynth,media,TRUE,FALSE,fluidsynth-devel,libfluidsynth-dev
 freetype,media,TRUE,FALSE,freetype-devel,libfreetype6-dev
 fribidi,media,TRUE,FALSE,fribidi-devel,libfribidi-dev
+fswatch,tools,TRUE,FALSE,fswatch-devel,libfswatch-dev
 g++,tools,FALSE,TRUE,g++,g++
 gdal,geo,TRUE,FALSE,gdal-devel,libgdal-dev
 gdal-python,geo,FALSE,TRUE,python3dist(gdal),python3-gdal
@@ -41,6 +46,7 @@ ghostscript,doc,FALSE,TRUE,ghostscript,ghostscript
 git,net,FALSE,TRUE,git,git
 glib2,tools,TRUE,FALSE,glib2-devel,libglib2.0-dev
 glpk,math,TRUE,FALSE,glpk-devel,libglpk-dev
+glslc,media,TRUE,FALSE,glslc,glslc
 gmp,math,TRUE,FALSE,gmp-devel,libgmp3-dev
 gmt,geo,FALSE,TRUE,gmt,gmt
 gnupg2,crypto,FALSE,TRUE,gnupg2,gnupg2
@@ -72,9 +78,11 @@ ledger,doc,FALSE,TRUE,ledger,ledger
 leptonica,media,TRUE,FALSE,leptonica-devel,libleptonica-dev
 libarchive,media,TRUE,FALSE,libarchive-devel,libarchive-dev
 libatomic,hpc,TRUE,FALSE,libatomic,libatomic1
+libclang,tools,TRUE,FALSE,libclang-devel,libclang-dev
 libgit2,net,TRUE,FALSE,libgit2-devel,libgit2-dev
 libgl,media,TRUE,FALSE,mesa-libGL-devel,libgl1-mesa-dev
 libglu,media,TRUE,FALSE,mesa-libGLU-devel,libglu1-mesa-dev
+libidn,net,TRUE,FALSE,libidn-devel,libidn11-dev
 libjpeg,media,TRUE,FALSE,libjpeg-turbo-devel,libjpeg-dev
 libpng,media,TRUE,FALSE,libpng-devel,libpng-dev
 libreoffice,doc,FALSE,TRUE,libreoffice,libreoffice
@@ -134,6 +142,7 @@ scala,,TRUE,TRUE,scala,scala
 scikit-learn,math,FALSE,TRUE,python3dist(scikit-learn),python3-sklearn
 scipy,math,FALSE,TRUE,python3dist(scipy),python3-scipy
 singularity,hpc,FALSE,TRUE,singularity,singularity
+snappy,tools,TRUE,FALSE,snappy-devel,libsnappy-dev
 source-highlight,doc,FALSE,TRUE,source-highlight,source-highlight
 sqlite,db,TRUE,FALSE,sqlite-devel,libsqlite3-dev
 subversion,net,FALSE,TRUE,subversion,subversion
@@ -165,6 +174,7 @@ udunits,geo,TRUE,FALSE,udunits2-devel,libudunits2-dev
 unrar,tools,FALSE,TRUE,/usr/bin/unrar,unrar
 v8,,TRUE,FALSE,v8-devel,libv8-dev
 vagrant,hpc,FALSE,TRUE,vagrant,vagrant
+vulkan,media,TRUE,FALSE,vulkan-loader-devel,libvulkan-dev
 wordnet,db,FALSE,TRUE,wordnet,wordnet
 wxpython,gui,FALSE,TRUE,python3dist(wxpython),python3-wxgtk4.0
 xclip,tools,FALSE,TRUE,xclip,xclip
