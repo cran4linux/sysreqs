@@ -465,7 +465,7 @@ ledger,,ledger hledger,TRUE,"ledger, hledger, beancount"
 leidenAlg,libxml2 glpk,,TRUE,"(optional), libxml2 (optional), glpk, optional)"
 libdeflate,cmake,,TRUE,CMake
 libimath,cmake,,TRUE,cmake
-libopenexr,,,,"CMake,"
+libopenexr,,,FALSE,"CMake,"
 Libra,gsl,,TRUE,GNU Scientific Library (GSL)
 libstable4u,gsl,,TRUE,GNU GSL
 liftr,,docker,TRUE,Docker (see <https://docs.docker.com/install/>)
@@ -474,6 +474,7 @@ lincom,,,TRUE,"MOSEK, MOSEK License"
 lira,,,TRUE,JAGS (seehttp://mcmc-jags.sourceforge.net)
 littler,,,TRUE,libR
 LLMing,,,TRUE,"Python with packages: torch,transformers, pandas, numpy"
+llmjson,,,FALSE,"Cargo (Rust's package manager), rustc"
 localLLM,curl,,TRUE,"libcurl (optional, for model downloading)"
 localsolver,,,TRUE,At least trial version of LocalSolver to bedownloaded from http://www.localsolver.com/download.html
 locfit,,,TRUE,USE_C17
@@ -494,6 +495,7 @@ maGUI,,,TRUE,Tktable
 mailR,,,TRUE,Java
 mallet,,,TRUE,java
 manipulate,,,TRUE,RStudio - http://www.rstudio.com/products/rstudio/
+manureshed,,,FALSE,"GDAL, GEOS, PROJ"
 MaOEA,,,TRUE,"Pythonx with following modules: PyGMO, NumPy,and cloudpickle"
 mapme.biodiversity,,,TRUE,"GDAL, PROJ"
 marked,,,TRUE,ADMB version<http://admb-project.org/> foruse.admb=TRUE; see readme.txt
@@ -541,6 +543,7 @@ mongolite,openssl sasl,,TRUE,"OpenSSL, Cyrus SASL (aka libsasl2)"
 monoreg,gsl,,TRUE,GNU GSL
 morse,,,TRUE,JAGS (seehttps://mcmc-jags.sourceforge.io)
 motifr,,numpy pandas,TRUE,"Python, numpy, pandas"
+MPCR,,,FALSE,"CMake, CUDA"
 MplusTrees,,,TRUE,'Mplus' (<http://www.statmodel.com>)
 mRpostman,,,TRUE,libcurl: libcurl-devel (rpm) orlibcurl4-openssl-dev (deb)
 mscstexta4r,,,TRUE,"A valid account MUST be registered with Microsoft'sCognitive Services website<https://www.microsoft.com/cognitive-services/> in order toobtain a (free) API key. Without an API key, this package willnot work properly."
@@ -816,6 +819,7 @@ rirods,,,TRUE,iRODS C++ HTTP API(<https://github.com/irods/irods_client_http_api
 rixpress,,,TRUE,Nix
 rjags,jags,,TRUE,JAGSx.y
 rJava,java,,TRUE,"Java JDKor higher (for JRI/REngine JDKorhigher),"
+rjd3jars,,,FALSE,Java
 rjd3providers,,,TRUE,Java
 rjd3toolkit,,,TRUE,Java
 rjd3tramoseats,,,TRUE,Java
@@ -835,10 +839,12 @@ RMark,,,TRUE,"notepad.exe, mark32.exe or mark64.exe on Windowsand only mark on L
 rmarkdown,,pandoc,TRUE,pandoc - http://pandoc.org
 rmatio,,,TRUE,zlib headers and library.
 rmcfs,,,TRUE,Java
+rmdcev,,,FALSE,CmdStan
 RmdConcord,,,TRUE,"pandocwith 'commonmark_x' processing and'sourcepos' extension, needed for 'rmarkdown' formats)."
 rmdfiltr,,,TRUE,pandoc; https://pandoc.org)
 RmecabKo,mecab,,TRUE,
 rMIDAS,,,TRUE,Python
+rMIDAS2,,,FALSE,Python with the 'midasverse-midas-api'package
 RMOA,,,TRUE,Java
 RMOAjars,,,TRUE,Java
 Rmosek,,,TRUE,MOSEK and MOSEK License
@@ -850,6 +856,7 @@ RNetCDF,netcdf udunits,,TRUE,"netcdf, udunits-2"
 RNetLogo,,,TRUE,"Java, NetLogo"
 RoBMA,jags,,TRUE,JAGS(https://mcmc-jags.sourceforge.io/)
 RoBSA,jags,,TRUE,JAGS(https://mcmc-jags.sourceforge.io/)
+robscale,,,FALSE,TBB
 RODBC,odbc,,TRUE,An ODBC3 driver manager and drivers.
 rodeo,,,TRUE,The tools to run 'R CMD SHLIB' on 'Fortran' code.The used 'Fortran' compiler must support pointer initializationwhich is a feature of thestandard.
 roger,,,TRUE,roger-base (for interface functions only)
@@ -973,6 +980,7 @@ sparklyr,,java-bin,TRUE,"Spark:x, orx, orx"
 sparklyr.flint,,,TRUE,Spark:x or above
 sparklyr.nested,,,TRUE,Spark:x orx
 sparktf,,,TRUE,TensorFlow (https://www.tensorflow.org/)
+sparselu,,,FALSE,"SuiteSparse (UMFPACK, AMD, SuiteSparse_config)"
 sparsesurv,,,TRUE,JAGSx)
 spate,fftw,,TRUE,fftw3
 SpatialDownscaling,,,TRUE,"Python, TensorFlow, Keras"
