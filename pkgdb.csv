@@ -1,4 +1,5 @@
 name,build,run,revised,comment
+a5R,,,FALSE,"Cargo (Rust's package manager), rustc"
 abn,cmake gsl libjpeg gdal geos proj udunits openssl curl jags,,TRUE,"pkg-config, cmake, gsl, jpeg, gdal, geos, proj,udunits-2, openssl, libcurl, jags"
 accessr,,,TRUE,"OfficeToPDF -https://github.com/cognidox/OfficeToPDF, pandoc -https://pandoc.org"
 acro,,,TRUE,Python
@@ -144,6 +145,7 @@ cncaGUI,xvfb,bwidget,TRUE,Tcl/Tk package BWidget.
 codacore,,,TRUE,TensorFlow (https://www.tensorflow.org/)
 coga,gsl,,TRUE,GNU GSL
 cogmapr,,,TRUE,libcurl: libcurl-devel (rpm) orlibcurl4-openssl-dev (deb).
+CohortMethod,,,FALSE,Java
 colorizer,,,TRUE,ImageMagick++: ImageMagick-c++-devel (rpm) orlibmagick++-dev (deb)
 Colossus,,,TRUE,"make,"
 COMBO,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net)
@@ -230,7 +232,7 @@ easyNCDF,,,TRUE,netcdf development libraries
 EBASE,,,TRUE,JAGSx.y (https://mcmc-jags.sourceforge.net)
 ebvcube,,,TRUE,GDAL binaries
 EcoDiet,,,TRUE,JAGS
-econetwork,,,TRUE,GNU GSL
+econetwork,,,TRUE,
 ecotourism,,,TRUE,Quarto
 edgemodelr,,,TRUE,or equivalent for building
 eDMA,,,TRUE,"Requires the OpenMP library for parallel computing.If the OpenMP library is not available, the code is executedsequentially and a warning is printed."
@@ -273,7 +275,7 @@ FastKRR,,,TRUE,OpenMP (optional)
 fastText,,,TRUE,
 fcl,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 FCPS,,pandoc,TRUE,Pandoc
-fdars,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
+fdars,cargo,,TRUE,
 feather,,,TRUE,
 fect,,,TRUE,
 FedData,,,TRUE,GDAL
@@ -301,7 +303,7 @@ freesurfer,,,TRUE,"FSL, Freesurfer(https://surfer.nmr.mgh.harvard.edu/)"
 frequency,,,TRUE,pandoc - http://pandoc.org
 fRLR,gsl,,TRUE,GNU Scientific Library (GSL). Note: users shouldhave GSL installed.
 fru,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
-fs,automake,,TRUE,
+fs,automake,,FALSE,libuv: libuv-devel (rpm) or libuv1-dev (deb).Alternatively to build the vendored libuv 'cmake' is required..
 fsdaR,,,TRUE,"(license-free) MATLAB Runtime (MCR) V, Java(>=8)"
 fslr,,,TRUE,FSL
 fst,,,TRUE,little-endian platform
@@ -349,7 +351,7 @@ gitcreds,,git,TRUE,git
 gittargets,,git,TRUE,Git
 glioblastomaEHRsData,,,TRUE,"pandoc - http://pandoc.org, tcltk(optional)"
 glmulti,,,TRUE,Java
-glpkAPI,glpk gmp,,TRUE,GLPK
+glpkAPI,glpk gmp,,TRUE,
 gm,,musescore,TRUE,MuseScore - https://musescore.org/
 gMCP,,,TRUE,Java
 gmp,gmp,,TRUE,gmp
@@ -487,6 +489,7 @@ loon.tourr,xvfb,,TRUE,
 lpmec,,,TRUE,"Python with jax, numpy, numpyro(optional; for NumPyro backend via reticulate)"
 LSAMBA,,,TRUE,'Monolix'(<https://monolixsuite.slp-software.com/monolix/2024R1/>)
 lubridate,,,TRUE,A system with zoneinfo data (e.g./usr/share/zoneinfo). On Windows the zoneinfo included with Ris used.
+lumbermark,,,FALSE,OpenMP
 lwgeom,geos proj sqlite,,TRUE,"GEOS, PROJ, sqlite3"
 m2r,,,TRUE,Macaulay2 <https://www.macaulay2.com>
 magick,imagemagick,,TRUE,ImageMagick++: ImageMagick-c++-devel (rpm) orlibmagick++-dev (deb)
@@ -531,6 +534,7 @@ mixcat,gsl,,TRUE,
 mixgb,,,TRUE,macOS: Accelerate framework
 MixSIAR,,,TRUE,JAGS
 mixture,,,TRUE,GNU GSL
+ml,,,FALSE,"Cargo ('Rust' package manager), rustc,optional)"
 ML2Pvae,,,TRUE,"TensorFlow (https://www.tensorflow.org), Keras(https://keras.io), TensorFlow Probability(https://www.tensorflow.org/probability)"
 mlexperiments,,,TRUE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
 mllrnrs,,,TRUE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
@@ -971,6 +975,7 @@ socratadata,cargo,,TRUE,"Cargo (Rust's package manager), rustc, xz"
 sodium,libsodium,,TRUE,libsodium
 SOFIA,,,TRUE,Circos
 soilhypfit,,,TRUE,"gmp, mpfr"
+soilVAE,,,FALSE,Python; TensorFlow; Keras
 soptdmaeA,xvfb,,TRUE,
 sound,,,TRUE,"For playing sounds, a command line system tool forplaying wav-files is required."
 sourcoise,,,TRUE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
@@ -988,7 +993,7 @@ spatPomp,,,TRUE,"For Windows users, Rtools (seehttps://cran.r-project.org/bin/wi
 spatsoc,,,TRUE,"GDAL, GEOS, PROJ,sqlite3"
 spcosa,,,TRUE,Java
 speakeasyR,,,TRUE,arpack (optional)
-specklestar,fftw,,TRUE,fftw3
+specklestar,fftw,,TRUE,
 spherepc,,,TRUE,XQuartz (on MacOS)
 spongecake,,ffmpeg-bin,TRUE,FFmpeg (http://ffmpeg.org)
 sportyR,,,TRUE,"pandoc, pandoc-citeproc"
