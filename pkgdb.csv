@@ -420,6 +420,7 @@ iMRMC,,java-bin,TRUE,
 informativeSCI,,,TRUE,Java
 inlpubs,,,TRUE,"Complete functionality necessitates Amazon Corretto(win), and default-jre, pandoc, libxml2-dev,libpoppler-cpp-dev, libmagick++-dev, optipng, libtesseract-dev,libleptonica-dev, tesseract-ocr-eng (deb)"
 inpdfr,,xpdf,TRUE,XPDF (http://www.foolabs.com/xpdf/download.html)
+InsectLabelR,,,FALSE,pdflatex
 InSilicoVA,,,TRUE,Java
 inTextSummaryTable,,pandoc,TRUE,pandoc (to export an interactive summary table to afile)
 inti,,,TRUE,pandoc
@@ -468,7 +469,7 @@ lcra,,,TRUE,JAGSx.y or WinBUGS
 LDATS,,,TRUE,gsl
 LeafArea,,imagej,TRUE,"ImageJ, ij.jar (seehttp://imagej.nih.gov/ij/), Java"
 learnr,,,TRUE,pandoc - http://pandoc.org
-ledger,,ledger hledger,TRUE,"ledger, hledger, beancount"
+ledger,,ledger hledger,FALSE,"ledger, hledger, beanquery"
 leidenAlg,libxml2 glpk,,TRUE,"(optional), libxml2 (optional), glpk, optional)"
 libdeflate,cmake,,TRUE,CMake
 libimath,cmake,,TRUE,cmake
@@ -778,6 +779,7 @@ RCzechia,,,TRUE,"GDAL, GEOS, PROJ"
 rdataretriever,,,TRUE,"Python, retriever (version mustbe listed to patch to allow parsing)"
 rde,,xclip,TRUE,xclip (https://github.com/astrand/xclip) or xsel(http://www.vergenet.net/~conrad/software/xsel/) for accessingthe X11 clipboard
 rDEA,glpk,,TRUE,GLPK
+RDesk,,,FALSE,"Windowsor later, 'Rtools44' or later(https://cran.r-project.org/bin/windows/Rtools/), Microsoft'WebView2' Runtime(https://developer.microsoft.com/microsoft-edge/webview2/)"
 RDieHarder,gsl,,TRUE,GNU GSL for the GSL random-number generators
 rdkitpyr,,,TRUE,"Python, NumPy, RDKit (Python)"
 rdoxygen,,doxygen,TRUE,doxygen
@@ -835,6 +837,7 @@ rjd3jars,,,FALSE,Java
 rjd3providers,,,TRUE,Java
 rjd3toolkit,,,TRUE,Java
 rjd3tramoseats,,,TRUE,Java
+rjd3workspace,,,FALSE,Java
 rjd3x13,,,TRUE,Java
 RJDemetra,,,TRUE,Java
 rjdmarkdown,,,TRUE,Java
@@ -868,7 +871,7 @@ RNetCDF,netcdf udunits,,TRUE,"netcdf, udunits-2"
 RNetLogo,,,TRUE,"Java, NetLogo"
 RoBMA,jags,,TRUE,JAGS(https://mcmc-jags.sourceforge.io/)
 RoBSA,jags,,TRUE,JAGS(https://mcmc-jags.sourceforge.io/)
-robscale,,,FALSE,TBB
+robscale,,,TRUE,
 RODBC,odbc,,TRUE,An ODBC3 driver manager and drivers.
 rodeo,,,TRUE,The tools to run 'R CMD SHLIB' on 'Fortran' code.The used 'Fortran' compiler must support pointer initializationwhich is a feature of thestandard.
 roger,,,TRUE,roger-base (for interface functions only)
@@ -944,6 +947,8 @@ sarsop,,,TRUE,"mallinfo, hence Linux, MacOS or Windows"
 SASmarkdown,,,TRUE,SAS
 sasquatch,,,TRUE,"python, SASPy, java required forIOM access method"
 sbrl,gmp gsl,,TRUE,"gmp, gsl"
+scip,,,FALSE,"CMake,"
+sd2R,,,FALSE,curl or wget (for downloading vocabularyfiles during installation)
 sdcTable,glpk gmp,,TRUE,"GLPK library, including -dev or -devel part"
 SDMtune,,java-bin,TRUE,Java
 seewave,,,TRUE,LIBSNDFILE
@@ -952,8 +957,10 @@ sendigR,,,TRUE,Python(>=3.9.6)
 seqinr,,,TRUE,zlib headers and library.
 seqminer,,,TRUE,"zlib headers and libraries,  optionallyalso bzip2 and POSIX-compliant regex functions."
 sequoia,,,TRUE,Fortran95
+seroreconstruct,,,FALSE,TBB
 sf,gdal geos proj sqlite,,TRUE,"GDAL, GEOS, PROJ,sqlite3"
 SGP,,tex-pdfpages,TRUE,(PDF)LaTeX (https://www.latex-project.org/) with'pdfpages' package for studentGrowthPlot option in visualizeSGPto bind together student growth plots into school catalogs
+shard,,,FALSE,"POSIX shared memory (optional), memory-mapped files"
 sharx,,,TRUE,jags
 shinyalert,,pandoc,TRUE,
 shinyInvoice,,,TRUE,pandoc
@@ -1106,6 +1113,7 @@ tth,,,TRUE,USE_C17
 TTR.PGM,,,TRUE,CXX17
 TVMM,xvfb,,TRUE,
 twc,,,TRUE,"PROJ, https://proj.org/download.html), GDAL(>=, https://gdal.org/download.html), NetCDF(>=,https://www.unidata.ucar.edu/software/netcdf/)."
+tynding,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
 typr,,,TRUE,Typst command line tool(<https://github.com/typst/typst>) or Quarto command line tool(<https://github.com/quarto-dev/quarto-cli>).
 ubiquity,,perl,TRUE,Perl
 udunits2,udunits,,TRUE,udunits fromhttps://www.unidata.ucar.edu/software/udunits/
