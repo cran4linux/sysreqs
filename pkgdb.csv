@@ -58,6 +58,7 @@ bamdit,,,TRUE,JAGS (seehttp://mcmc-jags.sourceforge.net)
 bamm,,,TRUE,"GDAL: gdal-bin (deb), libgdal-dev (deb)or gdal-devel (rmp), GEOS, PROJ:libproj-dev (deb), sqlite3, ImageMagick++: imagemagick (deb),libmagic-dev (deb), libmagick++-dev (deb) orImageMagick-c++-devel (rpm) ImageMagick(http://imagemagick.org) or GraphicsMagick(http://www.graphicsmagick.org) or LyX (http://www.lyx.org) forsaveGIF(); (PDF)LaTeX for saveLatex(); SWF Tools(http://swftools.org) for saveSWF(); FFmpeg (http://ffmpeg.org)or avconv (https://libav.org/avconv.html) for saveVideo()"
 bartMachine,,,TRUE,Java
 bartMachineJARs,,,TRUE,Java
+basifoR,,,FALSE,Microsoft Access driver on Windows for Accessbackends; mdbtools on Unix-like systems
 BayesCACE,,,TRUE,JAGSx.y (http://mcmc-jags.sourceforge.net)
 bayescount,,,TRUE,JAGS (https://mcmc-jags.sourceforge.net)
 BayesGWQS,,,TRUE,JAGS
@@ -129,6 +130,7 @@ ChoR,,,TRUE,Java
 chromote,,,TRUE,Google Chrome or other Chromium-based browser.chromium: chromium (rpm) or chromium-browser (deb)
 ciflyr,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 CirceR,,,TRUE,Java
+circuitscaper,,,FALSE,"Julia, Circuitscape.jl, Omniscape.jl"
 cit,gsl,,TRUE,gsl (with development libraries libgsl-dev)
 citestR,,,FALSE,Python with the 'midasverse-citest-api'package
 clarabel,cargo,,TRUE,"Cargo (Rust's package manager), rustc,and"
@@ -450,7 +452,7 @@ jSDM,gsl,,TRUE,GNU GSL
 juicr,,,TRUE,
 JuliaCall,,julia,TRUE,"Julia, RCall.jl"
 JuliaConnectoR,,julia,TRUE,Julia
-kantorovich,,,TRUE,GMP (https://gmplib.org/)
+kantorovich,,,TRUE,
 KernelKnn,,,TRUE,"libarmadillo: apt-get install -y libarmadillo-dev(deb), libblas: apt-get install -y libblas-dev (deb),liblapack: apt-get install -y liblapack-dev (deb),libarpack++2: apt-get install -y libarpack++2-dev (deb),: apt-get install -y  (deb)"
 keyring,libsecret,,TRUE,"Optional: libsecret on Linux (libsecret-1-dev onDebian/Ubuntu, libsecret-devel on Fedora/CentOS)"
 klaR,,,TRUE,SVMlight
@@ -509,6 +511,7 @@ MaOEA,,,TRUE,"Pythonx with following modules: PyGMO, NumPy,and cloudpickle"
 mapme.biodiversity,,,TRUE,"GDAL, PROJ"
 marked,,,TRUE,ADMB version<http://admb-project.org/> foruse.admb=TRUE; see readme.txt
 matchingMarkets,,,TRUE,Java
+MatchingPursuit,,,FALSE,"external tool (installed via empi.install()function). The package uses the implementation of the MatchingPursuit algorithm by Piotr T. Różański, available athttps://github.com/develancer/empi)"
 matlabr,,,TRUE,MATLAB
 mauricer,,,TRUE,BEAST2 (https://www.beast2.org/)
 MaxentVariableSelection,,java-bin,TRUE,maxent.jar file
@@ -959,6 +962,7 @@ seqminer,,,TRUE,"zlib headers and libraries,  optionallyalso bzip2 and POSIX-com
 sequoia,,,TRUE,Fortran95
 seroreconstruct,,,FALSE,TBB
 sf,gdal geos proj sqlite,,TRUE,"GDAL, GEOS, PROJ,sqlite3"
+sftpR,,,FALSE,libcurl: libcurl (with libssh2 support)
 SGP,,tex-pdfpages,TRUE,(PDF)LaTeX (https://www.latex-project.org/) with'pdfpages' package for studentGrowthPlot option in visualizeSGPto bind together student growth plots into school catalogs
 shard,,,FALSE,"POSIX shared memory (optional), memory-mapped files"
 sharx,,,TRUE,jags
@@ -1126,6 +1130,7 @@ unmconf,,,TRUE,JAGS(http://mcmc-jags.sourceforge.net)
 unsum,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 untb,,pari,TRUE,PARI/GP[strongly recommended forlogkda()]
 URooTab,,,TRUE,EViews
+uuidx,,,FALSE,"Cargo (Rust's package manager), rustc"
 V8,v8,,TRUE,"On Linux you can build against libv8-dev (Debian)or v8-devel (Fedora). We also provide static libv8 binaries formost platforms, see the README for details."
 valection,,,TRUE,valection
 vapour,gdal proj sqlite,,TRUE,"libgdal-dev, GDAL, PROJ"
