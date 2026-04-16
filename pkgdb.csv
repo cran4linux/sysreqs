@@ -308,7 +308,7 @@ freesurfer,,,TRUE,"FSL, Freesurfer(https://surfer.nmr.mgh.harvard.edu/)"
 frequency,,,TRUE,pandoc - http://pandoc.org
 fRLR,gsl,,TRUE,GNU Scientific Library (GSL). Note: users shouldhave GSL installed.
 fru,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
-fs,automake,,FALSE,libuv: libuv-devel (rpm) or libuv1-dev (deb).Alternatively to build the vendored libuv 'cmake' is required..
+fs,libuv,,TRUE,libuv: libuv-devel (rpm) or libuv1-dev (deb).Alternatively to build the vendored libuv 'cmake' is required..
 fsdaR,,,TRUE,"(license-free) MATLAB Runtime (MCR) V, Java(>=8)"
 fslr,,,TRUE,FSL
 fst,,,TRUE,little-endian platform
@@ -621,6 +621,7 @@ osrm.backend,,,TRUE,OSRM backend binariesv5.27.0)<https://github.com/Project-OSR
 osrmr,,,TRUE,"To use the Localhost of OSRM, you need to buildOSRM<https://github.com/Project-OSRM/osrm-backend/wiki/Building-OSRM>locally"
 otelsdk,cmake protobuf curl,,TRUE,"cmake, protobuf-compiler, libprotobuf, libcurl,zlib,"
 pagedown,,,TRUE,Pandoc
+pak,curl,,TRUE,
 pander,,pandoc,TRUE,pandoc (https://johnmacfarlane.net/pandoc) forexporting markdown files to other formats.
 pandocfilters,,pandoc,TRUE,pandoc
 papaja,,,TRUE,"Rendering the document template requires pandoc; https://pandoc.org) and for PDFs a TeX distribution, suchas TinyTeX; https://yihui.org/tinytex/)"

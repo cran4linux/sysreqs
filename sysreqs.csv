@@ -93,6 +93,7 @@ libssh,net,TRUE,FALSE,libssh-devel,libssh-dev
 libssh2,net,TRUE,FALSE,libssh2-devel,libssh2-1-dev
 libtiff,media,TRUE,FALSE,libtiff-devel,libtiff-dev
 libtool,tools,TRUE,FALSE,libtool,libtool
+libuv,tools,TRUE,FALSE,libuv-devel,libuv1-dev
 libwebp,media,TRUE,FALSE,libwebp-devel,libwebp-dev
 libxml2,net,TRUE,FALSE,libxml2-devel,libxml2-dev
 libxslt,net,TRUE,FALSE,libxslt-devel,libxslt1-dev
