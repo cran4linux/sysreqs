@@ -149,6 +149,7 @@ cncaGUI,xvfb,bwidget,TRUE,Tcl/Tk package BWidget.
 codacore,,,TRUE,TensorFlow (https://www.tensorflow.org/)
 coga,gsl,,TRUE,GNU GSL
 cogmapr,,,TRUE,libcurl: libcurl-devel (rpm) orlibcurl4-openssl-dev (deb).
+CohortContrast,,,FALSE,Python
 CohortMethod,,,FALSE,Java
 colorizer,,,TRUE,ImageMagick++: ImageMagick-c++-devel (rpm) orlibmagick++-dev (deb)
 Colossus,,,TRUE,"make,"
@@ -511,7 +512,7 @@ MaOEA,,,TRUE,"Pythonx with following modules: PyGMO, NumPy,and cloudpickle"
 mapme.biodiversity,,,TRUE,"GDAL, PROJ"
 marked,,,TRUE,ADMB version<http://admb-project.org/> foruse.admb=TRUE; see readme.txt
 matchingMarkets,,,TRUE,Java
-MatchingPursuit,,,FALSE,"external tool (installed via empi.install()function). The package uses the implementation of the MatchingPursuit algorithm by Piotr T. Różański, available athttps://github.com/develancer/empi)"
+MatchingPursuit,,,FALSE,"external tool (installed via empi.install()function). The package uses the implementation of the MatchingPursuit algorithm by Piotr T. Różański, available athttps://github.com/develancer/empi."
 matlabr,,,TRUE,MATLAB
 mauricer,,,TRUE,BEAST2 (https://www.beast2.org/)
 MaxentVariableSelection,,java-bin,TRUE,maxent.jar file
@@ -832,6 +833,7 @@ RH2,,,TRUE,java runtime
 ridge,gsl,,TRUE,Gnu Scientific Library version
 rim,,maxima,TRUE,"Maxima (https://sourceforge.net/projects/maxima/,tested with versions-, needs to be on PATH"
 rinet,,,TRUE,"Python, TensorFlow, Keras, scikit-learn"
+rip.opencv,,,FALSE,OpenCVor newer
 rirods,,,TRUE,iRODS C++ HTTP API(<https://github.com/irods/irods_client_http_api>)
 rixpress,,,TRUE,Nix
 rjags,jags,,TRUE,JAGSx.y
@@ -1040,7 +1042,7 @@ strawr,curl,,TRUE,libcurl: libcurl-devel (rpm) orlibcurl4-openssl-dev (deb)
 streambugs,,,TRUE,C99
 streamMOA,,,TRUE,Java
 stressor,,,TRUE,python(>=3.8.10)
-string2path,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
+string2path,cargo,,FALSE,"Cargo (Rust's package manager), rustc, fontconfig"
 stringi,,,TRUE,"ICU4C, optional)"
 sudachir,,,TRUE,Python
 SuperGauss,fftw,,TRUE,fftw3
