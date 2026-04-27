@@ -62,6 +62,7 @@ basifoR,,,FALSE,Microsoft Access driver on Windows for Accessbackends; mdbtools 
 BayesCACE,,,TRUE,JAGSx.y (http://mcmc-jags.sourceforge.net)
 bayescount,,,TRUE,JAGS (https://mcmc-jags.sourceforge.net)
 BayesGWQS,,,TRUE,JAGS
+BayesianDEB,,,FALSE,CmdStan(https://mc-stan.org/users/interfaces/cmdstan)
 BayesianInference,,,TRUE,"Python, 'BayesInference' python library."
 bayesplot,,pandoc,TRUE,"pandoc, pandoc-citeproc"
 BayesPostEst,,,TRUE,JAGS (http://mcmc-jags.sourceforge.io)
@@ -221,6 +222,7 @@ docknitr,,docker,TRUE,"Docker, RStudio>=1.2"
 doconv,,libreoffice,TRUE,"LibreOffice, Microsoft Word"
 docxtractr,,libreoffice,TRUE,LibreOffice (<https://www.libreoffice.org/>)required to extract data fromdoc files or performpptxconversion.
 domino,,,TRUE,domino (~>1.7.1)
+DownBallotR,,,FALSE,"Python, pip"
 DQAstats,,,TRUE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
 dress.graph,,,FALSE,"OpenMP, CUDA Toolkit (optional, for GPUacceleration)"
 DRIP,gsl,,TRUE,
@@ -305,6 +307,7 @@ forensim,,,TRUE,Tcl/Tk package TkTable
 forsearch,,,TRUE,gmp
 fozziejoin,cargo,,TRUE,"Cargo (Rust's package manager), rustc, xz"
 fpROC,,,TRUE,"OpenMP, TBB"
+freestiler,,,FALSE,"Cargo (Rust's package manager), rustc"
 freesurfer,,,TRUE,"FSL, Freesurfer(https://surfer.nmr.mgh.harvard.edu/)"
 frequency,,,TRUE,pandoc - http://pandoc.org
 fRLR,gsl,,TRUE,GNU Scientific Library (GSL). Note: users shouldhave GSL installed.
@@ -427,7 +430,7 @@ InsectLabelR,,,FALSE,pdflatex
 InSilicoVA,,,TRUE,Java
 inTextSummaryTable,,pandoc,TRUE,pandoc (to export an interactive summary table to afile)
 inti,,,TRUE,pandoc
-IP,libidn,,TRUE,libidn: libidn11-dev (deb)
+IP,libidn,,TRUE,
 ip2location,,,TRUE,IP2Location Python library<https://www.ip2location.com/development-libraries/ip2location/python>
 ip2locationio,,,TRUE,IP2Location.io Python library<https://github.com/ip2location/ip2location-io-python>
 ip2proxy,,,TRUE,IP2Proxy Python library<https://www.ip2location.com/development-libraries/ip2proxy/python>
@@ -470,6 +473,7 @@ latte,,latte 4ti2,TRUE,"LattE <https://www.math.ucdavis.edu/~latte/>,ti2<http://
 LCMCR,gsl,,TRUE,Gnu Scientific Library version
 lcra,,,TRUE,JAGSx.y or WinBUGS
 LDATS,,,TRUE,gsl
+leaf,,,FALSE,"Conda, Python"
 LeafArea,,imagej,TRUE,"ImageJ, ij.jar (seehttp://imagej.nih.gov/ij/), Java"
 learnr,,,TRUE,pandoc - http://pandoc.org
 ledger,,ledger hledger,FALSE,"ledger, hledger, beanquery"
@@ -487,7 +491,7 @@ littler,,,TRUE,libR
 LLMing,,,TRUE,"Python with packages: torch,transformers, pandas, numpy"
 llmjson,,,FALSE,"Cargo (Rust's package manager), rustc"
 localLLM,curl,,TRUE,"libcurl (optional, for model downloading)"
-localsolver,,,TRUE,At least trial version of LocalSolver to bedownloaded from http://www.localsolver.com/download.html
+localsolver,,,TRUE,
 locfit,,,TRUE,USE_C17
 LOMAR,gmp fftw,,TRUE,"gmp, fftw3"
 loo,,pandoc,TRUE,"pandoc, pandoc-citeproc"
@@ -559,6 +563,7 @@ morse,,,TRUE,JAGS (seehttps://mcmc-jags.sourceforge.io)
 motifr,,numpy pandas,TRUE,"Python, numpy, pandas"
 MPCR,,,FALSE,"CMake, CUDA"
 MplusTrees,,,TRUE,'Mplus' (<http://www.statmodel.com>)
+MRIreduce,,,FALSE,"FSL (FMRIB Software Library, available athttps://fsl.fmrib.ox.ac.uk/fsl/docs/#/install/index)"
 mRpostman,,,TRUE,libcurl: libcurl-devel (rpm) orlibcurl4-openssl-dev (deb)
 mscstexta4r,,,TRUE,"A valid account MUST be registered with Microsoft'sCognitive Services website<https://www.microsoft.com/cognitive-services/> in order toobtain a (free) API key. Without an API key, this package willnot work properly."
 mscsweblm4r,,,TRUE,"A valid account MUST be registered with Microsoft'sCognitive Services website<https://www.microsoft.com/cognitive-services/> in order toobtain a (free) API key. Without an API key, this package willnot work properly."
@@ -715,6 +720,7 @@ R2wd,,,TRUE,Windows
 R2WinBUGS,,openbugs,TRUE,OpenBugs for functions bugs() and openbugs() orWinBUGSfor function bugs()
 r5r,,,TRUE,Java JDK
 ragg,freetype libpng libtiff libjpeg libwebp,,TRUE,"freetype2, libpng, libtiff, libjpeg, libwebp,libwebpmux"
+randomForestRHF,,,FALSE,OpenMP
 randomForestSRC,,,FALSE,OpenMP
 rapidraker,,,TRUE,Java
 RAppArmor,,,TRUE,"linux, libapparmor-dev"
@@ -845,6 +851,7 @@ rjd3toolkit,,,TRUE,Java
 rjd3tramoseats,,,TRUE,Java
 rjd3workspace,,,FALSE,Java
 rjd3x13,,,TRUE,Java
+rjd3xjars,,,FALSE,Java
 RJDemetra,,,TRUE,Java
 rjdmarkdown,,,TRUE,Java
 rjdqa,,,TRUE,Java
@@ -920,7 +927,7 @@ rstanarm,,pandoc,TRUE,"pandoc, pandoc-citeproc"
 rstantools,,pandoc,TRUE,pandoc
 rsubgroup,,,TRUE,Java
 rsvg,librsvg2,,TRUE,librsvg2 (at least version
-rswipl,cmake libarchive expat,,TRUE,"CMake, pandoc, libarchive,libregex, libexpat, liblzma, libzstd, liblz4, libz2, libz,libbcrypt"
+rswipl,cmake libarchive expat,,FALSE,"CMake, pandoc, libarchive,libregex, libexpat, liblzma, libzstd, liblz4, libz2, libz,libbcrypt, libutf8proc"
 Rsymphony,coin-or-symphony,,TRUE,SYMPHONY libraries and headers
 rsyncrosim,,,TRUE,SyncroSim
 rsyslog,,,TRUE,POSIX.1-2001
@@ -935,6 +942,7 @@ rvisidata,,,TRUE,visidata
 rvMF,gmp mpfr,,TRUE,"gmp, mpfr"
 RWeka,,,TRUE,Java
 RWekajars,,,TRUE,Java
+rwig,,,FALSE,"autoconf, CUDA, only for Linux)"
 RWinEdt,,,TRUE,WinEdt
 rzmq,zeromq,,TRUE,ZeroMQ: libzmq3-dev (deb) or zeromq-devel(rpm)
 s2,cmake openssl abseil,,TRUE,"cmake, OpenSSL, Abseil"
@@ -1019,6 +1027,7 @@ speakeasyR,,,TRUE,arpack (optional)
 specklestar,fftw,,TRUE,
 spherepc,,,TRUE,XQuartz (on MacOS)
 spongecake,,ffmpeg-bin,TRUE,FFmpeg (http://ffmpeg.org)
+spopt,,,FALSE,"Cargo (Rust's package manager), rustc"
 sportyR,,,TRUE,"pandoc, pandoc-citeproc"
 SQLFormatteR,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 SqlRender,,,TRUE,Java
@@ -1045,6 +1054,7 @@ stressor,,,TRUE,python(>=3.8.10)
 string2path,cargo,,FALSE,"Cargo (Rust's package manager), rustc, fontconfig"
 stringi,,,TRUE,"ICU4C, optional)"
 sudachir,,,TRUE,Python
+sundialr,,,FALSE,cmake
 SuperGauss,fftw,,TRUE,fftw3
 surveyvoi,jags fftw gmp mpfr,,TRUE,"JAGS (optional), fftw3, gmp, gmpxx, mpfr, autoconf,automake"
 survSNP,gsl,,TRUE,GNU GSL
@@ -1061,6 +1071,7 @@ systemfonts,freetype,,TRUE,"fontconfig, freetype2"
 tables,,,TRUE,pandoc for vignettes
 tabr,,lilypond,TRUE,LilyPond v2.22.1-2+ (needed for rendering sheetmusic or writing MIDI files)
 tabulapdf,,,TRUE,"Java: openjdk-11-jdk (deb),java-11-openjdk.x86_64 (rpm), openjdk@11 (brew)"
+talib,,,FALSE,CMake
 tapkee,,,TRUE,'tapkee' (http://tapkee.lisitsyn.me/)
 TAQMNGR,,,TRUE,zlib headers and library
 targeted,,,TRUE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
@@ -1120,7 +1131,7 @@ tth,,,TRUE,USE_C17
 TTR.PGM,,,TRUE,CXX17
 TVMM,xvfb,,TRUE,
 twc,,,TRUE,"PROJ, https://proj.org/download.html), GDAL(>=, https://gdal.org/download.html), NetCDF(>=,https://www.unidata.ucar.edu/software/netcdf/)."
-tynding,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
+tynding,,,TRUE,
 typr,,,TRUE,Typst command line tool(<https://github.com/typst/typst>) or Quarto command line tool(<https://github.com/quarto-dev/quarto-cli>).
 ubiquity,,perl,TRUE,Perl
 udunits2,udunits,,TRUE,udunits fromhttps://www.unidata.ucar.edu/software/udunits/
@@ -1161,6 +1172,7 @@ webdriver,,,TRUE,PhantomJS (http://phantomjs.org/)
 webp,libwebp,,TRUE,libwebp
 webshot,,imagemagick-bin,TRUE,"PhantomJS for taking screenshots, ImageMagick orGraphicsMagick and OptiPNG for manipulating images."
 websocket,openssl,,TRUE,OpenSSL
+weightederm,,,FALSE,"Python, weightederm Python package"
 wgaim,,,TRUE,asreml-Rx
 WH,,,TRUE,LAPACK
 whirl,,,TRUE,Quarto command line tool(<https://github.com/quarto-dev/quarto-cli>).
