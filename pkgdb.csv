@@ -1,5 +1,6 @@
 name,build,run,revised,comment
 a5R,,,FALSE,"Cargo (Rust's package manager), rustc"
+abba,,,FALSE,"kubectl (optional, for Kubernetes backend), SLURM(optional, sbatch/scontrol/sacct/squeue for SLURM backend),Posit Workbench (optional, for Workbench backend)"
 abn,cmake gsl libjpeg gdal geos proj udunits openssl curl jags,,TRUE,"pkg-config, cmake, gsl, jpeg, gdal, geos, proj,udunits-2, openssl, libcurl, jags"
 accessr,,,TRUE,"OfficeToPDF -https://github.com/cognidox/OfficeToPDF, pandoc -https://pandoc.org"
 acro,,,TRUE,Python
@@ -196,7 +197,7 @@ DataExplorer,,,TRUE,pandoc - http://pandoc.org
 dataMaid,,,TRUE,"pandoc; https://pandoc.org), git, whoami"
 DataPackageR,,,TRUE,pandoc - https://pandoc.org
 dataReporter,,,TRUE,"pandoc; https://pandoc.org), git, whoami"
-datefixR,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
+datefixR,cargo,,FALSE,"Cargo (Rust's package manager), rustc, xz"
 datr,,,TRUE,dat
 dbmss,,pandoc,TRUE,"pandoc,"
 dclone,,,TRUE,"none, one or more of JAGS, WinBUGS, OpenBUGS, Stan"
@@ -294,7 +295,7 @@ fgitR,,git,TRUE,Git
 findInFiles,,grep,TRUE,grep
 findInGit,,grep git,TRUE,"grep, git"
 fio,cargo,,TRUE,"Cargo (Rust's package manager), rustc, xz"
-fitbitViz,,,TRUE,update: apt-get -y update (deb)
+fitbitViz,,,TRUE,
 flan,gsl,,TRUE,GNU GSL
 flexsiteboard,,,TRUE,pandoc - http://pandoc.org
 flint,flint mpfr gmp,,TRUE,"flint, mpfr, gmp"
@@ -369,7 +370,7 @@ gnn,,,TRUE,TensorFlow (https://www.tensorflow.org/)
 govdown,,,TRUE,pandoc - http://pandoc.org
 goxygen,,,TRUE,"pandoc, pandoc-citeproc"
 GPBayes,gsl,,TRUE,GNU Scientific Library version
-GreedyExperimentalDesign,,,TRUE,Java
+GreedyExperimentalDesign,,,FALSE,"Java; wgpu-native(optional,for GPU acceleration, seehttps://github.com/gfx-rs/wgpu-native)"
 GreedyExperimentalDesignJARs,,,TRUE,Java
 gretlR,,gretl,TRUE,gretl
 gridDebug,,,TRUE,graphviz
@@ -393,6 +394,7 @@ haven,,,TRUE,"zlib: zlib1g-dev (deb), zlib-devel (rpm)"
 hdbayes,,,TRUE,CmdStan(https://mc-stan.org/users/interfaces/cmdstan)
 hdf5r,hdf5,,TRUE,HDF5
 hdfqlr,,,TRUE,HDFql
+HDNRA,,,FALSE,OpenMP
 hdtg,,,TRUE,CPU with AVX/SSE4.2 (optional for betterperformance)
 heck,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 helloJavaWorld,,,TRUE,Java
@@ -597,6 +599,7 @@ NMADTA,,,TRUE,JAGSx.y (http://mcmc-jags.sourceforge.net)
 nmslibR,,,TRUE,"python3-dev: apt-get install -y python3-dev (deb),python3-pip: apt-get install -y python3-pip (deb), numpy: pip3install numpy (deb), scipy: pip3 install scipy (deb), nmslib:pip3 install --no-binary :all: nmslib (deb)"
 NobBS,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net/) foranalysis of Bayesian hierarchical models
 nomnoml,,,TRUE,"A chromium based browser, required by ""webshot2""<https://rstudio.github.io/webshot2/>"
+npRmpi,,,FALSE,MPI
 nucim,,,TRUE,tiff fftw libcurl openssl
 occumb,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net)
 oceanmap,,imagemagick-bin,TRUE,ImageMagick
@@ -1003,7 +1006,7 @@ smile,,,TRUE,"GDAL, GEOS, PROJ"
 snSMART,,,TRUE,JAGSx.y
 socratadata,cargo,,TRUE,"Cargo (Rust's package manager), rustc, xz"
 sodium,libsodium,,TRUE,libsodium
-SOFIA,,,TRUE,Circos
+SOFIA,,,TRUE,
 soilFlux,,,FALSE,"Python, TensorFlow, Keras"
 soilhypfit,,,TRUE,"gmp, mpfr"
 soilVAE,,,FALSE,Python; TensorFlow; Keras
