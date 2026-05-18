@@ -98,7 +98,7 @@ BiplotGUI,,,TRUE,windows
 bittermelon,,,TRUE,'monobit' for reading/writing additional bitmapfont formats.
 blandr,,,TRUE,pandoc
 blastula,,,TRUE,pandoc - http://pandoc.org
-blindreview,,,TRUE,gmp
+blindreview,,,TRUE,
 blogdown,,hugo,TRUE,Hugo (<https://gohugo.io>) and Pandoc(<https://pandoc.org>)
 blosc,blosc,,TRUE,blosc: blosc-devel (rpm) or libblosc-dev (deb)
 bnlearn,,,TRUE,USE_C17
@@ -126,6 +126,7 @@ caugi,cargo,,TRUE,"Cargo (Rust's package manager), rustc, xz"
 causact,,,TRUE,Python and numpyro are needed for Bayesianinference computations; python with header files andshared library; numpyrov0.12.1;https://https://num.pyro.ai/en/latest/index.html); arvizv0.15.1; https://https://python.arviz.org/en/stable/)
 caviarpd,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 CBSr,,,TRUE,Java
+cgvR,,,FALSE,"C17,   pkg-config, libvulkan-dev(Linux) or LunarG 'Vulkan' 'SDK' (Windows, macOS), libglfw3-dev(Linux) or glfw via Homebrew (macOS), ffmpeg (optional, forcgv_record_*). Optional configure flags: --with-vulkan /--without-vulkan, --with-simd for SSE4.1 + PCLMUL fpng."
 chicane,,,TRUE,bedtools
 chopin,,,TRUE,netcdf
 ChoR,,,TRUE,
@@ -229,6 +230,7 @@ DownBallotR,,,FALSE,"Python, pip"
 DQAstats,,,TRUE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
 dress.graph,,,FALSE,"OpenMP, CUDA Toolkit (optional, for GPUacceleration)"
 DRIP,gsl,,TRUE,
+drogonR,,,FALSE,"OpenSSL (optional, for HTTPS)"
 drugsens,,,TRUE,QuPath™or higher
 dti,gsl,,TRUE,gsl
 duckdb,,,TRUE,xz (for building from source)
@@ -307,7 +309,7 @@ FMAT,,,TRUE,Python
 fmriAR,,,TRUE,OpenMP (optional)
 footBayes,,pandoc,TRUE,"CmdStan(https://mc-stan.org/users/interfaces/cmdstan), pandoc, pandoc-citeproc"
 forensim,,,TRUE,Tcl/Tk package TkTable
-forsearch,,,TRUE,gmp
+forsearch,,,TRUE,
 fozziejoin,cargo,,TRUE,"Cargo (Rust's package manager), rustc, xz"
 fpROC,,,TRUE,"OpenMP, TBB"
 freestiler,,,FALSE,"Cargo (Rust's package manager), rustc"
@@ -545,7 +547,7 @@ MFSIS,,,TRUE,Python
 microbenchmark,,,TRUE,"On a Unix-alike, one of the C functionsmach_absolute_time (macOS), clock_gettime or gethrtime. If noneof these is found, the obsolescent POSIX function gettimeofdaywill be tried."
 MicrobiomeStat,,,TRUE,"NLopt library (optional, for high-performance BMDDmode)"
 MigConnectivity,,,TRUE,JAGS (https://mcmc-jags.sourceforge.net)
-MIMSunit,,,TRUE,
+MIMSunit,,,FALSE,"memoryGB) Ubuntu: build-essential,libxml2-dev, libssl-dev, libcurl4-openssl-dev Windows: Rtools(>="
 mindr,,,TRUE,pandoc - http://pandoc.org
 minidown,,,TRUE,pandoc - http://pandoc.org
 minimaxALT,gsl,,TRUE,"GNU Scientific Library (GSL), OpenMP"
@@ -583,6 +585,7 @@ mwcsr,,java-bin,TRUE,Java
 NACHO,,,TRUE,"pandoc, pandoc-citeproc"
 nanoarrow,,,TRUE,libzstd (optional)
 nanonext,cmake,,FALSE,"'libnng'and 'libmbedtls', or'cmake' to compile NNG and/or Mbed TLS included in packagesources"
+nativeORT,,,FALSE,libonnxruntime
 nbconvertR,,pandoc nbconvert,TRUE,"pandoc, jupyter, jupyter nbconvert (""nbconvert""python package), pywin32 (on windows)"
 ncdf4,netcdf,,TRUE,netcdf library versionor later
 ndjson,,,TRUE,"zlib,"
@@ -1060,7 +1063,7 @@ strawr,curl,,TRUE,libcurl: libcurl-devel (rpm) orlibcurl4-openssl-dev (deb)
 streambugs,,,TRUE,C99
 streamMOA,,,TRUE,Java
 stressor,,,TRUE,python(>=3.8.10)
-string2path,cargo,,FALSE,"Cargo (Rust's package manager), rustc, fontconfig"
+string2path,cargo,,TRUE,
 stringi,,,TRUE,"ICU4C, optional)"
 sudachir,,,TRUE,Python
 sundialr,,,FALSE,cmake
@@ -1071,7 +1074,7 @@ svDialogs,,zenity yad,TRUE,"zenity, yad"
 svglite,libpng,,TRUE,libpng
 svKomodo,,,TRUE,Komodo Edit(https://www.activestate.com/products/komodo-ide/)
 switchr,,git subversion,TRUE,"git, svn"
-SymbolicDeterminants,,,TRUE,gmp
+SymbolicDeterminants,,,TRUE,
 symengine,cmake gmp mpfr,,TRUE,"cmake, gmp, mpfr"
 symSEM,,,TRUE,Python
 SymTS,gsl,,TRUE,
@@ -1124,7 +1127,7 @@ tkImgR,xvfb,tkimg,TRUE,"Tcl/Tk. To read and write other formatsthan PPM/PGM, PNG
 tkrplot,,,TRUE,Windows or X11
 tkRplotR,xvfb,,TRUE,Tcl/Tk
 TMB,,g++,TRUE,
-tok,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
+tok,cargo,,TRUE,
 tomledit,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 TooManyCellsR,,,TRUE,'TooManyCells'(https://github.com/GregorySchwartz/too-many-cells)
 topicmodels,gsl,,TRUE,GNU Scientific Library version
