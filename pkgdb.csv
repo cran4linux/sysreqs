@@ -228,7 +228,7 @@ docxtractr,,libreoffice,TRUE,LibreOffice (<https://www.libreoffice.org/>)require
 domino,,,TRUE,domino (~>1.7.1)
 DownBallotR,,,FALSE,"Python, pip"
 DQAstats,,,TRUE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
-dress.graph,,,FALSE,"OpenMP, CUDA Toolkit (optional, for GPUacceleration)"
+dress.graph,,,TRUE,
 DRIP,gsl,,TRUE,
 drogonR,,,FALSE,"OpenSSL (optional, for HTTPS)"
 drugsens,,,TRUE,QuPath™or higher
@@ -532,7 +532,7 @@ MBNMAdose,,,TRUE,JAGS(https://mcmc-jags.sourceforge.net/)
 MBNMAtime,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net)
 mBvs,gsl,,TRUE,
 mcbette,,,TRUE,BEAST2 (https://www.beast2.org/)
-mdbr,,mdbtools,TRUE,mdbtools: mdbtools (deb).
+mdbr,,mdbtools,TRUE,
 MDCcure,,,TRUE,TBB
 mdendro,,,TRUE,
 MDSGUI,,bwidget,TRUE,"windows, 'BWidget', 'Tktable'"
@@ -589,7 +589,7 @@ nativeORT,,,FALSE,libonnxruntime
 nbconvertR,,pandoc nbconvert,TRUE,"pandoc, jupyter, jupyter nbconvert (""nbconvert""python package), pywin32 (on windows)"
 ncdf4,netcdf,,TRUE,netcdf library versionor later
 ndjson,,,TRUE,"zlib,"
-neo2R,,,TRUE,neo4jAND <=5) <https://neo4j.com/>
+neo2R,,,FALSE,neo4j <https://neo4j.com/>
 neo4jshell,,,TRUE,"neo4j - http://www.neo4j.com, cypher-shell -https://github.com/neo4j/cypher-shell/releases"
 neojags,,,TRUE,JAGS(https://mcmc-jags.sourceforge.io/)
 neptune,,,TRUE,"Python, Neptune (https://neptune.ai/)"
@@ -718,6 +718,7 @@ qgisprocess,,,TRUE,"'QGIS' latest or long-term release currentlysupported accord
 qpdf,libjpeg,,TRUE,libjpeg
 qqconf,fftw,,TRUE,fftw3
 qtkit,,,TRUE,"Chromium-based browser (e.g., Chrome, Chromium, orBrave)"
+quaqcr,,,FALSE,quaqc (https://github.com/bjmt/quaqc)
 quarto,,,TRUE,Quarto command line tool(<https://github.com/quarto-dev/quarto-cli>).
 questionr,,xclip,TRUE,xclip (Linux)
 quitefastmst,,,TRUE,OpenMP
@@ -1065,6 +1066,7 @@ streamMOA,,,TRUE,Java
 stressor,,,TRUE,python(>=3.8.10)
 string2path,cargo,,TRUE,
 stringi,,,TRUE,"ICU4C, optional)"
+submitr,,,FALSE,"SSH client, HTCondor (https://htcondor.org)"
 sudachir,,,TRUE,Python
 sundialr,,,FALSE,cmake
 SuperGauss,fftw,,TRUE,fftw3
