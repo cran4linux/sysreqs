@@ -116,6 +116,7 @@ bssm,,,TRUE,"pandoc, needed for vignettes)"
 bsub,,,TRUE,"Platform LSF, bsub"
 BTSPAS,,,TRUE,JAGS
 BuildSys,,gdb,TRUE,"'Microsoft Visual Code', 'Rtools' on 'Windows','gdb' or 'lldb' depending on which OS"
+buzzMed,,,FALSE,JAGS
 Cairo,cairo,,TRUE,cairohttp://www.cairographics.org/)
 callme,,,TRUE,"Rtools (suitable for the installed R) for Windows,Xcode for Mac"
 camtrapR,,exiftool,TRUE,ExifTool (https://exiftool.org/)
@@ -229,6 +230,7 @@ domino,,,TRUE,domino (~>1.7.1)
 DownBallotR,,,FALSE,"Python, pip"
 DQAstats,,,TRUE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
 dress.graph,,,TRUE,
+drhur,,,FALSE,Quarto command-line tool (https://quarto.org)
 DRIP,gsl,,TRUE,
 drogonR,,,FALSE,"OpenSSL (optional, for HTTPS)"
 drugsens,,,TRUE,QuPath™or higher
@@ -242,7 +244,7 @@ dynr,gsl,,TRUE,
 eaf,gsl,,TRUE,Gnu Scientific Library
 easyNCDF,,,TRUE,netcdf development libraries
 EBASE,,,TRUE,JAGSx.y (https://mcmc-jags.sourceforge.net)
-ebvcube,,,TRUE,
+ebvcube,,,FALSE,GDAL binaries
 EcoDiet,,,TRUE,JAGS
 econetwork,,,TRUE,
 ecotourism,,,TRUE,Quarto
@@ -263,6 +265,7 @@ eplusr,,,TRUE,EnergyPlus (optional) (<https://energyplus.net>);udunits2
 ergm,,,TRUE,
 eseis,,,TRUE,gipptools dataselect
 esviz,,,TRUE,"GDAL, GEOS, PROJ"
+eulerr,,,FALSE,"Cargo (Rust's package manager), rustc"
 evapoRe,,,TRUE,"PROJ, https://proj.org/download.html), GDAL(>=, https://gdal.org/download.html), NetCDF,https://www.unidata.ucar.edu/software/netcdf/)."
 EvidenceSynthesis,,,TRUE,Java
 EviewsR,,,TRUE,EViews
@@ -334,6 +337,7 @@ gdalcubes,gdal proj netcdf sqlite,,TRUE,"GDAL, PROJ, netcdf, sqlite3"
 gdalraster,gdal,,TRUE,"GDAL, built against GEOS)"
 gdata,,perl,TRUE,
 gdtools,cairo freetype,,TRUE,"cairo, freetype2, fontconfig"
+gdxtools,,,FALSE,GAMS is only required if you callgams()
 GeneralizedUmatrix,,,TRUE,"pandoc, needed for vignettes)"
 GeneralizedUmatrixGPU,,,TRUE,"pandoc, needed forvignettes), OpenCL shared library (provided by an SDK such asAMD/NVIDIA)"
 GeneralizedWendland,gsl,,TRUE,gsl
@@ -357,6 +361,7 @@ gglinedensity,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 ggmlR,vulkan glslc,,TRUE,"libvulkan-dev, glslc (optional,for GPU on Linux), 'Vulkan' 'SDK' (optional, for GPU onWindows)"
 ggquickeda,,pandoc,TRUE,pandoc with https support
 ggseg,,,TRUE,"GDAL, GEOS, PROJ"
+ggsql,,,FALSE,"Cargo (Rust's package manager), rustc, ODBC drivermanager (unixODBC on Linux, iODBC or unixODBC on macOS; builtinto Windows)"
 ggtrace,,pandoc,TRUE,pandoc
 gibasa,mecab,,FALSE,"MeCab (libmecab-dev (deb), mecab-devel(rpm))"
 gifski,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
@@ -488,6 +493,7 @@ ledger,,ledger hledger,FALSE,"ledger, hledger, beanquery"
 leidenAlg,libxml2 glpk,,TRUE,"(optional), libxml2 (optional), glpk, optional)"
 libdeflate,cmake,,TRUE,CMake
 libimath,cmake,,TRUE,cmake
+libipldr,,,FALSE,"Cargo (Rust's package manager), rustc"
 libopenexr,,,FALSE,"CMake,"
 Libra,gsl,,TRUE,GNU Scientific Library (GSL)
 libstable4u,gsl,,TRUE,GNU GSL
