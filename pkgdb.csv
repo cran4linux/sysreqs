@@ -12,6 +12,7 @@ admixr,,,TRUE,ADMIXTOOLS suite of command-line utilities forpopulation genetics.
 AFR,,,TRUE,
 AgePopDenom,,,TRUE,TMB
 agregR,,,TRUE,CmdStan(https://mc-stan.org/users/interfaces/cmdstan)
+ahocorasick,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
 aifeducation,,,TRUE,"PyTorch (see vignette ""Get started"")"
 alfr,,,TRUE,Alfresco Content Repository (Community orEnterprise)
 altair,,,TRUE,"Python, (Python) Altair,vega_datasets. To use image functions for MacOS: X11"
@@ -71,6 +72,7 @@ bayesQRsurvey,,,TRUE,"BLAS, LAPACK"
 BayesTools,,,TRUE,JAGS(https://mcmc-jags.sourceforge.io/)
 BayesVarSel,gsl,,TRUE,GNU Scientific Library
 BayLum,,,TRUE,JAGS(https://mcmc-jags.sourceforge.io/)
+bayprior,,,FALSE,"Quarto CLI, https://quarto.org)"
 bbl,gsl,,TRUE,
 BCFM,,,TRUE,pandoc for building vignettes
 BCHM,,,TRUE,JAGS
@@ -212,7 +214,7 @@ deepspat,,,TRUE,"TensorFlow (https://www.tensorflow.org/),"
 deforestable,,,TRUE,"GDAL, GEOS, PROJ,sqlite3"
 Delaporte,,,TRUE,A version of Fortran supporting the LOG_GAMMAIntrinsic and the ieee_arithmetic module.
 denguedatahub,,,TRUE,"Java: openjdk-11-jdk (deb),java-11-openjdk.x86_64 (rpm), openjdk@11 (brew)"
-devEMF,,,TRUE,fontconfig or zlib (only needed for platforms otherthan modern OSX and Windows)
+devEMF,,,FALSE,fontconfig or zlib (only needed for platforms otherthan modern macOS and Windows)
 devianLM,,,TRUE,"OpenMP (optional, for parallel execution)"
 dialr,,,TRUE,java
 dialrjars,,,TRUE,java
@@ -361,7 +363,7 @@ gglinedensity,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 ggmlR,vulkan glslc,,TRUE,"libvulkan-dev, glslc (optional,for GPU on Linux), 'Vulkan' 'SDK' (optional, for GPU onWindows)"
 ggquickeda,,pandoc,TRUE,pandoc with https support
 ggseg,,,TRUE,"GDAL, GEOS, PROJ"
-ggsql,,,FALSE,"Cargo (Rust's package manager), rustc, ODBC drivermanager (unixODBC on Linux, iODBC or unixODBC on macOS; builtinto Windows)"
+ggsql,,,FALSE,"Cargo (Rust's package manager), rustc,ODBC driver manager (unixODBC on Linux, iODBC or unixODBC onmacOS; built into Windows)"
 ggtrace,,pandoc,TRUE,pandoc
 gibasa,mecab,,FALSE,"MeCab (libmecab-dev (deb), mecab-devel(rpm))"
 gifski,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
@@ -623,6 +625,7 @@ officedown,,,TRUE,pandoc - http://pandoc.org
 OncoBayes2,,pandoc,TRUE,"pandoc, pngquant,"
 Open.Visualization.Academy,,,TRUE,quarto
 OpenCL,pocl,,TRUE,"OpenCL library,"
+opencltools,,,FALSE,"Optional 'OpenCL' support. If available, GPUacceleration will be used; otherwise, computation runs on CPU."
 opencpu,,,TRUE,"pandoc, apparmor (optional)"
 opencv,opencv,,TRUE,"OpenCVor newer: libopencv-dev (Debian, Ubuntu)or opencv-devel (Fedora). The QR code detector requires atleast libopencv"
 OpenImageR,,,TRUE,"libarmadillo: apt-get install -y libarmadillo-dev(deb), libblas: apt-get install -y libblas-dev (deb),liblapack: apt-get install -y liblapack-dev (deb),libarpack++2: apt-get install -y libarpack++2-dev (deb),: apt-get install -y  (deb), libjpeg-dev:apt-get install -y libjpeg-dev (deb), libpng-dev: apt-getinstall -y libpng-dev (deb), libfftw3-dev: apt-get install -ylibfftw3-dev (deb), libtiff5-dev: apt-get install -ylibtiff5-dev (deb)"
@@ -698,7 +701,7 @@ precommit,,git,TRUE,git
 PreKnitPostHTMLRender,,,TRUE,pandoc -http://johnmacfarlane.net/pandoc
 prettydoc,,,TRUE,pandoc
 prevalence,,,TRUE,JAGS (seehttps://mcmc-jags.sourceforge.io/)
-PRIMME,,,TRUE,A POSIX system. Currently Linux and OS X are knownto work. .
+PRIMME,,,TRUE,
 proccalibrad,,,TRUE,MRTSwath
 ProcData,,,TRUE,"Python, Keras, TensorFlow"
 proffer,,graphviz pprof,TRUE,pprof (https://github.com/google/pprof)
@@ -981,6 +984,7 @@ SASmarkdown,,,TRUE,SAS
 sasquatch,,,TRUE,"python, SASPy, java required forIOM access method"
 sbrl,gmp gsl,,TRUE,"gmp, gsl"
 scip,,,FALSE,"CMake,"
+scModels,,,FALSE,"gmp, mpfr"
 sd2R,,,FALSE,curl or wget (for downloading vocabularyfiles during installation)
 sdcTable,glpk gmp,,TRUE,"GLPK library, including -dev or -devel part"
 SDMtune,,java-bin,TRUE,Java
@@ -990,6 +994,7 @@ sendigR,,,TRUE,Python(>=3.9.6)
 seqinr,,,TRUE,zlib headers and library.
 seqminer,,,TRUE,"zlib headers and libraries,  optionallyalso bzip2 and POSIX-compliant regex functions."
 sequoia,,,TRUE,Fortran95
+serodynamics,,,FALSE,JAGS
 seroreconstruct,,,FALSE,TBB
 sf,gdal geos proj sqlite,,TRUE,"GDAL, GEOS, PROJ,sqlite3"
 sftpR,,,FALSE,libcurl: libcurl (with libssh2 support)
@@ -1019,6 +1024,7 @@ slowraker,,java-bin,TRUE,Java
 slurm,,,TRUE,"Slurm command line programs (sacct, squeue)"
 smam,gsl,,TRUE,"GNU GSL,"
 smile,,,TRUE,"GDAL, GEOS, PROJ"
+smoothbp,,,FALSE,"Cargo (Rust's package manager), rustc"
 snSMART,,,TRUE,JAGSx.y
 socratadata,cargo,,TRUE,"Cargo (Rust's package manager), rustc, xz"
 sodium,libsodium,,TRUE,libsodium
