@@ -8,6 +8,7 @@ adbcpostgresql,postgresql,,TRUE,libpq
 adbcsqlite,sqlite,,TRUE,SQLite3
 adimpro,,imagemagick-bin dcraw,TRUE,"Image Magick (for reading non PPM format), dcraw(for reading RAW images)."
 admisc,,,FALSE,OpenMP (optional)
+AdmixPoly,,,FALSE,A system with a C++ compiler supporting OpenMP
 admixr,,,TRUE,ADMIXTOOLS suite of command-line utilities forpopulation genetics. See<https://github.com/dreichlab/admixtools> for the most recentinstallation instructions and further information.
 AFR,,,TRUE,
 AgePopDenom,,,TRUE,TMB
@@ -63,6 +64,7 @@ bartMachineJARs,,,TRUE,Java
 basifoR,,,FALSE,Microsoft Access driver on Windows for Accessbackends; mdbtools on Unix-like systems
 BayesCACE,,,TRUE,JAGSx.y (http://mcmc-jags.sourceforge.net)
 bayescount,,,TRUE,JAGS (https://mcmc-jags.sourceforge.net)
+BayesForge,,,FALSE,"Python, 'bayesforge' python library."
 BayesGWQS,,,TRUE,JAGS
 BayesianDEB,,,FALSE,CmdStan(https://mc-stan.org/users/interfaces/cmdstan)
 BayesianInference,,,TRUE,"Python, 'BayesInference' python library."
@@ -112,7 +114,7 @@ breathtestcore,,pandoc,TRUE,pandoc
 breathteststan,,pandoc,TRUE,
 brinton,,,TRUE,"Pandoc, web browser"
 brms,,,TRUE,pngquant
-bsam,,,TRUE,JAGS
+bsam,,,TRUE,
 bspm,,,TRUE,"systemd, dbus-python, PyGObject,python-(dnf|apt|alpm)"
 bssm,,,TRUE,"pandoc, needed for vignettes)"
 bsub,,,TRUE,"Platform LSF, bsub"
@@ -394,6 +396,7 @@ grwat,,,TRUE,pandoc
 gsl,gsl,,TRUE,Gnu Scientific Library version
 gslnls,gsl,,TRUE,GSL
 gsynth,,,TRUE,
+gtfsrealtime,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
 guildai,,,TRUE,Python
 gWidgets2tcltk,xvfb,,TRUE,
 GWnnegPCA,,,TRUE,"GDAL, GEOS, PROJ"
@@ -475,7 +478,7 @@ kantorovich,,,TRUE,
 KernelKnn,,,TRUE,"libarmadillo: apt-get install -y libarmadillo-dev(deb), libblas: apt-get install -y libblas-dev (deb),liblapack: apt-get install -y liblapack-dev (deb),libarpack++2: apt-get install -y libarpack++2-dev (deb),: apt-get install -y  (deb)"
 keyring,libsecret,,TRUE,"Optional: libsecret on Linux (libsecret-1-dev onDebian/Ubuntu, libsecret-devel on Fedora/CentOS)"
 klaR,,,TRUE,SVMlight
-klic,,,TRUE,MOSEK (http://www.mosek.com) and MOSEK license.
+klic,,,TRUE,
 knitr,,pandoc rst2pdf,TRUE,Package vignettes based on R Markdown v2 orreStructuredText require Pandoc (http://pandoc.org). Thefunction rst2pdf() requires rst2pdf(https://github.com/rst2pdf/rst2pdf).
 KSgeneral,fftw,,TRUE,fftw3
 kuenm2,,,FALSE,"GDAL, GEOS, PROJ"
@@ -491,7 +494,7 @@ LDATS,,,TRUE,gsl
 leaf,,,FALSE,"Conda, Python"
 LeafArea,,imagej,TRUE,"ImageJ, ij.jar (seehttp://imagej.nih.gov/ij/), Java"
 learnr,,,TRUE,pandoc - http://pandoc.org
-ledger,,ledger hledger,FALSE,"ledger, hledger, beanquery"
+ledger,,ledger hledger,FALSE,"ledger, hledger, beanquery orrustledger"
 leidenAlg,libxml2 glpk,,TRUE,"(optional), libxml2 (optional), glpk, optional)"
 libdeflate,cmake,,TRUE,CMake
 libimath,cmake,,TRUE,cmake
@@ -506,6 +509,7 @@ lira,,,TRUE,
 littler,,,TRUE,libR
 LLMing,,,TRUE,"Python with packages: torch,transformers, pandas, numpy"
 llmjson,,,FALSE,"Cargo (Rust's package manager), rustc"
+lnmixsurv,,,FALSE,"GNU,  GSL"
 localLLM,curl,,TRUE,"libcurl (optional, for model downloading)"
 localsolver,,,TRUE,
 locfit,,,TRUE,USE_C17
@@ -550,6 +554,7 @@ metagear,,,TRUE,Tcl/Tk toolkit (X11 Quarts for Mac)
 metapost,,mpost,TRUE,mpost
 MetaSKAT,,,TRUE,Little Endian
 MethComp,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net)
+MethScope,,,FALSE,zlib
 MFPCA,fftw,,TRUE,libfftw3
 MFSIS,,,TRUE,Python
 microbenchmark,,,TRUE,"On a Unix-alike, one of the C functionsmach_absolute_time (macOS), clock_gettime or gethrtime. If noneof these is found, the obsolescent POSIX function gettimeofdaywill be tried."
@@ -590,6 +595,7 @@ mutossGUI,,,TRUE,Java
 mvst,gsl,,TRUE,GNU Scientific Library
 mwa,,,TRUE,Java
 mwcsr,,java-bin,TRUE,Java
+mx.crypto,,,FALSE,"Cargo (Rust's package manager), rustc"
 NACHO,,,TRUE,"pandoc, pandoc-citeproc"
 nanoarrow,,,TRUE,libzstd (optional)
 nanonext,cmake,,FALSE,"'libnng'and 'libmbedtls', or'cmake' to compile NNG and/or Mbed TLS included in packagesources"
@@ -715,6 +721,7 @@ prqlr,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 psbcGroup,gsl,,TRUE,
 psborrow2,,,TRUE,cmdstan
 PTXQC,,,TRUE,pandoc (http://pandoc.org) for building Vignettesand output reports as HTML
+punycoder,,,FALSE,"GNU libidn2 (optional, for native punycode backend)"
 pureseqtmr,,,TRUE,PureseqTM(https://github.com/PureseqTM/pureseqTM_package)
 PVAClone,,,TRUE,JAGS
 pylintR,,pylint,TRUE,pylint
@@ -881,7 +888,7 @@ rjuliabugs,,,TRUE,"Julia with the following packagesinstalled: 'JuliaBUGS.jl', '
 rkafkajars,,,TRUE,Java JDKor higher
 RKEA,,,TRUE,Java
 RKEAjars,,,TRUE,Java
-rlas,,,FALSE,"GDAL, GEOS, PROJ, sqlite3,"
+rlas,,,TRUE,
 Rlibeemd,gsl,,TRUE,GNU GSL
 rlibkriging,cmake,,TRUE,"cmake,"
 RMariaDB,mysql,,TRUE,"libmariadb-client-lgpl-dev or libmariadb-dev orlibmysqlclient-dev, with libssl-dev (deb),mariadb-connector-c-devel or mariadb-devel (rpm),mariadb-connector-c or mysql-connector-c (brew)"
@@ -912,7 +919,7 @@ rodeo,,,TRUE,The tools to run 'R CMD SHLIB' on 'Fortran' code.The used 'Fortran'
 roger,,,TRUE,roger-base (for interface functions only)
 Rogue,,,TRUE,C99
 ROI.plugin.symphony,coin-or-symphony,,TRUE,
-rolog,,,TRUE,swi-prolog
+rolog,,,TRUE,
 Romeb,,,TRUE,JAGS
 ropenblas,,,TRUE,GCC Compiler Suite (C and Fortran)
 ROpenCVLite,,cmake,TRUE,cmake
@@ -949,7 +956,7 @@ rstanarm,,pandoc,TRUE,"pandoc, pandoc-citeproc"
 rstantools,,pandoc,TRUE,pandoc
 rsubgroup,,,TRUE,Java
 rsvg,librsvg2,,TRUE,librsvg2 (at least version
-rswipl,cmake libarchive expat,,FALSE,"CMake, pandoc, libarchive,libregex, libexpat, liblzma, libzstd, liblz4, libz2, libz,libbcrypt, libutf8proc"
+rswipl,cmake libarchive expat,,TRUE,
 Rsymphony,coin-or-symphony,,TRUE,SYMPHONY libraries and headers
 rsyncrosim,,,TRUE,SyncroSim
 rsyslog,,,TRUE,POSIX.1-2001
@@ -1002,6 +1009,7 @@ SGP,,tex-pdfpages,TRUE,(PDF)LaTeX (https://www.latex-project.org/) with'pdfpages
 shard,,,FALSE,"POSIX shared memory (optional), memory-mapped files"
 sharx,,,TRUE,jags
 shinyalert,,pandoc,TRUE,
+ShinyBlock,,,FALSE,"Python, ecdsa (Python package)"
 shinyInvoice,,,TRUE,pandoc
 shinyjs,,pandoc,TRUE,
 shinyloadtest,,pandoc,TRUE,pandoc - http://pandoc.org
@@ -1097,6 +1105,7 @@ systemfonts,freetype,,TRUE,"fontconfig, freetype2"
 tables,,,TRUE,pandoc for vignettes
 tabr,,lilypond,TRUE,LilyPond v2.22.1-2+ (needed for rendering sheetmusic or writing MIDI files)
 tabulapdf,,,TRUE,"Java: openjdk-11-jdk (deb),java-11-openjdk.x86_64 (rpm), openjdk@11 (brew)"
+tabular,,,FALSE,"Quarto command line tool(<https://github.com/quarto-dev/quarto-cli>), needed only tobuild the package vignettes."
 talib,,,FALSE,CMake
 tapkee,,,TRUE,'tapkee' (http://tapkee.lisitsyn.me/)
 TAQMNGR,,,TRUE,zlib headers and library
@@ -1167,6 +1176,7 @@ unigd,libtiff libpng,,TRUE,"Cairo (optional, for raster output), libtiff(optiona
 units,udunits,,TRUE,udunits-2
 unix,,,TRUE,"POSIX.1-2001, AppArmor (optional)"
 unmconf,,,TRUE,JAGS(http://mcmc-jags.sourceforge.net)
+Uno,,,FALSE,"CMake,"
 unsum,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 untb,,pari,TRUE,PARI/GP[strongly recommended forlogkda()]
 URooTab,,,TRUE,EViews
@@ -1190,7 +1200,7 @@ vitae,,,TRUE,pandoc - http://pandoc.org
 VMDecomp,,,TRUE,"libarmadillo: apt-get install -y libarmadillo-dev(deb), libblas: apt-get install -y libblas-dev (deb),liblapack: apt-get install -y liblapack-dev (deb),libarpack++2: apt-get install -y libarpack++2-dev (deb),: apt-get install -y  (deb)"
 vmr,,vagrant,TRUE,Vagrant <https://www.vagrantup.com>
 vol2birdR,gsl hdf5 proj,,TRUE,"GSL, HDF5, PROJ"
-vostokR,,,FALSE,OpenMP (optional)
+vostokR,,,TRUE,
 warbleR,,,TRUE,"fftw3,  sox, Ghostscript, libsndfile, GDAL"
 watcher,fswatch,,TRUE,"'libfswatch', or 'cmake' to compile from packagesources"
 waysign,cargo,,TRUE,"Cargo (Rust's package manager), rustc, xz"
