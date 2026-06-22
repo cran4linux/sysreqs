@@ -20,6 +20,7 @@ altair,,,TRUE,"Python, (Python) Altair,vega_datasets. To use image functions for
 altmeta,,,TRUE,JAGSx.y (http://mcmc-jags.sourceforge.net)
 AMAPVox,,java-bin,TRUE,
 animation,,tex-latex ffmpeg-bin,TRUE,ImageMagick (http://imagemagick.org) orGraphicsMagick (http://www.graphicsmagick.org) or LyX(http://www.lyx.org) for saveGIF(); (PDF)LaTeX for saveLatex();SWF Tools (http://swftools.org) for saveSWF(); FFmpeg(http://ffmpeg.org) or avconv (https://libav.org/avconv.html)for saveVideo()
+animl,,,FALSE,"Python, animl-py"
 anticlust,,,TRUE,Rendering the vignette requires pandoc(<https://pandoc.org/>).
 apache.sedona,,,TRUE,'Apache Spark'x
 apathe,,,TRUE,"Rendering the document template requires pandoc; https://pandoc.org) and for PDFs a TeX distribution, suchas TinyTeX; https://yihui.org/tinytex/)"
@@ -179,9 +180,11 @@ coreNLP,,,TRUE,Java; Stanford CoreNLP<http://nlp.stanford.edu/ software/corenlp.
 corteza,,,FALSE,"On Windows, Rtools45 (Rx) or Rtools44 (R4.4.x) is recommended so the 'bash' shell tool is available;minimal installs fall back to a 'cmd' tool. 'git' is requiredfor the git_status, git_diff, and git_log tools (install Gitfor Windows, or 'pacman -Sy git' from an Rtools shell)."
 coveffectsplot,,pandoc,TRUE,pandoc with https support
 COveR,gsl,,TRUE,Gnu Scientific Library version
+cpp11bigwig,,,FALSE,"libcurl (optional, for remote file access):libcurl-devel (rpm) or libcurl4-openssl-dev (deb)"
 cpp11qpdf,libjpeg,,TRUE,"libjpegdeb: libjpeg-dev, rpm: libjpeg-devel,brew: libjpeg )"
 cppcheckR,,cppcheck,TRUE,cppcheck
 cppSim,,,TRUE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
+craftgrn,,,FALSE,"Optional Shiny app support on Linux may requirelibuv headers, for example libuv1-dev, or cmake for bundledlibuv builds in transitive dependencies."
 crandep,,,TRUE,pandoc - http://pandoc.org
 crc32c,cmake,,TRUE,cmake
 credentials,,git,TRUE,git (optional)
@@ -265,7 +268,7 @@ enderecobr,cargo,,TRUE,"Cargo (Rust's package manager), rustc, xz"
 EnTraineR,,,TRUE,Pandoc (for DOCX/HTML conversion when usingrmarkdown)
 entropart,,pandoc,TRUE,pandoc
 EpiSignalDetection,,,TRUE,pandoc
-eplusr,,,TRUE,EnergyPlus (optional) (<https://energyplus.net>);udunits2
+eplusr,,,FALSE,"EnergyPlus (optional) (<https://energyplus.net>);udunits2 (optional, for units support)"
 ergm,,,TRUE,
 eseis,,,TRUE,gipptools dataselect
 esviz,,,TRUE,"GDAL, GEOS, PROJ"
@@ -592,6 +595,7 @@ multibiplotGUI,xvfb,bwidget,TRUE,Tcl/Tk package BWidget.
 multibridge,gmp mpfr,,TRUE,"mpfr, gmp_1)"
 multinet,,,TRUE,
 mutossGUI,,,TRUE,Java
+mvalpha,,,FALSE,OpenMP
 mvst,gsl,,TRUE,GNU Scientific Library
 mwa,,,TRUE,Java
 mwcsr,,java-bin,TRUE,Java
@@ -614,9 +618,11 @@ neuralGAM,,,TRUE,"python, keras, tensorflow"
 ngboostForecast,,,TRUE,Python
 NGCHM,,,TRUE,Java Git
 nhdR,,p7zip,TRUE,7-zip command line toolz)
+nirs4alldatasets,,,FALSE,"Cargo (Rust toolchain), rustc"
 nloptr,cmake,,TRUE,cmake which is used only on Linux ormacOS systems when no system build of nlopt can befound.
 nlrx,,java-bin pandoc,TRUE,"NetLogo, Java, pandoc, OpenSSL,udunits-2, PROJ.4, GEOS, GDAL, libxml2"
 NMADTA,,,TRUE,JAGSx.y (http://mcmc-jags.sourceforge.net)
+nmathopencl,,,FALSE,"Optional 'OpenCL' support. If available, GPUacceleration will be used; otherwise, computation runs on CPU."
 nmslibR,,,TRUE,"python3-dev: apt-get install -y python3-dev (deb),python3-pip: apt-get install -y python3-pip (deb), numpy: pip3install numpy (deb), scipy: pip3 install scipy (deb), nmslib:pip3 install --no-binary :all: nmslib (deb)"
 NobBS,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net/) foranalysis of Bayesian hierarchical models
 nomnoml,,,TRUE,"A chromium based browser, required by ""webshot2""<https://rstudio.github.io/webshot2/>"
@@ -672,6 +678,7 @@ pcaL1,coin-or-clp,,TRUE,COIN-OR Clp
 pcnetmeta,,,TRUE,JAGSx.y (http://mcmc-jags.sourceforge.net)
 PDE,,xpdf,TRUE,XPDF(4.02)(https://github.com/erikstricker/PDE/tree/master/inst/examples/bin)
 pdfminer,,pandas,TRUE,"Python>=3.6, pdfminer.six>=20200402, pandas"
+pdfsigner,,,FALSE,"Cargo (Rust's package manager), rustc"
 pdftools,poppler,,TRUE,"Poppler C++ API: libpoppler-cpp-dev (deb) orpoppler-cpp-devel (rpm), and poppler-data (rpm/deb) package."
 pedometrics,,pandoc,TRUE,pandoc
 pedprobr,,,TRUE,MERLIN (https://csg.sph.umich.edu/abecasis/merlin/)for calculations involving multiple linked markers.
@@ -845,7 +852,7 @@ reprex,,,TRUE,pandoc - https://pandoc.org/
 reproducible,,unrar,TRUE,'unrar' (Linux/macOS) or '7-Zip' (Windows) to workwith '.rar' files.
 reproj,,,TRUE,PROJ
 reservoirnet,,,TRUE,Python
-restoptr,,,TRUE,Java
+restoptr,,,TRUE,
 ReSurv,,,TRUE,Python
 reticulate,,python3,TRUE,Python
 revert,,,TRUE,
@@ -919,7 +926,7 @@ rodeo,,,TRUE,The tools to run 'R CMD SHLIB' on 'Fortran' code.The used 'Fortran'
 roger,,,TRUE,roger-base (for interface functions only)
 Rogue,,,TRUE,C99
 ROI.plugin.symphony,coin-or-symphony,,TRUE,
-rolog,,,TRUE,
+rolog,,,FALSE,swi-prolog
 Romeb,,,TRUE,JAGS
 ropenblas,,,TRUE,GCC Compiler Suite (C and Fortran)
 ROpenCVLite,,cmake,TRUE,cmake
@@ -956,7 +963,7 @@ rstanarm,,pandoc,TRUE,"pandoc, pandoc-citeproc"
 rstantools,,pandoc,TRUE,pandoc
 rsubgroup,,,TRUE,Java
 rsvg,librsvg2,,TRUE,librsvg2 (at least version
-rswipl,cmake libarchive expat,,TRUE,
+rswipl,cmake libarchive expat,,FALSE,"CMake, pandoc, libarchive,libregex, libexpat, liblzma, libzstd, liblz4, libz2, libz,libbcrypt, libutf8proc"
 Rsymphony,coin-or-symphony,,TRUE,SYMPHONY libraries and headers
 rsyncrosim,,,TRUE,SyncroSim
 rsyslog,,,TRUE,POSIX.1-2001
@@ -1114,6 +1121,7 @@ taxodist,,,FALSE,internet access
 tcltk2,xvfb,,TRUE,"Tcl/Tk, Tktable, optional)"
 TDA,gmp,,TRUE,"gmp,"
 TDCM,,,TRUE,pandoc
+teems,,,FALSE,Docker (https://www.docker.com)
 tensorflow,,,TRUE,TensorFlow (https://www.tensorflow.org/)
 tergo,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 terminalgraphics,,,TRUE,A terminal emulator supporting the TerminalGraphics Protocol(<https://sw.kovidgoyal.net/kitty/graphics-protocol/>) orSixel.
@@ -1150,7 +1158,7 @@ tkImgR,xvfb,tkimg,TRUE,"Tcl/Tk. To read and write other formatsthan PPM/PGM, PNG
 tkrplot,,,TRUE,Windows or X11
 tkRplotR,xvfb,,TRUE,Tcl/Tk
 TMB,,g++,TRUE,
-tok,cargo,,TRUE,
+tok,cargo,,FALSE,"Cargo (Rust's package manager), rustc"
 tomledit,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 TooManyCellsR,,,TRUE,'TooManyCells'(https://github.com/GregorySchwartz/too-many-cells)
 topicmodels,gsl,,TRUE,GNU Scientific Library version
@@ -1180,6 +1188,7 @@ Uno,,,FALSE,"CMake,"
 unsum,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 untb,,pari,TRUE,PARI/GP[strongly recommended forlogkda()]
 URooTab,,,TRUE,EViews
+ustats,,,FALSE,"Python; Python packages: u-stats, numpy,torch (installed automatically on first use, or viasetup_ustats())"
 uuidx,,,FALSE,"Cargo (Rust's package manager), rustc"
 V8,v8,,TRUE,"On Linux you can build against libv8-dev (Debian)or v8-devel (Fedora). We also provide static libv8 binaries formost platforms, see the README for details."
 valection,,,TRUE,
