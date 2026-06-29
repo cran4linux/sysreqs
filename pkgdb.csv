@@ -367,7 +367,7 @@ ggiraph,libpng,,TRUE,libpng
 gglinedensity,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 ggmlR,vulkan glslc,,TRUE,"libvulkan-dev, glslc (optional,for GPU on Linux), 'Vulkan' 'SDK' (optional, for GPU onWindows)"
 ggquickeda,,pandoc,TRUE,pandoc with https support
-ggseg,,,TRUE,"GDAL, GEOS, PROJ"
+ggseg,,,TRUE,
 ggsql,,,FALSE,"Cargo (Rust's package manager), rustc,ODBC driver manager (unixODBC on Linux, iODBC or unixODBC onmacOS; built into Windows)"
 ggtrace,,pandoc,TRUE,pandoc
 gibasa,mecab,,FALSE,"MeCab (libmecab-dev (deb), mecab-devel(rpm))"
@@ -426,6 +426,7 @@ hicream,,,TRUE,Python
 HighFive,,,TRUE,hdf5
 highs,cmake,,TRUE,"Bash, PkgConfig, CMAKE,"
 hive,,,TRUE,"Apache Hadoop(https://hadoop.apache.org/releases.html#Download); Obsolete:Hadoop coreand <=or CDH3(https://www.cloudera.com); standard unix tools (e.g., chmod)"
+HOIF,,,FALSE,"For the default Python backend: Pythonwith the 'u-stats', 'numpy' and 'torch' packages (provisionedautomatically on first use via 'reticulate', or viaustats::setup_ustats()). Not needed when pure_R_codeTRUE."
 hoopR,,pandoc,TRUE,"pandoc, pandoc-citeproc"
 hSDM,gsl,,TRUE,GNU GSL
 httpuv,,,TRUE,zlib
@@ -524,6 +525,7 @@ loon.shiny,xvfb,,TRUE,
 loon.tourr,xvfb,,TRUE,
 lpmec,,,TRUE,"Python with jax, numpy, numpyro(optional; for NumPyro backend via reticulate)"
 LSAMBA,,,TRUE,'Monolix'(<https://monolixsuite.slp-software.com/monolix/2024R1/>)
+lstar,,,FALSE,zlib
 lubridate,,,TRUE,A system with zoneinfo data (e.g./usr/share/zoneinfo). On Windows the zoneinfo included with Ris used.
 lumbermark,,,FALSE,OpenMP
 lwgeom,geos proj sqlite,,TRUE,"GEOS, PROJ, sqlite3"
@@ -666,7 +668,7 @@ paramlink,,,TRUE,"For multipoint linkage analysis, 'MERLIN'(http://csg.sph.umich
 paramlink2,,,TRUE,MERLIN (https://csg.sph.umich.edu/abecasis/merlin/)for multipoint linkage analysis.
 parseLatex,,,TRUE,"gettext, bison"
 patchDVI,,,TRUE,The 'Japanese.Rnw' vignette requires uplatex anddvipdfmx.
-pathfindR,,java-bin,TRUE,Java
+pathfindR,,java-bin,TRUE,
 pathling,,,TRUE,Spark:x
 patientProfilesVis,,tex-latex,TRUE,"latex, cairo (for report creation)"
 paws.common,,pandoc,TRUE,pandoc - http://pandoc.org
@@ -707,6 +709,7 @@ poisbinom,fftw,,TRUE,fftw3
 PoissonBinomial,fftw,,TRUE,fftw3
 PoissonMultinomial,fftw,,TRUE,fftw3(>=3.3)
 pomp,,,TRUE,"For Windows users, Rtools (seehttps://cran.r-project.org/bin/windows/Rtools/)."
+PONG2,,,FALSE,"PLINK2, minimac4, optional)"
 popbayes,,,TRUE,JAGS
 potools,,gettext,TRUE,gettext
 pRecipe,,,TRUE,"PROJ, https://proj.org/download.html), GDAL(>=, https://gdal.org/en/latest/download.html), NetCDF(>=,https://www.unidata.ucar.edu/software/netcdf/)."
@@ -924,9 +927,9 @@ robscale,,,TRUE,
 RODBC,odbc,,TRUE,An ODBC3 driver manager and drivers.
 rodeo,,,TRUE,The tools to run 'R CMD SHLIB' on 'Fortran' code.The used 'Fortran' compiler must support pointer initializationwhich is a feature of thestandard.
 roger,,,TRUE,roger-base (for interface functions only)
-Rogue,,,TRUE,C99
+Rogue,,,TRUE,
 ROI.plugin.symphony,coin-or-symphony,,TRUE,
-rolog,,,FALSE,swi-prolog
+rolog,,,TRUE,
 Romeb,,,TRUE,JAGS
 ropenblas,,,TRUE,GCC Compiler Suite (C and Fortran)
 ROpenCVLite,,cmake,TRUE,cmake
@@ -997,6 +1000,7 @@ sarsop,,,TRUE,"mallinfo, hence Linux, MacOS or Windows"
 SASmarkdown,,,TRUE,SAS
 sasquatch,,,TRUE,"python, SASPy, java required forIOM access method"
 sbrl,gmp gsl,,TRUE,"gmp, gsl"
+sceua,,,FALSE,"Cargo (Rust's package manager), rustc"
 scip,,,FALSE,"CMake,"
 scModels,,,FALSE,"gmp, mpfr"
 sd2R,,,FALSE,curl or wget (for downloading vocabularyfiles during installation)
@@ -1211,7 +1215,7 @@ vmr,,vagrant,TRUE,Vagrant <https://www.vagrantup.com>
 vol2birdR,gsl hdf5 proj,,TRUE,"GSL, HDF5, PROJ"
 vostokR,,,TRUE,
 warbleR,,,TRUE,"fftw3,  sox, Ghostscript, libsndfile, GDAL"
-watcher,fswatch,,TRUE,"'libfswatch', or 'cmake' to compile from packagesources"
+watcher,fswatch,,FALSE,"'libfswatch' (optional, bundled copy compiledotherwise)"
 waysign,cargo,,TRUE,"Cargo (Rust's package manager), rustc, xz"
 webdriver,,,TRUE,PhantomJS (http://phantomjs.org/)
 webp,libwebp,,TRUE,libwebp
