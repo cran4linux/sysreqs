@@ -145,6 +145,7 @@ citestR,,,FALSE,Python with the 'midasverse-citest-api'package
 clarabel,cargo,,TRUE,"Cargo (Rust's package manager), rustc,and"
 cld3,protobuf,,TRUE,libprotobuf and protobuf-compiler
 cleanNLP,,,TRUE,Python
+clim4health,,,FALSE,"CDO (Climate Data Operators,https://code.mpimet.mpg.de/projects/cdo), NCO (NetCDFOperators, https://nco.sourceforge.net/)"
 clinDataReview,,,TRUE,pandoc (to create a clinical data review report)
 clinUtils,,,TRUE,pandoc (for export clin DT to a file - inclusion oflist of interactive plots/objects with knitr)
 clipr,,xclip,TRUE,"xclip (https://github.com/astrand/xclip) or xsel(http://www.vergenet.net/~conrad/software/xsel/) for accessingthe X11 clipboard, or wl-clipboard(https://github.com/bugaevc/wl-clipboard) for systems usingWayland."
@@ -306,6 +307,7 @@ FFD,xvfb,bwidget,TRUE,BWidget
 fftw,fftw,,TRUE,fftw3
 fftwtools,fftw,,TRUE,"fftw3 (libfftw3-dev (deb), or fftw-devel (rpm))"
 fgitR,,git,TRUE,Git
+fibr,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
 findInFiles,,grep,TRUE,grep
 findInGit,,grep git,TRUE,"grep, git"
 fio,cargo,,TRUE,"Cargo (Rust's package manager), rustc, xz"
@@ -335,6 +337,7 @@ fstcore,,,TRUE,little-endian platform
 ftExtra,,,TRUE,pandoc - http://pandoc.org
 FTSgof,,,TRUE,XQuartz (https://www.xquartz.org/)
 fuzzywuzzyR,,,TRUE,"Python, difflib, fuzzywuzzy,python-Levenshtein. Detailed installationinstructions can be found in the README file."
+fz,,,FALSE,"Python, funz-fz Python package"
 gadjid,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 ganDataModel,,,TRUE,TensorFlow (https://www.tensorflow.org)
 ganGenerativeData,,,TRUE,TensorFlow (https://www.tensorflow.org)
@@ -444,6 +447,7 @@ ijtiff,fftw libtiff libjpeg libwebp,,TRUE,"fftw3, libtiff, libbz2, libdeflate, l
 image.CannyEdges,libpng fftw,,TRUE,"libpng, fftw3"
 imager,fftw libtiff,,TRUE,"fftw3, libtiff, X11"
 implyr,,,TRUE,Impala driver to support a 'DBI'-compatible Rinterface
+ImprintCapASM,,,FALSE,samtools
 iMRMC,,java-bin,TRUE,
 informativeSCI,,,TRUE,Java
 inlpubs,,,TRUE,"Complete functionality necessitates Amazon Corretto(win), and default-jre, pandoc, libxml2-dev,libpoppler-cpp-dev, libmagick++-dev, optipng, libtesseract-dev,libleptonica-dev, tesseract-ocr-eng (deb)"
@@ -597,14 +601,14 @@ multibiplotGUI,xvfb,bwidget,TRUE,Tcl/Tk package BWidget.
 multibridge,gmp mpfr,,TRUE,"mpfr, gmp_1)"
 multinet,,,TRUE,
 mutossGUI,,,TRUE,Java
-mvalpha,,,FALSE,OpenMP
+mvalpha,,,TRUE,
 mvst,gsl,,TRUE,GNU Scientific Library
 mwa,,,TRUE,Java
 mwcsr,,java-bin,TRUE,Java
 mx.crypto,,,FALSE,"Cargo (Rust's package manager), rustc"
 NACHO,,,TRUE,"pandoc, pandoc-citeproc"
 nanoarrow,,,TRUE,libzstd (optional)
-nanonext,cmake,,FALSE,"'libnng'and 'libmbedtls', or'cmake' to compile NNG and/or Mbed TLS included in packagesources"
+nanonext,cmake,,FALSE,"'libnng'and 'libmbedtls'(optional,bundled sources compiled otherwise)"
 nativeORT,,,FALSE,libonnxruntime
 nbconvertR,,pandoc nbconvert,TRUE,"pandoc, jupyter, jupyter nbconvert (""nbconvert""python package), pywin32 (on windows)"
 ncdf4,netcdf,,TRUE,netcdf library versionor later
@@ -620,7 +624,7 @@ neuralGAM,,,TRUE,"python, keras, tensorflow"
 ngboostForecast,,,TRUE,Python
 NGCHM,,,TRUE,Java Git
 nhdR,,p7zip,TRUE,7-zip command line toolz)
-nirs4alldatasets,,,FALSE,"Cargo (Rust toolchain), rustc"
+nirs4alldatasets,,,TRUE,
 nloptr,cmake,,TRUE,cmake which is used only on Linux ormacOS systems when no system build of nlopt can befound.
 nlrx,,java-bin pandoc,TRUE,"NetLogo, Java, pandoc, OpenSSL,udunits-2, PROJ.4, GEOS, GDAL, libxml2"
 NMADTA,,,TRUE,JAGSx.y (http://mcmc-jags.sourceforge.net)
@@ -656,6 +660,7 @@ orderanalyzer,,,TRUE,"Tesseract, libtesseract-dev (deb),tesseract-devel (rpm), l
 orderly,,git,TRUE,
 ordinalbayes,,,TRUE,JAGS
 ORscraper,,,TRUE,poppler-cpp
+osmnxr,,,FALSE,"Cargo (Rust's package manager), rustc"
 osrm.backend,,,TRUE,OSRM backend binariesv5.27.0)<https://github.com/Project-OSRM/osrm-backend>; packagedownloads binaries automatically if not found
 osrmr,,,TRUE,"To use the Localhost of OSRM, you need to buildOSRM<https://github.com/Project-OSRM/osrm-backend/wiki/Building-OSRM>locally"
 otelsdk,cmake protobuf curl,,TRUE,"cmake, protobuf-compiler, libprotobuf, libcurl,zlib,"
@@ -711,6 +716,7 @@ PoissonMultinomial,fftw,,TRUE,fftw3(>=3.3)
 pomp,,,TRUE,"For Windows users, Rtools (seehttps://cran.r-project.org/bin/windows/Rtools/)."
 PONG2,,,FALSE,"PLINK2, minimac4, optional)"
 popbayes,,,TRUE,JAGS
+porter,,,FALSE,CastXML
 potools,,gettext,TRUE,gettext
 pRecipe,,,TRUE,"PROJ, https://proj.org/download.html), GDAL(>=, https://gdal.org/en/latest/download.html), NetCDF(>=,https://www.unidata.ucar.edu/software/netcdf/)."
 precommit,,git,TRUE,git
@@ -750,6 +756,7 @@ questionr,,xclip,TRUE,xclip (Linux)
 quitefastmst,,,TRUE,OpenMP
 r.blip,,java-bin,TRUE,
 R2admb,,,TRUE,AD Model Builder <http://admb-project.org>
+R2camtrapdp,,,FALSE,Python with the 'frictionless' package(optional; only for validate_frictionless())Config/testthat/edition:
 R2jags,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net)
 R2MLwiN,,,TRUE,"MLwiN, (OpenBUGS, WinBUGS optional)"
 R2OpenBUGS,,openbugs,TRUE,OpenBUGS
@@ -883,7 +890,7 @@ rixpress,,,TRUE,Nix
 rjags,jags,,TRUE,JAGSx.y
 rJava,java,,TRUE,"Java JDKor higher (for JRI/REngine JDKorhigher),"
 rjd3bench,,,FALSE,Java
-rjd3jars,,,FALSE,Java
+rjd3jars,,,TRUE,
 rjd3providers,,,TRUE,Java
 rjd3toolkit,,,TRUE,Java
 rjd3tramoseats,,,TRUE,Java
@@ -950,7 +957,7 @@ RQuantLib,quantlib boost,,TRUE,"QuantLib library fromhttps://quantlib.org, Boost
 rriskDistributions,xvfb,,TRUE,"Tcl/Tk, Tktable"
 RSAGA,,saga,TRUE,SAGA GISLTS -
 Rsagacmd,,saga,TRUE,SAGA-GIS
-rsahmi,,,TRUE,"kraken2, seqkit"
+rsahmi,,,TRUE,
 rsamplr,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 RSclient,openssl,,TRUE,
 Rserve,,,TRUE,"libR,"
@@ -991,6 +998,7 @@ saeHB,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net)
 saeHB.panel,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net)
 saeHB.panel.beta,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net)
 saeHB.spatial,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net)
+saeHB.Spatial.Beta,,,FALSE,JAGS (http://mcmc-jags.sourceforge.net)
 saeHB.twofold,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net)
 saeHB.unit,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net)
 salso,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
