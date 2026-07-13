@@ -43,7 +43,7 @@ asbio,xvfb,bwidget,TRUE,BWidget
 asremlPlus,,,TRUE,asreml
 astgrepr,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 autoharp,,,TRUE,pandoc - http://pandoc.org
-automerge,cargo,,TRUE,"'automerge-c', or Cargo (Rust's package manager),rustcand CMaketo build from package sources."
+automerge,cargo,,FALSE,"'automerge-c', or Cargo (Rust's package manager)and rustcto build from package sources."
 autonewsmd,,,TRUE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
 autotab,,,TRUE,Python; TensorFlow; Keras;TensorFlow Addons
 av,ffmpeg,,TRUE,"FFmpeg; with at least libx264 and lame(mp3) drivers. MacOS Homebrew: ffmpeg. Debian/Ubuntu:libavfilter-dev. Fedora/RHEL: either ffmpeg-devel fromhttps://rpmfusion.org (preferred), or libavfilter-free-develwhich is a more limited version available on Fedora/EPEL9."
@@ -168,6 +168,7 @@ CommonJavaJars,,java-bin,TRUE,Java
 compdb,,,TRUE,Clang
 concaveman,,,TRUE,"GDAL, GEOS, PROJ.4"
 condor,,,TRUE,htcondor
+conflibertR,,,FALSE,"Python; the Python modules 'torch','transformers', 'accelerate', 'peft', 'scikit-learn'and 'numpy', installable via conflibert_install()"
 CoNI,,python3,TRUE,python3
 conquestr,,,TRUE,ACER ConQuest
 CoordinateCleaner,,,TRUE,GDAL
@@ -215,6 +216,7 @@ dbmss,,pandoc,TRUE,"pandoc,"
 dclone,,,TRUE,"none, one or more of JAGS, WinBUGS, OpenBUGS, Stan"
 dcmle,,,TRUE,JAGS
 deadwood,,,TRUE,OpenMP
+deckglgeoarrow,,,FALSE,Quarto command line tool(<https://github.com/quarto-dev/quarto-cli>).
 Deducer,,,TRUE,"Java, JRI"
 deepspat,,,TRUE,"TensorFlow (https://www.tensorflow.org/),"
 deforestable,,,TRUE,"GDAL, GEOS, PROJ,sqlite3"
@@ -224,6 +226,7 @@ devEMF,,,FALSE,fontconfig or zlib (only needed for platforms otherthan modern ma
 devianLM,,,TRUE,"OpenMP (optional, for parallel execution)"
 dialr,,,TRUE,java
 dialrjars,,,TRUE,java
+didintrjl,,,FALSE,"Julia, DiDInt.jl"
 diffeqr,,,TRUE,"Julia, DifferentialEquations.jl,ModelingToolkit.jl"
 DiNAMIC.Duo,,,TRUE,"Python, NumPy Python library"
 dismo,,java-bin,TRUE,Java
@@ -232,6 +235,7 @@ diversitree,fftw gsl,,TRUE,"fftw3, gsl"
 DIZutils,,,TRUE,libpq: libpq-dev (deb) or postgresql-devel(rpm)
 DNNSIM,,,TRUE,Python; PyTorch (https://pytorch.org/);NumPy (https://numpy.org/); SciPy (https://scipy.org/); sklearn(https://scikit-learn.org/stable/);
 docknitr,,docker,TRUE,"Docker, RStudio>=1.2"
+doclingr,,,FALSE,"Python, docling; tested with2.107.0)"
 doconv,,libreoffice,TRUE,"LibreOffice, Microsoft Word"
 docxtractr,,libreoffice,TRUE,LibreOffice (<https://www.libreoffice.org/>)required to extract data fromdoc files or performpptxconversion.
 domino,,,TRUE,domino (~>1.7.1)
@@ -296,6 +300,7 @@ fastgeojson,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 fastGLCM,,,TRUE,"apt-get-pip: apt-get install -y python3-pip (deb),python3-pip: python3 -m pip install -U pip (deb), numpy: pip3install -U numpy (deb), cv2: pip3 install -U opencv-python(deb), matplotlib: pip3 install -U matplotlib (deb), skimage:pip3 install -U scikit-image (deb), libarmadillo: apt-getinstall -y libarmadillo-dev (deb), libblas: apt-get install -ylibblas-dev (deb), liblapack: apt-get install -y liblapack-dev(deb), libarpack++2: apt-get install -y libarpack++2-dev (deb),: apt-get install -y  (deb)"
 FastHamming,,,TRUE,"C compiler (C99), OpenMP"
 FastKRR,,,TRUE,OpenMP (optional)
+fastLISA,,,FALSE,"C99, optional OpenMP"
 fastText,,,TRUE,
 fcl,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 FCPS,,pandoc,TRUE,Pandoc
@@ -461,6 +466,7 @@ ip2location,,,TRUE,IP2Location Python library<https://www.ip2location.com/develo
 ip2locationio,,,TRUE,IP2Location.io Python library<https://github.com/ip2location/ip2location-io-python>
 ip2proxy,,,TRUE,IP2Proxy Python library<https://www.ip2location.com/development-libraries/ip2proxy/python>
 ip2whois,,,TRUE,IP2WHOIS Python library<https://github.com/ip2whois/ip2whois-python>
+ipf,,,FALSE,"Cargo (Rust's package manager), rustc"
 iplots,xvfb,,TRUE,
 IRkernel,,,TRUE,"jupyter, jupyter_kernel_test (Python package fortesting)"
 ISEtools,,,TRUE,OpenBUGS or JAGS
@@ -661,7 +667,7 @@ orderly,,git,TRUE,
 ordinalbayes,,,TRUE,JAGS
 ORscraper,,,TRUE,poppler-cpp
 osmnxr,,,FALSE,"Cargo (Rust's package manager), rustc"
-osrm.backend,,,TRUE,OSRM backend binariesv5.27.0)<https://github.com/Project-OSRM/osrm-backend>; packagedownloads binaries automatically if not found
+osrm.backend,,,FALSE,OSRM backend binariesv5.27.0); packagedownloads binaries automatically from<https://github.com/e-kotov/osrm-binaries> by default; upstreamOSRM binaries from<https://github.com/Project-OSRM/osrm-backend> are available asan optional provider
 osrmr,,,TRUE,"To use the Localhost of OSRM, you need to buildOSRM<https://github.com/Project-OSRM/osrm-backend/wiki/Building-OSRM>locally"
 otelsdk,cmake protobuf curl,,TRUE,"cmake, protobuf-compiler, libprotobuf, libcurl,zlib,"
 pagedown,,,TRUE,Pandoc
@@ -1038,6 +1044,7 @@ shinyWGD,,,TRUE,"pandoc, pandoc-citeproc"
 shortcuts,,,TRUE,RStudio
 showtext,libpng freetype,,TRUE,"zlib, libpng, FreeType"
 shrinkGPR,,,TRUE,"torch backend, for installation guide seehttps://cran.r-project.org/web/packages/torch/vignettes/installation.html"
+shrinkr,,,FALSE,compiler
 SIBER,,,TRUE,JAGS
 simhelpers,,,TRUE,RStudio
 SimInf,gsl,,TRUE,GNU Scientific Library (GSL)
