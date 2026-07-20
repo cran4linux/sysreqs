@@ -200,6 +200,7 @@ CTxCC,,,TRUE,Intel MKL (optional for optimized BLAS/LAPACKperformance)
 cubature,,,TRUE,and USE_C17
 cuda.ml,,,TRUE,RAPIDS cuML (see https://rapids.ai/start.html)
 curl,curl,,TRUE,libcurl: libcurl-devel (rpm) orlibcurl4-openssl-dev (deb)
+cusna,,,FALSE,optionally a CUDAx toolkit (nvcc) forthe GPU path
 CytOpT,,,TRUE,Python
 DALY,xvfb,,TRUE,"Tcl/Tk, Tktable"
 data.table,,,TRUE,
@@ -588,7 +589,7 @@ ml,,,FALSE,"Cargo ('Rust' package manager), rustc,optional)"
 ML2Pvae,,,TRUE,"TensorFlow (https://www.tensorflow.org), Keras(https://keras.io), TensorFlow Probability(https://www.tensorflow.org/probability)"
 mlexperiments,,,TRUE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
 mllrnrs,,,TRUE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
-mlpack,,,TRUE,A  compiler. Versionor later of GCC will befine.
+mlpack,,,TRUE,
 mlr,,,TRUE,"gdal (optional), geos (optional), proj (optional),udunits (optional), gsl (optional), gmp (optional), glu(optional), jags (optional), mpfr (optional), openmpi(optional)"
 mlsurvlrnrs,,,TRUE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
 MoBPS,,,TRUE,MiXBLUP (optional; used for multi-trait genomicevaluations); blupf90-family (optional; used for multi-traitgenomic evaluations)
@@ -639,6 +640,7 @@ nmslibR,,,TRUE,"python3-dev: apt-get install -y python3-dev (deb),python3-pip: a
 NobBS,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net/) foranalysis of Bayesian hierarchical models
 nomnoml,,,TRUE,"A chromium based browser, required by ""webshot2""<https://rstudio.github.io/webshot2/>"
 npRmpi,,,FALSE,MPI
+nQuack,,,FALSE,samtools
 nucim,,,TRUE,tiff fftw libcurl openssl
 occumb,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net)
 oceanmap,,imagemagick-bin,TRUE,ImageMagick
@@ -691,7 +693,7 @@ pcaL1,coin-or-clp,,TRUE,COIN-OR Clp
 pcnetmeta,,,TRUE,JAGSx.y (http://mcmc-jags.sourceforge.net)
 PDE,,xpdf,TRUE,XPDF(4.02)(https://github.com/erikstricker/PDE/tree/master/inst/examples/bin)
 pdfminer,,pandas,TRUE,"Python>=3.6, pdfminer.six>=20200402, pandas"
-pdfsigner,,,FALSE,"Cargo (Rust's package manager), rustc"
+pdfsigner,,,TRUE,
 pdftools,poppler,,TRUE,"Poppler C++ API: libpoppler-cpp-dev (deb) orpoppler-cpp-devel (rpm), and poppler-data (rpm/deb) package."
 pedometrics,,pandoc,TRUE,pandoc
 pedprobr,,,TRUE,MERLIN (https://csg.sph.umich.edu/abecasis/merlin/)for calculations involving multiple linked markers.
@@ -829,7 +831,7 @@ RcppCCTZ,,,TRUE,A-bit POSIX OS such as Linux or OS X with IANAtime zone data in 
 RcppCWB,bison flex glib2 ncurses,,TRUE,"pcre2, GLib. OnWindows, no prior installations are necessary, as pre-built(i.e. cross-compiled) binaries of required libraries aredownloaded from a GitHub repository(<https://github.com/PolMine/libcl>) during installation. OnmacOS, static libraries of Glib are downloaded(<https://github.com/PolMine/libglib>) if Glib is not present."
 RcppGetconf,,,TRUE,A POSIX system. Currently Linux and macOS are knownto work.
 RcppGSL,gsl,gsl,TRUE,GNU GSL
-RcppMeCab,mecab,,FALSE,"MeCabor higher for Japanese (libmecab-dev(deb), mecab-devel (rpm)), mecab-ko(https://github.com/Pusnow/mecab-ko-msvc) for Korean"
+RcppMeCab,mecab,,FALSE,"MeCabor higher for Japanese and Chinese(libmecab-dev (deb), mecab-devel (rpm)), mecab-jiebaforMandarin Chinese (https://github.com/lindera/mecab-jieba),mecab-ko(https://github.com/Pusnow/mecab-ko-msvc) forKorean"
 RcppParallel,tbb,tbb,TRUE,"Intel TBB, Windows: cmd.exe andcscript.exe, Solaris: g++ is required"
 RcppPlanc,cmake hdf5 hwloc,,TRUE,"cmake, hdf5, git, patch, gnumake,hwloc,"
 RcppRedis,hiredis,,TRUE,"An available hiredis library (eg via packagelibhiredis-dev on Debian/Ubuntu, hiredis-devel onFedora/RedHat, or directly from source from<https://github.com/redis/hiredis>) can be used but version1.0.2 is also included and built on demand if needed. Theoptional 'rredis' package can be installed from the 'ghrr''drat' repo for additional illustrations and tests."
@@ -865,7 +867,7 @@ REPLesentR,,,TRUE,Presentations written in (R)Markdown require Pandoc(http://pan
 RepoGenerator,,,TRUE,"GitHub, 'RStudio'"
 reportfactory,,,TRUE,pandoc - http://pandoc.org
 reprex,,,TRUE,pandoc - https://pandoc.org/
-reproducible,,unrar,TRUE,'unrar' (Linux/macOS) or '7-Zip' (Windows) to workwith '.rar' files.
+reproducible,,unrar,TRUE,
 reproj,,,TRUE,PROJ
 reservoirnet,,,TRUE,Python
 restoptr,,,TRUE,
@@ -951,6 +953,7 @@ roxigraph,cargo libclang snappy,,TRUE,"Cargo (Rust's package manager), rustc,lib
 Rpadrino,,,TRUE,libcurl: libcurl-devel (rpm) orlibcurl4-openssl-dev (deb).
 rpanel,xvfb bwidget,bwidget,TRUE,
 RPesto,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
+rpic,,,FALSE,"Cargo (Rust's package manager), rustc"
 Rpoppler,poppler,,TRUE,"Poppler Glib interface headers and libraries(<http://poppler.freedesktop.org/>) [Debian/Ubuntu:libpoppler-glib-dev, Fedora: poppler-glib-devel]"
 rpostgis,,,TRUE,'PostgreSQL' with 'PostGIS' extension
 RPostgres,postgresql,,TRUE,libpq: libpq-dev (deb) or postgresql-devel(rpm)
@@ -988,6 +991,7 @@ rtika,,,TRUE,Java
 rtiktoken,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 rtmpt,gsl,,TRUE,GSL
 runjags,jags,,TRUE,JAGS(https://mcmc-jags.sourceforge.io/)
+rush,,,FALSE,Redis
 rvg,,,TRUE,libpng
 rviewgraph,,,TRUE,Java
 rvisidata,,,TRUE,visidata
@@ -1133,6 +1137,7 @@ tabr,,lilypond,TRUE,LilyPond v2.22.1-2+ (needed for rendering sheetmusic or writ
 tabulapdf,,,TRUE,"Java: openjdk-11-jdk (deb),java-11-openjdk.x86_64 (rpm), openjdk@11 (brew)"
 tabular,,,FALSE,"Quarto command line tool(<https://github.com/quarto-dev/quarto-cli>), needed only tobuild the package vignettes."
 talib,,,FALSE,CMake
+tantivyr,,,FALSE,"Cargo (Rust's package manager), rustc"
 tapkee,,,TRUE,'tapkee' (http://tapkee.lisitsyn.me/)
 TAQMNGR,,,TRUE,zlib headers and library
 targeted,,,TRUE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
