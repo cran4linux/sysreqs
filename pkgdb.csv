@@ -128,10 +128,12 @@ camtrapR,,exiftool,TRUE,ExifTool (https://exiftool.org/)
 caracas,,,TRUE,Python
 cartogramR,fftw,,TRUE,"FFTW; possible package: fftw-devel (rpm),libfftw3-dev (deb) or fftw (brew)."
 cartography,gdal geos proj sqlite,,TRUE,
+catmodeling,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
 caugi,cargo,,TRUE,"Cargo (Rust's package manager), rustc, xz"
 causact,,,TRUE,Python and numpyro are needed for Bayesianinference computations; python with header files andshared library; numpyrov0.12.1;https://https://num.pyro.ai/en/latest/index.html); arvizv0.15.1; https://https://python.arviz.org/en/stable/)
 caviarpd,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 CBSr,,,TRUE,Java
+cdtmbnma,,,FALSE,A working Stan backend through cmdstanr/CmdStan orrstan.
 cgvR,,,FALSE,"C17,   pkg-config, libvulkan-dev(Linux) or LunarG 'Vulkan' 'SDK' (Windows, macOS), libglfw3-dev(Linux) or glfw via Homebrew (macOS), ffmpeg (optional, forcgv_record_*). Optional configure flags: --with-vulkan /--without-vulkan, --with-simd for SSE4.1 + PCLMUL fpng."
 chicane,,,TRUE,bedtools
 chopin,,,TRUE,netcdf
@@ -154,6 +156,7 @@ clustermq,zeromq,,TRUE,ZeroMQ (libzmq)(optional; otherwisebundled)
 ClusterR,,,TRUE,
 CLVTools,gsl,,TRUE,GNU GSL
 cmaRs,,,TRUE,MOSEK (http://www.mosek.com) and MOSEK License foruse of Rmosek
+CMCMC,,,FALSE,Optional CUDA toolkit and NVIDIA GPU for the CUDAbackend; OpenMP for parallel CPU execution.
 cmtkr,,,TRUE,zlib
 cncaGUI,xvfb,bwidget,TRUE,Tcl/Tk package BWidget.
 codacore,,,TRUE,TensorFlow (https://www.tensorflow.org/)
@@ -398,6 +401,9 @@ goxygen,,,TRUE,"pandoc, pandoc-citeproc"
 GPBayes,gsl,,TRUE,GNU Scientific Library version
 GreedyExperimentalDesign,,,FALSE,"Java; wgpu-native(optional,for GPU acceleration, seehttps://github.com/gfx-rs/wgpu-native)"
 GreedyExperimentalDesignJARs,,,TRUE,Java
+greta,,,FALSE,Python with header files and sharedlibrary; TensorFlowv2.0.0; https://www.tensorflow.org/);TensorFlow Probability (v0.8.0;https://www.tensorflow.org/probability/)
+greta.dynamics,,,FALSE,Python with header files and sharedlibrary; TensorFlowv2.0.0; https://www.tensorflow.org/);TensorFlow Probability (v0.8.0;https://www.tensorflow.org/probability/)
+greta.gp,,,FALSE,Python with header files and sharedlibrary; TensorFlowv2.0.0; https://www.tensorflow.org/);TensorFlow Probability (v0.8.0;https://www.tensorflow.org/probability/)
 gretlR,,gretl,TRUE,gretl
 gridDebug,,,TRUE,graphviz
 gridGraphviz,,graphviz,TRUE,graphviz
@@ -467,8 +473,9 @@ ip2location,,,TRUE,IP2Location Python library<https://www.ip2location.com/develo
 ip2locationio,,,TRUE,IP2Location.io Python library<https://github.com/ip2location/ip2location-io-python>
 ip2proxy,,,TRUE,IP2Proxy Python library<https://www.ip2location.com/development-libraries/ip2proxy/python>
 ip2whois,,,TRUE,IP2WHOIS Python library<https://github.com/ip2whois/ip2whois-python>
-ipf,,,FALSE,"Cargo (Rust's package manager), rustc"
+ipf,,,TRUE,
 iplots,xvfb,,TRUE,
+IRISSeismic,,,FALSE,Java JREor later
 IRkernel,,,TRUE,"jupyter, jupyter_kernel_test (Python package fortesting)"
 ISEtools,,,TRUE,OpenBUGS or JAGS
 jagstargets,,,TRUE,JAGSx.y (https://mcmc-jags.sourceforge.net)
@@ -522,6 +529,7 @@ lightsout,,pandoc,TRUE,pandoc with https support
 lincom,,,TRUE,"MOSEK, MOSEK License"
 lira,,,TRUE,
 littler,,,TRUE,libR
+livelink,,,FALSE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
 LLMing,,,TRUE,"Python with packages: torch,transformers, pandas, numpy"
 llmjson,,,FALSE,"Cargo (Rust's package manager), rustc"
 lnmixsurv,,,FALSE,"GNU,  GSL"
@@ -536,7 +544,7 @@ loon.shiny,xvfb,,TRUE,
 loon.tourr,xvfb,,TRUE,
 lpmec,,,TRUE,"Python with jax, numpy, numpyro(optional; for NumPyro backend via reticulate)"
 LSAMBA,,,TRUE,'Monolix'(<https://monolixsuite.slp-software.com/monolix/2024R1/>)
-lstar,,,FALSE,zlib
+lstar,,,FALSE,"zlib,  libzstd (optional, forreading Zstd-compressed Zarr v3 stores)"
 lubridate,,,TRUE,A system with zoneinfo data (e.g./usr/share/zoneinfo). On Windows the zoneinfo included with Ris used.
 lumbermark,,,FALSE,OpenMP
 lwgeom,geos proj sqlite,,TRUE,"GEOS, PROJ, sqlite3"
@@ -608,7 +616,7 @@ multibiplotGUI,xvfb,bwidget,TRUE,Tcl/Tk package BWidget.
 multibridge,gmp mpfr,,TRUE,"mpfr, gmp_1)"
 multinet,,,TRUE,
 mutossGUI,,,TRUE,Java
-mvalpha,,,TRUE,
+mvalpha,,,FALSE,OpenMP
 mvst,gsl,,TRUE,GNU Scientific Library
 mwa,,,TRUE,Java
 mwcsr,,java-bin,TRUE,Java
@@ -782,6 +790,7 @@ RAQSAPI,,,TRUE,package manual and Vignettes require pandoc http://pandoc.org)
 rasciidoc,,asciidoc source-highlight,TRUE,"python, by default rasciidoc uses a systeminstallation of asciidoc. If a system installation of asciidocis not available, it downloads the sources from(<http://gitlab.com/asciidoc>). GNU source-highlight isrecommended."
 RAthena,,,TRUE,Python and boto3(https://aws.amazon.com/sdk-for-python)
 ravetools,fftw,,TRUE,"fftw3 (libfftw3-dev (deb), or fftw-devel (rpm)),pkg-config"
+rBahadur,,,FALSE,"curl, gzip (providing zcat), awk"
 RBaseX,,,TRUE,Needs a running BaseX server instance. The testuserwith credentials ('Test'/'testBasex') should have admin rights.
 rbch,,,TRUE,BCHunlimited
 rbedrock,cmake,,TRUE,"cmake, zlib,"
@@ -832,7 +841,7 @@ RcppCWB,bison flex glib2 ncurses,,TRUE,"pcre2, GLib. OnWindows, no prior install
 RcppGetconf,,,TRUE,A POSIX system. Currently Linux and macOS are knownto work.
 RcppGSL,gsl,gsl,TRUE,GNU GSL
 RcppMeCab,mecab,,FALSE,"MeCabor higher for Japanese and Chinese(libmecab-dev (deb), mecab-devel (rpm)), mecab-jiebaforMandarin Chinese (https://github.com/lindera/mecab-jieba),mecab-ko(https://github.com/Pusnow/mecab-ko-msvc) forKorean"
-RcppParallel,tbb,tbb,TRUE,"Intel TBB, Windows: cmd.exe andcscript.exe, Solaris: g++ is required"
+RcppParallel,tbb,tbb,FALSE,CMake
 RcppPlanc,cmake hdf5 hwloc,,TRUE,"cmake, hdf5, git, patch, gnumake,hwloc,"
 RcppRedis,hiredis,,TRUE,"An available hiredis library (eg via packagelibhiredis-dev on Debian/Ubuntu, hiredis-devel onFedora/RedHat, or directly from source from<https://github.com/redis/hiredis>) can be used but version1.0.2 is also included and built on demand if needed. Theoptional 'rredis' package can be installed from the 'ghrr''drat' repo for additional illustrations and tests."
 RcppSimdJson,,,TRUE,
@@ -889,6 +898,7 @@ rgph,,,TRUE,Java
 rgrass,,grass,TRUE,GRASS
 rGroovy,,,TRUE,Java
 RH2,,,TRUE,java runtime
+Rhpc,,,FALSE,"R built as a shared or static library, 'MPI'library."
 ridge,gsl,,TRUE,Gnu Scientific Library version
 rim,,maxima,TRUE,"Maxima (https://sourceforge.net/projects/maxima/,tested with versions-, needs to be on PATH"
 rinet,,,TRUE,"Python, TensorFlow, Keras, scikit-learn"
@@ -1135,11 +1145,11 @@ systemfonts,freetype,,TRUE,"fontconfig, freetype2"
 tables,,,TRUE,pandoc for vignettes
 tabr,,lilypond,TRUE,LilyPond v2.22.1-2+ (needed for rendering sheetmusic or writing MIDI files)
 tabulapdf,,,TRUE,"Java: openjdk-11-jdk (deb),java-11-openjdk.x86_64 (rpm), openjdk@11 (brew)"
-tabular,,,FALSE,"Quarto command line tool(<https://github.com/quarto-dev/quarto-cli>), needed only tobuild the package vignettes."
+tabular,,,FALSE,"Quarto command line tool(<https://github.com/quarto-dev/quarto-cli>), needed only tobuild the package vignettes. Optional for PDF output: a TeXdistribution (e.g. TinyTeX) or Typst(<https://github.com/typst/typst>, standalone or the copybundled with Quarto); see check_latex() and check_typst()."
 talib,,,FALSE,CMake
 tantivyr,,,FALSE,"Cargo (Rust's package manager), rustc"
 tapkee,,,TRUE,'tapkee' (http://tapkee.lisitsyn.me/)
-TAQMNGR,,,TRUE,zlib headers and library
+TAQMNGR,,,TRUE,
 targeted,,,TRUE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
 taxodist,,,FALSE,internet access
 tcltk2,xvfb,,TRUE,"Tcl/Tk, Tktable, optional)"
