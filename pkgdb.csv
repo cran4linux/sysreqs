@@ -11,6 +11,7 @@ admisc,,,FALSE,OpenMP (optional)
 AdmixPoly,,,FALSE,A system with a C++ compiler supporting OpenMP
 admixr,,,TRUE,ADMIXTOOLS suite of command-line utilities forpopulation genetics. See<https://github.com/dreichlab/admixtools> for the most recentinstallation instructions and further information.
 AFR,,,TRUE,
+agenticr,,,FALSE,"ripgrep (optional, for fast file search; installwith 'winget install BurntSushi.ripgrep.MSVC' on Windows or seehttps://github.com/BurntSushi/ripgrep)"
 AgePopDenom,,,TRUE,TMB
 agregR,,,TRUE,CmdStan(https://mc-stan.org/users/interfaces/cmdstan)
 ahocorasick,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
@@ -45,7 +46,7 @@ astgrepr,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 autoharp,,,TRUE,pandoc - http://pandoc.org
 automerge,cargo,,FALSE,"'automerge-c', or Cargo (Rust's package manager)and rustcto build from package sources."
 autonewsmd,,,TRUE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
-autotab,,,TRUE,Python; TensorFlow; Keras;TensorFlow Addons
+autotab,,,FALSE,"Python; TensorFlow, <;Keras; TensorFlow Addons"
 av,ffmpeg,,TRUE,"FFmpeg; with at least libx264 and lame(mp3) drivers. MacOS Homebrew: ffmpeg. Debian/Ubuntu:libavfilter-dev. Fedora/RHEL: either ffmpeg-devel fromhttps://rpmfusion.org (preferred), or libavfilter-free-develwhich is a more limited version available on Fedora/EPEL9."
 AV1R,ffmpeg vulkan,,TRUE,"FFmpeg withlibavcodec/libavformat, libvulkan-dev (optional, for GPUencoding on Linux), Vulkan SDK (optional, for GPU encoding onWindows)"
 awdb,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
@@ -128,7 +129,7 @@ camtrapR,,exiftool,TRUE,ExifTool (https://exiftool.org/)
 caracas,,,TRUE,Python
 cartogramR,fftw,,TRUE,"FFTW; possible package: fftw-devel (rpm),libfftw3-dev (deb) or fftw (brew)."
 cartography,gdal geos proj sqlite,,TRUE,
-catmodeling,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
+catmodeling,,,FALSE,xz
 caugi,cargo,,TRUE,"Cargo (Rust's package manager), rustc, xz"
 causact,,,TRUE,Python and numpyro are needed for Bayesianinference computations; python with header files andshared library; numpyrov0.12.1;https://https://num.pyro.ai/en/latest/index.html); arvizv0.15.1; https://https://python.arviz.org/en/stable/)
 caviarpd,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
@@ -293,6 +294,7 @@ excursions,gsl,,TRUE,Gnu Scientific Library version
 exdqlm,,,TRUE,OpenMP (optional)
 exifr,exiftool,exiftool,TRUE,Perl
 exiftoolr,exiftool,exiftool,TRUE,Perl
+exmort,,,FALSE,pandoc for report rendering; a LaTeXinstallation (for example TinyTeX) is required only for PDFreports.
 extraDistr,,,TRUE,
 ezknitr,,,TRUE,pandoc with https support
 factset.protobuf.stach.v2,,,TRUE,"ProtoBuf libraries and compiler versionorlater; On Debian/Ubuntu these can be installed aslibprotoc-dev, libprotobuf-dev and protobuf-compiler, while onFedora/CentOS protobuf-devel and protobuf-compiler are needed."
@@ -321,7 +323,7 @@ findInFiles,,grep,TRUE,grep
 findInGit,,grep git,TRUE,"grep, git"
 fio,cargo,,TRUE,"Cargo (Rust's package manager), rustc, xz"
 fitbitViz,,,TRUE,
-flan,gsl,,TRUE,GNU GSL
+flan,gsl,,TRUE,
 flexsiteboard,,,TRUE,pandoc - http://pandoc.org
 flint,flint mpfr gmp,,TRUE,"flint, mpfr, gmp"
 Fluidigm,,,TRUE,"perl, plink"
@@ -388,7 +390,7 @@ git2r,libgit2 openssl libssh2,,TRUE,libgit2 and its dependencies libssh2 andopen
 gitcreds,,git,TRUE,git
 gittargets,,git,TRUE,Git
 glioblastomaEHRsData,,,TRUE,"pandoc - http://pandoc.org, tcltk(optional)"
-glmbayes,,,FALSE,"Optional OpenCL support. If available, GPUacceleration will be used; otherwise, computation runs on CPU."
+glmbayes,,,TRUE,
 glmulti,,,TRUE,Java
 glpkAPI,glpk gmp,,TRUE,
 gm,,musescore,TRUE,MuseScore - https://musescore.org/
@@ -473,7 +475,7 @@ ip2location,,,TRUE,IP2Location Python library<https://www.ip2location.com/develo
 ip2locationio,,,TRUE,IP2Location.io Python library<https://github.com/ip2location/ip2location-io-python>
 ip2proxy,,,TRUE,IP2Proxy Python library<https://www.ip2location.com/development-libraries/ip2proxy/python>
 ip2whois,,,TRUE,IP2WHOIS Python library<https://github.com/ip2whois/ip2whois-python>
-ipf,,,TRUE,
+ipf,,,FALSE,"Cargo (Rust's package manager), rustc"
 iplots,xvfb,,TRUE,
 IRISSeismic,,,FALSE,Java JREor later
 IRkernel,,,TRUE,"jupyter, jupyter_kernel_test (Python package fortesting)"
@@ -493,6 +495,7 @@ JointAI,,,TRUE,JAGS (https://mcmc-jags.sourceforge.io/)
 jpeg,libjpeg,,TRUE,libjpeg
 jqr,jq,,TRUE,libjq: jq-devel (rpm) or libjq-dev (deb)
 jSDM,gsl,,TRUE,GNU GSL
+jsslintr,,,FALSE,"Cargo (Rust's package manager), rustc"
 juicr,,,TRUE,
 JuliaCall,,julia,TRUE,"Julia, RCall.jl"
 JuliaConnectoR,,julia,TRUE,Julia
@@ -900,7 +903,7 @@ rGroovy,,,TRUE,Java
 RH2,,,TRUE,java runtime
 Rhpc,,,FALSE,"R built as a shared or static library, 'MPI'library."
 ridge,gsl,,TRUE,Gnu Scientific Library version
-rim,,maxima,TRUE,"Maxima (https://sourceforge.net/projects/maxima/,tested with versions-, needs to be on PATH"
+rim,,maxima,TRUE,
 rinet,,,TRUE,"Python, TensorFlow, Keras, scikit-learn"
 rip.opencv,,,FALSE,OpenCVor newer
 rirods,,,TRUE,iRODS C++ HTTP API(<https://github.com/irods/irods_client_http_api>)
@@ -1127,6 +1130,7 @@ stressor,,,TRUE,python(>=3.8.10)
 string2path,cargo,,TRUE,
 stringi,,,TRUE,"ICU4C, optional)"
 submitr,,,FALSE,"SSH client, HTCondor (https://htcondor.org)"
+subtitles,,,FALSE,"ffmpeg, libass"
 sudachir,,,TRUE,Python
 sundialr,,,FALSE,cmake
 SuperGauss,fftw,,TRUE,fftw3
@@ -1166,6 +1170,7 @@ texor,,,TRUE,pandoc - https://pandoc.org
 texPreview,,tex-standalone,TRUE,
 texreg,,pandoc,TRUE,"pandoc suggested for using wordregfunction; LaTeX packages tikz, booktabs, dcolumn, rotating,thumbpdf, longtable, paralist for the vignette"
 text,,,TRUE,Python
+TextAnalysisR,,,FALSE,Python with spaCy forlemmatization and sentence-transformers for embeddings(optional)
 textrecipes,,,TRUE,""""""
 textshaping,freetype harfbuzz fribidi,,TRUE,"freetype2, harfbuzz, fribidi"
 textTinyR,,,TRUE,libarmadillo: apt-get install -y libarmadillo-dev(deb)
@@ -1239,6 +1244,7 @@ vegawidget,,,TRUE,To use image functions for MacOS: X11
 venneuler,,,TRUE,Javaor higher
 VertexWiseR,,,TRUE,"Miniconda3 (v24.9.2), Python (<= v3.12), BrainStat(v0.4.2), vtk (v9.3.1), numpy (<= v1.26.4), nilearn (<=v0.12.0), netneurotools (<= v0.2.5)"
 virtuoso,,,TRUE,"virtuoso-opensource (Linux). For Mac & Windows,this package can automate Virtuoso installation."
+visreg,,,FALSE,Quarto command line tool
 vitae,,,TRUE,pandoc - http://pandoc.org
 VMDecomp,,,TRUE,"libarmadillo: apt-get install -y libarmadillo-dev(deb), libblas: apt-get install -y libblas-dev (deb),liblapack: apt-get install -y liblapack-dev (deb),libarpack++2: apt-get install -y libarpack++2-dev (deb),: apt-get install -y  (deb)"
 vmr,,vagrant,TRUE,Vagrant <https://www.vagrantup.com>
@@ -1248,6 +1254,7 @@ warbleR,,,TRUE,"fftw3,  sox, Ghostscript, libsndfile, GDAL"
 watcher,fswatch,,FALSE,"'libfswatch' (optional, bundled copy compiledotherwise)"
 waysign,cargo,,TRUE,"Cargo (Rust's package manager), rustc, xz"
 webdriver,,,TRUE,PhantomJS (http://phantomjs.org/)
+WebGestaltR,,,FALSE,"Cargo (Rust's package manager), rustc v1.63.0+"
 webp,libwebp,,TRUE,libwebp
 webshot,,imagemagick-bin,TRUE,"PhantomJS for taking screenshots, ImageMagick orGraphicsMagick and OptiPNG for manipulating images."
 websocket,openssl,,TRUE,OpenSSL
