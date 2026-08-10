@@ -80,6 +80,7 @@ bayprior,,,FALSE,"Quarto CLI, https://quarto.org)"
 bbl,gsl,,TRUE,
 BCFM,,,TRUE,pandoc for building vignettes
 BCHM,,,TRUE,JAGS
+BCodifSIS,,,FALSE,C99
 bcputility,,,TRUE,bcp Utility
 bdpar,,python3,TRUE,Pythonor
 beastier,,,TRUE,BEAST2 (https://www.beast2.org/)
@@ -90,7 +91,7 @@ bertopicr,,,TRUE,"Python; BERTopic and Python packages:sentence-transformers, um
 bfw,,java-bin,TRUE,"JAGS<https://mcmc-jags.sourceforge.io>,Java JDK<https://www.java.com/en/download/manual.jsp>"
 bhmbasket,,,TRUE,JAGSx.y (http://mcmc-jags.sourceforge.net)
 biblio,,pandoc,TRUE,pandoc - http://pandoc.org
-BIDistances,,,TRUE,"pandoc, needed for vignettes)"
+BIDistances,,,FALSE,"OpenCL library (optional, for GPUacceleration), pandoc, needed for vignettes)"
 bigGP,openmpi,openmpi-bin,TRUE,OpenMPI or MPICH2
 bigMICE,,,TRUE,"Spark:x, orx"
 bigPLSR,,,TRUE,Optional CBLAS (detected at compile time)
@@ -161,6 +162,7 @@ CMCMC,,,FALSE,Optional CUDA toolkit and NVIDIA GPU for the CUDAbackend; OpenMP f
 cmtkr,,,TRUE,zlib
 cncaGUI,xvfb,bwidget,TRUE,Tcl/Tk package BWidget.
 codacore,,,TRUE,TensorFlow (https://www.tensorflow.org/)
+codriver,,,FALSE,"RStudio,https://posit.co/download/rstudio-desktop/)"
 coga,gsl,,TRUE,GNU GSL
 cogmapr,,,TRUE,libcurl: libcurl-devel (rpm) orlibcurl4-openssl-dev (deb).
 CohortContrast,,,FALSE,Python
@@ -170,6 +172,7 @@ Colossus,,,TRUE,"make,"
 COMBO,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net)
 CommonJavaJars,,java-bin,TRUE,Java
 compdb,,,TRUE,Clang
+compost,,,FALSE,ffmpeg
 concaveman,,,TRUE,"GDAL, GEOS, PROJ.4"
 condor,,,TRUE,htcondor
 conflibertR,,,FALSE,"Python; the Python modules 'torch','transformers', 'accelerate', 'peft', 'scikit-learn'and 'numpy', installable via conflibert_install()"
@@ -238,6 +241,7 @@ dismo,,java-bin,TRUE,Java
 divent,,,TRUE,pandoc
 diversitree,fftw gsl,,TRUE,"fftw3, gsl"
 DIZutils,,,TRUE,libpq: libpq-dev (deb) or postgresql-devel(rpm)
+DLCA,,,FALSE,OpenMP
 DNNSIM,,,TRUE,Python; PyTorch (https://pytorch.org/);NumPy (https://numpy.org/); SciPy (https://scipy.org/); sklearn(https://scikit-learn.org/stable/);
 docknitr,,docker,TRUE,"Docker, RStudio>=1.2"
 doclingr,,,FALSE,"Python, docling; tested with2.107.0)"
@@ -254,6 +258,7 @@ drugsens,,,TRUE,QuPath™or higher
 dti,gsl,,TRUE,gsl
 duckdb,,,TRUE,xz (for building from source)
 duet,,ffmpeg-bin,TRUE,FFmpeg (https://ffmpeg.org/)
+dwg2geo,,,FALSE,"Cargo (Rust's package manager), rustc"
 DynareR,,,TRUE,"Dynare, Octave"
 dynaSpec,,ffmpeg-bin,TRUE,ffmpeg
 dynBiplotGUI,xvfb,,TRUE,gmake
@@ -307,6 +312,7 @@ fastGLCM,,,TRUE,"apt-get-pip: apt-get install -y python3-pip (deb),python3-pip: 
 FastHamming,,,TRUE,"C compiler (C99), OpenMP"
 FastKRR,,,TRUE,OpenMP (optional)
 fastLISA,,,FALSE,"C99, optional OpenMP"
+fastrda,,,FALSE,OpenMP
 fastText,,,TRUE,
 fcl,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 FCPS,,pandoc,TRUE,Pandoc
@@ -390,7 +396,8 @@ git2r,libgit2 openssl libssh2,,TRUE,libgit2 and its dependencies libssh2 andopen
 gitcreds,,git,TRUE,git
 gittargets,,git,TRUE,Git
 glioblastomaEHRsData,,,TRUE,"pandoc - http://pandoc.org, tcltk(optional)"
-glmbayes,,,TRUE,
+glmbayes,,,FALSE,"Optional OpenCL support. If available, GPUacceleration will be used; otherwise, computation runs on CPU."
+glmbayesCore,,,FALSE,"Optional OpenCL support. If available, GPUacceleration will be used; otherwise, computation runs on CPU."
 glmulti,,,TRUE,Java
 glpkAPI,glpk gmp,,TRUE,
 gm,,musescore,TRUE,MuseScore - https://musescore.org/
@@ -468,6 +475,7 @@ inlpubs,,,TRUE,"Complete functionality necessitates Amazon Corretto(win), and de
 inpdfr,,xpdf,TRUE,XPDF (http://www.foolabs.com/xpdf/download.html)
 InsectLabelR,,,FALSE,pdflatex
 InSilicoVA,,,TRUE,Java
+IntegMultiReg,,,FALSE,GSL
 inTextSummaryTable,,pandoc,TRUE,pandoc (to export an interactive summary table to afile)
 inti,,,TRUE,pandoc
 IP,libidn,,TRUE,
@@ -486,6 +494,7 @@ jarbes,,,TRUE,JAGS (seehttp://mcmc-jags.sourceforge.net)
 JavaGD,,,TRUE,and Java JDKor higher
 JFE,xvfb,,TRUE,
 JGR,,,TRUE,Java
+jiebaRS,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
 jlmerclusterperm,,,TRUE,Julia
 jlview,,,FALSE,"Julia, https://julialang.org/downloads/)"
 JMbayes,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net)
@@ -531,6 +540,7 @@ liftr,,docker,TRUE,Docker (see <https://docs.docker.com/install/>)
 lightsout,,pandoc,TRUE,pandoc with https support
 lincom,,,TRUE,"MOSEK, MOSEK License"
 lira,,,TRUE,
+liteformats,,,FALSE,"Chromium, Google Chrome, or Microsoft Edge (for PDFoutput)"
 littler,,,TRUE,libR
 livelink,,,FALSE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
 LLMing,,,TRUE,"Python with packages: torch,transformers, pandas, numpy"
@@ -589,9 +599,10 @@ MicrobiomeStat,,,TRUE,"NLopt library (optional, for high-performance BMDDmode)"
 MigConnectivity,,,TRUE,JAGS (https://mcmc-jags.sourceforge.net)
 MIMSunit,,,FALSE,"memoryGB) Ubuntu: build-essential,libxml2-dev, libssl-dev, libcurl4-openssl-dev Windows: Rtools(>="
 mindr,,,TRUE,pandoc - http://pandoc.org
+MineSDG,,,FALSE,"Quarto CLI (optional, for reportrendering)"
 minidown,,,TRUE,pandoc - http://pandoc.org
 minimaxALT,gsl,,TRUE,"GNU Scientific Library (GSL), OpenMP"
-minired,,,TRUE,"'Redatam' runtime engine (see https://redatam.org),The dynamic binary library is downloaded from<https://redatam-core.s3.us-west-2.amazonaws.com> during thebuild step. Currently supported platforms are Windows and Linux(both for x86-64 processors only)"
+minired,,,TRUE,
 mixcat,gsl,,TRUE,
 mixgb,,,TRUE,macOS: Accelerate framework
 MixSIAR,,,TRUE,JAGS
@@ -617,6 +628,7 @@ mscstexta4r,,,TRUE,"A valid account MUST be registered with Microsoft'sCognitive
 mscsweblm4r,,,TRUE,"A valid account MUST be registered with Microsoft'sCognitive Services website<https://www.microsoft.com/cognitive-services/> in order toobtain a (free) API key. Without an API key, this package willnot work properly."
 multibiplotGUI,xvfb,bwidget,TRUE,Tcl/Tk package BWidget.
 multibridge,gmp mpfr,,TRUE,"mpfr, gmp_1)"
+multichainr,,,FALSE,MultiChain<https://www.multichain.com/download-install/>
 multinet,,,TRUE,
 mutossGUI,,,TRUE,Java
 mvalpha,,,FALSE,OpenMP
@@ -625,7 +637,7 @@ mwa,,,TRUE,Java
 mwcsr,,java-bin,TRUE,Java
 mx.crypto,,,FALSE,"Cargo (Rust's package manager), rustc"
 NACHO,,,TRUE,"pandoc, pandoc-citeproc"
-nanoarrow,,,TRUE,libzstd (optional)
+nanoarrow,,,FALSE,"libzstd (optional), liblz4 (optional)"
 nanonext,cmake,,FALSE,"'libnng'and 'libmbedtls'(optional,bundled sources compiled otherwise)"
 nativeORT,,,FALSE,libonnxruntime
 nbconvertR,,pandoc nbconvert,TRUE,"pandoc, jupyter, jupyter nbconvert (""nbconvert""python package), pywin32 (on windows)"
@@ -732,6 +744,7 @@ png,libpng,,TRUE,libpng
 poisbinom,fftw,,TRUE,fftw3
 PoissonBinomial,fftw,,TRUE,fftw3
 PoissonMultinomial,fftw,,TRUE,fftw3(>=3.3)
+polyglotSQL,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
 pomp,,,TRUE,"For Windows users, Rtools (seehttps://cran.r-project.org/bin/windows/Rtools/)."
 PONG2,,,FALSE,"PLINK2, minimac4, optional)"
 popbayes,,,TRUE,JAGS
@@ -901,6 +914,7 @@ rgph,,,TRUE,Java
 rgrass,,grass,TRUE,GRASS
 rGroovy,,,TRUE,Java
 RH2,,,TRUE,java runtime
+Rhobots,,,FALSE,Microsoft Visual C++ Redistributable(Windowsonly; required by torch)
 Rhpc,,,FALSE,"R built as a shared or static library, 'MPI'library."
 ridge,gsl,,TRUE,Gnu Scientific Library version
 rim,,maxima,TRUE,
@@ -942,6 +956,7 @@ rMIDAS,,,TRUE,Python
 rMIDAS2,,,FALSE,Python with the 'midasverse-midas-api'package
 RMOA,,,TRUE,Java
 RMOAjars,,,TRUE,Java
+rmoriebricklayer,,,FALSE,"libcurl (deb: libcurl4-openssl-dev, rpm:libcurl-devel)"
 Rmosek,,,TRUE,MOSEK and MOSEK License
 Rmpfr,gmp mpfr,,TRUE,"gmp, mpfr, pdfcrop (part ofTexLive) is required to rebuild the vignettes."
 Rmpi,openmpi,openmpi,TRUE,
@@ -1052,6 +1067,7 @@ shard,,,FALSE,"POSIX shared memory (optional), memory-mapped files"
 sharx,,,TRUE,jags
 shinyalert,,pandoc,TRUE,
 ShinyBlock,,,FALSE,"Python, ecdsa (Python package)"
+shinyelectron,,,FALSE,"Node.js, npm"
 shinyInvoice,,,TRUE,pandoc
 shinyjs,,pandoc,TRUE,
 shinyloadtest,,pandoc,TRUE,pandoc - http://pandoc.org
@@ -1101,6 +1117,7 @@ spatsoc,,,TRUE,"GDAL, GEOS, PROJ,sqlite3"
 spcosa,,,TRUE,Java
 speakeasyR,,,TRUE,arpack (optional)
 specklestar,fftw,,TRUE,
+specmine,,,FALSE,"Python, Python module 'nmrglue'"
 spherepc,,,TRUE,XQuartz (on MacOS)
 spongecake,,ffmpeg-bin,TRUE,FFmpeg (http://ffmpeg.org)
 spopt,,,FALSE,"Cargo (Rust's package manager), rustc"
@@ -1155,6 +1172,7 @@ tantivyr,,,FALSE,"Cargo (Rust's package manager), rustc"
 tapkee,,,TRUE,'tapkee' (http://tapkee.lisitsyn.me/)
 TAQMNGR,,,TRUE,
 targeted,,,TRUE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
+tarpolyglot,,,FALSE,"The external language toolchains are optional andeach is only required by its matching targets constructor: aPython installation for tar_target_py(), a Julia installationfor tar_target_jl(), and a Rust toolchain with Cargo fortar_target_rs() (on Windows, the GNU toolchain, to match R'sABI). A pipeline that uses a single language needs only thatlanguage's toolchain, and a pipeline that uses none of theseconstructors needs no external toolchain at all."
 taxodist,,,FALSE,internet access
 tcltk2,xvfb,,TRUE,"Tcl/Tk, Tktable, optional)"
 TDA,gmp,,TRUE,"gmp,"
@@ -1282,4 +1300,5 @@ xslt,libxslt,,TRUE,"libxslt: libxslt1-dev (deb), libxslt-devel (rpm)"
 yaml12,cargo,,TRUE,"Cargo (Rust's package manager), rustc, xz"
 yamlme,,,TRUE,pandoc - http://pandoc.org
 ymd,cargo,,TRUE,"Cargo (Rust's package manager), rustc, xz"
+zmij,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
 zoomerjoin,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
