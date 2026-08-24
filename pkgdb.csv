@@ -7,7 +7,7 @@ acro,,,TRUE,Python
 adbcpostgresql,postgresql,,TRUE,libpq
 adbcsqlite,sqlite,,TRUE,SQLite3
 adimpro,,imagemagick-bin dcraw,TRUE,"Image Magick (for reading non PPM format), dcraw(for reading RAW images)."
-admisc,,,FALSE,OpenMP (optional)
+admisc,,,FALSE,POSIX threads
 AdmixPoly,,,FALSE,A system with a C++ compiler supporting OpenMP
 admixr,,,TRUE,ADMIXTOOLS suite of command-line utilities forpopulation genetics. See<https://github.com/dreichlab/admixtools> for the most recentinstallation instructions and further information.
 AFR,,,TRUE,
@@ -37,7 +37,7 @@ arcpy,,,TRUE,"Conda, ArcGIS Pro"
 argparse,,python3,TRUE,python
 arrangements,gmp,,TRUE,gmp
 arrow,arrow curl openssl,,TRUE,"for AWS S3 support on Linux, libcurl andopenssl (optional); cmake(build-time only, and onlyfor full source build)"
-artma,jags,,TRUE,JAGS(https://mcmc-jags.sourceforge.io/)
+artma,jags,,TRUE,
 arulesCBA,,java-bin,TRUE,Java
 arulesNBMiner,,java-bin,TRUE,Java
 asbio,xvfb,bwidget,TRUE,BWidget
@@ -205,7 +205,7 @@ ctrdata,,,TRUE,
 ctsmTMB,,,TRUE,
 CTxCC,,,TRUE,Intel MKL (optional for optimized BLAS/LAPACKperformance)
 cubature,,,TRUE,and USE_C17
-cuda.ml,,,TRUE,RAPIDS cuML (see https://rapids.ai/start.html)
+cuda.ml,,,FALSE,Native operations require Linux x86_64 with glibc2.28 or newer. GPU-backed operations require a supported NVIDIAGPU and driveror newer.
 curl,curl,,TRUE,libcurl: libcurl-devel (rpm) orlibcurl4-openssl-dev (deb)
 cusna,,,FALSE,optionally a CUDAx toolkit (nvcc) forthe GPU path
 CytOpT,,,TRUE,Python
@@ -416,7 +416,7 @@ greta.gp,,,FALSE,Python with header files and sharedlibrary; TensorFlowv2.0.0; h
 gretlR,,gretl,TRUE,gretl
 gridDebug,,,TRUE,graphviz
 gridGraphviz,,graphviz,TRUE,graphviz
-gridmicrotex,,,FALSE,"FreeType, pkg-config"
+gridmicrotex,,,FALSE,"FreeType, pkg-config, FriBidi(optional)"
 grImport,,ghostscript,TRUE,ghostscript
 GroupSeq,xvfb,,TRUE,
 grwat,,,TRUE,pandoc
@@ -488,6 +488,7 @@ iplots,xvfb,,TRUE,
 IRISSeismic,,,FALSE,Java JREor later
 IRkernel,,,TRUE,"jupyter, jupyter_kernel_test (Python package fortesting)"
 ISEtools,,,TRUE,OpenBUGS or JAGS
+isodistrreg,,,FALSE,"Cargo (Rust's package manager), rustc"
 jagstargets,,,TRUE,JAGSx.y (https://mcmc-jags.sourceforge.net)
 jagsUI,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net)
 jarbes,,,TRUE,JAGS (seehttp://mcmc-jags.sourceforge.net)
@@ -522,6 +523,7 @@ languageserversetup,,procps,TRUE,"procps (linux), ps (macos), wmic (windows)"
 latdiag,,graphviz,TRUE,dot from graphviz
 latexdiffr,,latexdiff,TRUE,latexdiff
 latte,,latte 4ti2,TRUE,"LattE <https://www.math.ucdavis.edu/~latte/>,ti2<http://www.4ti2.de/>"
+lava,,,FALSE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
 LCMCR,gsl,,TRUE,Gnu Scientific Library version
 lcra,,,TRUE,JAGSx.y or WinBUGS
 LDATS,,,TRUE,gsl
@@ -573,7 +575,7 @@ MaOEA,,,TRUE,"Pythonx with following modules: PyGMO, NumPy,and cloudpickle"
 mapme.biodiversity,,,TRUE,"GDAL, PROJ"
 marked,,,TRUE,ADMB version<http://admb-project.org/> foruse.admb=TRUE; see readme.txt
 matchingMarkets,,,TRUE,Java
-MatchingPursuit,,,FALSE,"external tool (installed via empi.install()function). The package uses the implementation of the MatchingPursuit algorithm by Piotr T. Różański, available athttps://github.com/develancer/empi."
+MatchingPursuit,,,FALSE,"external tool (installed via empi_install()function). The package uses the implementation of the MatchingPursuit algorithm (Enhanced Matching Pursuit Implementation;EMPI) by Piotr T. Różański, available athttps://github.com/develancer/empi."
 matlabr,,,TRUE,MATLAB
 mauricer,,,TRUE,BEAST2 (https://www.beast2.org/)
 MaxentVariableSelection,,java-bin,TRUE,maxent.jar file
@@ -620,7 +622,7 @@ mongolite,openssl sasl,,TRUE,"OpenSSL, Cyrus SASL (aka libsasl2)"
 monoreg,gsl,,TRUE,GNU GSL
 morse,,,TRUE,JAGS (seehttps://mcmc-jags.sourceforge.io)
 motifr,,numpy pandas,TRUE,"Python, numpy, pandas"
-MPCR,,,FALSE,"CMake, CUDA"
+MPCR,,,FALSE,"CMake, BLAS, LAPACK (includingsingle-precision complex routines), optional CUDA"
 MplusTrees,,,TRUE,'Mplus' (<http://www.statmodel.com>)
 MRIreduce,,,FALSE,"FSL (FMRIB Software Library, available athttps://fsl.fmrib.ox.ac.uk/fsl/docs/#/install/index)"
 mRpostman,,,TRUE,libcurl: libcurl-devel (rpm) orlibcurl4-openssl-dev (deb)
@@ -677,6 +679,7 @@ OpenCL,pocl,,TRUE,"OpenCL library,"
 opencltools,,,FALSE,"Optional 'OpenCL' support. If available, GPUacceleration will be used; otherwise, computation runs on CPU."
 opencpu,,,TRUE,"pandoc, apparmor (optional)"
 opencv,opencv,,TRUE,"OpenCVor newer: libopencv-dev (Debian, Ubuntu)or opencv-devel (Fedora). The QR code detector requires atleast libopencv"
+openfhe.R,,,FALSE,"cmake,"
 OpenImageR,,,TRUE,"libarmadillo: apt-get install -y libarmadillo-dev(deb), libblas: apt-get install -y libblas-dev (deb),liblapack: apt-get install -y liblapack-dev (deb),libarpack++2: apt-get install -y libarpack++2-dev (deb),: apt-get install -y  (deb), libjpeg-dev:apt-get install -y libjpeg-dev (deb), libpng-dev: apt-getinstall -y libpng-dev (deb), libfftw3-dev: apt-get install -ylibfftw3-dev (deb), libtiff5-dev: apt-get install -ylibtiff5-dev (deb)"
 openNLP,,,TRUE,Java
 openNLPdata,,,TRUE,Java
@@ -726,7 +729,7 @@ PEPBVS,gsl,,TRUE,GNU GSL
 pexm,jags,,TRUE,
 pharmr,,,TRUE,Python
 phase1PRMD,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net)
-phonfieldwork,,,TRUE,pandoc - http://pandoc.org
+phonfieldwork,,,TRUE,
 piecepackr,,ghostscript,TRUE,
 pivmet,,pandoc,TRUE,"pandoc, pandoc-citeproc"
 PKbioanalysis,,,TRUE,python
@@ -1008,6 +1011,7 @@ RsSimulx,,,TRUE,'Simulx' (<http://simulx.lixoft.com/>)
 rstan,,pandoc,TRUE,pandoc
 rstanarm,,pandoc,TRUE,"pandoc, pandoc-citeproc"
 rstantools,,pandoc,TRUE,pandoc
+rstudio.prefs,,,FALSE,RStudio
 rsubgroup,,,TRUE,Java
 rsvg,librsvg2,,TRUE,librsvg2 (at least version
 rswipl,cmake libarchive expat,,FALSE,"CMake, pandoc, libarchive,libregex, libexpat, liblzma, libzstd, liblz4, libz2, libz,libbcrypt, libutf8proc"
@@ -1015,7 +1019,7 @@ Rsymphony,coin-or-symphony,,TRUE,SYMPHONY libraries and headers
 rsyncrosim,,,TRUE,SyncroSim
 rsyslog,,,TRUE,POSIX.1-2001
 RTD,,,TRUE,"embulk, embulk-output-td"
-rtika,,,TRUE,Java
+rtika,,,TRUE,
 rtiktoken,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 rtmpt,gsl,,TRUE,GSL
 runjags,jags,,TRUE,JAGS(https://mcmc-jags.sourceforge.io/)
@@ -1046,6 +1050,7 @@ sarsop,,,TRUE,"mallinfo, hence Linux, MacOS or Windows"
 SASmarkdown,,,TRUE,SAS
 sasquatch,,,TRUE,"python, SASPy, java required forIOM access method"
 sbrl,gmp gsl,,TRUE,"gmp, gsl"
+scanr,,,FALSE,"Cargo (Rust's package manager), rustc, Quarto CLI"
 sceua,,,FALSE,"Cargo (Rust's package manager), rustc"
 scip,,,FALSE,"CMake,"
 scModels,,,FALSE,"gmp, mpfr"
@@ -1149,6 +1154,7 @@ stringi,,,TRUE,"ICU4C, optional)"
 submitr,,,FALSE,"SSH client, HTCondor (https://htcondor.org)"
 subtitles,,,FALSE,"ffmpeg, libass"
 sudachir,,,TRUE,Python
+summata,,,FALSE,"All optional. A 'LaTeX' distribution providingpdflatex or xelatex, and kpsewhich, for PDF output fromtable2pdf(); pdfcrop for auto-sized PDF output; Ghostscript forthe optional font embedding in forestsave(). Each featurereports the absence of its tool and the remainder of thepackage is unaffected."
 sundialr,,,FALSE,cmake
 SuperGauss,fftw,,TRUE,fftw3
 surveyvoi,jags fftw gmp mpfr,,TRUE,"JAGS (optional), fftw3, gmp, gmpxx, mpfr, autoconf,automake"
