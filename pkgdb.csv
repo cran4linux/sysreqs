@@ -70,7 +70,7 @@ BayesForge,,,FALSE,"Python, 'bayesforge' python library."
 BayesGWQS,,,TRUE,JAGS
 BayesianDEB,,,FALSE,CmdStan(https://mc-stan.org/users/interfaces/cmdstan)
 BayesianInference,,,TRUE,"Python, 'BayesInference' python library."
-bayesplot,,pandoc,TRUE,"pandoc, pandoc-citeproc"
+bayesplot,,pandoc,FALSE,pandoc
 BayesPostEst,,,TRUE,JAGS (http://mcmc-jags.sourceforge.io)
 bayesQRsurvey,,,TRUE,"BLAS, LAPACK"
 BayesTools,,,TRUE,JAGS(https://mcmc-jags.sourceforge.io/)
@@ -166,6 +166,7 @@ codriver,,,FALSE,"RStudio,https://posit.co/download/rstudio-desktop/)"
 coga,gsl,,TRUE,GNU GSL
 cogmapr,,,TRUE,libcurl: libcurl-devel (rpm) orlibcurl4-openssl-dev (deb).
 CohortContrast,,,FALSE,Python
+CohortIncidence,,,FALSE,Java
 CohortMethod,,,FALSE,Java
 colorizer,,,TRUE,ImageMagick++: ImageMagick-c++-devel (rpm) orlibmagick++-dev (deb)
 Colossus,,,TRUE,"make,"
@@ -574,6 +575,7 @@ manureshed,,,FALSE,"GDAL, GEOS, PROJ"
 MaOEA,,,TRUE,"Pythonx with following modules: PyGMO, NumPy,and cloudpickle"
 mapme.biodiversity,,,TRUE,"GDAL, PROJ"
 marked,,,TRUE,ADMB version<http://admb-project.org/> foruse.admb=TRUE; see readme.txt
+markovchain,,,FALSE,Quarto
 matchingMarkets,,,TRUE,Java
 MatchingPursuit,,,FALSE,"external tool (installed via empi_install()function). The package uses the implementation of the MatchingPursuit algorithm (Enhanced Matching Pursuit Implementation;EMPI) by Piotr T. Różański, available athttps://github.com/develancer/empi."
 matlabr,,,TRUE,MATLAB
@@ -605,6 +607,7 @@ MineSDG,,,FALSE,"Quarto CLI (optional, for reportrendering)"
 minidown,,,TRUE,pandoc - http://pandoc.org
 minimaxALT,gsl,,TRUE,"GNU Scientific Library (GSL), OpenMP"
 minired,,,TRUE,
+misha,,,FALSE,"samtools; optional, required only for BAMinput), bedGraphToBigWig or wigToBigWig from UCSC (optional,required only for bigWig export; available as the biocondapackage ucsc-bedgraphtobigwig)"
 mixcat,gsl,,TRUE,
 mixgb,,,TRUE,macOS: Accelerate framework
 MixSIAR,,,TRUE,JAGS
@@ -895,7 +898,7 @@ REPLesentR,,,TRUE,Presentations written in (R)Markdown require Pandoc(http://pan
 RepoGenerator,,,TRUE,"GitHub, 'RStudio'"
 reportfactory,,,TRUE,pandoc - http://pandoc.org
 reprex,,,TRUE,pandoc - https://pandoc.org/
-reproducible,,unrar,TRUE,
+reproducible,,unrar,FALSE,'unrar' (Linux/macOS) or '7-Zip' (Windows) to workwith '.rar' files.
 reproj,,,TRUE,PROJ
 reservoirnet,,,TRUE,Python
 restoptr,,,TRUE,
@@ -1303,7 +1306,7 @@ XML,libxml2,,TRUE,libxml2
 xml2,libxml2,,TRUE,"libxml2: libxml2-dev (deb), libxml2-devel (rpm)"
 xmpdf,,ghostscript exiftool,TRUE,'ghostscript' or 'pdftk' for editing pdf bookmarksand/or documentation info entries. 'exiftool' for editing pdfdocumentation info entries and/or xmp metadata.
 xslt,libxslt,,TRUE,"libxslt: libxslt1-dev (deb), libxslt-devel (rpm)"
-yaml12,cargo,,TRUE,"Cargo (Rust's package manager), rustc, xz"
+yaml12,cargo,,FALSE,"Cargo (Rust's package manager), rustc,xz. On Windows ARM64, source installs also require MicrosoftC++ Build Tools with ARM64 components."
 yamlme,,,TRUE,pandoc - http://pandoc.org
 ymd,cargo,,TRUE,"Cargo (Rust's package manager), rustc, xz"
 zmij,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
