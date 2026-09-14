@@ -4,8 +4,8 @@ abba,,,FALSE,"kubectl (optional, for Kubernetes backend), SLURM(optional, sbatch
 abn,cmake gsl libjpeg gdal geos proj udunits openssl curl jags,,TRUE,"pkg-config, cmake, gsl, jpeg, gdal, geos, proj,udunits-2, openssl, libcurl, jags"
 accessr,,,TRUE,"OfficeToPDF -https://github.com/cognidox/OfficeToPDF, pandoc -https://pandoc.org"
 acro,,,TRUE,Python
-adbcpostgresql,postgresql,,TRUE,libpq
-adbcsqlite,sqlite,,TRUE,SQLite3
+adbcpostgresql,postgresql,,TRUE,
+adbcsqlite,sqlite,,TRUE,
 adimpro,,imagemagick-bin dcraw,TRUE,"Image Magick (for reading non PPM format), dcraw(for reading RAW images)."
 admisc,,,FALSE,POSIX threads
 AdmixPoly,,,FALSE,A system with a C++ compiler supporting OpenMP
@@ -193,7 +193,7 @@ corteza,,,FALSE,"On Windows, Rtools45 (Rx) or Rtools44 (R4.4.x) is recommended s
 coveffectsplot,,pandoc,TRUE,pandoc with https support
 COveR,gsl,,TRUE,Gnu Scientific Library version
 cpp11bigwig,,,FALSE,"libcurl (optional, for remote file access):libcurl-devel (rpm) or libcurl4-openssl-dev (deb)"
-cpp11qpdf,libjpeg,,TRUE,"libjpegdeb: libjpeg-dev, rpm: libjpeg-devel,brew: libjpeg )"
+cpp11qpdf,libjpeg,,TRUE,
 cppcheckR,,cppcheck,TRUE,cppcheck
 cppSim,,,TRUE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
 craftgrn,,,FALSE,"Optional Shiny app support on Linux may requirelibuv headers, for example libuv1-dev, or cmake for bundledlibuv builds in transitive dependencies."
@@ -209,6 +209,7 @@ ctsmTMB,,,TRUE,
 CTxCC,,,TRUE,Intel MKL (optional for optimized BLAS/LAPACKperformance)
 cubature,,,TRUE,and USE_C17
 cuda.ml,,,FALSE,Native operations require Linux x86_64 with glibc2.28 or newer. GPU-backed operations require a supported NVIDIAGPU and driveror newer.
+cudaverse,,,FALSE,"For GPU execution on Windows or Linux: NVIDIACUDA-capable GPU, NVIDIA driver with CUDA Driver API, NVIDIAcuBLAS, and NVIDIA cuSOLVER"
 curl,curl,,TRUE,libcurl: libcurl-devel (rpm) orlibcurl4-openssl-dev (deb)
 cusna,,,FALSE,optionally a CUDAx toolkit (nvcc) forthe GPU path
 CytOpT,,,TRUE,Python
@@ -216,6 +217,7 @@ DALY,xvfb,,TRUE,"Tcl/Tk, Tktable"
 data.table,,,TRUE,
 DatabaseConnector,,,TRUE,Java
 DatabionicSwarm,,,TRUE,"pandoc, needed for vignettes)"
+datacaged,,,FALSE,"7-Zip (optional, required for PPMd-compressed filesfrom CAGED antigo and CAGED Ajustes)"
 DataExplorer,,,TRUE,pandoc - http://pandoc.org
 dataMaid,,,TRUE,"pandoc; https://pandoc.org), git, whoami"
 DataPackageR,,,TRUE,pandoc - https://pandoc.org
@@ -324,6 +326,7 @@ fdars,cargo,,TRUE,
 feather,,,TRUE,
 fect,,,TRUE,
 FedData,,,TRUE,GDAL
+FeNEU,,,FALSE,"pandoc and a LaTeX distribution (e.g.TinyTeX, see ?tinytex::install_tinytex) with the booktabs,longtable, siunitx, and makecell LaTeX packages are requiredfor the *_pdf() output functions."
 FFD,xvfb,bwidget,TRUE,BWidget
 fftw,fftw,,TRUE,fftw3
 fftwtools,fftw,,TRUE,"fftw3 (libfftw3-dev (deb), or fftw-devel (rpm))"
@@ -462,7 +465,9 @@ huito,,,TRUE,pandoc
 huxtable,,tex-adjustbox tex-array tex-calc tex-caption tex-colortbl tex-fontspec tex-graphicx tex-hhline tex-hyperref tex-multirow tex-siunitx tex-tabularx tex-threeparttable tex-ulem tex-wrapfig,TRUE,"LaTeX packages: adjustbox, array, calc, caption,colortbl, fontspec, graphicx, hhline, hyperref, multirow,siunitx, tabularx, threeparttable, ulem, wrapfig"
 hypergeo2,gmp mpfr,,TRUE,"gmp, mpfr"
 iai,,,TRUE,Julia and Interpretable AI System Image(>=
+icebergr,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
 IceSat2R,,,TRUE,
+ICESat2VegR,,,FALSE,- GDAL - PROJ - HDF5
 idiogramFISH,,pandoc,TRUE,pandoc
 idm,,,TRUE,ImageMagick (http://imagemagick.org) orGraphicsMagick (http://www.graphicsmagick.org)
 ieeeround,,,TRUE,A C library with the fesetround/fegetroundfunctions.
@@ -495,6 +500,7 @@ ISEtools,,,TRUE,OpenBUGS or JAGS
 isodistrreg,,,FALSE,"Cargo (Rust's package manager), rustc"
 jagstargets,,,TRUE,JAGSx.y (https://mcmc-jags.sourceforge.net)
 jagsUI,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net)
+janssonr,,,FALSE,"jansson is linked when present:libjansson-dev (deb), jansson-devel (rpm), jansson (brew). Whenit is absent, and always on Windows, the bundled Janssonis compiled into the package."
 jarbes,,,TRUE,JAGS (seehttp://mcmc-jags.sourceforge.net)
 JavaGD,,,TRUE,and Java JDKor higher
 JFE,xvfb,,TRUE,
@@ -595,6 +601,7 @@ MDSGUI,,bwidget,TRUE,"windows, 'BWidget', 'Tktable'"
 meltt,,,TRUE,Python
 memoiR,,,TRUE,pandoc
 metagear,,,TRUE,Tcl/Tk toolkit (X11 Quarts for Mac)
+metajam,,,FALSE,"Mac OSX: redland ; Linux: librdf0, librdf0-dev"
 metapost,,mpost,TRUE,mpost
 MetaSKAT,,,TRUE,Little Endian
 MethComp,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net)
@@ -610,6 +617,7 @@ MineSDG,,,FALSE,"Quarto CLI (optional, for reportrendering)"
 minidown,,,TRUE,pandoc - http://pandoc.org
 minimaxALT,gsl,,TRUE,"GNU Scientific Library (GSL), OpenMP"
 minired,,,TRUE,
+minirocketR,,,FALSE,OpenMP
 misha,,,FALSE,"samtools; optional, required only for BAMinput), bedGraphToBigWig or wigToBigWig from UCSC (optional,required only for bigWig export; available as the biocondapackage ucsc-bedgraphtobigwig)"
 mixcat,gsl,,TRUE,
 mixgb,,,TRUE,macOS: Accelerate framework
@@ -706,6 +714,7 @@ osrm.backend,,,FALSE,OSRM backend binariesv5.27.0); packagedownloads binaries au
 osrmr,,,TRUE,"To use the Localhost of OSRM, you need to buildOSRM<https://github.com/Project-OSRM/osrm-backend/wiki/Building-OSRM>locally"
 otelsdk,cmake protobuf curl,,TRUE,"cmake, protobuf-compiler, libprotobuf, libcurl,zlib,"
 pagedown,,,TRUE,Pandoc
+pairwiseLLM,,,FALSE,CmdStan and a  toolchain (optional; neededonly for Bayesian and adaptive modeling)
 pak,curl,,TRUE,
 pander,,pandoc,TRUE,pandoc (https://johnmacfarlane.net/pandoc) forexporting markdown files to other formats.
 pandocfilters,,pandoc,TRUE,pandoc
@@ -1026,6 +1035,7 @@ Rsymphony,coin-or-symphony,,TRUE,SYMPHONY libraries and headers
 rsyncrosim,,,TRUE,SyncroSim
 rsyslog,,,TRUE,POSIX.1-2001
 RTD,,,TRUE,"embulk, embulk-output-td"
+rtdists,,,FALSE,GNU GSL (libgsl-dev/gsl)
 rtika,,,TRUE,
 rtiktoken,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 rtmpt,gsl,,TRUE,GSL
@@ -1039,6 +1049,7 @@ RWeka,,,TRUE,Java
 RWekajars,,,TRUE,Java
 rwig,,,FALSE,"autoconf, CUDA, only for Linux)"
 RWinEdt,,,TRUE,WinEdt
+rzig,,,FALSE,"Zig, see https://ziglang.org/download/"
 rzmq,zeromq,,TRUE,ZeroMQ: libzmq3-dev (deb) or zeromq-devel(rpm)
 s2,cmake openssl abseil,,TRUE,"cmake, OpenSSL, Abseil"
 s2dv,,,TRUE,cdo
@@ -1105,6 +1116,7 @@ smam,gsl,,TRUE,"GNU GSL,"
 smile,,,TRUE,"GDAL, GEOS, PROJ"
 smoothbp,,,FALSE,"Cargo (Rust's package manager), rustc"
 snSMART,,,TRUE,JAGSx.y
+socketR,,,FALSE,Linux operating system with POSIX socket APIs and compiler
 socratadata,cargo,,TRUE,"Cargo (Rust's package manager), rustc, xz"
 sodium,libsodium,,TRUE,libsodium
 SOFIA,,,TRUE,
@@ -1242,6 +1254,7 @@ tsapp,,,TRUE,"under Linux, fftwtools needs libfftw3-dev"
 TTAinterfaceTrendAnalysis,xvfb,,TRUE,
 tth,,,TRUE,USE_C17
 TTR.PGM,,,TRUE,CXX17
+tvbounds,,,FALSE,For tvbounds_counterfactual(): Julia andthe Artelys KNITRO solver with a valid license.
 TVMM,xvfb,,TRUE,
 twc,,,TRUE,"PROJ, https://proj.org/download.html), GDAL(>=, https://gdal.org/download.html), NetCDF(>=,https://www.unidata.ucar.edu/software/netcdf/)."
 tynding,,,TRUE,
