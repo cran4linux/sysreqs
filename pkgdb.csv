@@ -4,6 +4,7 @@ abba,,,FALSE,"kubectl (optional, for Kubernetes backend), SLURM(optional, sbatch
 abn,cmake gsl libjpeg gdal geos proj udunits openssl curl jags,,TRUE,"pkg-config, cmake, gsl, jpeg, gdal, geos, proj,udunits-2, openssl, libcurl, jags"
 accessr,,,TRUE,"OfficeToPDF -https://github.com/cognidox/OfficeToPDF, pandoc -https://pandoc.org"
 acro,,,TRUE,Python
+adaR,,,FALSE,GCC(or Clang withequivalent  support)
 adbcpostgresql,postgresql,,FALSE,libpq
 adbcsqlite,sqlite,,FALSE,SQLite3
 adimpro,,imagemagick-bin dcraw,TRUE,"Image Magick (for reading non PPM format), dcraw(for reading RAW images)."
@@ -35,6 +36,7 @@ archive,libarchive,,TRUE,"libarchive: libarchive-dev (deb), libarchive-devel(rpm
 arcpbf,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 arcpy,,,TRUE,"Conda, ArcGIS Pro"
 argparse,,python3,TRUE,python
+arity,,,FALSE,"Cargo (Rust's package manager), rustc"
 arrangements,gmp,,TRUE,gmp
 arrow,arrow curl openssl,,TRUE,"for AWS S3 support on Linux, libcurl andopenssl (optional); cmake(build-time only, and onlyfor full source build)"
 artma,jags,,TRUE,
@@ -92,6 +94,7 @@ bedr,,,TRUE,"Preferred genomic operations engine: 'BEDTools','BEDOPS' and 'Tabix
 BeQut,,,TRUE,JAGSx.y
 bertopicr,,,TRUE,"Python; BERTopic and Python packages:sentence-transformers, umap-learn, hdbscan, scikit-learn"
 bfw,,java-bin,TRUE,"JAGS<https://mcmc-jags.sourceforge.io>,Java JDK<https://www.java.com/en/download/manual.jsp>"
+bgns,,,FALSE,optional OpenMP
 bhmbasket,,,TRUE,JAGSx.y (http://mcmc-jags.sourceforge.net)
 biblio,,pandoc,TRUE,pandoc - http://pandoc.org
 BIDistances,,,FALSE,"OpenCL library (optional, for GPUacceleration), pandoc, needed for vignettes)"
@@ -106,6 +109,7 @@ biocohort,,,FALSE,"CrossMap (optional, for the CrossMap liftoverbackend)"
 bioimagetools,libtiff fftw curl openssl,,TRUE,tiff fftw libcurl openssl
 biplotbootGUI,xvfb,bwidget,TRUE,Tcl/Tk package BWidget.
 BiplotGUI,,,TRUE,windows
+birp,,,FALSE,cmake
 bittermelon,,,TRUE,'monobit' for reading/writing additional bitmapfont formats.
 blandr,,,TRUE,pandoc
 blastula,,,TRUE,pandoc - http://pandoc.org
@@ -145,6 +149,7 @@ chicane,,,TRUE,bedtools
 chopin,,,TRUE,netcdf
 ChoR,,,TRUE,
 chromote,,,TRUE,Google Chrome or other Chromium-based browser.chromium: chromium (rpm) or chromium-browser (deb)
+churon,,,FALSE,"Cargo, rustc; ONNX Runtime(>=, optional at runtime)"
 ciflyr,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 CirceR,,,TRUE,Java
 circuitscaper,,,FALSE,"Julia, Circuitscape.jl, Omniscape.jl"
@@ -386,6 +391,7 @@ geno2proteo,,perl,TRUE,Perl
 geoarrowWidget,,,TRUE,Quarto command line tool(<https://github.com/quarto-dev/quarto-cli>).
 GeoFIS,gmp mpfr,,TRUE,"gmp, mpfr"
 geojsonR,,,TRUE,libarmadillo: apt-get install -y libarmadillo-dev(deb)
+GeoModels,,,FALSE,OpenMP (optional)
 GeoMongo,,,TRUE,"MongoDB, Python. Installationinstructions and links can be found in the README file."
 GerminaR,,,TRUE,pandoc
 gert,libgit2,,TRUE,libgit2: libgit2-devel (rpm) orlibgit2-dev (deb)
@@ -657,9 +663,9 @@ mutossGUI,,,TRUE,Java
 mvalpha,,,FALSE,OpenMP
 mvst,gsl,,TRUE,GNU Scientific Library
 mwa,,,TRUE,Java
-mwcsr,,java-bin,TRUE,
+mwcsr,,java-bin,FALSE,Java
 mx.crypto,,,FALSE,"Cargo (Rust's package manager), rustc"
-NACHO,,,TRUE,"pandoc, pandoc-citeproc"
+NACHO,,,FALSE,pandoc
 nanoarrow,,,FALSE,"libzstd (optional), liblz4 (optional)"
 nanonext,cmake,,FALSE,"'libnng'and 'libmbedtls'(optional,bundled sources compiled otherwise)"
 nativeORT,,,FALSE,libonnxruntime
@@ -742,7 +748,7 @@ pcaL1,coin-or-clp,,TRUE,COIN-OR Clp
 pcnetmeta,,,TRUE,JAGSx.y (http://mcmc-jags.sourceforge.net)
 PDE,,xpdf,TRUE,XPDF(4.02)(https://github.com/erikstricker/PDE/tree/master/inst/examples/bin)
 pdfminer,,pandas,TRUE,"Python>=3.6, pdfminer.six>=20200402, pandas"
-pdfsigner,,,TRUE,
+pdfsigner,,,FALSE,"Cargo (Rust's package manager), rustc"
 pdftools,poppler,,TRUE,"Poppler C++ API: libpoppler-cpp-dev (deb) orpoppler-cpp-devel (rpm), and poppler-data (rpm/deb) package."
 pedometrics,,pandoc,TRUE,pandoc
 pedprobr,,,TRUE,MERLIN (https://csg.sph.umich.edu/abecasis/merlin/)for calculations involving multiple linked markers.
@@ -1208,7 +1214,7 @@ tapkee,,,TRUE,'tapkee' (http://tapkee.lisitsyn.me/)
 TAQMNGR,,,TRUE,
 targeted,,,TRUE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
 tarpolyglot,,,FALSE,"The external language toolchains are optional andeach is only required by its matching targets constructor: aPython installation for tar_target_py(), a Julia installationfor tar_target_jl(), and a Rust toolchain with Cargo fortar_target_rs() (on Windows, the GNU toolchain, to match R'sABI). A pipeline that uses a single language needs only thatlanguage's toolchain, and a pipeline that uses none of theseconstructors needs no external toolchain at all."
-taxodist,,,FALSE,internet access
+taxodist,,,FALSE,internet access for online taxonomy retrieval
 tcltk2,xvfb,,TRUE,"Tcl/Tk, Tktable, optional)"
 TDA,gmp,,TRUE,"gmp,"
 TDCM,,,TRUE,pandoc
@@ -1280,6 +1286,7 @@ unmconf,,,TRUE,JAGS(http://mcmc-jags.sourceforge.net)
 Uno,,,FALSE,"CMake,"
 unsum,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 untb,,pari,TRUE,PARI/GP[strongly recommended forlogkda()]
+uqsa,,,FALSE,GSL
 URooTab,,,TRUE,EViews
 ustats,,,FALSE,"Python; Python packages: u-stats, numpy,torch (installed automatically on first use, or viasetup_ustats())"
 uuidx,,,FALSE,"Cargo (Rust's package manager), rustc"
@@ -1338,3 +1345,4 @@ yamlme,,,TRUE,pandoc - http://pandoc.org
 ymd,cargo,,TRUE,"Cargo (Rust's package manager), rustc, xz"
 zmij,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
 zoomerjoin,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
+zot,,,FALSE,"Pythonand zotero-mcp-server (optional, forztSemantic())"
