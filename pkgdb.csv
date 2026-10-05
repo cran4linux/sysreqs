@@ -8,6 +8,7 @@ adaR,,,FALSE,GCC(or Clang withequivalent  support)
 adbcpostgresql,postgresql,,FALSE,libpq
 adbcsqlite,sqlite,,FALSE,SQLite3
 adimpro,,imagemagick-bin dcraw,TRUE,"Image Magick (for reading non PPM format), dcraw(for reading RAW images)."
+admetshiny,,,FALSE,Java; only required for the optionalCDK-based descriptor calculation (rcdk) module.
 admisc,,,FALSE,POSIX threads
 AdmixPoly,,,FALSE,A system with a C++ compiler supporting OpenMP
 admixr,,,TRUE,ADMIXTOOLS suite of command-line utilities forpopulation genetics. See<https://github.com/dreichlab/admixtools> for the most recentinstallation instructions and further information.
@@ -18,6 +19,7 @@ agregR,,,TRUE,CmdStan(https://mc-stan.org/users/interfaces/cmdstan)
 ahocorasick,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
 aifeducation,,,TRUE,"PyTorch (see vignette ""Get started"")"
 alfr,,,TRUE,Alfresco Content Repository (Community orEnterprise)
+AlphaSDM,,,FALSE,Python with the 'earthengine-api' module;'reticulate' installs it automatically when needed.
 altair,,,TRUE,"Python, (Python) Altair,vega_datasets. To use image functions for MacOS: X11"
 altmeta,,,TRUE,JAGSx.y (http://mcmc-jags.sourceforge.net)
 AMAPVox,,java-bin,TRUE,
@@ -132,6 +134,7 @@ bsub,,,TRUE,"Platform LSF, bsub"
 BTSPAS,,,TRUE,JAGS
 BuildSys,,gdb,TRUE,"'Microsoft Visual Code', 'Rtools' on 'Windows','gdb' or 'lldb' depending on which OS"
 buzzMed,,,FALSE,JAGS
+cagedr,,,FALSE,libarchive (via the 'archive' package)
 Cairo,cairo,,TRUE,cairohttp://www.cairographics.org/)
 callme,,,TRUE,"Rtools (suitable for the installed R) for Windows,Xcode for Mac"
 camtrapR,,exiftool,TRUE,ExifTool (https://exiftool.org/)
@@ -150,6 +153,7 @@ chopin,,,TRUE,netcdf
 ChoR,,,TRUE,
 chromote,,,TRUE,Google Chrome or other Chromium-based browser.chromium: chromium (rpm) or chromium-browser (deb)
 churon,,,FALSE,"Cargo, rustc; ONNX Runtime(>=, optional at runtime)"
+cidian,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
 ciflyr,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 CirceR,,,TRUE,Java
 circuitscaper,,,FALSE,"Julia, Circuitscape.jl, Omniscape.jl"
@@ -230,6 +234,7 @@ datacaged,,,FALSE,"7-Zip (optional, required for PPMd-compressed filesfrom CAGED
 DataExplorer,,,TRUE,pandoc - http://pandoc.org
 dataMaid,,,TRUE,"pandoc; https://pandoc.org), git, whoami"
 DataPackageR,,,TRUE,pandoc - https://pandoc.org
+dataprep,,,FALSE,optional OpenMP
 dataReporter,,,TRUE,"pandoc; https://pandoc.org), git, whoami"
 datasusr,,,FALSE,C99
 datefixR,cargo,,FALSE,"Cargo (Rust's package manager), rustc, xz"
@@ -327,6 +332,7 @@ fastGLCM,,,TRUE,"apt-get-pip: apt-get install -y python3-pip (deb),python3-pip: 
 FastHamming,,,TRUE,"C compiler (C99), OpenMP"
 FastKRR,,,TRUE,OpenMP (optional)
 fastLISA,,,FALSE,"C99, optional OpenMP"
+fastPLS,,,FALSE,"Optional OpenBLAS development libraries for fasterCPU matrix operations; optional NVIDIA CUDA Toolkit with CUDARuntime, cuBLAS, cuSOLVER and cuRAND plus a compatibleseparately managed NVIDIA driver; optional Apple Metalframework on macOS. CPU-only builds do not require GPUsoftware."
 fastrda,,,FALSE,OpenMP
 fastText,,,TRUE,
 fcl,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
@@ -467,6 +473,7 @@ hicream,,,TRUE,Python
 HighFive,,,TRUE,hdf5
 highs,cmake,,TRUE,"Bash, PkgConfig, CMAKE,"
 hive,,,TRUE,"Apache Hadoop(https://hadoop.apache.org/releases.html#Download); Obsolete:Hadoop coreand <=or CDH3(https://www.cloudera.com); standard unix tools (e.g., chmod)"
+hobbs,,,FALSE,"Cargo (Rust's package manager), rustc, C compiler"
 HOIF,,,FALSE,"For the default Python backend: Pythonwith the 'u-stats', 'numpy' and 'torch' packages (provisionedautomatically on first use via 'reticulate', or viaustats::setup_ustats()). Not needed when pure_R_codeTRUE."
 hoopR,,pandoc,TRUE,"pandoc, pandoc-citeproc"
 hSDM,gsl,,TRUE,GNU GSL
@@ -620,6 +627,7 @@ MethComp,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net)
 MethScope,,,FALSE,zlib
 MFPCA,fftw,,TRUE,libfftw3
 MFSIS,,,TRUE,Python
+mgwrsar,,,FALSE,(OpenMP optional; enable withMGWRSAR_OPENMP=1)
 microbenchmark,,,TRUE,"On a Unix-alike, one of the C functionsmach_absolute_time (macOS), clock_gettime or gethrtime. If noneof these is found, the obsolescent POSIX function gettimeofdaywill be tried."
 MicrobiomeStat,,,TRUE,"NLopt library (optional, for high-performance BMDDmode)"
 MigConnectivity,,,TRUE,JAGS (https://mcmc-jags.sourceforge.net)
@@ -811,6 +819,7 @@ QCA,,,FALSE,POSIX threads (optional)
 qCBA,,,TRUE,Java
 QF,gsl,,TRUE,GNU GSL
 qgisprocess,,,TRUE,"'QGIS' latest or long-term release currentlysupported according to the 'QGIS' release schedule(<https://www.qgis.org/en/site/getinvolved/development/roadmap.html>).Older 'QGIS' releases are not officially supported, but maywork since 'QGIS'"
+qio,,,FALSE,zlib
 qpdf,libjpeg,,TRUE,libjpeg
 qqconf,fftw,,TRUE,fftw3
 qtkit,,,TRUE,"Chromium-based browser (e.g., Chrome, Chromium, orBrave)"
@@ -829,6 +838,7 @@ R2wd,,,TRUE,Windows
 R2WinBUGS,,openbugs,TRUE,OpenBugs for functions bugs() and openbugs() orWinBUGSfor function bugs()
 r5r,,,TRUE,Java JDK
 ragg,freetype libpng libtiff libjpeg libwebp,,TRUE,"freetype2, libpng, libtiff, libjpeg, libwebp,libwebpmux"
+raisr,,,FALSE,libarchive (via the 'archive' package)
 randomForestRHF,,,FALSE,OpenMP
 randomForestSRC,,,FALSE,OpenMP
 rapidraker,,,TRUE,Java
@@ -845,6 +855,7 @@ rbedrock,cmake,,TRUE,"cmake, zlib,"
 RBesT,,pandoc,TRUE,"pandoc, pngquant,"
 rbi,,,TRUE,LibBi
 rbi.helpers,,,TRUE,libbi
+rbiogeme,,,FALSE,"Python, Biogeme"
 rblimp,,,TRUE,Blimp software(<https://www.appliedmissingdata.com/blimp>)
 Rblpapi,,,TRUE,A valid Bloomberg installation. The API headers anddynamic library are downloaded from<https://github.com/Rblp/blp> during the build step. See<https://bloomberg.github.io/blpapi-docs/cpp/3.24.6> as well as<https://www.bloomberg.com/professional/support/api-library/>for API documentation. Currently supported platforms areWindows and Linux (both for x86-64 processors only) as well asmacOS (for arm64 only).Other os-cpu pairings are notsupported by Bloomberg and can therefore not be fully supportedhere.
 rblt,,,TRUE,libhdf5
@@ -945,7 +956,7 @@ rgnparser,,,TRUE,gnparser (<https://github.com/gnames/gnparser>)
 rgph,,,TRUE,Java
 rgrass,,grass,TRUE,GRASS
 rGroovy,,,TRUE,Java
-rgrpc,,,FALSE,"gRPC C++ and protobuf libraries with developmentheaders, found via 'pkg-config grpc++ protobuf' (Ubuntu/Debian:'libgrpc++-dev', 'libprotobuf-dev'; on Windows both ship withRtoolsand later)."
+rgrpc,,,FALSE,"gRPC C++ (testedto and protobuflibraries with development headers, found via 'pkg-configgrpc++ protobuf': 'libgrpc++-dev' and 'libprotobuf-dev'(Debian, Ubuntu); 'grpc-cpp', 'grpc-devel' and 'protobuf-devel'(Fedora); 'grpc', 'protobuf' and 'pkgconf' (Homebrew). Windows:bundled with Rtoolsand later. Without them the packageinstalls as a stub whose functions error; see grpc_available()."
 RH2,,,TRUE,java runtime
 Rhobots,,,FALSE,Microsoft Visual C++ Redistributable(Windowsonly; required by torch)
 Rhpc,,,FALSE,"R built as a shared or static library, 'MPI'library."
@@ -1138,6 +1149,7 @@ SOFIA,,,TRUE,
 soilFlux,,,FALSE,"Python, TensorFlow, Keras"
 soilhypfit,,,TRUE,"gmp, mpfr"
 soilVAE,,,FALSE,Python; TensorFlow; Keras
+sommer,,,FALSE,"METIS graph partitioning library (optional; enablesnested-dissection sparse ordering for large relationshipmatrices, auto-detected at configure time, falls back to AMDordering when absent)"
 soptdmaeA,xvfb,,TRUE,
 sound,,,TRUE,"For playing sounds, a command line system tool forplaying wav-files is required."
 sourcoise,,,TRUE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
@@ -1219,7 +1231,9 @@ tcltk2,xvfb,,TRUE,"Tcl/Tk, Tktable, optional)"
 TDA,gmp,,TRUE,"gmp,"
 TDCM,,,TRUE,pandoc
 teems,,,FALSE,Docker (https://www.docker.com)
+telegramR,,,FALSE,"OpenSSL: libssl-dev (deb), openssl-devel(rpm), openssl@3 (brew)"
 tensorflow,,,TRUE,TensorFlow (https://www.tensorflow.org/)
+tera,,,FALSE,"Cargo (Rust's package manager), rustc"
 tergo,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 terminalgraphics,,,TRUE,A terminal emulator supporting the TerminalGraphics Protocol(<https://sw.kovidgoyal.net/kitty/graphics-protocol/>) orSixel.
 terra,gdal geos proj sqlite,,TRUE,"GDAL, GEOS, PROJ, TBB, sqlite3"
@@ -1311,7 +1325,7 @@ VMDecomp,,,TRUE,"libarmadillo: apt-get install -y libarmadillo-dev(deb), libblas
 vmr,,vagrant,TRUE,Vagrant <https://www.vagrantup.com>
 vol2birdR,gsl hdf5 proj,,TRUE,"GSL, HDF5, PROJ"
 vostokR,,,FALSE,OpenMP (optional)
-warbleR,,,TRUE,"fftw3,  sox, Ghostscript, libsndfile, GDAL"
+warbleR,,,FALSE,"fftw3,  sox, Ghostscript, libsndfile, FLAC(optional)"
 watcher,fswatch,,FALSE,"'libfswatch' (optional, bundled copy compiledotherwise)"
 waysign,cargo,,TRUE,"Cargo (Rust's package manager), rustc, xz"
 webdriver,,,TRUE,PhantomJS (http://phantomjs.org/)
@@ -1338,6 +1352,7 @@ xlsx,,,TRUE,java
 xlsxjars,,,TRUE,java
 XML,libxml2,,TRUE,libxml2
 xml2,libxml2,,TRUE,"libxml2: libxml2-dev (deb), libxml2-devel (rpm)"
+xmlrectr,,,FALSE,"libxml2 development files, pkg-config; on Windowsuse the matching Rtools toolchain"
 xmpdf,,ghostscript exiftool,TRUE,'ghostscript' or 'pdftk' for editing pdf bookmarksand/or documentation info entries. 'exiftool' for editing pdfdocumentation info entries and/or xmp metadata.
 xslt,libxslt,,TRUE,"libxslt: libxslt1-dev (deb), libxslt-devel (rpm)"
 yaml12,cargo,,FALSE,"Cargo (Rust's package manager), rustc,xz. On Windows ARM64, source installs also require MicrosoftC++ Build Tools with ARM64 components."
