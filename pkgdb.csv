@@ -37,6 +37,7 @@ arcgisutils,cargo,,TRUE,"Cargo (Rust's package manager), rustc, xz"
 archive,libarchive,,TRUE,"libarchive: libarchive-dev (deb), libarchive-devel(rpm), libarchive (homebrew), libarchive_dev (csw)"
 arcpbf,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 arcpy,,,TRUE,"Conda, ArcGIS Pro"
+ardea,,,FALSE,"OpenCL,"
 argparse,,python3,TRUE,python
 arity,,,FALSE,"Cargo (Rust's package manager), rustc"
 arrangements,gmp,,TRUE,gmp
@@ -55,7 +56,7 @@ automerge,cargo,,FALSE,"'automerge-c', or Cargo (Rust's package manager)and rust
 autonewsmd,,,TRUE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
 autotab,,,FALSE,"Python; TensorFlow, <;Keras; TensorFlow Addons"
 av,ffmpeg,,TRUE,"FFmpeg; with at least libx264 and lame(mp3) drivers. MacOS Homebrew: ffmpeg. Debian/Ubuntu:libavfilter-dev. Fedora/RHEL: either ffmpeg-devel fromhttps://rpmfusion.org (preferred), or libavfilter-free-develwhich is a more limited version available on Fedora/EPEL9."
-AV1R,ffmpeg vulkan,,TRUE,"FFmpeg withlibavcodec/libavformat, libvulkan-dev (optional, for GPUencoding on Linux), Vulkan SDK (optional, for GPU encoding onWindows)"
+AV1R,ffmpeg vulkan,,TRUE,
 awdb,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 AWR,,,TRUE,AWS Java SDK (see README.md for more details)
 b32,cargo,,TRUE,"Cargo (Rust's package manager), rustc, xz"
@@ -148,6 +149,7 @@ caviarpd,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 CBSr,,,TRUE,Java
 cdtmbnma,,,FALSE,A working Stan backend through cmdstanr/CmdStan orrstan.
 cgvR,,,FALSE,"C17,   pkg-config, libvulkan-dev(Linux) or LunarG 'Vulkan' 'SDK' (Windows, macOS), libglfw3-dev(Linux) or glfw via Homebrew (macOS), ffmpeg (optional, forcgv_record_*). Optional configure flags: --with-vulkan /--without-vulkan, --with-simd for SSE4.1 + PCLMUL fpng."
+charr,,,FALSE,ICU4Cor(optional;bundled otherwise)
 chicane,,,TRUE,bedtools
 chopin,,,TRUE,netcdf
 ChoR,,,TRUE,
@@ -240,6 +242,7 @@ datasusr,,,FALSE,C99
 datefixR,cargo,,FALSE,"Cargo (Rust's package manager), rustc, xz"
 datr,,,TRUE,dat
 dawnn,,,FALSE,"Python with TensorFlow, typicallyinstalled in a conda environment and selected via the'tf_conda_env' argument of run_dawnn(). See the packagedocumentation for setup instructions."
+dbcturbo,,,FALSE,C99 compiler
 dbmss,,pandoc,TRUE,"pandoc,"
 dclone,,,TRUE,"none, one or more of JAGS, WinBUGS, OpenBUGS, Stan"
 dcmle,,,TRUE,JAGS
@@ -249,6 +252,7 @@ Deducer,,,TRUE,"Java, JRI"
 deepspat,,,TRUE,"TensorFlow (https://www.tensorflow.org/),"
 deforestable,,,TRUE,"GDAL, GEOS, PROJ,sqlite3"
 Delaporte,,,TRUE,A version of Fortran supporting the LOG_GAMMAIntrinsic and the ieee_arithmetic module.
+delta.sharing,,,FALSE,"Cargo (Rust's package manager), rustc"
 denguedatahub,,,TRUE,"Java: openjdk-11-jdk (deb),java-11-openjdk.x86_64 (rpm), openjdk@11 (brew)"
 devEMF,,,FALSE,fontconfig or zlib (only needed for platforms otherthan modern macOS and Windows)
 devianLM,,,TRUE,"OpenMP (optional, for parallel execution)"
@@ -270,6 +274,7 @@ docxtractr,,libreoffice,TRUE,LibreOffice (<https://www.libreoffice.org/>)require
 domino,,,TRUE,domino (~>1.7.1)
 DownBallotR,,,FALSE,"Python, pip"
 DQAstats,,,TRUE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
+dragonfarm,,,FALSE,'Python'. The 'uv' tool is installedautomatically by 'reticulate' to build the 'Python'environment.
 dress.graph,,,TRUE,
 drhur,,,FALSE,Quarto command-line tool (https://quarto.org)
 DRIP,gsl,,TRUE,
@@ -292,7 +297,7 @@ econetwork,,,TRUE,
 ecotourism,,,TRUE,Quarto
 edgemodelr,,,TRUE,or equivalent for building
 eDMA,,,TRUE,"Requires the OpenMP library for parallel computing.If the OpenMP library is not available, the code is executedsequentially and a warning is printed."
-effectcheck,,,FALSE,poppler-utils (pdftotext) for PDF text extraction
+effectcheck,,,TRUE,
 EHRmuse,gsl,,TRUE,GNU Scientific Library version
 EIAapi,,,TRUE,The package required the jq command line library.Please check https://stedolan.github.io/jq/download/ fordownload instructions.
 elexr,,python3,TRUE,Pythonor and elex package
@@ -360,11 +365,12 @@ FMAT,,,TRUE,Python
 fmriAR,,,TRUE,OpenMP (optional)
 footBayes,,pandoc,TRUE,"CmdStan(https://mc-stan.org/users/interfaces/cmdstan), pandoc, pandoc-citeproc"
 forensim,,,TRUE,Tcl/Tk package TkTable
+forestsearch,,,FALSE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli)
 forsearch,,,TRUE,
 fozziejoin,cargo,,TRUE,"Cargo (Rust's package manager), rustc, xz"
 fpROC,,,TRUE,"OpenMP, TBB"
 freestiler,,,FALSE,"Cargo (Rust's package manager), rustc"
-freesurfer,,,TRUE,"FSL, Freesurfer(https://surfer.nmr.mgh.harvard.edu/)"
+freesurfer,,,FALSE,FreeSurfer (https://freesurfer.net/)
 frequency,,,TRUE,pandoc - http://pandoc.org
 fRLR,gsl,,TRUE,GNU Scientific Library (GSL). Note: users shouldhave GSL installed.
 fru,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
@@ -476,6 +482,7 @@ hive,,,TRUE,"Apache Hadoop(https://hadoop.apache.org/releases.html#Download); Ob
 hobbs,,,FALSE,"Cargo (Rust's package manager), rustc, C compiler"
 HOIF,,,FALSE,"For the default Python backend: Pythonwith the 'u-stats', 'numpy' and 'torch' packages (provisionedautomatically on first use via 'reticulate', or viaustats::setup_ustats()). Not needed when pure_R_codeTRUE."
 hoopR,,pandoc,TRUE,"pandoc, pandoc-citeproc"
+HRTnomaly,,,FALSE,C11 compiler
 hSDM,gsl,,TRUE,GNU GSL
 httpuv,,,TRUE,zlib
 huito,,,TRUE,pandoc
@@ -538,6 +545,7 @@ JuliaCall,,julia,TRUE,"Julia, RCall.jl"
 JuliaConnectoR,,julia,TRUE,Julia
 kantorovich,,,TRUE,
 KernelKnn,,,TRUE,"libarmadillo: apt-get install -y libarmadillo-dev(deb), libblas: apt-get install -y libblas-dev (deb),liblapack: apt-get install -y liblapack-dev (deb),libarpack++2: apt-get install -y libarpack++2-dev (deb),: apt-get install -y  (deb)"
+KeyNubLicDongle,,,FALSE,"the KeyNub License Dongle native library(keynub_licdongle) for the platform, seehttps://github.com/AB-KeyNub/KeyNub-SDK/blob/master/NATIVES.md"
 keyring,libsecret,,TRUE,"Optional: libsecret on Linux (libsecret-1-dev onDebian/Ubuntu, libsecret-devel on Fedora/CentOS)"
 klaR,,,TRUE,SVMlight
 klic,,,TRUE,
@@ -747,7 +755,7 @@ patchDVI,,,TRUE,The 'Japanese.Rnw' vignette requires uplatex anddvipdfmx.
 pathfindR,,java-bin,TRUE,
 pathling,,,TRUE,Spark:x
 patientProfilesVis,,tex-latex,TRUE,"latex, cairo (for report creation)"
-paws.common,,pandoc,TRUE,pandoc - http://pandoc.org
+paws.common,,pandoc,TRUE,
 pbdMPI,openmpi,openmpi-bin,TRUE,"OpenMPI on Linux, Mac, and FreeBSD.MS-MPI (Microsoft MPI v7.1 (SDK) and Microsoft HPC PackR2MS-MPI Redistributable Package) on Windows."
 pbdSLAP,openmpi,openmpi-bin,TRUE,"'OpenMPI' on Solaris, Linux, Mac, andFreeBSD. 'MS-MPI' (Microsoft HPC PackR2 MS-MPIRedistributable Package) on Windows."
 pbdZMQ,zeromq,,TRUE,"Linux, Mac OSX, and Windows, or 'ZeroMQ' librarySolarisneeds 'ZeroMQ' libraryand 'OpenCSW'."
@@ -969,6 +977,7 @@ rixpress,,,TRUE,Nix
 rjags,jags,,TRUE,JAGSx.y
 rJava,java,,TRUE,"Java JDKor higher (for JRI/REngine JDKorhigher),"
 rjd3bench,,,FALSE,Java
+rjd3filters,,,FALSE,Java
 rjd3jars,,,FALSE,Java
 rjd3providers,,,TRUE,Java
 rjd3toolkit,,,TRUE,Java
@@ -1259,6 +1268,7 @@ theorytools,,,TRUE,Python
 Thermimage,,exiftool ffmpeg-bin imagemagick-bin,TRUE,"exiftool, perl, ffmpeg, imagemagick"
 tidycwl,,pandoc,TRUE,"PhantomJS (https://phantomjs.org), pandoc - https://pandoc.org."
 tidyGenR,,,TRUE,cutadapt(https://cutadapt.readthedocs.io/en/stable/)
+tidymedia,,,FALSE,"FFmpeg (https://ffmpeg.org/), MediaInfo(https://mediaarea.net/en/MediaInfo)"
 tidync,,,TRUE,netcdf udunits-2
 tiff,libjpeg libtiff,,TRUE,tiff and jpeg libraries
 tikzDevice,,tex-pgf,TRUE,pgf
@@ -1345,6 +1355,7 @@ writexl,,,TRUE,zlib
 WriteXLS,,perl,TRUE,Perl
 x13binary,,,TRUE,Fortran sources included in `tools/x13as_html`require a Fortran compiler
 xactonomial,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
+xbioclim,,,FALSE,"optionally GDAL withgdal-config, CUDA toolkit with nvcc for GPUacceleration"
 xdvir,freetype,,TRUE,freetype2
 xlcharts,,,TRUE,"Python, Conda"
 XLConnect,,,TRUE,Java
