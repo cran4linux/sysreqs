@@ -56,7 +56,7 @@ automerge,cargo,,FALSE,"'automerge-c', or Cargo (Rust's package manager)and rust
 autonewsmd,,,TRUE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
 autotab,,,FALSE,"Python; TensorFlow, <;Keras; TensorFlow Addons"
 av,ffmpeg,,TRUE,"FFmpeg; with at least libx264 and lame(mp3) drivers. MacOS Homebrew: ffmpeg. Debian/Ubuntu:libavfilter-dev. Fedora/RHEL: either ffmpeg-devel fromhttps://rpmfusion.org (preferred), or libavfilter-free-develwhich is a more limited version available on Fedora/EPEL9."
-AV1R,ffmpeg vulkan,,TRUE,
+AV1R,ffmpeg vulkan,,FALSE,"FFmpeg with 'libsvtav1', libvulkan-dev andglslc (optional, for GPU encoding on Linux), Vulkan SDK(optional, for GPU encoding on Windows)"
 awdb,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 AWR,,,TRUE,AWS Java SDK (see README.md for more details)
 b32,cargo,,TRUE,"Cargo (Rust's package manager), rustc, xz"
@@ -229,6 +229,7 @@ curl,curl,,TRUE,libcurl: libcurl-devel (rpm) orlibcurl4-openssl-dev (deb)
 cusna,,,FALSE,optionally a CUDAx toolkit (nvcc) forthe GPU path
 CytOpT,,,TRUE,Python
 DALY,xvfb,,TRUE,"Tcl/Tk, Tktable"
+dasklyr,,,FALSE,"Python with the dask (dataframe, distributed),pandas, and pyarrow packages"
 data.table,,,TRUE,
 DatabaseConnector,,,TRUE,Java
 DatabionicSwarm,,,TRUE,"pandoc, needed for vignettes)"
@@ -272,6 +273,7 @@ doclingr,,,FALSE,"Python, docling; tested with2.107.0)"
 doconv,,libreoffice,TRUE,"LibreOffice, Microsoft Word"
 docxtractr,,libreoffice,TRUE,LibreOffice (<https://www.libreoffice.org/>)required to extract data fromdoc files or performpptxconversion.
 domino,,,TRUE,domino (~>1.7.1)
+doubletrs,,,FALSE,"Cargo (Rust's package manager), rustc"
 DownBallotR,,,FALSE,"Python, pip"
 DQAstats,,,TRUE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
 dragonfarm,,,FALSE,'Python'. The 'uv' tool is installedautomatically by 'reticulate' to build the 'Python'environment.
@@ -309,6 +311,7 @@ EnTraineR,,,TRUE,Pandoc (for DOCX/HTML conversion when usingrmarkdown)
 entropart,,pandoc,TRUE,pandoc
 EpiSignalDetection,,,TRUE,pandoc
 eplusr,,,FALSE,"EnergyPlus (optional) (<https://energyplus.net>);udunits2 (optional, for units support)"
+eqty.sdk.r,,,FALSE,Python
 ergm,,,TRUE,
 eseis,,,TRUE,gipptools dataselect
 esviz,,,TRUE,"GDAL, GEOS, PROJ"
@@ -365,6 +368,7 @@ FMAT,,,TRUE,Python
 fmriAR,,,TRUE,OpenMP (optional)
 footBayes,,pandoc,TRUE,"CmdStan(https://mc-stan.org/users/interfaces/cmdstan), pandoc, pandoc-citeproc"
 forensim,,,TRUE,Tcl/Tk package TkTable
+foresightr,,,FALSE,"Cargo (Rust's package manager), rustc"
 forestsearch,,,FALSE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli)
 forsearch,,,TRUE,
 fozziejoin,cargo,,TRUE,"Cargo (Rust's package manager), rustc, xz"
@@ -382,6 +386,7 @@ fstcore,,,TRUE,little-endian platform
 ftExtra,,,TRUE,pandoc - http://pandoc.org
 FTSgof,,,TRUE,XQuartz (https://www.xquartz.org/)
 fuzzywuzzyR,,,TRUE,"Python, difflib, fuzzywuzzy,python-Levenshtein. Detailed installationinstructions can be found in the README file."
+fvfmR,,,FALSE,"Python, fvfmPy"
 fz,,,FALSE,"Python, funz-fz Python package"
 gadjid,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 ganDataModel,,,TRUE,TensorFlow (https://www.tensorflow.org)
@@ -410,6 +415,7 @@ gert,libgit2,,TRUE,libgit2: libgit2-devel (rpm) orlibgit2-dev (deb)
 geslaR,,,TRUE,arrow
 GetoptLong,,perl-getopt-long,TRUE,"Perl, Getopt::Long"
 GGally,,,TRUE,openssl
+ggcolonviz,,,FALSE,"GDAL, GEOS, PROJ,sqlite3"
 ggdemetra,,,TRUE,Java
 ggExtra,,pandoc,TRUE,pandoc with https support
 ggiraph,libpng,,TRUE,libpng
@@ -429,6 +435,7 @@ glmbayes,,,FALSE,"Optional OpenCL support. If available, GPUacceleration will be
 glmbayesCore,,,FALSE,"Optional OpenCL support. If available, GPUacceleration will be used; otherwise, computation runs on CPU."
 glmulti,,,TRUE,Java
 glpkAPI,glpk gmp,,TRUE,
+glpsol,,,FALSE,"GLPK: libglpk-dev (deb), glpk-devel (rpm),glpk (brew)"
 gm,,musescore,TRUE,MuseScore - https://musescore.org/
 gMCP,,,TRUE,Java
 gmp,gmp,,TRUE,gmp
@@ -459,6 +466,7 @@ GWnnegPCA,,,TRUE,"GDAL, GEOS, PROJ"
 GWpcor,,,TRUE,"GDAL, GEOS, PROJ"
 h2o,,java-bin,TRUE,"Java, <="
 h2o4gpu,,,TRUE,Python with header files and sharedlibrary; H2O4GPU (https://github.com/h2oai/h2o4gpu)
+h2oplyr,,,FALSE,"Java, a running H2O cluster matching the h2oR package version"
 h3jsr,,,TRUE,"V8 engine version+ is needed for modern JS andWASM support. On Debian / Ubuntu install either libv8-dev orlibnode-dev, on Fedora use v8-devel."
 h3o,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 happign,,,TRUE,
@@ -500,6 +508,7 @@ igraph,libxml2 glpk,,TRUE,"libxml2 (optional), glpk, optional)"
 ijtiff,fftw libtiff libjpeg libwebp,,TRUE,"fftw3, libtiff, libbz2, libdeflate, libjpeg,liblzma, libwebp, libzstd, X11, zlib"
 image.CannyEdges,libpng fftw,,TRUE,"libpng, fftw3"
 imager,fftw libtiff,,TRUE,"fftw3, libtiff, X11"
+impectR,,,FALSE,"ffmpeg (optional, only required forgetVideoClips())"
 implyr,,,TRUE,Impala driver to support a 'DBI'-compatible Rinterface
 ImprintCapASM,,,FALSE,samtools
 iMRMC,,java-bin,TRUE,
@@ -527,6 +536,7 @@ jagsUI,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net)
 janssonr,,,FALSE,"jansson is linked when present:libjansson-dev (deb), jansson-devel (rpm), jansson (brew). Whenit is absent, and always on Windows, the bundled Janssonis compiled into the package."
 jarbes,,,TRUE,JAGS (seehttp://mcmc-jags.sourceforge.net)
 JavaGD,,,TRUE,and Java JDKor higher
+jekylldown,,,FALSE,"Ruby, jekyll, bundler"
 JFE,xvfb,,TRUE,
 JGR,,,TRUE,Java
 jiebaRS,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
@@ -550,6 +560,7 @@ keyring,libsecret,,TRUE,"Optional: libsecret on Linux (libsecret-1-dev onDebian/
 klaR,,,TRUE,SVMlight
 klic,,,TRUE,
 knitr,,pandoc rst2pdf,TRUE,Package vignettes based on R Markdown v2 orreStructuredText require Pandoc (http://pandoc.org). Thefunction rst2pdf() requires rst2pdf(https://github.com/rst2pdf/rst2pdf).
+knitroff,,,FALSE,GNU groff for render_roff(); pdfinfo(poppler) for figures in PDF output
 koopman.dmd,,,FALSE,"Cargo (Rust's package manager), rustc"
 KSgeneral,fftw,,TRUE,fftw3
 kuenm2,,,FALSE,"GDAL, GEOS, PROJ"
@@ -616,7 +627,7 @@ matchingMarkets,,,TRUE,Java
 MatchingPursuit,,,FALSE,"external tool (installed via empi_install()function). The package uses the implementation of the MatchingPursuit algorithm (Enhanced Matching Pursuit Implementation;EMPI) by Piotr T. Różański, available athttps://github.com/develancer/empi."
 matlabr,,,TRUE,MATLAB
 mauricer,,,TRUE,BEAST2 (https://www.beast2.org/)
-MaxentVariableSelection,,java-bin,TRUE,maxent.jar file
+MaxentVariableSelection,,java-bin,TRUE,
 MBNMAdose,,,TRUE,JAGS(https://mcmc-jags.sourceforge.net/)
 MBNMAtime,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net)
 mBvs,gsl,,TRUE,
@@ -685,7 +696,7 @@ NACHO,,,FALSE,pandoc
 nanoarrow,,,FALSE,"libzstd (optional), liblz4 (optional)"
 nanonext,cmake,,FALSE,"'libnng'and 'libmbedtls'(optional,bundled sources compiled otherwise)"
 nativeORT,,,FALSE,libonnxruntime
-nbconvertR,,pandoc nbconvert,TRUE,"pandoc, jupyter, jupyter nbconvert (""nbconvert""python package), pywin32 (on windows)"
+nbconvertR,,pandoc nbconvert,TRUE,
 ncdf4,netcdf,,TRUE,netcdf library versionor later
 ndjson,,,TRUE,"zlib,"
 neo2R,,,FALSE,neo4j <https://neo4j.com/>
@@ -816,6 +827,7 @@ provolleyballr,,,TRUE,Google Chrome browser
 prqlr,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 psbcGroup,gsl,,TRUE,
 psborrow2,,,TRUE,cmdstan
+psychds,,,FALSE,Node.js
 PTXQC,,,TRUE,pandoc (http://pandoc.org) for building Vignettesand output reports as HTML
 punycoder,,,FALSE,"GNU libidn2 (optional, for native punycode backend)"
 pureseqtmr,,,TRUE,PureseqTM(https://github.com/PureseqTM/pureseqTM_package)
@@ -989,10 +1001,12 @@ RJDemetra,,,TRUE,Java
 rjdmarkdown,,,TRUE,Java
 rjdqa,,,TRUE,Java
 RJSDMX,,,TRUE,Java
+rjsf,,,FALSE,"Python, Quarto command line tool"
 rjuliabugs,,,TRUE,"Julia with the following packagesinstalled: 'JuliaBUGS.jl', 'LogDensityProblemsAD.jl','ReverseDiff.jl', 'AdvancedHMC.jl', 'AbstractMCMC.jl','LogDensityProblems.jl', 'MCMCChains.jl', 'RCall.jl','Suppressor.jl'."
 rkafkajars,,,TRUE,Java JDKor higher
 RKEA,,,TRUE,Java
 RKEAjars,,,TRUE,Java
+rladybugdb,,,FALSE,CMake
 rlas,,,FALSE,"GDAL, GEOS, PROJ, sqlite3,"
 Rlibeemd,gsl,,TRUE,GNU GSL
 rlibkriging,cmake,,TRUE,"cmake,"
@@ -1070,6 +1084,7 @@ rsyncrosim,,,TRUE,SyncroSim
 rsyslog,,,TRUE,POSIX.1-2001
 RTD,,,TRUE,"embulk, embulk-output-td"
 rtdists,,,FALSE,GNU GSL (libgsl-dev/gsl)
+rtemis.draw,,,FALSE,Node.js for optional SVG export
 rtika,,,TRUE,
 rtiktoken,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 rtmpt,gsl,,TRUE,GSL
@@ -1106,6 +1121,7 @@ scanr,,,FALSE,"Cargo (Rust's package manager), rustc, Quarto CLI"
 sceua,,,FALSE,"Cargo (Rust's package manager), rustc"
 scip,,,FALSE,"CMake,"
 scModels,,,FALSE,"gmp, mpfr"
+scNPM,,,FALSE,OpenMP
 sd2R,,,FALSE,curl or wget (for downloading vocabularyfiles during installation)
 sdcTable,glpk gmp,,TRUE,"GLPK library, including -dev or -devel part"
 SDMtune,,java-bin,TRUE,Java
@@ -1162,6 +1178,7 @@ sommer,,,FALSE,"METIS graph partitioning library (optional; enablesnested-dissec
 soptdmaeA,xvfb,,TRUE,
 sound,,,TRUE,"For playing sounds, a command line system tool forplaying wav-files is required."
 sourcoise,,,TRUE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
+spacemodR,,,FALSE,"Julia (optional, for dispersal with'Omniscape')"
 spaMM,gsl,,TRUE,GNU Scientific Library (GSL)
 sparkbq,,,TRUE,Sparkx)
 sparklyr,,java-bin,TRUE,"Spark:x, orx, orx"
@@ -1256,7 +1273,7 @@ TextAnalysisR,,,FALSE,Python with spaCy forlemmatization and sentence-transforme
 textrecipes,,,TRUE,""""""
 textshaping,freetype harfbuzz fribidi,,TRUE,"freetype2, harfbuzz, fribidi"
 textTinyR,,,TRUE,libarmadillo: apt-get install -y libarmadillo-dev(deb)
-tfaddons,,,TRUE,TensorFlow(https://www.tensorflow.org/)
+tfaddons,,,TRUE,
 tfautograph,,,TRUE,TensorFlow (https://www.tensorflow.org/)
 tfdatasets,,,TRUE,TensorFlow(https://www.tensorflow.org/)
 tfestimators,,,TRUE,TensorFlow (https://www.tensorflow.org/)
@@ -1264,6 +1281,7 @@ tfevents,protobuf,,TRUE,"libprotobuf, protobuf-compiler"
 tfhub,,,TRUE,TensorFlow(https://www.tensorflow.org/)
 tfio,,,TRUE,TensorFlow(https://www.tensorflow.org/)and TensorFlow IO(https://github.com/tensorflow/io)
 tfprobability,,,TRUE,TensorFlow Probability(https://www.tensorflow.org/probability)
+theeuh,,,FALSE,"ONNX Runtime, optional at runtime)"
 theorytools,,,TRUE,Python
 Thermimage,,exiftool ffmpeg-bin imagemagick-bin,TRUE,"exiftool, perl, ffmpeg, imagemagick"
 tidycwl,,pandoc,TRUE,"PhantomJS (https://phantomjs.org), pandoc - https://pandoc.org."
@@ -1321,6 +1339,7 @@ varitas,,perl bwa,TRUE,"perl, bedtools, bwa"
 varPro,,,TRUE,OpenMP
 vaultr,,,TRUE,vault
 VBLPCM,gsl,,TRUE,Gnu Scientific Library
+VCFArrow,,,FALSE,zlib
 vcfppR,curl,,TRUE,"libcurl: libcurl-devel (rpm) orlibcurl4-openssl-dev (deb), ."
 vcfR,devscripts,,TRUE,
 vdiffr,libpng,,TRUE,libpng
