@@ -8,6 +8,7 @@ adaR,,,FALSE,GCC(or Clang withequivalent  support)
 adbcpostgresql,postgresql,,FALSE,libpq
 adbcsqlite,sqlite,,FALSE,SQLite3
 adimpro,,imagemagick-bin dcraw,TRUE,"Image Magick (for reading non PPM format), dcraw(for reading RAW images)."
+adlaplace,,,FALSE,OpenMP
 admetshiny,,,FALSE,Java; only required for the optionalCDK-based descriptor calculation (rcdk) module.
 admisc,,,FALSE,POSIX threads
 AdmixPoly,,,FALSE,A system with a C++ compiler supporting OpenMP
@@ -25,6 +26,7 @@ altmeta,,,TRUE,JAGSx.y (http://mcmc-jags.sourceforge.net)
 AMAPVox,,java-bin,TRUE,
 animation,,tex-latex ffmpeg-bin,TRUE,ImageMagick (http://imagemagick.org) orGraphicsMagick (http://www.graphicsmagick.org) or LyX(http://www.lyx.org) for saveGIF(); (PDF)LaTeX for saveLatex();SWF Tools (http://swftools.org) for saveSWF(); FFmpeg(http://ffmpeg.org) or avconv (https://libav.org/avconv.html)for saveVideo()
 animl,,,FALSE,"Python, animl-py"
+anotherSAS7bdat,,,FALSE,"POSIX threads, iconv"
 anticlust,,,TRUE,Rendering the vignette requires pandoc(<https://pandoc.org/>).
 apache.sedona,,,TRUE,'Apache Spark'x
 apathe,,,TRUE,"Rendering the document template requires pandoc; https://pandoc.org) and for PDFs a TeX distribution, suchas TinyTeX; https://yihui.org/tinytex/)"
@@ -41,16 +43,17 @@ ardea,,,FALSE,"OpenCL,"
 argparse,,python3,TRUE,python
 arity,,,FALSE,"Cargo (Rust's package manager), rustc"
 arrangements,gmp,,TRUE,gmp
-arrow,arrow curl openssl,,TRUE,"for AWS S3 support on Linux, libcurl andopenssl (optional); cmake(build-time only, and onlyfor full source build)"
+arrow,arrow curl openssl,,FALSE,"for AWS S3 support on Linux, libcurl andopenssl, and libxml2 for Azure (optional); cmake(build-time only, and only for full source build)"
 artma,jags,,TRUE,
 arulesCBA,,java-bin,TRUE,Java
 arulesNBMiner,,java-bin,TRUE,Java
 asbio,xvfb,bwidget,TRUE,BWidget
+asleep,,,FALSE,"Python, 'asleep' Python module"
 asremlPlus,,,TRUE,asreml
 ast2ast,,,FALSE,Rtools on Windows
 astgrepr,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 AsyPeer,,,FALSE,"Requires the OpenMP library for parallel computing.If the OpenMP library is not available, the code is executedsequentially, and a warning is printed."
-atime,,,FALSE,git command line program
+atime,,,FALSE,git command line program for bisect
 autoharp,,,TRUE,pandoc - http://pandoc.org
 automerge,cargo,,FALSE,"'automerge-c', or Cargo (Rust's package manager)and rustcto build from package sources."
 autonewsmd,,,TRUE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
@@ -196,6 +199,7 @@ condor,,,TRUE,htcondor
 conflibertR,,,FALSE,"Python; the Python modules 'torch','transformers', 'accelerate', 'peft', 'scikit-learn'and 'numpy', installable via conflibert_install()"
 CoNI,,python3,TRUE,python3
 conquestr,,,TRUE,ACER ConQuest
+convertxlsform,,,FALSE,"'LibreOffice' (optional, for PDF output)"
 CoordinateCleaner,,,TRUE,GDAL
 CopernicusDEM,,awscli,TRUE,"awscli: apt install -y awscli (deb), aws-configure:aws configure (deb)"
 CopernicusMarine,,,TRUE,Requires GDALwith BLOSC support See<https://pepijn-devries.github.io/CopernicusMarine/articles/blosc.html>
@@ -270,7 +274,7 @@ DLCA,,,FALSE,OpenMP
 DNNSIM,,,TRUE,Python; PyTorch (https://pytorch.org/);NumPy (https://numpy.org/); SciPy (https://scipy.org/); sklearn(https://scikit-learn.org/stable/);
 docknitr,,docker,TRUE,"Docker, RStudio>=1.2"
 doclingr,,,FALSE,"Python, docling; tested with2.107.0)"
-doconv,,libreoffice,TRUE,"LibreOffice, Microsoft Word"
+doconv,,libreoffice,FALSE,"LibreOffice, Microsoft Word, Microsoft PowerPoint,Microsoft Excel"
 docxtractr,,libreoffice,TRUE,LibreOffice (<https://www.libreoffice.org/>)required to extract data fromdoc files or performpptxconversion.
 domino,,,TRUE,domino (~>1.7.1)
 doubletrs,,,FALSE,"Cargo (Rust's package manager), rustc"
@@ -283,7 +287,7 @@ DRIP,gsl,,TRUE,
 drogonR,,,FALSE,"OpenSSL (optional, for HTTPS)"
 drugsens,,,TRUE,QuPath™or higher
 dti,gsl,,TRUE,gsl
-duckdb,,,TRUE,xz (for building from source)
+duckdb,,,TRUE,
 duet,,ffmpeg-bin,TRUE,FFmpeg (https://ffmpeg.org/)
 dwg2geo,,,FALSE,"Cargo (Rust's package manager), rustc"
 DynareR,,,TRUE,"Dynare, Octave"
@@ -350,11 +354,13 @@ feather,,,TRUE,
 fect,,,TRUE,
 FedData,,,TRUE,GDAL
 FeNEU,,,FALSE,"pandoc and a LaTeX distribution (e.g.TinyTeX, see ?tinytex::install_tinytex) with the booktabs,longtable, siunitx, and makecell LaTeX packages are requiredfor the *_pdf() output functions."
+fereg,,,FALSE,"Cargo (Rust's package manager), rustc"
 FFD,xvfb,bwidget,TRUE,BWidget
 fftw,fftw,,TRUE,fftw3
 fftwtools,fftw,,TRUE,"fftw3 (libfftw3-dev (deb), or fftw-devel (rpm))"
 fgitR,,git,TRUE,Git
 fibr,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
+fieldopt,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
 findInFiles,,grep,TRUE,grep
 findInGit,,grep git,TRUE,"grep, git"
 fio,cargo,,TRUE,"Cargo (Rust's package manager), rustc, xz"
@@ -410,6 +416,7 @@ GeoFIS,gmp mpfr,,TRUE,"gmp, mpfr"
 geojsonR,,,TRUE,libarmadillo: apt-get install -y libarmadillo-dev(deb)
 GeoModels,,,FALSE,OpenMP (optional)
 GeoMongo,,,TRUE,"MongoDB, Python. Installationinstructions and links can be found in the README file."
+geopytorch,,,FALSE,Python
 GerminaR,,,TRUE,pandoc
 gert,libgit2,,TRUE,libgit2: libgit2-devel (rpm) orlibgit2-dev (deb)
 geslaR,,,TRUE,arrow
@@ -444,6 +451,7 @@ gnn,,,TRUE,TensorFlow (https://www.tensorflow.org/)
 govdown,,,TRUE,pandoc - http://pandoc.org
 goxygen,,,TRUE,"pandoc, pandoc-citeproc"
 GPBayes,gsl,,TRUE,GNU Scientific Library version
+gputools,,,FALSE,NVIDIA CUDA toolkit; an NVIDIA GPU to runthe GPU functions
 GreedyExperimentalDesign,,,FALSE,"Java; wgpu-native(optional,for GPU acceleration, seehttps://github.com/gfx-rs/wgpu-native)"
 GreedyExperimentalDesignJARs,,,TRUE,Java
 greta,,,FALSE,Python with header files and sharedlibrary; TensorFlowv2.0.0; https://www.tensorflow.org/);TensorFlow Probability (v0.8.0;https://www.tensorflow.org/probability/)
@@ -490,6 +498,7 @@ hive,,,TRUE,"Apache Hadoop(https://hadoop.apache.org/releases.html#Download); Ob
 hobbs,,,FALSE,"Cargo (Rust's package manager), rustc, C compiler"
 HOIF,,,FALSE,"For the default Python backend: Pythonwith the 'u-stats', 'numpy' and 'torch' packages (provisionedautomatically on first use via 'reticulate', or viaustats::setup_ustats()). Not needed when pure_R_codeTRUE."
 hoopR,,pandoc,TRUE,"pandoc, pandoc-citeproc"
+hpsreg,,,FALSE,OpenMP (optional)
 HRTnomaly,,,FALSE,C11 compiler
 hSDM,gsl,,TRUE,GNU GSL
 httpuv,,,TRUE,zlib
@@ -577,6 +586,7 @@ LDATS,,,TRUE,gsl
 leaf,,,FALSE,"Conda, Python"
 LeafArea,,imagej,TRUE,"ImageJ, ij.jar (seehttp://imagej.nih.gov/ij/), Java"
 learnr,,,TRUE,pandoc - http://pandoc.org
+learnr2,,,FALSE,Quarto command line tool(https://github.com/quarto-dev/quarto-cli).
 ledger,,ledger hledger,FALSE,"ledger, hledger, beanquery orrustledger"
 leidenAlg,libxml2 glpk,,TRUE,"(optional), libxml2 (optional), glpk, optional)"
 libdeflate,cmake,,TRUE,CMake
@@ -620,7 +630,7 @@ manipulate,,,TRUE,RStudio - http://www.rstudio.com/products/rstudio/
 manureshed,,,FALSE,"GDAL, GEOS, PROJ"
 MaOEA,,,TRUE,"Pythonx with following modules: PyGMO, NumPy,and cloudpickle"
 mapme.biodiversity,,,TRUE,"GDAL, PROJ"
-marcxmlr,,,FALSE,libxml2
+marcxmlr,,,FALSE,"libxml2, Expat (optional, for recordfiltering)"
 marked,,,TRUE,ADMB version<http://admb-project.org/> foruse.admb=TRUE; see readme.txt
 markovchain,,,FALSE,Quarto
 matchingMarkets,,,TRUE,Java
@@ -740,6 +750,7 @@ openNLP,,,TRUE,Java
 openNLPdata,,,TRUE,Java
 openssl,openssl,,TRUE,OpenSSL
 OpenStreetMap,,,TRUE,"Java, JRI"
+opentimsr,,,FALSE,libzstd
 optbdmaeAT,xvfb,,TRUE,
 optimalThreshold,,,TRUE,JAGSx.y
 optrcdmaeAT,xvfb,,TRUE,
@@ -829,6 +840,7 @@ psbcGroup,gsl,,TRUE,
 psborrow2,,,TRUE,cmdstan
 psychds,,,FALSE,Node.js
 PTXQC,,,TRUE,pandoc (http://pandoc.org) for building Vignettesand output reports as HTML
+publishTC,,,FALSE,Java
 punycoder,,,FALSE,"GNU libidn2 (optional, for native punycode backend)"
 pureseqtmr,,,TRUE,PureseqTM(https://github.com/PureseqTM/pureseqTM_package)
 PVAClone,,,TRUE,JAGS
@@ -982,14 +994,16 @@ Rhobots,,,FALSE,Microsoft Visual C++ Redistributable(Windowsonly; required by to
 Rhpc,,,FALSE,"R built as a shared or static library, 'MPI'library."
 ridge,gsl,,TRUE,Gnu Scientific Library version
 rim,,maxima,TRUE,
-rinet,,,TRUE,"Python, TensorFlow, Keras, scikit-learn"
+rinet,,,TRUE,
 rip.opencv,,,FALSE,OpenCVor newer
 rirods,,,TRUE,iRODS C++ HTTP API(<https://github.com/irods/irods_client_http_api>)
 rixpress,,,TRUE,Nix
 rjags,jags,,TRUE,JAGSx.y
 rJava,java,,TRUE,"Java JDKor higher (for JRI/REngine JDKorhigher),"
 rjd3bench,,,FALSE,Java
+rjd3bridge,,,FALSE,Java
 rjd3filters,,,FALSE,Java
+rjd3highfreq,,,FALSE,Java
 rjd3jars,,,FALSE,Java
 rjd3providers,,,TRUE,Java
 rjd3toolkit,,,TRUE,Java
@@ -1023,7 +1037,7 @@ rMIDAS,,,TRUE,Python
 rMIDAS2,,,FALSE,Python with the 'midasverse-midas-api'package
 RMOA,,,TRUE,Java
 RMOAjars,,,TRUE,Java
-rmoriebricklayer,,,FALSE,"libcurl (deb: libcurl4-openssl-dev, rpm:libcurl-devel)."
+rmoriebricklayer,,,FALSE,"libcurl (deb: libcurl4-openssl-dev, rpm:libcurl-devel, brew: curl), zlib (deb: zlib1g-dev, rpm:zlib-devel)."
 Rmosek,,,TRUE,MOSEK and MOSEK License
 Rmpfr,gmp mpfr,,TRUE,"gmp, mpfr, pdfcrop (part ofTexLive) is required to rebuild the vignettes."
 Rmpi,openmpi,openmpi,TRUE,
@@ -1098,7 +1112,7 @@ RWeka,,,TRUE,Java
 RWekajars,,,TRUE,Java
 rwig,,,FALSE,"autoconf, CUDA, only for Linux, optional)"
 RWinEdt,,,TRUE,WinEdt
-rzig,,,FALSE,"Zig, see https://ziglang.org/download/"
+rzig,,,FALSE,"Zigx orx(https://ziglang.org/download/), needed to install packagescreated with rzig"
 rzmq,zeromq,,TRUE,ZeroMQ: libzmq3-dev (deb) or zeromq-devel(rpm)
 s2,cmake openssl abseil,,TRUE,"cmake, OpenSSL, Abseil"
 s2dv,,,TRUE,cdo
@@ -1116,6 +1130,7 @@ saros.base,,,TRUE,None.
 sarsop,,,TRUE,"mallinfo, hence Linux, MacOS or Windows"
 SASmarkdown,,,TRUE,SAS
 sasquatch,,,TRUE,"python, SASPy, java required forIOM access method"
+sbert,,,FALSE,ONNX Runtime
 sbrl,gmp gsl,,TRUE,"gmp, gsl"
 scanr,,,FALSE,"Cargo (Rust's package manager), rustc, Quarto CLI"
 sceua,,,FALSE,"Cargo (Rust's package manager), rustc"
@@ -1174,7 +1189,7 @@ SOFIA,,,TRUE,
 soilFlux,,,FALSE,"Python, TensorFlow, Keras"
 soilhypfit,,,TRUE,"gmp, mpfr"
 soilVAE,,,FALSE,Python; TensorFlow; Keras
-sommer,,,FALSE,"METIS graph partitioning library (optional; enablesnested-dissection sparse ordering for large relationshipmatrices, auto-detected at configure time, falls back to AMDordering when absent)"
+sommer,,,FALSE,"METIS graph partitioning library (optional; enablesnested-dissection sparse ordering for large relationshipmatrices, auto-detected at configure time, falls back to AMDordering when absent), NVIDIA CUDA toolkit with cuBLAS andcuSOLVER (optional; enables GPU kernels on Linux throughSOMMER_CUDA_HOME; CUDA libraries are loaded dynamically)"
 soptdmaeA,xvfb,,TRUE,
 sound,,,TRUE,"For playing sounds, a command line system tool forplaying wav-files is required."
 sourcoise,,,TRUE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
@@ -1328,7 +1343,7 @@ unmconf,,,TRUE,JAGS(http://mcmc-jags.sourceforge.net)
 Uno,,,FALSE,"CMake,"
 unsum,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 untb,,pari,TRUE,PARI/GP[strongly recommended forlogkda()]
-uqsa,,,FALSE,GSL
+uqsa,,,TRUE,
 URooTab,,,TRUE,EViews
 ustats,,,FALSE,"Python; Python packages: u-stats, numpy,torch (installed automatically on first use, or viasetup_ustats())"
 uuidx,,,FALSE,"Cargo (Rust's package manager), rustc"
@@ -1390,4 +1405,6 @@ yamlme,,,TRUE,pandoc - http://pandoc.org
 ymd,cargo,,TRUE,"Cargo (Rust's package manager), rustc, xz"
 zmij,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
 zoomerjoin,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
-zot,,,FALSE,"Pythonand zotero-mcp-server (optional, forztSemantic())"
+zot,,,TRUE,
+zucrypt,,,FALSE,"A C99 compiler. No system cryptographic library isused, no CMake, Python or Perl is required, and nothing isdownloaded or generated during installation: the backend isbuilt from vendored sources, with an explicit object list inportable make."
+zuexact,,,FALSE,C99
