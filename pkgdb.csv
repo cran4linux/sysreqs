@@ -49,6 +49,7 @@ arulesCBA,,java-bin,TRUE,Java
 arulesNBMiner,,java-bin,TRUE,Java
 asbio,xvfb,bwidget,TRUE,BWidget
 asleep,,,FALSE,"Python, 'asleep' Python module"
+ASmiR,,,FALSE,Python
 asremlPlus,,,TRUE,asreml
 ast2ast,,,FALSE,Rtools on Windows
 astgrepr,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
@@ -62,6 +63,7 @@ av,ffmpeg,,TRUE,"FFmpeg; with at least libx264 and lame(mp3) drivers. MacOS Home
 AV1R,ffmpeg vulkan,,FALSE,"FFmpeg with 'libsvtav1', libvulkan-dev andglslc (optional, for GPU encoding on Linux), Vulkan SDK(optional, for GPU encoding on Windows)"
 awdb,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 AWR,,,TRUE,AWS Java SDK (see README.md for more details)
+awscrt,,,FALSE,C compiler
 b32,cargo,,TRUE,"Cargo (Rust's package manager), rustc, xz"
 b64,cargo,,TRUE,"Cargo (Rust's package manager), rustc, xz"
 babelwhale,,docker singularity,TRUE,Docker and/or Singularity
@@ -230,7 +232,7 @@ cubature,,,TRUE,and USE_C17
 cuda.ml,,,FALSE,Native operations require Linux x86_64 with glibc2.28 or newer. GPU-backed operations require a supported NVIDIAGPU and driveror newer.
 cudaverse,,,FALSE,"For GPU execution on Windows or Linux: NVIDIACUDA-capable GPU, NVIDIA driver with CUDA Driver API, NVIDIAcuBLAS, and NVIDIA cuSOLVER"
 curl,curl,,TRUE,libcurl: libcurl-devel (rpm) orlibcurl4-openssl-dev (deb)
-cusna,,,FALSE,optionally a CUDAx toolkit (nvcc) forthe GPU path
+cusna,,,TRUE,
 CytOpT,,,TRUE,Python
 DALY,xvfb,,TRUE,"Tcl/Tk, Tktable"
 dasklyr,,,FALSE,"Python with the dask (dataframe, distributed),pandas, and pyarrow packages"
@@ -273,7 +275,7 @@ DIZutils,,,TRUE,libpq: libpq-dev (deb) or postgresql-devel(rpm)
 DLCA,,,FALSE,OpenMP
 DNNSIM,,,TRUE,Python; PyTorch (https://pytorch.org/);NumPy (https://numpy.org/); SciPy (https://scipy.org/); sklearn(https://scikit-learn.org/stable/);
 docknitr,,docker,TRUE,"Docker, RStudio>=1.2"
-doclingr,,,FALSE,"Python, docling; tested with2.107.0)"
+doclingr,,,FALSE,"Python, docling; tested with2.143.1)"
 doconv,,libreoffice,FALSE,"LibreOffice, Microsoft Word, Microsoft PowerPoint,Microsoft Excel"
 docxtractr,,libreoffice,TRUE,LibreOffice (<https://www.libreoffice.org/>)required to extract data fromdoc files or performpptxconversion.
 domino,,,TRUE,domino (~>1.7.1)
@@ -335,7 +337,7 @@ exmort,,,FALSE,pandoc for report rendering; a LaTeXinstallation (for example Tin
 extraDistr,,,TRUE,
 ezknitr,,,TRUE,pandoc with https support
 factset.protobuf.stach.v2,,,TRUE,"ProtoBuf libraries and compiler versionorlater; On Debian/Ubuntu these can be installed aslibprotoc-dev, libprotobuf-dev and protobuf-compiler, while onFedora/CentOS protobuf-devel and protobuf-compiler are needed."
-fairGATE,,,TRUE,Optional 'LibTorch' backend; install viatorch::install_torch().
+fairGATE,,,FALSE,Optional 'LibTorch' backend for the neural-networkcomponents; install via torch::install_torch().
 fairGNN,,,TRUE,Optional 'LibTorch' backend; install viatorch::install_torch().
 fangs,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 fasterRaster,,,TRUE,GRASS
@@ -344,6 +346,7 @@ fastGLCM,,,TRUE,"apt-get-pip: apt-get install -y python3-pip (deb),python3-pip: 
 FastHamming,,,TRUE,"C compiler (C99), OpenMP"
 FastKRR,,,TRUE,OpenMP (optional)
 fastLISA,,,FALSE,"C99, optional OpenMP"
+fastphylosig,,,FALSE,OpenMP (optional)
 fastPLS,,,FALSE,"Optional OpenBLAS development libraries for fasterCPU matrix operations; optional NVIDIA CUDA Toolkit with CUDARuntime, cuBLAS, cuSOLVER and cuRAND plus a compatibleseparately managed NVIDIA driver; optional Apple Metalframework on macOS. CPU-only builds do not require GPUsoftware."
 fastrda,,,FALSE,OpenMP
 fastText,,,TRUE,
@@ -399,7 +402,7 @@ ganDataModel,,,TRUE,TensorFlow (https://www.tensorflow.org)
 ganGenerativeData,,,TRUE,TensorFlow (https://www.tensorflow.org)
 gcbd,,,TRUE,"Debian or Ubuntu system with access to Goto Blas,Intel MKL, Atlas development build as well as a Nvidia GPU withCUDA support"
 GCPM,,,TRUE,"Windows, Linux, OS X"
-gdalcubes,gdal proj netcdf sqlite,,TRUE,
+gdalcubes,gdal proj netcdf sqlite,,FALSE,"GDAL, PROJ, netcdf, sqlite3"
 gdalraster,gdal,,TRUE,"GDAL, built against GEOS)"
 gdata,,perl,TRUE,
 gdtools,cairo freetype,,TRUE,"cairo, freetype2, fontconfig"
@@ -451,6 +454,7 @@ gnn,,,TRUE,TensorFlow (https://www.tensorflow.org/)
 govdown,,,TRUE,pandoc - http://pandoc.org
 goxygen,,,TRUE,"pandoc, pandoc-citeproc"
 GPBayes,gsl,,TRUE,GNU Scientific Library version
+gptr,,,FALSE,"Optional: Ollama for native localdecision models; other optional external programs: 'claude'(Claude Code) and 'codex' (Codex) for subscription providers,'quarto' for 'Quarto' documents, and a 'Chrome'-family browserfor app screenshots."
 gputools,,,FALSE,NVIDIA CUDA toolkit; an NVIDIA GPU to runthe GPU functions
 GreedyExperimentalDesign,,,FALSE,"Java; wgpu-native(optional,for GPU acceleration, seehttps://github.com/gfx-rs/wgpu-native)"
 GreedyExperimentalDesignJARs,,,TRUE,Java
@@ -642,6 +646,7 @@ MBNMAdose,,,TRUE,JAGS(https://mcmc-jags.sourceforge.net/)
 MBNMAtime,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net)
 mBvs,gsl,,TRUE,
 mcbette,,,TRUE,BEAST2 (https://www.beast2.org/)
+mcp,,,FALSE,JAGS
 mdbr,,mdbtools,TRUE,
 MDCcure,,,TRUE,TBB
 mdendro,,,TRUE,
@@ -681,6 +686,7 @@ mlr,,,TRUE,"gdal (optional), geos (optional), proj (optional),udunits (optional)
 mlsurvlrnrs,,,TRUE,Quarto command line tools(https://github.com/quarto-dev/quarto-cli).
 MoBPS,,,TRUE,MiXBLUP (optional; used for multi-trait genomicevaluations); blupf90-family (optional; used for multi-traitgenomic evaluations)
 mod09nrt,,,TRUE,MRTSwath
+MOFAT,,,FALSE,"On Linux, optional NVIDIA CUDA Toolkitx or13.x) and a supported host compiler; Metal is optional on macOS"
 mongolite,openssl sasl,,TRUE,"OpenSSL, Cyrus SASL (aka libsasl2)"
 monoreg,gsl,,TRUE,GNU GSL
 morse,,,TRUE,JAGS (seehttps://mcmc-jags.sourceforge.io)
@@ -702,7 +708,7 @@ mvst,gsl,,TRUE,GNU Scientific Library
 mwa,,,TRUE,Java
 mwcsr,,java-bin,FALSE,Java
 mx.crypto,,,FALSE,"Cargo (Rust's package manager), rustc"
-NACHO,,,FALSE,pandoc
+NACHO,,,FALSE,"Quarto command-line interface, pandoc(>="
 nanoarrow,,,FALSE,"libzstd (optional), liblz4 (optional)"
 nanonext,cmake,,FALSE,"'libnng'and 'libmbedtls'(optional,bundled sources compiled otherwise)"
 nativeORT,,,FALSE,libonnxruntime
@@ -737,6 +743,7 @@ oceanmap,,imagemagick-bin,TRUE,ImageMagick
 odbc,odbc,,TRUE,An ODBC3 driver manager and drivers.
 oddsapiR,,pandoc,TRUE,"pandoc, pandoc-citeproc"
 odiffr,,,TRUE,odiff -https://github.com/dmtrKovalenko/odiff
+OECDdata,,,FALSE,libxml2
 officedown,,,TRUE,pandoc - http://pandoc.org
 OncoBayes2,,pandoc,TRUE,"pandoc, pngquant,"
 Open.Visualization.Academy,,,TRUE,quarto
@@ -855,6 +862,7 @@ qio,,,FALSE,zlib
 qpdf,libjpeg,,TRUE,libjpeg
 qqconf,fftw,,TRUE,fftw3
 qtkit,,,TRUE,"Chromium-based browser (e.g., Chrome, Chromium, orBrave)"
+QuantilePeer,,,FALSE,"Requires the OpenMP library for parallel computing.If the OpenMP library is not available, the code is executedsequentially, and a warning is printed."
 quaqcr,,,FALSE,quaqc (https://github.com/bjmt/quaqc)
 quarto,,,TRUE,Quarto command line tool(<https://github.com/quarto-dev/quarto-cli>).
 questionr,,xclip,TRUE,xclip (Linux)
@@ -874,6 +882,7 @@ raisr,,,FALSE,libarchive (via the 'archive' package)
 randomForestRHF,,,FALSE,OpenMP
 randomForestSRC,,,FALSE,OpenMP
 rapidraker,,,TRUE,Java
+rapidxlsx,,,FALSE,Cargo (Rust toolchain)
 RAppArmor,,,TRUE,"linux, libapparmor-dev"
 rapport,,,TRUE,pandoc (https://johnmacfarlane.net/pandoc) forexporting markdown files to other formats.
 RAQSAPI,,,TRUE,package manual and Vignettes require pandoc http://pandoc.org)
@@ -959,6 +968,7 @@ redist,gmp libxml2,python3,TRUE,python
 redland,redland,,TRUE,"Mac OSX: redland ; Linux: librdf0, librdf0-dev"
 redux,hiredis,,TRUE,hiredis
 RegimeChange,,,TRUE,"Julia for optional high-performancebackend, Python with TensorFlow for deep learningmethods"
+relm,,,FALSE,"Cargo (Rust's package manager), rustc, cmake, xz"
 relMix,,,TRUE,"tcltk, tk"
 remiod,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net/)
 REMixed,,,TRUE,'Monolix'(<https://monolixsuite.slp-software.com/>)
@@ -1037,7 +1047,7 @@ rMIDAS,,,TRUE,Python
 rMIDAS2,,,FALSE,Python with the 'midasverse-midas-api'package
 RMOA,,,TRUE,Java
 RMOAjars,,,TRUE,Java
-rmoriebricklayer,,,FALSE,"libcurl (deb: libcurl4-openssl-dev, rpm:libcurl-devel, brew: curl), zlib (deb: zlib1g-dev, rpm:zlib-devel)."
+rmoriebricklayer,,,FALSE,"libcurl (deb: libcurl4-openssl-dev, rpm:libcurl-devel, brew: curl), zlib (deb: zlib1g-dev, rpm:zlib-devel). Optional, for mkbndlchk() running a bundle:unshare (util-linux) and systemctl on Linux; podman or dockerfor containerTRUE."
 Rmosek,,,TRUE,MOSEK and MOSEK License
 Rmpfr,gmp mpfr,,TRUE,"gmp, mpfr, pdfcrop (part ofTexLive) is required to rebuild the vignettes."
 Rmpi,openmpi,openmpi,TRUE,
@@ -1403,8 +1413,10 @@ xslt,libxslt,,TRUE,"libxslt: libxslt1-dev (deb), libxslt-devel (rpm)"
 yaml12,cargo,,FALSE,"Cargo (Rust's package manager), rustc,xz. On Windows ARM64, source installs also require MicrosoftC++ Build Tools with ARM64 components."
 yamlme,,,TRUE,pandoc - http://pandoc.org
 ymd,cargo,,TRUE,"Cargo (Rust's package manager), rustc, xz"
+zigimports,,,FALSE,"'Zig' compiler, only needed forzig_call() and to build libraries"
 zmij,,,FALSE,"Cargo (Rust's package manager), rustc, xz"
 zoomerjoin,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 zot,,,TRUE,
+zstd,,,FALSE,"libzstd: libzstd-dev (deb),libzstd-devel (rpm), zstd (brew). If not found, the bundledcopy is used."
 zucrypt,,,FALSE,"A C99 compiler. No system cryptographic library isused, no CMake, Python or Perl is required, and nothing isdownloaded or generated during installation: the backend isbuilt from vendored sources, with an explicit object list inportable make."
 zuexact,,,FALSE,C99
