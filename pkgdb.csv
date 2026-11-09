@@ -86,7 +86,7 @@ BayesianInference,,,TRUE,"Python, 'BayesInference' python library."
 bayesplot,,pandoc,FALSE,pandoc
 BayesPostEst,,,TRUE,JAGS (http://mcmc-jags.sourceforge.io)
 bayesQRsurvey,,,TRUE,"BLAS, LAPACK"
-BayesTools,,,TRUE,JAGS(https://mcmc-jags.sourceforge.io/)
+BayesTools,,,FALSE,"JAGS, <(https://mcmc-jags.sourceforge.io/)"
 BayesVarSel,gsl,,TRUE,GNU Scientific Library
 BayLum,,,TRUE,JAGS(https://mcmc-jags.sourceforge.io/)
 bayprior,,,FALSE,"Quarto CLI, https://quarto.org)"
@@ -106,6 +106,7 @@ bgns,,,FALSE,optional OpenMP
 bhmbasket,,,TRUE,JAGSx.y (http://mcmc-jags.sourceforge.net)
 biblio,,pandoc,TRUE,pandoc - http://pandoc.org
 BIDistances,,,FALSE,"OpenCL library (optional, for GPUacceleration), pandoc, needed for vignettes)"
+bigcurve,,,FALSE,"PROJ: libproj-dev (deb), proj-devel(rpm), proj (brew)"
 bigGP,openmpi,openmpi-bin,TRUE,OpenMPI or MPICH2
 bigMICE,,,TRUE,"Spark:x, orx"
 bigPLSR,,,TRUE,Optional CBLAS (detected at compile time)
@@ -134,7 +135,7 @@ breathteststan,,pandoc,TRUE,
 brinton,,,TRUE,"Pandoc, web browser"
 brms,,,TRUE,pngquant
 bsam,,,TRUE,
-bspm,,,TRUE,"systemd, dbus-python, PyGObject,python-(dnf|apt|alpm)"
+bspm,,,FALSE,"systemd, dbus-python, PyGObject,python-(libdnf5|dnf|apt|alpm)"
 bssm,,,TRUE,"pandoc, needed for vignettes)"
 bsub,,,TRUE,"Platform LSF, bsub"
 BTSPAS,,,TRUE,JAGS
@@ -405,11 +406,12 @@ GCPM,,,TRUE,"Windows, Linux, OS X"
 gdalcubes,gdal proj netcdf sqlite,,FALSE,"GDAL, PROJ, netcdf, sqlite3"
 gdalraster,gdal,,TRUE,"GDAL, built against GEOS)"
 gdata,,perl,TRUE,
-gdtools,cairo freetype,,TRUE,"cairo, freetype2, fontconfig"
+gdtools,cairo freetype,,FALSE,freetype2
 gdxtools,,,FALSE,GAMS is only required if you callgams()
 GeneralizedUmatrix,,,TRUE,"pandoc, needed for vignettes)"
 GeneralizedUmatrixGPU,,,TRUE,"pandoc, needed forvignettes), OpenCL shared library (provided by an SDK such asAMD/NVIDIA)"
 GeneralizedWendland,gsl,,TRUE,gsl
+geneviewer,,,FALSE,"MUMmer (optional, used by mummer_alignment())"
 genie,,,TRUE,
 genieclust,,,TRUE,OpenMP
 genlogis,,,TRUE,RStudio -https://posit.co/products/open-source/rstudio/
@@ -432,6 +434,7 @@ ggiraph,libpng,,TRUE,libpng
 gglinedensity,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 ggmlR,vulkan glslc,,TRUE,"libvulkan-dev, glslc (optional,for GPU on Linux), 'Vulkan' 'SDK' (optional, for GPU onWindows)"
 ggquickeda,,pandoc,TRUE,pandoc with https support
+ggRandomForests,,,FALSE,Quarto command line tool(<https://github.com/quarto-dev/quarto-cli>)
 ggseg,,,TRUE,
 ggsql,,,FALSE,"Cargo (Rust's package manager), rustc,ODBC driver manager (unixODBC on Linux, iODBC or unixODBC onmacOS; built into Windows)"
 ggtrace,,pandoc,TRUE,pandoc
@@ -575,6 +578,7 @@ klic,,,TRUE,
 knitr,,pandoc rst2pdf,TRUE,Package vignettes based on R Markdown v2 orreStructuredText require Pandoc (http://pandoc.org). Thefunction rst2pdf() requires rst2pdf(https://github.com/rst2pdf/rst2pdf).
 knitroff,,,FALSE,GNU groff for render_roff(); pdfinfo(poppler) for figures in PDF output
 koopman.dmd,,,FALSE,"Cargo (Rust's package manager), rustc"
+kpqc,,,FALSE,C11
 KSgeneral,fftw,,TRUE,fftw3
 kuenm2,,,FALSE,"GDAL, GEOS, PROJ"
 kza,fftw,,TRUE,fftw
@@ -767,6 +771,7 @@ orderanalyzer,,,TRUE,"Tesseract, libtesseract-dev (deb),tesseract-devel (rpm), l
 orderly,,git,TRUE,
 ordinalbayes,,,TRUE,JAGS
 ORscraper,,,TRUE,poppler-cpp
+osirad,,,FALSE,"Python with the modules 'pyradiomics','SimpleITK' and 'numpy' (optional, for pyradiomics_features())"
 osmnxr,,,FALSE,"Cargo (Rust's package manager), rustc"
 osrm.backend,,,FALSE,OSRM backend binariesv5.27.0); packagedownloads binaries automatically from<https://github.com/e-kotov/osrm-binaries> by default; upstreamOSRM binaries from<https://github.com/Project-OSRM/osrm-backend> are available asan optional provider
 osrmr,,,TRUE,"To use the Localhost of OSRM, you need to buildOSRM<https://github.com/Project-OSRM/osrm-backend/wiki/Building-OSRM>locally"
@@ -865,6 +870,7 @@ qtkit,,,TRUE,"Chromium-based browser (e.g., Chrome, Chromium, orBrave)"
 QuantilePeer,,,FALSE,"Requires the OpenMP library for parallel computing.If the OpenMP library is not available, the code is executedsequentially, and a warning is printed."
 quaqcr,,,FALSE,quaqc (https://github.com/bjmt/quaqc)
 quarto,,,TRUE,Quarto command line tool(<https://github.com/quarto-dev/quarto-cli>).
+quartodown,,,FALSE,Quarto command line tool(<https://github.com/quarto-dev/quarto-cli>).
 questionr,,xclip,TRUE,xclip (Linux)
 quitefastmst,,,TRUE,OpenMP
 r.blip,,java-bin,TRUE,
@@ -874,6 +880,7 @@ R2jags,,,TRUE,JAGS (http://mcmc-jags.sourceforge.net)
 R2MLwiN,,,TRUE,"MLwiN, (OpenBUGS, WinBUGS optional)"
 R2OpenBUGS,,openbugs,TRUE,OpenBUGS
 r2pmml,,java-bin,TRUE,Java
+r2sbml,,,FALSE,"cmake, libxml2, libbz2"
 R2wd,,,TRUE,Windows
 R2WinBUGS,,openbugs,TRUE,OpenBugs for functions bugs() and openbugs() orWinBUGSfor function bugs()
 r5r,,,TRUE,Java JDK
@@ -963,7 +970,7 @@ readepi,,,TRUE,"odbc, libmariadbclient-dev"
 readNSx,,,FALSE,little-endian platform
 REBayes,,,TRUE,MOSEK (http://www.mosek.com) and MOSEK license.
 redatamx,,,TRUE,"'Redatam' runtime engine (see https://redatam.org),The dynamic binary library is downloaded from<https://redatam-core.s3.us-west-2.amazonaws.com> during thebuild step. Currently supported platforms are Windows, Linuxand macOS."
-redcas,,,TRUE,"'REDUCE' <http://www.reduce-algebra.com>. At leastone of the 'CSL' or 'PSL' dialects must be installed in orderto use the package. Tested with 'REDUCE' releasesandfor both 'CSL' and 'PSL' on Linux, andandfor 'CSL'on MacOS"
+redcas,,,FALSE,"'REDUCE' <https://reduce-algebra.sourceforge.io>.At least one of the 'CSL' or 'PSL' dialects must be installedin order to use the package. Tested with 'REDUCE' packagedreleasesandand a non-packaged releasefor both'CSL' and 'PSL' on Linux, and packaged releasesandfor 'CSL' on MacOS Intel and MacOS arm M5."
 redist,gmp libxml2,python3,TRUE,python
 redland,redland,,TRUE,"Mac OSX: redland ; Linux: librdf0, librdf0-dev"
 redux,hiredis,,TRUE,hiredis
@@ -1003,7 +1010,7 @@ RH2,,,TRUE,java runtime
 Rhobots,,,FALSE,Microsoft Visual C++ Redistributable(Windowsonly; required by torch)
 Rhpc,,,FALSE,"R built as a shared or static library, 'MPI'library."
 ridge,gsl,,TRUE,Gnu Scientific Library version
-rim,,maxima,TRUE,
+rim,,maxima,FALSE,"Maxima (https://sourceforge.net/projects/maxima/,tested with versions-, needs to be on PATH"
 rinet,,,TRUE,
 rip.opencv,,,FALSE,OpenCVor newer
 rirods,,,TRUE,iRODS C++ HTTP API(<https://github.com/irods/irods_client_http_api>)
@@ -1030,7 +1037,7 @@ rjuliabugs,,,TRUE,"Julia with the following packagesinstalled: 'JuliaBUGS.jl', '
 rkafkajars,,,TRUE,Java JDKor higher
 RKEA,,,TRUE,Java
 RKEAjars,,,TRUE,Java
-rladybugdb,,,FALSE,CMake
+rladybugdb,,,TRUE,
 rlas,,,FALSE,"GDAL, GEOS, PROJ, sqlite3,"
 Rlibeemd,gsl,,TRUE,GNU GSL
 rlibkriging,cmake,,TRUE,"cmake,"
@@ -1055,7 +1062,7 @@ RMySQL,mysql,,TRUE,"libmariadb-client-dev | libmariadb-client-lgpl-dev| libmysql
 rnetcarto,gsl,,TRUE,GNU GSL
 RNetCDF,netcdf udunits,,TRUE,"netcdf, udunits-2"
 RNetLogo,,,TRUE,"Java, NetLogo"
-RoBMA,jags,,TRUE,JAGS(https://mcmc-jags.sourceforge.io/)
+RoBMA,jags,,FALSE,"JAGS, <(https://mcmc-jags.sourceforge.io/)"
 RoBSA,jags,,TRUE,JAGS(https://mcmc-jags.sourceforge.io/)
 robscale,,,TRUE,
 RODBC,odbc,,TRUE,An ODBC3 driver manager and drivers.
@@ -1073,6 +1080,7 @@ Rpadrino,,,TRUE,libcurl: libcurl-devel (rpm) orlibcurl4-openssl-dev (deb).
 rpanel,xvfb bwidget,bwidget,TRUE,
 RPesto,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 rpic,,,FALSE,"Cargo (Rust's package manager), rustc"
+rplatypus,,,FALSE,"Python. Not a prerequisite the userinstalls: the package declares what it needs through'reticulate' and 'uv' provisions an isolated environment onfirst use, leaving any system Python untouched."
 Rpoppler,poppler,,TRUE,"Poppler Glib interface headers and libraries(<http://poppler.freedesktop.org/>) [Debian/Ubuntu:libpoppler-glib-dev, Fedora: poppler-glib-devel]"
 rpostgis,,,TRUE,'PostgreSQL' with 'PostGIS' extension
 RPostgres,postgresql,,TRUE,libpq: libpq-dev (deb) or postgresql-devel(rpm)
@@ -1238,7 +1246,7 @@ starvz,,,TRUE,"arrow package with gzip codec, StarPU"
 Statamarkdown,,,TRUE,Stata
 statgenGxE,,pdflatex,TRUE,pdflatex
 statgenSTA,,pdflatex,TRUE,pdflatex
-stddiff.spark,,,TRUE,Apache Spark (tested with
+stddiff.spark,,,FALSE,Apache Spark (tested withand
 stevedore,,docker,TRUE,docker
 sTiles,,,FALSE,"the 'sTiles' solver library (libstiles.so on Linux,libstiles.dylib on macOS, libstiles.dll on Windows), obtainedwith sTiles_install_library() or supplied by the user"
 stmgp,,,TRUE,PLINK must be installed
@@ -1283,6 +1291,7 @@ TDA,gmp,,TRUE,"gmp,"
 TDCM,,,TRUE,pandoc
 teems,,,FALSE,Docker (https://www.docker.com)
 telegramR,,,FALSE,"OpenSSL: libssl-dev (deb), openssl-devel(rpm), openssl@3 (brew)"
+TemporalHazard,,,FALSE,Quarto command line tool(<https://github.com/quarto-dev/quarto-cli>)
 tensorflow,,,TRUE,TensorFlow (https://www.tensorflow.org/)
 tera,,,FALSE,"Cargo (Rust's package manager), rustc"
 tergo,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
@@ -1355,8 +1364,9 @@ unsum,cargo,,TRUE,"Cargo (Rust's package manager), rustc"
 untb,,pari,TRUE,PARI/GP[strongly recommended forlogkda()]
 uqsa,,,TRUE,
 URooTab,,,TRUE,EViews
+uSDT,,,FALSE,compiler (for Bayesian model compilation)
 ustats,,,FALSE,"Python; Python packages: u-stats, numpy,torch (installed automatically on first use, or viasetup_ustats())"
-uuidx,,,FALSE,"Cargo (Rust's package manager), rustc"
+uuidx,,,TRUE,
 V8,v8,,TRUE,"On Linux you can build against libv8-dev (Debian)or v8-devel (Fedora). We also provide static libv8 binaries formost platforms, see the README for details."
 valection,,,TRUE,
 vapour,gdal proj sqlite,,TRUE,"libgdal-dev, GDAL, PROJ"
